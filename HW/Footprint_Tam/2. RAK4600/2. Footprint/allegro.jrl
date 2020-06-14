@@ -1,0 +1,64 @@
+\t (00:00:00) allegro 17.2 S052 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Sat Jun 13 19:02:07 2020
+\t (00:00:00)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=10500 CPUs=4
+\t (00:00:00) CmdLine= c:\cadence\spb_17.2\tools\bin\allegro.exe C:\GIT\ThesisLorawanNode\HW\Footprint_Tam\2. RAK4600\2. Footprint\RAK4600.dra
+\t (00:00:00) 
+   (00:00:01) Loading axlcore.cxt 
+   (00:00:02) Searching for nsWare programs v2.78
+   (00:00:02) 	NsWare directory found: E:/CAD/pcbenv/nsWare/
+   (00:00:02) 	NsWare programs must reside in this directory!
+   (00:00:02) function AFn_OpenDesign redefined
+   (00:00:02) function PinVia_Overlap_FinishEnterFun redefined
+   (00:00:02) function Find_Point_On_Line_From_Distant redefined
+   (00:00:02) function Find_Point_Quadrature_Line redefined
+   (00:00:02) function Line_Line_Intersect redefined
+   (00:00:02) function _getPinsNet redefined
+   (00:00:02) function _getBranchs redefined
+   (00:00:02) function _getPaths redefined
+   (00:00:02) function _get2PointsPath redefined
+   (00:00:02) function _checkElementList redefined
+   (00:00:02) function _getSurroundPoints redefined
+   (00:00:02) function _getListPointsLPaths redefined
+   (00:00:02) function _checkPathPoint redefined
+   (00:00:02) function _deleteElementList redefined
+   (00:00:02) function _checkElementList redefined
+   (00:00:02) function _deleteElementList redefined
+   (00:00:02) function Find_Point_On_Line_From_Distant redefined
+   (00:00:02) function Find_Point_Quadrature_Line redefined
+   (00:00:02) function Is_Point_On_List redefined
+   (00:00:02) function Line_Line_Intersect redefined
+   (00:00:02) function Line_Line_Distant redefined
+\t (00:00:02) Opening existing design...
+\i (00:00:02) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged RAK4600
+\d (00:00:02) Design opened: C:/GIT/ThesisLorawanNode/HW/Footprint_Tam/2. RAK4600/2. Footprint/RAK4600.dra
+\i (00:00:03) trapsize 3392
+\i (00:00:03) trapsize 3488
+\i (00:00:03) trapsize 3392
+\i (00:00:04) trapsize 3667
+\i (00:00:04) pop singletrace 
+\e (00:00:04) No command active
+\i (00:00:04) generaledit 
+\i (00:00:09) save_as 
+\i (00:00:24) fillin "E:/TTTN/Orcad/lib/0_Lib/1_Footprint/RAK4600.dra"
+\i (00:00:24) cd "E:/TTTN/Orcad/lib/0_Lib/1_Footprint"
+\t (00:00:25) Symbol 'rak4600.psm' created.
+\i (00:00:25) save 
+\i (00:00:27) fillin yes 
+\t (00:00:27) Symbol 'rak4600.psm' created.
+\i (00:00:27) generaledit 
+\i (00:00:27) new 
+\i (00:00:28) newdrawfillin "menu_cancel"
+\i (00:00:28) generaledit 
+\i (00:00:30) dlib 
+\i (00:00:33) setwindow form.dlib
+\i (00:00:33) FORM dlib execute  
+\t (00:00:33) Starting Cadence export libraries...
+\i (00:00:36) FORM dlib cancel  
+\i (00:00:36) setwindow pcb
+\i (00:00:36) generaledit 
+\i (00:00:36) save 
+\i (00:00:37) fillin yes 
+\t (00:00:38) Symbol 'rak4600.psm' created.
+\i (00:00:38) generaledit 
+\i (00:00:40) exit 
+\t (00:00:40)     Journal end - Sat Jun 13 19:02:47 2020

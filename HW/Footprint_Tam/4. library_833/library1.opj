@@ -1,0 +1,40 @@
+(ExpressProject ""
+  (ProjectVersion "19981106")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (File ".\library1.olb"
+      (Type "Schematic Library"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (NoModify))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (MPSSessionName "NguyenThanhTam")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\library1.olb")
+      (Select "Design Resources" ".\library1.olb" "mPCIe_Connector"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 288"))
+      (Tab 0))
+    (Doc
+      (Type "COrPrmBrowserDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 1434 104 425"))
+      (Path
+         "C:\GIT\THESISLORAWANNODE\HW\FOOTPRINT_TAM\4. LIBRARY_833\LIBRARY1.OLB")
+      (Package "MPCIE_CONNECTOR")
+      (PartType "1"))
+    (Doc
+      (Type "COrPrmBrowserDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 130 1460 130 451"))
+      (Path
+         "C:\GIT\THESISLORAWANNODE\HW\FOOTPRINT_TAM\4. LIBRARY_833\LIBRARY1.OLB")
+      (Package "RAK4600")
+      (PartType "1")))
+  (ISPCBBASICLICENSE "false"))

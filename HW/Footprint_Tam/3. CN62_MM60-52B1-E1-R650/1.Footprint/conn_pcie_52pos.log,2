@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : conn_pcie_52pos.dra                           )
+(    Software Version : 17.2S052                                      )
+(    Date/Time        : Tue Feb 11 02:40:15 2020                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: PACKAGE
+    Directory = F:/1.Hardware/1.ClearFog/2.Update/4.Check_Footprint/2.CN62_MM60-52B1-E1-R650/1.Footprint
+    Name      = conn_pcie_52pos.psm
+    User      = Nghiem Do
+    Machine   = NGHIEMSENPAI
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

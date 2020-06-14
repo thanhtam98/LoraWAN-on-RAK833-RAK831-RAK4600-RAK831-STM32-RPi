@@ -1,0 +1,36 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Dump Library Log                                                 )
+(                                                                     )
+(    Software Version : 17.2S052                                      )
+(    Date/Time        : Mon Feb 10 11:15:09 2020                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+*** file: F:/1.Hardware/1.ClearFog/2.Update/4.Check_Footprint/2.CN62_MM60-52B1-E1-R650/1.Footprint/conn_pcie_52pos.dra ***
+
+
+
+  *** Creating padstacks. ***
+
+  DRILL1P1_NOPLATED being dumped.
+
+  DRILL1P6_NOPLATED being dumped.
+
+  SMD_REC2P0X0P6 being dumped.
+
+  SMD_REC3P2X2P3 being dumped.
+
+  DRILL3P0_CIR5P3 being dumped.
+
+
+
+*********************** Summary *********************
+ERRORs reported:                           0
+
+Number of padstacks dumped:                5
+
+Total number of symbols dumped:            0
+*****************************************************
+

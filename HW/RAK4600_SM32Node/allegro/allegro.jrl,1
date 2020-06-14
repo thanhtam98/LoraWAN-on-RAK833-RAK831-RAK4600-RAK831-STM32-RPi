@@ -1,0 +1,40 @@
+\t (00:00:00) allegro 17.2 S052 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Sun Jun 14 15:17:44 2020
+\t (00:00:00)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=15892 CPUs=4
+\t (00:00:00) CmdLine= C:\Cadence\SPB_17.2\tools\bin\allegro.exe -mpssession NguyenThanhTam C:\GIT\THESISLORAWANNODE\HW\RAK4600_SM32NODE\allegro\STM32F103_RAK4600_THESISNODE.brd
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+   (00:00:01) Searching for nsWare programs v2.78
+   (00:00:01) 	NsWare directory found: E:/CAD/pcbenv/nsWare/
+   (00:00:01) 	NsWare programs must reside in this directory!
+   (00:00:01) function AFn_OpenDesign redefined
+   (00:00:01) function PinVia_Overlap_FinishEnterFun redefined
+   (00:00:01) function Find_Point_On_Line_From_Distant redefined
+   (00:00:01) function Find_Point_Quadrature_Line redefined
+   (00:00:01) function Line_Line_Intersect redefined
+   (00:00:01) function _getPinsNet redefined
+   (00:00:01) function _getBranchs redefined
+   (00:00:01) function _getPaths redefined
+   (00:00:01) function _get2PointsPath redefined
+   (00:00:01) function _checkElementList redefined
+   (00:00:01) function _getSurroundPoints redefined
+   (00:00:01) function _getListPointsLPaths redefined
+   (00:00:01) function _checkPathPoint redefined
+   (00:00:01) function _deleteElementList redefined
+   (00:00:01) function _checkElementList redefined
+   (00:00:01) function _deleteElementList redefined
+   (00:00:01) function Find_Point_On_Line_From_Distant redefined
+   (00:00:01) function Find_Point_Quadrature_Line redefined
+   (00:00:01) function Is_Point_On_List redefined
+   (00:00:01) function Line_Line_Intersect redefined
+   (00:00:01) function Line_Line_Distant redefined
+\t (00:00:04) Opening existing design...
+\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged STM32F103_RAK4600_THESISNODE
+\d (00:00:04) Design opened: C:/GIT/THESISLORAWANNODE/HW/RAK4600_SM32NODE/allegro/STM32F103_RAK4600_THESISNODE.brd
+\i (00:00:04) trapsize 3372
+\i (00:00:04) trapsize 3467
+\i (00:00:05) trapsize 3008
+\i (00:00:05) trapsize 3008
+\i (00:00:05) generaledit 
+\i (00:00:13) exit 
+\t (00:00:14)     Journal end - Sun Jun 14 15:17:57 2020

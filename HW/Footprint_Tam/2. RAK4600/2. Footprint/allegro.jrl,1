@@ -1,0 +1,102 @@
+\t (00:00:00) allegro 17.2 S052 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Wed Jun 10 18:24:50 2020
+\t (00:00:00)         Host=DESKTOP-I963OQ4 User=Nghiem Do Pid=16032 CPUs=12
+\t (00:00:00) CmdLine= c:\cadence\spb_17.2\tools\bin\allegro.exe F:\Footprint_Tam\2. RAK4600\2. Footprint\RAK4600.dra
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+   (00:00:00) Searching for nsWare programs v2.78
+   (00:00:00) 	NsWare directory found: F:/Orcad/Working/pcbenv/nsWare/
+   (00:00:00) 	NsWare programs must reside in this directory!
+   (00:00:00) function AFn_OpenDesign redefined
+   (00:00:00) function PinVia_Overlap_FinishEnterFun redefined
+   (00:00:00) function Find_Point_On_Line_From_Distant redefined
+   (00:00:00) function Find_Point_Quadrature_Line redefined
+   (00:00:00) function Line_Line_Intersect redefined
+   (00:00:00) function _getPinsNet redefined
+   (00:00:00) function _getBranchs redefined
+   (00:00:00) function _getPaths redefined
+   (00:00:00) function _get2PointsPath redefined
+   (00:00:00) function _checkElementList redefined
+   (00:00:00) function _getSurroundPoints redefined
+   (00:00:00) function _getListPointsLPaths redefined
+   (00:00:00) function _checkPathPoint redefined
+   (00:00:00) function _deleteElementList redefined
+   (00:00:00) function _checkElementList redefined
+   (00:00:00) function _deleteElementList redefined
+   (00:00:00) function Find_Point_On_Line_From_Distant redefined
+   (00:00:00) function Find_Point_Quadrature_Line redefined
+   (00:00:00) function Is_Point_On_List redefined
+   (00:00:00) function Line_Line_Intersect redefined
+   (00:00:00) function Line_Line_Distant redefined
+   (00:00:00) function logoMaker_start redefined
+   (00:00:00) function logoMaker_mkBitmapDefaults redefined
+   (00:00:00) function logoMaker_setOptionsLevelVisibility redefined
+   (00:00:00) function logoMaker_checkImageFile redefined
+   (00:00:00) function logoMaker_needMkbitmap redefined
+   (00:00:00) function logoMaker_potraceDefaults redefined
+   (00:00:00) function logoMaker_check4plugins redefined
+   (00:00:00) function logoMaker_formAction redefined
+   (00:00:00) function logoMaker_validSymbolName redefined
+   (00:00:00) function logoMaker_validFileName redefined
+   (00:00:00) function logoMaker_validPathName redefined
+   (00:00:00) function logoMaker_validName redefined
+   (00:00:00) function logoMaker_drawPbm redefined
+   (00:00:00) function logoMaker_setSizeFields redefined
+   (00:00:00) function logoMaker_setDynamicsRotMir redefined
+   (00:00:00) function logoMaker_mkbitmap redefined
+   (00:00:00) function logoMaker_create redefined
+   (00:00:00) function logoMaker_rotate redefined
+   (00:00:00) function logoMaker_mirror redefined
+   (00:00:00) function logoMaker_createSym redefined
+   (00:00:00) function logoMaker_Help redefined
+   (00:00:00) function logoMaker_helpTxt redefined
+   (00:00:00) function PtsToUnits redefined
+   (00:00:00) function Lerp redefined
+   (00:00:00) function BezierPt redefined
+   (00:00:00) function BezierToPath redefined
+   (00:00:00) function logoMaker_formOpenFile redefined
+   (00:00:00) function logoMaker_formHeader redefined
+   (00:00:00) function AFn_formEnd redefined
+   (00:00:00) function logoMaker_formPopupDefine redefined
+   (00:00:00) function AFn_formMessage redefined
+   (00:00:00) function AFn_formGroup redefined
+   (00:00:00) function AFn_formText redefined
+   (00:00:00) function AFn_formButton redefined
+   (00:00:00) function AFn_formChecklistItem redefined
+   (00:00:00) function AFn_formStrFillin redefined
+   (00:00:00) function AFn_formRealFillin redefined
+   (00:00:00) function AFn_formIntegerFillin redefined
+   (00:00:00) function AFn_formColor redefined
+   (00:00:00) function AFn_formPop redefined
+   (00:00:00) function AFn_formThumbnail redefined
+   (00:00:00) function AFn_formIntSlideBar redefined
+   (00:00:00) function AFn_formSetLayerSubColour redefined
+   (00:00:00) function AFn_formOptionsString redefined
+   (00:00:00) function AFn_formSizeString redefined
+   (00:00:00) function AFn_formOptionalString redefined
+\t (00:00:00) Opening existing design...
+\i (00:00:00) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged RAK4600
+\d (00:00:00) Design opened: F:/Footprint_Tam/2. RAK4600/2. Footprint/RAK4600.dra
+\i (00:00:00) trapsize 3505
+\i (00:00:01) trapsize 3608
+\i (00:00:01) trapsize 3505
+\i (00:00:01) trapsize 3608
+\i (00:00:01) trapsize 3608
+\i (00:00:01) generaledit 
+\i (00:00:06) pdf out 
+\i (00:00:07) setwindow form.pdf_out
+\i (00:00:07) FORM pdf_out pdftree  TOP 
+\i (00:00:07) FORM pdf_out pdftree 'MULTISEL YES' TOP 
+\i (00:00:09) FORM pdf_out export  
+\t (00:00:09) Starting Exporting PDF File...
+\t (00:00:10) PDF output completed.
+\w (00:10:00) Save pending
+\i (00:10:02) FORM pdf_out cancel  
+\i (00:10:02) setwindow pcb
+\i (00:10:02) generaledit 
+\t (00:10:02) Performing autosave...
+\t (00:10:02) Autosave successful
+\i (00:10:03) exit 
+\e (00:10:03) Do you want to save the changes you made to RAK4600.dra?
+\i (00:10:04) fillin no 
+\t (00:10:05)     Journal end - Wed Jun 10 18:34:55 2020

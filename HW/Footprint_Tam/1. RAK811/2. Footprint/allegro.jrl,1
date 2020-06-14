@@ -1,0 +1,147 @@
+\t (00:00:00) allegro 17.2 S052 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Wed Jun 10 18:21:17 2020
+\t (00:00:00)         Host=DESKTOP-I963OQ4 User=Nghiem Do Pid=19264 CPUs=12
+\t (00:00:00) CmdLine= c:\cadence\spb_17.2\tools\bin\allegro.exe F:\Footprint_Tam\1. RAK811\2. Footprint\RAK811.dra
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+   (00:00:01) Searching for nsWare programs v2.78
+   (00:00:01) 	NsWare directory found: F:/Orcad/Working/pcbenv/nsWare/
+   (00:00:01) 	NsWare programs must reside in this directory!
+   (00:00:01) function AFn_OpenDesign redefined
+   (00:00:01) function PinVia_Overlap_FinishEnterFun redefined
+   (00:00:01) function Find_Point_On_Line_From_Distant redefined
+   (00:00:01) function Find_Point_Quadrature_Line redefined
+   (00:00:01) function Line_Line_Intersect redefined
+   (00:00:01) function _getPinsNet redefined
+   (00:00:01) function _getBranchs redefined
+   (00:00:01) function _getPaths redefined
+   (00:00:01) function _get2PointsPath redefined
+   (00:00:01) function _checkElementList redefined
+   (00:00:01) function _getSurroundPoints redefined
+   (00:00:01) function _getListPointsLPaths redefined
+   (00:00:01) function _checkPathPoint redefined
+   (00:00:01) function _deleteElementList redefined
+   (00:00:01) function _checkElementList redefined
+   (00:00:01) function _deleteElementList redefined
+   (00:00:01) function Find_Point_On_Line_From_Distant redefined
+   (00:00:01) function Find_Point_Quadrature_Line redefined
+   (00:00:01) function Is_Point_On_List redefined
+   (00:00:01) function Line_Line_Intersect redefined
+   (00:00:01) function Line_Line_Distant redefined
+   (00:00:01) function logoMaker_start redefined
+   (00:00:01) function logoMaker_mkBitmapDefaults redefined
+   (00:00:01) function logoMaker_setOptionsLevelVisibility redefined
+   (00:00:01) function logoMaker_checkImageFile redefined
+   (00:00:01) function logoMaker_needMkbitmap redefined
+   (00:00:01) function logoMaker_potraceDefaults redefined
+   (00:00:01) function logoMaker_check4plugins redefined
+   (00:00:01) function logoMaker_formAction redefined
+   (00:00:01) function logoMaker_validSymbolName redefined
+   (00:00:01) function logoMaker_validFileName redefined
+   (00:00:01) function logoMaker_validPathName redefined
+   (00:00:01) function logoMaker_validName redefined
+   (00:00:01) function logoMaker_drawPbm redefined
+   (00:00:01) function logoMaker_setSizeFields redefined
+   (00:00:01) function logoMaker_setDynamicsRotMir redefined
+   (00:00:01) function logoMaker_mkbitmap redefined
+   (00:00:01) function logoMaker_create redefined
+   (00:00:01) function logoMaker_rotate redefined
+   (00:00:01) function logoMaker_mirror redefined
+   (00:00:01) function logoMaker_createSym redefined
+   (00:00:01) function logoMaker_Help redefined
+   (00:00:01) function logoMaker_helpTxt redefined
+   (00:00:01) function PtsToUnits redefined
+   (00:00:01) function Lerp redefined
+   (00:00:01) function BezierPt redefined
+   (00:00:01) function BezierToPath redefined
+   (00:00:01) function logoMaker_formOpenFile redefined
+   (00:00:01) function logoMaker_formHeader redefined
+   (00:00:01) function AFn_formEnd redefined
+   (00:00:01) function logoMaker_formPopupDefine redefined
+   (00:00:01) function AFn_formMessage redefined
+   (00:00:01) function AFn_formGroup redefined
+   (00:00:01) function AFn_formText redefined
+   (00:00:01) function AFn_formButton redefined
+   (00:00:01) function AFn_formChecklistItem redefined
+   (00:00:01) function AFn_formStrFillin redefined
+   (00:00:01) function AFn_formRealFillin redefined
+   (00:00:01) function AFn_formIntegerFillin redefined
+   (00:00:01) function AFn_formColor redefined
+   (00:00:01) function AFn_formPop redefined
+   (00:00:01) function AFn_formThumbnail redefined
+   (00:00:01) function AFn_formIntSlideBar redefined
+   (00:00:01) function AFn_formSetLayerSubColour redefined
+   (00:00:01) function AFn_formOptionsString redefined
+   (00:00:01) function AFn_formSizeString redefined
+   (00:00:01) function AFn_formOptionalString redefined
+\t (00:00:01) Opening existing design...
+\i (00:00:01) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged RAK811
+\d (00:00:01) Design opened: F:/Footprint_Tam/1. RAK811/2. Footprint/RAK811.dra
+\i (00:00:02) trapsize 3505
+\i (00:00:02) trapsize 3608
+\i (00:00:02) trapsize 3505
+\i (00:00:02) trapsize 3608
+\i (00:00:02) trapsize 3608
+\i (00:00:02) generaledit 
+\i (00:00:04) zoom in 1 
+\i (00:00:04) setwindow pcb
+\i (00:00:04) zoom in -3.9922 6.5997
+\i (00:00:04) trapsize 1804
+\i (00:00:04) zoom out 1 
+\i (00:00:04) setwindow pcb
+\i (00:00:04) zoom out -4.1365 7.7182
+\i (00:00:04) trapsize 3608
+\i (00:00:11) pdf out 
+\i (00:00:15) setwindow form.pdf_out
+\i (00:00:15) FORM pdf_out pdftree 'MULTISEL YES' TOP 
+\i (00:00:15) FORM pdf_out pdftree  TOP 
+\i (00:00:19) FORM pdf_out export  
+\t (00:00:19) Starting Exporting PDF File...
+\t (00:00:22) PDF output completed.
+\i (00:00:43) FORM pdf_out cancel  
+\i (00:00:43) setwindow pcb
+\i (00:00:43) generaledit 
+\i (00:00:44) zoom out 1 
+\i (00:00:44) setwindow pcb
+\i (00:00:44) zoom out -1.1780 8.0069
+\i (00:00:44) trapsize 7216
+\i (00:00:45) zoom in 1 
+\i (00:00:45) setwindow pcb
+\i (00:00:45) zoom in -3.9200 17.2436
+\i (00:00:45) trapsize 3608
+\i (00:00:51) save_as 
+\i (00:00:52) fillin "menu_cancel"
+\i (00:00:52) generaledit 
+\i (00:01:01) save_as 
+\i (00:01:06) fillin "menu_cancel"
+\i (00:01:06) generaledit 
+\i (00:01:10) pdf out 
+\i (00:01:12) setwindow form.pdf_out
+\i (00:01:12) FORM pdf_out pdftree 'MULTISEL YES' TOP 
+\i (00:01:12) FORM pdf_out pdftree  TOP 
+\i (00:01:13) FORM pdf_out pdftree 'MULTISEL YES' BOTTOM 
+\i (00:01:13) FORM pdf_out pdftree  BOTTOM 
+\i (00:01:37) FORM pdf_out filename RAK811_1 
+\i (00:01:37) FORM pdf_out cancel  
+\i (00:01:38) setwindow pcb
+\i (00:01:38) generaledit 
+\i (00:01:46) pdf out 
+\i (00:01:48) setwindow form.pdf_out
+\i (00:01:48) FORM pdf_out pdftree 'MULTISEL YES' TOP 
+\i (00:01:48) FORM pdf_out pdftree  TOP 
+\i (00:01:49) FORM pdf_out pdftree 'MULTISEL YES' BOTTOM 
+\i (00:01:49) FORM pdf_out pdftree  BOTTOM 
+\i (00:01:54) FORM pdf_out filename RAK811_1 
+\i (00:01:54) FORM pdf_out export  
+\t (00:01:54) Starting Exporting PDF File...
+\t (00:01:56) PDF output completed.
+\w (00:10:01) Save pending
+\i (00:13:28) FORM pdf_out cancel  
+\i (00:13:28) setwindow pcb
+\i (00:13:28) generaledit 
+\t (00:13:28) Performing autosave...
+\t (00:13:28) Autosave successful
+\i (00:13:29) exit 
+\e (00:13:29) Do you want to save the changes you made to RAK811.dra?
+\i (00:13:30) fillin no 
+\t (00:13:31)     Journal end - Wed Jun 10 18:34:48 2020

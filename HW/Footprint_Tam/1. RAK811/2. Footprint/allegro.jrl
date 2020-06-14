@@ -1,0 +1,73 @@
+\t (00:00:00) allegro 17.2 S052 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Thu Jun 11 16:00:09 2020
+\t (00:00:00)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=13376 CPUs=4
+\t (00:00:00) CmdLine= c:\cadence\spb_17.2\tools\bin\allegro.exe C:\GIT\ThesisLorawanNode\Footprint_Tam\1. RAK811\2. Footprint\RAK811.dra
+\t (00:00:00) 
+   (00:00:01) Loading axlcore.cxt 
+   (00:00:01) Searching for nsWare programs v2.78
+   (00:00:01) 	NsWare directory found: E:/CAD/pcbenv/nsWare/
+   (00:00:01) 	NsWare programs must reside in this directory!
+   (00:00:01) function AFn_OpenDesign redefined
+   (00:00:01) function PinVia_Overlap_FinishEnterFun redefined
+   (00:00:01) function Find_Point_On_Line_From_Distant redefined
+   (00:00:01) function Find_Point_Quadrature_Line redefined
+   (00:00:01) function Line_Line_Intersect redefined
+   (00:00:01) function _getPinsNet redefined
+   (00:00:01) function _getBranchs redefined
+   (00:00:01) function _getPaths redefined
+   (00:00:01) function _get2PointsPath redefined
+   (00:00:01) function _checkElementList redefined
+   (00:00:01) function _getSurroundPoints redefined
+   (00:00:01) function _getListPointsLPaths redefined
+   (00:00:01) function _checkPathPoint redefined
+   (00:00:01) function _deleteElementList redefined
+   (00:00:01) function _checkElementList redefined
+   (00:00:01) function _deleteElementList redefined
+   (00:00:01) function Find_Point_On_Line_From_Distant redefined
+   (00:00:01) function Find_Point_Quadrature_Line redefined
+   (00:00:01) function Is_Point_On_List redefined
+   (00:00:01) function Line_Line_Intersect redefined
+   (00:00:01) function Line_Line_Distant redefined
+\t (00:00:01) Opening existing design...
+\i (00:00:01) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged RAK811
+\d (00:00:01) Design opened: C:/GIT/ThesisLorawanNode/Footprint_Tam/1. RAK811/2. Footprint/RAK811.dra
+\i (00:00:02) trapsize 4073
+\i (00:00:02) trapsize 4213
+\i (00:00:02) trapsize 4073
+\i (00:00:03) trapsize 4381
+\i (00:00:03) generaledit 
+\i (00:00:09) dlib 
+\i (00:00:18) setwindow form.dlib
+\i (00:00:18) FORM dlib browse_export  
+\i (00:01:14) fillin "E:/TTTN/Orcad/lib/0_Lib/1_Footprint"
+\i (00:01:16) FORM dlib execute  
+\t (00:01:16) Starting Cadence export libraries...
+\i (00:01:20) FORM dlib cancel  
+\i (00:01:20) setwindow pcb
+\i (00:01:20) generaledit 
+\i (00:08:44) pick grid 23.3592 -0.9875
+\t (00:08:44) last pick:  23.4000 -1.0000
+\i (00:08:44) save 
+\i (00:08:48) fillin yes 
+\t (00:08:49) Symbol 'rak811.psm' created.
+\i (00:08:49) generaledit 
+\i (00:08:58) save_as 
+\i (00:09:32) fillin "E:/TTTN/Orcad/lib/0_Lib/1_Footprint/RAK811.dra"
+\i (00:09:32) cd "E:/TTTN/Orcad/lib/0_Lib/1_Footprint"
+\t (00:09:32) Symbol 'rak811.psm' created.
+\i (00:09:33) generaledit 
+\i (00:09:34) save 
+\i (00:09:35) fillin yes 
+\t (00:09:36) Symbol 'rak811.psm' created.
+\i (00:09:36) generaledit 
+\i (00:09:41) dlib 
+\i (00:09:43) setwindow form.dlib
+\i (00:09:43) FORM dlib execute  
+\t (00:09:43) Starting Cadence export libraries...
+\i (00:09:48) setwindow pcb
+\i (00:09:48) save 
+\i (00:09:48) fillin yes 
+\t (00:09:49) Symbol 'rak811.psm' created.
+\i (00:09:49) generaledit 
+\i (00:49:47) exit 
+\t (00:49:48)     Journal end - Thu Jun 11 16:49:57 2020

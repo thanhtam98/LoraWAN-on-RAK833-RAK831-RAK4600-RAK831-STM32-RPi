@@ -1,0 +1,23 @@
+\t (00:00:00) padstack_editor 17.2 S052 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Sun Jun 14 15:19:59 2020
+\t (00:00:00)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=14168 CPUs=4
+\t (00:00:00) CmdLine= padstack_editor -mpssession NguyenThanhTam -file C:/Users/NGUYEN~1/AppData/Local/Temp/#Taaaaak04756.tmp -pname PAD_75D55 -data C:/Users/NGUYEN~1/AppData/Local/Temp/#Taaaaam04756.tmp
+\t (00:00:00) 
+\d (00:00:03) QtSignal GuidedTabsParent GuidedTabs currentChanged "Mask Layers"
+\d (00:00:08) QtSignal GuidedMaskLayersTab PadWidth editingFinished 65.00
+\d (00:00:12) QtSignal GuidedMaskLayersTab PadHeight editingFinished 155.00
+\d (00:00:12) QtSignal GuidedMaskLayersTab LayersTable itemSelectionChanged 1 Pad
+\d (00:00:12) QtSignal GuidedMaskLayersTab LayersTable cellClicked 1 Pad 1 1
+\d (00:00:13) QtSignal GuidedMaskLayersTab LayersTable cellClicked 1 "Layer Name" 1 0
+\d (00:00:13) QtSignal GuidedMaskLayersTab LayersTable cellClicked 1 Pad 1 1
+\d (00:00:13) QtSignal GuidedMaskLayersTab LayersTable cellClicked 1 Pad 1 1
+\d (00:00:13) QtSignal GuidedMaskLayersTab LayersTable customContextMenuRequest 1 Pad
+\d (00:00:14) QtFillin 
+\d (00:00:14) QtSignal GuidedMaskLayersTab LayersTable itemSelectionChanged
+\d (00:00:15) QtSignal GuidedMaskLayersTab LayersTable itemSelectionChanged 1 Pad
+\d (00:00:15) QtSignal GuidedMaskLayersTab LayersTable cellClicked 1 Pad 1 1
+\d (00:00:19) QtSignal GuidedMaskLayersTab PadShape CurrentIndexChanged None
+\d (00:00:21) QtSignal MainWindow UpdateToDesignExit triggered
+\d (00:00:23) QtSignal pseCheckBrowser Close clicked
+\d (00:00:24) QtFillin Yes
+\t (00:00:24)     Journal end - Sun Jun 14 15:20:23 2020

@@ -1,0 +1,1010 @@
+FILE_TYPE = EXPANDEDPARTLIST;
+{ Using PSTWRITER 17.2.0 d001Jun-14-2020 at 15:18:02 }
+DIRECTIVES
+ PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
+ ROOT_DRAWING='STM32F103_RAK4600_THESISNODE';
+ POST_TIME='Feb 18 2019 18:33:40';
+ SOURCE_TOOL='CAPTURE_WRITER';
+END_DIRECTIVES;
+
+PART_NAME
+ B1 'SW PUSHBUTTON-SPST-2_0_B3U-1000':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8099492@STM32F407_MAINBOARD.SW PUSHBUTTON-SPST-2_0.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8099492@stm32f407_mainboard.\sw pushbutton-spst-2_0.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8099492@stm32f407_mainboard.\sw pushbutton-spst-2_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C1 'CAP NP_C0603_DISCRETE_10NF':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8096119@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8096119@discrete.\cap np.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page1_ins8096119@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C10 'CAP NP_0_C0603_0.1UF/6.3V_C0603':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8099532@STM32F407_MAINBOARD.CAP NP_0.NORMAL(SCH_1)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8099532@stm32f407_mainboard.\cap np_0.normal\(sch_1)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8099532@stm32f407_mainboard.\cap np_0.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C11 'CAP NP_0_C0603_0.1UF/6.3V_C0603':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8099262@STM32F407_MAINBOARD.CAP NP_0.NORMAL(SCH_1)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8099262@stm32f407_mainboard.\cap np_0.normal\(sch_1)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8099262@stm32f407_mainboard.\cap np_0.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C12 'CAP NP_0_C0603_0.1UF/6.3V_C0603':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8099432@STM32F407_MAINBOARD.CAP NP_0.NORMAL(SCH_1)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8099432@stm32f407_mainboard.\cap np_0.normal\(sch_1)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8099432@stm32f407_mainboard.\cap np_0.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C13 'CAP NP_0_C0603_0.1UF_C0603C104K':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8099472@STM32F407_MAINBOARD.CAP NP_0.NORMAL(SCH_1)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8099472@stm32f407_mainboard.\cap np_0.normal\(sch_1)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8099472@stm32f407_mainboard.\cap np_0.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C14 'CAP NP_0_C0603_18PF_CL10C180JB8':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8098874@STM32F407_MAINBOARD.CAP NP_0.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8098874@stm32f407_mainboard.\cap np_0.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8098874@stm32f407_mainboard.\cap np_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C15 'CAP NP_0_C0603_18PF_CL10C180JB8':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8099512@STM32F407_MAINBOARD.CAP NP_0.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8099512@stm32f407_mainboard.\cap np_0.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8099512@stm32f407_mainboard.\cap np_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C16 'CAP NP_0_C0603_0.1UF/6.3V_C0603':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8099302@STM32F407_MAINBOARD.CAP NP_0.NORMAL(SCH_1)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8099302@stm32f407_mainboard.\cap np_0.normal\(sch_1)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8099302@stm32f407_mainboard.\cap np_0.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C17 'CAP NP_0_C0603_0.1UF/6.3V_C0603':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8099592@STM32F407_MAINBOARD.CAP NP_0.NORMAL(SCH_1)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8099592@stm32f407_mainboard.\cap np_0.normal\(sch_1)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8099592@stm32f407_mainboard.\cap np_0.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C18 'CAP NP_0_C0603_0.1UF/6.3V_C0603':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8099612@STM32F407_MAINBOARD.CAP NP_0.NORMAL(SCH_1)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8099612@stm32f407_mainboard.\cap np_0.normal\(sch_1)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8099612@stm32f407_mainboard.\cap np_0.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C19 'CAP NP_0_C0603_0.1UF/6.3V_C0603':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8099632@STM32F407_MAINBOARD.CAP NP_0.NORMAL(SCH_1)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8099632@stm32f407_mainboard.\cap np_0.normal\(sch_1)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8099632@stm32f407_mainboard.\cap np_0.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C2 'CAP_CAP_AL_D_100UF/35V':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8095919@DISCRETE.CAP.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8095919@discrete.\cap.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page1_ins8095919@discrete.\cap.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C20 'CAP NP_C0805_DISCRETE_0.1UF':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8122277@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8122277@discrete.\cap np.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8122277@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C21 'CAP NP_C0805_DISCRETE_0.1UF':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8122297@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8122297@discrete.\cap np.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8122297@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C22 'CAP NP_C0805_DISCRETE_0.1UF':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8122815@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8122815@discrete.\cap np.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8122815@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C23 'CAP NP_C0805_DISCRETE_0.1UF':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8110757@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8110757@discrete.\cap np.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page4_ins8110757@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C24 'CAP NP_C0805_DISCRETE_0.1UF':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8110773@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8110773@discrete.\cap np.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page4_ins8110773@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C25 'CAP NP_C0805_DISCRETE_0.1UF':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8108857@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8108857@discrete.\cap np.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page4_ins8108857@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C3 'CAP NP_C0603_DISCRETE_10NF':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8096139@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8096139@discrete.\cap np.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page1_ins8096139@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C4 'CAP_CAP_AL_D_220U/16V':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8095963@DISCRETE.CAP.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8095963@discrete.\cap.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page1_ins8095963@discrete.\cap.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C5 'CAP NP_CAP_1210_22U/6.3V':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8096199@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8096199@discrete.\cap np.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page1_ins8096199@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C6 'CAP 0603_C0603_100NF':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8095859@AUTOTALAB.CAP 0603.NORMAL(SCH_1)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8095859@autotalab.\cap 0603.normal\(sch_1)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page1_ins8095859@autotalab.\cap 0603.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C7 'CAP NP_C0603_DISCRETE_100NF_C06':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8095899@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8095899@discrete.\cap np.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page1_ins8095899@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C8 'CAP NP_C0603_DISCRETE_100NF_C06':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8095983@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8095983@discrete.\cap np.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page1_ins8095983@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C9 'CAP NP_0_C0603_0.1UF/6.3V_C0603':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8099018@STM32F407_MAINBOARD.CAP NP_0.NORMAL(SCH_1)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8099018@stm32f407_mainboard.\cap np_0.normal\(sch_1)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8099018@stm32f407_mainboard.\cap np_0.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D1 'DIODE_DO214AC_SMA_1N4007':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8096159@DISCRETE.DIODE.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8096159@discrete.\diode.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page1_ins8096159@discrete.\diode.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D10 'DIODE_DO214AC_SMA_1N4007':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8122561@DISCRETE.DIODE.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8122561@discrete.\diode.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8122561@discrete.\diode.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D11 'DIODE_DO214AC_SMA_1N4007':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8122629@DISCRETE.DIODE.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8122629@discrete.\diode.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8122629@discrete.\diode.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D12 'DIODE_DO214AC_SMA_1N4007':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8122747@DISCRETE.DIODE.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8122747@discrete.\diode.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8122747@discrete.\diode.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D13 'DIODE_DO214AC_SMA_1N4007':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8122953@DISCRETE.DIODE.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8122953@discrete.\diode.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8122953@discrete.\diode.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D14 'DIODE_DO214AC_SMA_1N4007':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8123115@DISCRETE.DIODE.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8123115@discrete.\diode.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8123115@discrete.\diode.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D15 'DIODE_DO214AC_SMA_1N4007':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8123185@DISCRETE.DIODE.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8123185@discrete.\diode.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8123185@discrete.\diode.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D16 'DIODE_DO214AC_SMA_1N4007':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8123327@DISCRETE.DIODE.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8123327@discrete.\diode.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8123327@discrete.\diode.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D2 'SS34_2_SOD123_1N5819':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8096099@STM32F4_CONTROLLER.SS34_2.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8096099@stm32f4_controller.\ss34_2.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page1_ins8096099@stm32f4_controller.\ss34_2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D3 'LED_0_LED0805_LED':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8095879@STM32F4_CONTROLLER.LED_0.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8095879@stm32f4_controller.\led_0.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page1_ins8095879@stm32f4_controller.\led_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D4 'LED_0_LED0805_LED':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8096219@STM32F4_CONTROLLER.LED_0.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8096219@stm32f4_controller.\led_0.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page1_ins8096219@stm32f4_controller.\led_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D5 'LED_0_LED0805_LED':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8096179@STM32F4_CONTROLLER.LED_0.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8096179@stm32f4_controller.\led_0.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page1_ins8096179@stm32f4_controller.\led_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D6 'LED_0_LED0805_LED':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8099552@STM32F4_CONTROLLER.LED_0.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8099552@stm32f4_controller.\led_0.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8099552@stm32f4_controller.\led_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D7 'LED_0_LED0805_LED':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8099412@STM32F4_CONTROLLER.LED_0.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8099412@stm32f4_controller.\led_0.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8099412@stm32f4_controller.\led_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D8 'LED_0_LED0805_LED':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8098914@STM32F4_CONTROLLER.LED_0.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8098914@stm32f4_controller.\led_0.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8098914@stm32f4_controller.\led_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D9 'LED_0_LED0805_LED':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8099452@STM32F4_CONTROLLER.LED_0.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8099452@stm32f4_controller.\led_0.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8099452@stm32f4_controller.\led_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ E1 'ANTENNA_1_SMA_EDGE_ANTENNA_OPTI':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8107753@STM32SLAVE_ENVMONITORING.ANTENNA_1.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8107753@stm32slave_envmonitoring.\antenna_1.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page4_ins8107753@stm32slave_envmonitoring.\antenna_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J1 'HEADER 2_HEADER2-PITCH3P96-B2P_':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8095819@CONNECTOR.HEADER 2.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8095819@connector.\header 2.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page1_ins8095819@connector.\header 2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J10 'HEADER 2_DOMINO2_5_SW_IN2':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8122991@CONNECTOR.HEADER 2.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8122991@connector.\header 2.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8122991@connector.\header 2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J11 'HEADER 3_DOMINO3_5_ONEWIRE':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8123051@CONNECTOR.HEADER 3.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8123051@connector.\header 3.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8123051@connector.\header 3.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J12 'HEADER 2_DOMINO2_5_PULSE_IN':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8123253@CONNECTOR.HEADER 2.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8123253@connector.\header 2.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8123253@connector.\header 2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J13 'CON8_HEADER_8_CON8':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8110973@CONNECTOR.CON8.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8110973@connector.\con8.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page4_ins8110973@connector.\con8.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J14 'HEADER 3_HEADER3PITCH100MIL_HEA':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8108819@CONNECTOR.HEADER 3.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8108819@connector.\header 3.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page4_ins8108819@connector.\header 3.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J15 'CON8_HEADER_8_CON8':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8111001@CONNECTOR.CON8.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8111001@connector.\con8.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page4_ins8111001@connector.\con8.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J16 'HEADER 3_HEADER3PITCH100MIL_HEA':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8107729@CONNECTOR.HEADER 3.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8107729@connector.\header 3.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page4_ins8107729@connector.\header 3.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J2 'CONN JACK PWR_CONN_JACK_DC_12VD':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8095939@CONNECTOR.CONN JACK PWR.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8095939@connector.\conn jack pwr.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page1_ins8095939@connector.\conn jack pwr.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J3 'HEADER 5_HEADER_5_JTAG/STSW':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8099652@CONNECTOR.HEADER 5.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8099652@connector.\header 5.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8099652@connector.\header 5.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J4 'HEADER 3_HEADER3PITCH100MIL_RS4':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8098954@CONNECTOR.HEADER 3.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8098954@connector.\header 3.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8098954@connector.\header 3.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J5 'HEADER 2_DOMINO2_5_RAS485_MASTE':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8122189@CONNECTOR.HEADER 2.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8122189@connector.\header 2.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8122189@connector.\header 2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J6 'HEADER 2_DOMINO2_5_RS485_SLAVE':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8122169@CONNECTOR.HEADER 2.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8122169@connector.\header 2.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8122169@connector.\header 2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J7 'HEADER 3_DOMINO3_5_ANALOG_IN1':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8122577@CONNECTOR.HEADER 3.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8122577@connector.\header 3.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8122577@connector.\header 3.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J8 'HEADER 2_DOMINO2_5_SW_IN1':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8122645@CONNECTOR.HEADER 2.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8122645@connector.\header 2.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8122645@connector.\header 2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J9 'HEADER 3_DOMINO3_5_ANALOG_IN2':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8122973@CONNECTOR.HEADER 3.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8122973@connector.\header 3.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8122973@connector.\header 3.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ L1 'INDUCTOR_IND_6X6MM_8.8UH/1.7A':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8095779@DISCRETE.INDUCTOR.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8095779@discrete.\inductor.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page1_ins8095779@discrete.\inductor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ MH1 'MOUNTING HOLE_MH_3MM_1_HOLE 4MM':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8125481@HUY_LIB.MOUNTING HOLE.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8125481@huy_lib.\mounting hole.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8125481@huy_lib.\mounting hole.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ MH2 'MOUNTING HOLE_MH_3MM_1_HOLE 4MM':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8125495@HUY_LIB.MOUNTING HOLE.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8125495@huy_lib.\mounting hole.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8125495@huy_lib.\mounting hole.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ MH3 'MOUNTING HOLE_MH_3MM_1_HOLE 4MM':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8125509@HUY_LIB.MOUNTING HOLE.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8125509@huy_lib.\mounting hole.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8125509@huy_lib.\mounting hole.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ MH4 'MOUNTING HOLE_MH_3MM_1_HOLE 4MM':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8125523@HUY_LIB.MOUNTING HOLE.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8125523@huy_lib.\mounting hole.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8125523@huy_lib.\mounting hole.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R1 'RES-SM0402_0_R0603_DISCRETE_10K':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8096267@EDM1-FAIRY-REVA1.RES-SM0402_0.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8096267@\edm1-fairy-reva1\.\res-sm0402_0.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page1_ins8096267@\edm1-fairy-reva1\.\res-sm0402_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R10 'RESISTOR 0603_R0603_4K7':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8099684@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8099684@autotalab.\resistor 0603.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8099684@autotalab.\resistor 0603.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R11 'RESISTOR 0603_R0603_4K7':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8099322@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8099322@autotalab.\resistor 0603.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8099322@autotalab.\resistor 0603.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R12 'RESISTOR_0_R0603_4.7K_RC0603JR-':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8098978@STM32F407_MAINBOARD.RESISTOR_0.NORMAL(SCH_1)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8098978@stm32f407_mainboard.\resistor_0.normal\(sch_1)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8098978@stm32f407_mainboard.\resistor_0.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R13 'RESISTOR 0603_R0603_10K':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8099038@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8099038@autotalab.\resistor 0603.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8099038@autotalab.\resistor 0603.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R14 'RESISTOR 0603_R0603_10K':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8098934@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8098934@autotalab.\resistor 0603.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8098934@autotalab.\resistor 0603.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R15 'RESISTOR 0603_R0603_10K':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8098998@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8098998@autotalab.\resistor 0603.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8098998@autotalab.\resistor 0603.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R16 'RESISTOR 0603_R0603_100R':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8122211@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8122211@autotalab.\resistor 0603.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8122211@autotalab.\resistor 0603.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R17 'RESISTOR 0603_R0603_100R':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8122237@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8122237@autotalab.\resistor 0603.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8122237@autotalab.\resistor 0603.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R18 'RESISTOR 0603_R0603_1K':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8122661@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8122661@autotalab.\resistor 0603.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8122661@autotalab.\resistor 0603.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R19 'RESISTOR 0603_R0603_1K':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8123007@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8123007@autotalab.\resistor 0603.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8123007@autotalab.\resistor 0603.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R2 'RESISTOR 0603_R0603_4K7':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8095839@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8095839@autotalab.\resistor 0603.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page1_ins8095839@autotalab.\resistor 0603.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R20 'RESISTOR 0603_R0603_10K':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8123099@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8123099@autotalab.\resistor 0603.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8123099@autotalab.\resistor 0603.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R21 'RESISTOR 0603_R0603_1K':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8123269@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8123269@autotalab.\resistor 0603.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8123269@autotalab.\resistor 0603.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R22 'RESISTOR 0603_R0603_10K':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8108803@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8108803@autotalab.\resistor 0603.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page4_ins8108803@autotalab.\resistor 0603.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R3 'RESISTOR 0603_R0603_4K7':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8096059@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8096059@autotalab.\resistor 0603.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page1_ins8096059@autotalab.\resistor 0603.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R4 'RESISTOR 0603_R0603_4K7':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8096039@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8096039@autotalab.\resistor 0603.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page1_ins8096039@autotalab.\resistor 0603.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R5 'RES-SM0402_0_R0603_DISCRETE_49.':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8095799@EDM1-FAIRY-REVA1.RES-SM0402_0.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8095799@\edm1-fairy-reva1\.\res-sm0402_0.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page1_ins8095799@\edm1-fairy-reva1\.\res-sm0402_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R6 'RES-SM0402_0_R0603_DISCRETE_10K':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8096079@EDM1-FAIRY-REVA1.RES-SM0402_0.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8096079@\edm1-fairy-reva1\.\res-sm0402_0.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page1_ins8096079@\edm1-fairy-reva1\.\res-sm0402_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R7 'RESISTOR 0603_R0603_4K7':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8099372@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8099372@autotalab.\resistor 0603.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8099372@autotalab.\resistor 0603.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R8 'RESISTOR 0603_R0603_4K7':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8099704@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8099704@autotalab.\resistor 0603.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8099704@autotalab.\resistor 0603.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R9 'RESISTOR 0603_R0603_4K7':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8098894@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8098894@autotalab.\resistor 0603.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8098894@autotalab.\resistor 0603.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ SW1 'SW PUSHBUTTON-SPST-2_TACT_SWITC':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8117644@DISCRETE.SW PUSHBUTTON-SPST-2.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8117644@discrete.\sw pushbutton-spst-2.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8117644@discrete.\sw pushbutton-spst-2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ SW2 'SW PUSHBUTTON-SPST-2_TACT_SWITC':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8118507@DISCRETE.SW PUSHBUTTON-SPST-2.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8118507@discrete.\sw pushbutton-spst-2.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8118507@discrete.\sw pushbutton-spst-2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ SW3 'SW PUSHBUTTON-SPST-2_TACT_SWITC':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8118402@DISCRETE.SW PUSHBUTTON-SPST-2.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8118402@discrete.\sw pushbutton-spst-2.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8118402@discrete.\sw pushbutton-spst-2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U1 'PMIC_SOT23-6_SOT23-6_AP3211':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8096003@VLIB.PMIC_SOT23-6.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8096003@vlib.\pmic_sot23-6.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page1_ins8096003@vlib.\pmic_sot23-6.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U10 'RAK4600_RAK4600_RAK4600':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8108025@LIBRARY1.RAK4600.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8108025@library1.\rak4600.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page4_ins8108025@library1.\rak4600.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U2 'RT9193-33GB_1_SOT-223_LM1117 5V':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8096239@STM32F407_MAINBOARD_V2.0.RT9193-33GB_1.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8096239@\stm32f407_mainboard_v2.0\.\rt9193-33gb_1.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page1_ins8096239@\stm32f407_mainboard_v2.0\.\rt9193-33gb_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U3 'STM32F103C8T6_LQFP_48_STM32F103':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8099058@STM32F103C8T6.STM32F103C8T6.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8099058@stm32f103c8t6.\stm32f103c8t6.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8099058@stm32f103c8t6.\stm32f103c8t6.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U4 'MAX485_1_SOIC-8_MAX485':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8122385@VALVECONTROLLER.MAX485_1.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8122385@valvecontroller.\max485_1.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8122385@valvecontroller.\max485_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U5 'MAX485_1_SOIC-8_MAX485':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8122349@VALVECONTROLLER.MAX485_1.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8122349@valvecontroller.\max485_1.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8122349@valvecontroller.\max485_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U6 'OPTO_OPTOSMD_OPTO':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8122677@LIBRARY1.OPTO.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8122677@library1.\opto.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8122677@library1.\opto.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U7 '74HC14_SO_14_74HC14':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8122771@LIBRARY1.74HC14.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8122771@library1.\74hc14.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8122771@library1.\74hc14.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U8 'OPTO_OPTOSMD_OPTO':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8123023@LIBRARY1.OPTO.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8123023@library1.\opto.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8123023@library1.\opto.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U9 'OPTO_OPTOSMD_OPTO':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8123285@LIBRARY1.OPTO.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8123285@library1.\opto.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page3_ins8123285@library1.\opto.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ Y1 'CRYSTAL-4_0_CRY3225_M_12M-18PPM':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8099342@STM32F407_MAINBOARD.CRYSTAL-4_0.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8099342@stm32f407_mainboard.\crystal-4_0.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8099342@stm32f407_mainboard.\crystal-4_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+END.

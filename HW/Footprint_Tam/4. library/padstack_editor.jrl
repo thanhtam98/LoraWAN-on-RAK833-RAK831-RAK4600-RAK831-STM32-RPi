@@ -1,0 +1,58 @@
+\t (00:00:00) padstack_editor 17.2 S052 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Wed Jun 10 15:26:51 2020
+\t (00:00:00)         Host=DESKTOP-I963OQ4 User=Nghiem Do Pid=10996 CPUs=12
+\t (00:00:00) CmdLine= C:\Cadence\SPB_17.2\tools\bin\padstack_editor.exe
+\t (00:00:00) 
+\d (00:00:02) QtSignal MainWindow New triggered
+\d (00:00:04) QtSignal fileNewDialog browse clicked
+\d (00:02:40) QtFillin "F:/Footprint_Tam/2. RAK4600/2. Footprint/smd_rec_1p8x0p7mm..pad"
+\d (00:02:43) QtSignal fileNewDialog dataCombo CurrentIndexChanged "SMD Pin"
+\d (00:02:44) QtSignal fileNewDialog dirPath editingFinished smd_rec_1p8x0p7mm
+\d (00:02:44) QtSignal fileNewDialog OK clicked
+\d (00:02:47) QtSignal GuidedTabsParent NewPads currentRowChanged 3
+\d (00:02:47) QtSignal GuidedTabsParent NewPads itemSelectionChanged Rectangle
+\d (00:02:47) QtSignal GuidedTabsParent NewPads itemClicked Rectangle
+\d (00:02:50) QtSignal GuidedTabsParent GuidedTabs currentChanged "Design Layers"
+\d (00:02:51) QtSignal GuidedDesignLayersTab LayersTable cellClicked 0 "Regular Pad" 0 2
+\d (00:02:53) QtSignal MainWindow Units CurrentIndexChanged Millimeter
+\d (00:02:55) QtFillin Yes
+\w (00:02:55) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\d (00:02:57) QtSignal GuidedDesignLayersTab PadWidth editingFinished 1.800
+\d (00:03:00) QtSignal GuidedDesignLayersTab PadHeight editingFinished 0.700
+\d (00:03:01) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 0 "Thermal Pad"
+\d (00:03:01) QtSignal GuidedDesignLayersTab LayersTable cellClicked 0 "Thermal Pad" 0 3
+\d (00:03:06) QtSignal GuidedDesignLayersTab PadWidth editingFinished 2.100
+\d (00:03:07) QtSignal GuidedDesignLayersTab PadHeight editingFinished 1.000
+\d (00:03:08) QtSignal GuidedDesignLayersTab LayersTable cellClicked 0 "Thermal Pad" 0 3
+\d (00:03:08) QtSignal GuidedTabsParent GuidedDesignLayersTab keyPressEvent 16777249 67108864 false +
+\d (00:03:08) QtSignal 1
+\d (00:03:09) QtSignal GuidedTabsParent GuidedDesignLayersTab keyPressEvent 67 67108864 false 1 +
+\d (00:03:09) QtSignal 
+\d (00:03:09) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged 0 "Anti Pad"
+\d (00:03:09) QtSignal GuidedTabsParent GuidedDesignLayersTab keyPressEvent 16777249 67108864 false +
+\d (00:03:09) QtSignal 1
+\d (00:03:09) QtSignal GuidedDesignLayersTab LayersTable cellClicked 0 "Anti Pad" 0 4
+\d (00:03:09) QtSignal GuidedTabsParent GuidedDesignLayersTab keyPressEvent 86 67108864 false 1 +
+\d (00:03:09) QtSignal 
+\d (00:03:10) QtSignal GuidedDesignLayersTab LayersTable itemSelectionChanged
+\d (00:03:11) QtSignal GuidedTabsParent GuidedTabs currentChanged "Mask Layers"
+\d (00:03:12) QtSignal GuidedMaskLayersTab LayersTable cellClicked 0 Pad 0 1
+\d (00:03:15) QtSignal GuidedMaskLayersTab PadWidth editingFinished 1.950
+\d (00:03:18) QtSignal GuidedMaskLayersTab PadHeight editingFinished 0.850
+\d (00:03:18) QtSignal GuidedMaskLayersTab LayersTable itemSelectionChanged 2 Pad
+\d (00:03:18) QtSignal GuidedMaskLayersTab LayersTable cellClicked 2 Pad 2 1
+\d (00:03:19) QtSignal GuidedMaskLayersTab LayersTable itemSelectionChanged 0 Pad
+\d (00:03:19) QtSignal GuidedMaskLayersTab LayersTable cellClicked 0 Pad 0 1
+\d (00:03:19) QtSignal GuidedTabsParent GuidedMaskLayersTab keyPressEvent 16777249 67108864 false +
+\d (00:03:19) QtSignal 1
+\d (00:03:19) QtSignal GuidedTabsParent GuidedMaskLayersTab keyPressEvent 67 67108864 false 1 
+\d (00:03:20) QtSignal GuidedMaskLayersTab LayersTable itemSelectionChanged 2 Pad
+\d (00:03:20) QtSignal GuidedMaskLayersTab LayersTable cellClicked 2 Pad 2 1
+\d (00:03:20) QtSignal GuidedTabsParent GuidedMaskLayersTab keyPressEvent 16777249 67108864 false +
+\d (00:03:20) QtSignal 1
+\d (00:03:20) QtSignal GuidedTabsParent GuidedMaskLayersTab keyPressEvent 86 67108864 false 1 
+\d (00:03:20) QtSignal GuidedMaskLayersTab LayersTable itemSelectionChanged
+\d (00:03:21) QtSignal GuidedTabsParent GuidedTabs currentChanged "Design Layers"
+\d (00:03:24) QtSignal GuidedTabsParent GuidedTabs currentChanged "Mask Layers"
+\d (00:03:26) QtSignal MainWindow Save triggered
+\t (00:03:28)     Journal end - Wed Jun 10 15:30:19 2020
