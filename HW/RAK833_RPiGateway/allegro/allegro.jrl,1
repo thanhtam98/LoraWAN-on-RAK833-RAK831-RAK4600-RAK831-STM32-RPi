@@ -1,313 +1,435 @@
-\t (00:00:00) allegro 17.2 S052 Windows SPB 64-bit Edition
-\t (00:00:00)     Journal start - Sun Jun 14 17:33:36 2020
-\t (00:00:00)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=19228 CPUs=4
-\t (00:00:00) CmdLine= C:\Cadence\SPB_17.2\tools\bin\allegro.exe -mpssession NguyenThanhTam C:\GIT\THESISLORAWANNODE\HW\RAK833_RPIGATEWAY\allegro\RAK833_RPIGATEWAY.brd
-\t (00:00:00) 
-   (00:00:00) Loading axlcore.cxt 
-   (00:00:01) Searching for nsWare programs v2.78
-   (00:00:01) 	NsWare directory found: E:/CAD/pcbenv/nsWare/
-   (00:00:01) 	NsWare programs must reside in this directory!
-   (00:00:01) function AFn_OpenDesign redefined
-   (00:00:01) function PinVia_Overlap_FinishEnterFun redefined
-   (00:00:01) function Find_Point_On_Line_From_Distant redefined
-   (00:00:01) function Find_Point_Quadrature_Line redefined
-   (00:00:01) function Line_Line_Intersect redefined
-   (00:00:01) function _getPinsNet redefined
-   (00:00:01) function _getBranchs redefined
-   (00:00:01) function _getPaths redefined
-   (00:00:01) function _get2PointsPath redefined
-   (00:00:01) function _checkElementList redefined
-   (00:00:01) function _getSurroundPoints redefined
-   (00:00:01) function _getListPointsLPaths redefined
-   (00:00:01) function _checkPathPoint redefined
-   (00:00:01) function _deleteElementList redefined
-   (00:00:01) function _checkElementList redefined
-   (00:00:01) function _deleteElementList redefined
-   (00:00:01) function Find_Point_On_Line_From_Distant redefined
-   (00:00:01) function Find_Point_Quadrature_Line redefined
-   (00:00:01) function Is_Point_On_List redefined
-   (00:00:01) function Line_Line_Intersect redefined
-   (00:00:01) function Line_Line_Distant redefined
-\t (00:00:01) Opening existing design...
-\i (00:00:01) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged RAK833_RPIGATEWAY
-\d (00:00:01) Design opened: C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/RAK833_RPIGATEWAY.brd
-\i (00:00:02) trapsize 9953
-\i (00:00:02) trapsize 10294
-\i (00:00:02) trapsize 8692
-\i (00:00:02) trapsize 14630
-\i (00:00:03) generaledit 
-\i (00:00:07) pick grid 6934.60 11850.26
-\t (00:00:07) last pick:  6900.00 11900.00
-\i (00:00:18) done 
-\i (00:00:19) cmgr_spac 
-\i (00:00:20) setwindow cmgr
-\i (00:00:20) cm newView ( kConsmgr worksheet 78:Spacing "79:Spacing Constraint Set" "80:All Layers" "167:All Layers" )
-\i (00:00:20) cm select ( frame ( kConsmgr workbook 78:Spacing "79:Spacing Constraint Set" "80:All Layers" ) )
-\i (00:00:20) cm select ( frame ( kConsmgr workbook 78:Spacing "79:Spacing Constraint Set" "80:All Layers" ) )
-\i (00:00:20) cm expand ( row ( Design "RAK833_RPIGATEWAY" ) )
-\i (00:00:20) cm selectDesignTab ( kConsmgr worksheet 78:Spacing "79:Spacing Constraint Set" "80:All Layers" "167:All Layers" ) 0
-\i (00:00:20) setwindow pcb
-\i (00:00:20) trapsize 14630
-\i (00:00:20) generaledit 
-\i (00:00:23) QtSignal menuFile menuImport Triggered Constraints...
-\i (00:00:31) QtSignal BaseFileDlgWithScope AQFileDialog finished 1
-\i (00:00:31) QtFillin E:/TTTN/Orcad/BKSTEK_RulesTemplate.dcf
-\i (00:00:31) QtFillin ReportPath C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/Report.xml
-\i (00:00:31) setwindow cmgr
-\i (00:00:31) cm close ( frame ( kConsmgr workbook 78:Spacing "79:Spacing Constraint Set" "80:All Layers" ) )
-\i (00:00:32) cm newView ( kConsmgr worksheet 78:Spacing "79:Spacing Constraint Set" "80:All Layers" "167:All Layers" )
-\i (00:00:32) setwindow pcb
-\i (00:00:32) QtSignal m_domainSelector WS_Spacing itemSelectionChanged
-\i (00:00:32) QtSignal m_domainSelector WS_Spacing itemSelectionChanged "Spacing Constraint Set" +
-\i (00:00:32) QtSignal "All Layers"
-\i (00:00:32) setwindow cmgr
-\i (00:00:32) cm select ( frame ( kConsmgr workbook 78:Spacing "79:Spacing Constraint Set" "80:All Layers" ) )
-\i (00:00:32) cm select ( frame ( kConsmgr workbook 78:Spacing "79:Spacing Constraint Set" "80:All Layers" ) )
-\i (00:00:32) cm expand ( row ( Design "RAK833_RPIGATEWAY" ) )
-\i (00:00:32) cm expand ( row ( Design "RAK833_RPIGATEWAY" ) )
-\i (00:00:32) cm selectDesignTab ( kConsmgr worksheet 78:Spacing "79:Spacing Constraint Set" "80:All Layers" "167:All Layers" ) 0
-\i (00:00:32) setwindow pcb
-\i (00:00:32) QtSignal m_domainSelector WS_Spacing itemSelectionChanged
-\i (00:00:32) QtSignal m_domainSelector WS_Spacing itemSelectionChanged "Spacing Constraint Set" +
-\i (00:00:32) QtSignal "All Layers"
-\i (00:00:32) QtSignal m_domainSelector WS_Spacing itemSelectionChanged
-\i (00:00:32) QtSignal m_domainSelector WS_Spacing itemSelectionChanged "Spacing Constraint Set" +
-\i (00:00:32) QtSignal "All Layers"
-\i (00:00:32) setwindow cmgr
-\i (00:00:32) cm newView ( kConsmgr worksheet 78:Spacing "79:Spacing Constraint Set" "80:All Layers" "167:All Layers" )
-\i (00:00:32) setwindow pcb
-\i (00:00:32) QtSignal m_domainSelector WS_Spacing itemSelectionChanged
-\i (00:00:32) QtSignal m_domainSelector WS_Spacing itemSelectionChanged "Spacing Constraint Set" +
-\i (00:00:32) QtSignal "All Layers"
-\i (00:00:34) QtSignal m_domainSelector WS_Spacing itemSelectionChanged
-\i (00:00:34) QtSignal m_domainSelector WS_Spacing itemSelectionChanged "Spacing Constraint Set" +
-\i (00:00:34) QtSignal "All Layers"
-\i (00:00:36) setwindow cmgr
-\i (00:00:36) cm close ( frame ( kConsmgr workbook 78:Spacing "79:Spacing Constraint Set" "80:All Layers" ) )
-\i (00:00:37) cm exit
-\i (00:00:37) setwindow pcb
-\i (00:00:37) QtSignal m_domainSelector WS_Spacing itemSelectionChanged
-\i (00:00:38) pick grid 16736.66 11703.96
-\t (00:00:38) last pick:  16700.00 11700.00
-\i (00:00:42) pick grid 17380.38 10533.56
-\t (00:00:42) last pick:  17400.00 10500.00
-\i (00:00:51) xdehilite 
-\i (00:00:51) xname_flush 
-\i (00:00:51) done 
-\i (00:00:51) xhilite 
-\i (00:00:51) xname_flush 
-\i (00:00:51) done 
-\i (00:00:52) generaledit 
-\i (00:00:55) xdehilite 
-\i (00:00:55) xname_flush 
-\i (00:00:55) done 
-\i (00:00:55) generaledit 
-\i (00:00:56) xdehilite 
-\i (00:00:56) xname_flush 
-\i (00:00:56) done 
+\t (00:00:12) allegro 17.2 S052 Windows SPB 64-bit Edition
+\t (00:00:12)     Journal start - Sun Jun 14 18:01:32 2020
+\t (00:00:12)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=8004 CPUs=4
+\t (00:00:12) CmdLine= C:\Cadence\SPB_17.2\tools\bin\allegro.exe
+\t (00:00:12) 
+\d (00:00:12) Design opened: C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/RAK833_RPIGATEWAY.brd
+\i (00:00:12) trapsize 7903
+\i (00:00:12) generaledit 
+\i (00:00:13) zoom in 1 
+\i (00:00:13) setwindow pcb
+\i (00:00:13) zoom in 67.4784 363.8035
+\i (00:00:13) trapsize 3952
+\i (00:00:13) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out 107.9429 348.4713
+\i (00:00:14) trapsize 7903
+\i (00:00:14) pick grid 137.9903 351.0003
+\t (00:00:14) last pick:  138.0000 351.0000
+\i (00:00:14) roam x -96 
+\i (00:00:15) roam y -96 
+\i (00:00:15) roam y -96
+\i (00:00:15) roam y -96 
+\i (00:00:15) roam y -96
+\i (00:00:15) zoom in 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom in 79.3484 400.0612
+\i (00:00:15) trapsize 3952
+\i (00:00:16) zoom in 1 
+\i (00:00:16) setwindow pcb
+\i (00:00:16) zoom in 82.6677 382.9903
+\i (00:00:16) trapsize 1976
+\i (00:00:16) roam x -96 
+\i (00:00:16) roam x -96
+\i (00:00:16) zoom out 1 
+\i (00:00:16) setwindow pcb
+\i (00:00:16) zoom out 74.4089 380.1057
+\i (00:00:16) trapsize 3952
+\i (00:00:16) zoom out 1 
+\i (00:00:16) setwindow pcb
+\i (00:00:16) zoom out 74.4878 380.1056
+\i (00:00:16) trapsize 7903
+\i (00:00:16) roam x -96 
+\i (00:00:16) roam x -32
+\i (00:00:17) zoom in 1 
+\i (00:00:17) setwindow pcb
+\i (00:00:17) zoom in 73.0259 376.4774
+\i (00:00:17) trapsize 3952
+\i (00:00:17) roam x -96 
+\i (00:00:17) roam x -96
+\i (00:00:18) drag_start grid 71.5242 379.5597
+\i (00:00:18) move 
+\t (00:00:18) last pick:  64.0400 378.1400
+\t (00:00:18) Moving J1 / HEADER 20X2_HEADER40X2PITCH100M / HEADER40X2PITCH100MIL.
+\t (00:00:18) Pick new location for the element(s).
+\i (00:00:20) drag_stop grid 67.0193 378.5323
+\i (00:00:21) generaledit 
+\i (00:00:21) move 
+\t (00:00:21) last pick:  67.0000 379.0000
+\t (00:00:22) Moving J1 / HEADER 20X2_HEADER40X2PITCH100M / HEADER40X2PITCH100MIL.
+\t (00:00:22) Pick new location for the element(s).
+\i (00:00:23) cancel 
+\i (00:00:23) generaledit 
+\i (00:00:45) drag_start grid 69.7854 377.5048
+\i (00:00:45) move 
+\t (00:00:45) last pick:  67.0000 379.0000
+\t (00:00:45) Moving J1 / HEADER 20X2_HEADER40X2PITCH100M / HEADER40X2PITCH100MIL.
+\t (00:00:45) Pick new location for the element(s).
+\i (00:00:47) drag_stop grid 68.6000 377.9000
+\i (00:00:47) generaledit 
+\i (00:00:48) move 
+\t (00:00:48) last pick:  69.0000 378.0000
+\t (00:00:48) Moving J1 / HEADER 20X2_HEADER40X2PITCH100M / HEADER40X2PITCH100MIL.
+\t (00:00:48) Pick new location for the element(s).
+\i (00:00:56) ipick 86 
+\t (00:00:56) last pick:  155.0000 378.0000
 \i (00:00:56) generaledit 
-\i (00:00:57) xdehilite 
-\i (00:00:57) xname_flush 
-\i (00:00:57) done 
-\i (00:00:57) generaledit 
-\i (00:00:59) xdehilite 
-\i (00:00:59) xname_flush 
-\i (00:00:59) done 
-\i (00:00:59) generaledit 
-\i (00:01:07) board outline 
-   (00:01:07) Loading consmgr.cxt 
-   (00:01:08) Loading acns_formula.cxt 
-   (00:01:08) Loading floor.cxt 
-   (00:01:08) Loading fputil.cxt 
-\i (00:01:10) pick grid 907.06 15068.85
-\t (00:01:10) last pick:  900.00 15100.00
-\i (00:01:13) pick grid 8543.89 10533.56
-\t (00:01:13) last pick:  8500.00 10500.00
-\i (00:01:14) setwindow form.fpbdoutline
-\i (00:01:14) FORM fpbdoutline done  
+\i (00:00:58) zoom out 1 
+\i (00:00:58) setwindow pcb
+\i (00:00:58) zoom out 68.9951 378.8484
+\i (00:00:58) trapsize 7903
+\i (00:01:09) ipick -86 
+\t (00:01:09) last pick:  69.0000 378.0000
+\i (00:01:13) zoom out 1 
+\i (00:01:13) setwindow pcb
+\i (00:01:13) zoom out 151.9000 359.2484
+\i (00:01:13) trapsize 15806
+\i (00:01:13) zoom out 1 
+\i (00:01:13) setwindow pcb
+\i (00:01:13) zoom out 304.1161 289.2259
+\i (00:01:13) trapsize 30799
+\i (00:01:14) zoom in 1 
 \i (00:01:14) setwindow pcb
-\i (00:01:14) generaledit 
+\i (00:01:14) zoom in 556.8434 249.4708
+\i (00:01:14) trapsize 15399
+\i (00:01:14) zoom in 1 
+\i (00:01:14) setwindow pcb
+\i (00:01:14) zoom in 254.6703 307.3726
+\i (00:01:14) trapsize 7700
+\i (00:01:14) zoom out 1 
+\i (00:01:14) setwindow pcb
+\i (00:01:14) zoom out 230.9552 318.3062
+\i (00:01:14) trapsize 15399
+\i (00:01:14) zoom out 1 
+\i (00:01:14) setwindow pcb
+\i (00:01:14) zoom out 207.2401 316.1503
+\i (00:01:14) trapsize 30799
+\i (00:01:14) zoom out 1 
+\i (00:01:14) setwindow pcb
+\i (00:01:14) zoom out 222.9837 397.3053
+\i (00:01:14) trapsize 30799
 \i (00:01:15) zoom in 1 
 \i (00:01:15) setwindow pcb
-\i (00:01:15) zoom in 2399.31 14864.03
-\i (00:01:15) trapsize 7315
+\i (00:01:15) zoom in 163.2340 369.5863
+\i (00:01:15) trapsize 15399
 \i (00:01:15) zoom in 1 
 \i (00:01:15) setwindow pcb
-\i (00:01:15) zoom in 2399.32 14864.03
-\i (00:01:15) trapsize 3657
+\i (00:01:15) zoom in 160.7701 369.5864
+\i (00:01:15) trapsize 7700
+\i (00:01:15) drag_start grid 164.9280 376.0541
+\i (00:01:15) move 
+\t (00:01:16) last pick:  155.0000 378.0000
+\t (00:01:16) Moving J1 / HEADER 20X2_HEADER40X2PITCH100M / HEADER40X2PITCH100MIL.
+\t (00:01:16) Pick new location for the element(s).
+\i (00:01:16) drag_stop grid 161.6941 367.1225
+\i (00:01:16) generaledit 
 \i (00:01:16) zoom out 1 
 \i (00:01:16) setwindow pcb
-\i (00:01:16) zoom out 2516.36 14790.89
-\i (00:01:16) trapsize 7315
-\i (00:01:17) place manual 
-\i (00:01:21) setwindow form.plc_manual
-\i (00:01:21) FORM plc_manual tree 'MULTISEL YES' U4 'Components by refdes' 
-\t (00:01:21) Placing U4 / CAT25C02_0_TSSOP-8_CAT25256 / TSSOP-8 on Top.
-\i (00:01:21) FORM plc_manual tree  U4 'Components by refdes' 
-\i (00:01:22) FORM plc_manual tree 'MULTISEL YES' U3 'Components by refdes' 
-\e (00:01:22) Cannot load symbol 'ZM5202_A'
-\i (00:01:22) FORM plc_manual tree  U3 'Components by refdes' 
-\i (00:01:23) FORM plc_manual tree 'MULTISEL NO' U3 'Components by refdes' 
-\t (00:01:23) Placing U4 / CAT25C02_0_TSSOP-8_CAT25256 / TSSOP-8 on Top.
-\i (00:01:24) FORM plc_manual tree 'MULTISEL NO' U4 'Components by refdes' 
-\i (00:01:24) FORM plc_manual tree  U4 'Components by refdes' 
-\i (00:01:24) FORM plc_manual tree 'MULTISEL YES' U3 'Components by refdes' 
-\e (00:01:24) Cannot load symbol 'ZM5202_A'
-\i (00:01:24) FORM plc_manual tree  U3 'Components by refdes' 
-\i (00:01:31) FORM plc_manual tree 'MULTISEL NO' U3 'Components by refdes' 
-\i (00:01:31) FORM plc_manual tree 'MULTISEL YES' U2 'Components by refdes' 
-\t (00:01:31) Placing U2 / RAK_PCIE_CONN_PCIE_52POS_RAK_PC / CONN_PCIE_52POS on Top.
-\i (00:01:31) FORM plc_manual tree  U2 'Components by refdes' 
-\i (00:01:38) setwindow pcb
-\i (00:01:38) pick grid 3789.16 12552.50
-\t (00:01:38) last pick:  3800.00 12600.00
-\e (00:01:38) ERROR(SPMHGE-82): Pin numbers do not match between symbol and component. Run dev_check on device file for more information.
-\t (00:01:38) Placing U2 / RAK_PCIE_CONN_PCIE_52POS_RAK_PC / CONN_PCIE_52POS on Top.
-\i (00:01:48) setwindow form.plc_manual
-\i (00:01:48) FORM plc_manual done  
-\i (00:01:48) setwindow pcb
-\i (00:01:48) generaledit 
-\i (00:02:02) save 
-\i (00:02:04) fillin yes 
-\i (00:02:05) generaledit 
-\i (00:02:07) xrefdes U2.22 
-\t (00:02:07) Can not select unplaced component U2.
-\i (00:02:07) xname_flush 
-\i (00:02:08) xdehilite 
-\i (00:02:08) xrefdes U2.22 
-\t (00:02:08) Can not select unplaced component U2.
-\i (00:02:08) xname_flush 
-\i (00:02:08) done 
-\i (00:02:08) xhilite 
-\i (00:02:08) xrefdes U2 
-\t (00:02:08) Can not select unplaced component U2.
-\t (00:02:08) Can not select unplaced component U2.
-\i (00:02:08) xname_flush 
-\i (00:02:08) done 
-\i (00:02:08) generaledit 
-\i (00:02:09) pick grid 5661.79 12552.50
-\t (00:02:09) last pick:  5700.00 12600.00
-\i (00:02:10) xdehilite 
-\i (00:02:10) xrefdes U2 
-\t (00:02:10) Can not select unplaced component U2.
-\t (00:02:10) Can not select unplaced component U2.
-\i (00:02:10) xname_flush 
-\i (00:02:10) done 
-\i (00:02:11) xhilite 
-\i (00:02:11) xrefdes J1.9 
-\t (00:02:11) Can not select unplaced component J1.
-\i (00:02:11) xname_flush 
-\i (00:02:11) done 
-\i (00:02:11) generaledit 
-\i (00:02:11) xdehilite 
-\i (00:02:11) xrefdes J1.9 
-\t (00:02:11) Can not select unplaced component J1.
-\i (00:02:11) xname_flush 
-\i (00:02:11) done 
-\i (00:02:12) xhilite 
-\i (00:02:12) xrefdes J1 
-\t (00:02:12) Can not select unplaced component J1.
-\t (00:02:12) Can not select unplaced component J1.
-\i (00:02:12) xname_flush 
-\i (00:02:12) done 
-\i (00:02:12) generaledit 
-\i (00:02:14) xdehilite 
-\i (00:02:14) xrefdes J1 
-\t (00:02:14) Can not select unplaced component J1.
-\t (00:02:14) Can not select unplaced component J1.
-\i (00:02:14) xname_flush 
-\i (00:02:14) done 
-\i (00:02:14) generaledit 
-\i (00:02:16) place manual 
-\i (00:02:22) setwindow form.plc_manual
-\i (00:02:22) FORM plc_manual tree 'MULTISEL YES' U1 'Components by refdes' 
-\t (00:02:22) Placing U1 / PMIC_SOT23-6_SOT23-6_AP3211 / SOT23-6 on Top.
-\i (00:02:22) FORM plc_manual tree  U1 'Components by refdes' 
-\i (00:02:23) FORM plc_manual tree 'MULTISEL NO' U1 'Components by refdes' 
-\i (00:02:24) FORM plc_manual tree 'MULTISEL YES' U2 'Components by refdes' 
-\t (00:02:24) Placing U2 / RAK_PCIE_CONN_PCIE_52POS_RAK_PC / CONN_PCIE_52POS on Top.
-\i (00:02:24) FORM plc_manual tree  U2 'Components by refdes' 
-\i (00:02:24) FORM plc_manual tree 'MULTISEL NO' U2 'Components by refdes' 
-\i (00:02:25) FORM plc_manual tree 'MULTISEL YES' U3 'Components by refdes' 
-\e (00:02:25) Cannot load symbol 'ZM5202_A'
-\i (00:02:25) FORM plc_manual tree  U3 'Components by refdes' 
-\i (00:02:25) FORM plc_manual tree 'MULTISEL NO' U3 'Components by refdes' 
-\i (00:02:30) FORM plc_manual tree 'MULTISEL YES' J1 'Components by refdes' 
-\t (00:02:30) Placing J1 / HEADER 20X2_HEADER40X2PITCH100M / HEADER40X2PITCH100MIL on Top.
-\i (00:02:30) FORM plc_manual tree  J1 'Components by refdes' 
-\i (00:02:33) setwindow pcb
-\i (00:02:33) pick grid 3145.44 14088.65
-\t (00:02:33) last pick:  3100.00 14100.00
-\i (00:02:35) pick grid 3218.59 13035.29
-\t (00:02:35) last pick:  3200.00 13000.00
-\t (00:02:35) Moving J1 / HEADER 20X2_HEADER40X2PITCH100M / HEADER40X2PITCH100MIL.
-\t (00:02:35) last pick:  3100.00 14100.00
-\i (00:02:36) iangle -90.00 
-\t (00:02:36) last pick:  2700.00 0.00
-\i (00:02:37) iangle -90.00 
-\t (00:02:37) last pick:  2700.00 0.00
-\i (00:02:37) iangle -90.00 
-\t (00:02:37) last pick:  2700.00 0.00
-\i (00:02:38) pick grid 2648.02 14059.39
-\t (00:02:38) last pick:  2600.00 14100.00
-\i (00:02:41) setwindow form.plc_manual
-\i (00:02:41) FORM plc_manual tree 'MULTISEL YES' J2 'Components by refdes' 
-\t (00:02:41) Placing J2 / USB MIN_6_CON5_MICROUSB_SKT_SM_ / CON5_MICROUSB_SKT_SM on Top.
-\i (00:02:41) FORM plc_manual tree  J2 'Components by refdes' 
-\i (00:02:43) setwindow pcb
-\i (00:02:43) pick grid 1887.27 13649.75
-\t (00:02:43) last pick:  1900.00 13600.00
-\i (00:02:46) setwindow form.plc_manual
-\i (00:02:46) FORM plc_manual tree 'MULTISEL YES' U3 'Components by refdes' 
-\e (00:02:46) Cannot load symbol 'ZM5202_A'
-\i (00:02:46) FORM plc_manual tree  U3 'Components by refdes' 
-\i (00:02:46) FORM plc_manual tree 'MULTISEL NO' U3 'Components by refdes' 
-\i (00:02:47) FORM plc_manual tree 'MULTISEL YES' U4 'Components by refdes' 
-\t (00:02:47) Placing U4 / CAT25C02_0_TSSOP-8_CAT25256 / TSSOP-8 on Top.
-\i (00:02:47) FORM plc_manual tree  U4 'Components by refdes' 
-\i (00:02:48) FORM plc_manual tree 'MULTISEL NO' U4 'Components by refdes' 
-\i (00:02:48) FORM plc_manual tree 'MULTISEL YES' R12 'Components by refdes' 
-\t (00:02:48) Placing R12 / RES-SM0402_0_R0603_DISCRETE_10K / R0603 on Top.
-\i (00:02:48) FORM plc_manual tree  R12 'Components by refdes' 
-\i (00:02:49) FORM plc_manual tree 'MULTISEL YES' U1 'Components by refdes' 
-\i (00:02:49) FORM plc_manual tree  U1 'Components by refdes' 
-\i (00:02:49) FORM plc_manual tree 'MULTISEL NO' R12 'Components by refdes' 
-\t (00:02:49) Placing U1 / PMIC_SOT23-6_SOT23-6_AP3211 / SOT23-6 on Top.
-\i (00:02:49) FORM plc_manual tree  R12 'Components by refdes' 
-\i (00:02:50) FORM plc_manual tree 'MULTISEL NO' U1 'Components by refdes' 
-\i (00:02:50) FORM plc_manual tree  U1 'Components by refdes' 
-\i (00:02:50) FORM plc_manual tree 'MULTISEL YES' U2 'Components by refdes' 
-\t (00:02:50) Placing U2 / RAK_PCIE_CONN_PCIE_52POS_RAK_PC / CONN_PCIE_52POS on Top.
-\i (00:02:50) FORM plc_manual tree  U2 'Components by refdes' 
-\i (00:02:55) FORM plc_manual cancel  
-\i (00:02:55) setwindow pcb
-\i (00:02:55) generaledit 
-\i (00:06:13) xrefdes U2 
-\t (00:06:13) Can not select unplaced component U2.
-\t (00:06:13) Can not select unplaced component U2.
-\i (00:06:13) xname_flush 
-\i (00:07:06) xrefdes U2 
-\t (00:07:06) Can not select unplaced component U2.
-\t (00:07:06) Can not select unplaced component U2.
-\i (00:07:06) xname_flush 
-\i (00:09:07) xrefdes U2 
-\t (00:09:07) Can not select unplaced component U2.
-\t (00:09:07) Can not select unplaced component U2.
-\i (00:09:07) xname_flush 
-\t (00:10:01) Performing autosave...
-\t (00:10:01) Autosave successful
-\i (00:10:17) xdehilite 
-\i (00:10:17) xrefdes U2 
-\t (00:10:17) Can not select unplaced component U2.
-\t (00:10:17) Can not select unplaced component U2.
-\i (00:10:17) xname_flush 
-\i (00:10:17) done 
-\i (00:10:17) generaledit 
-\i (00:10:17) xrefdes U2 
-\t (00:10:17) Can not select unplaced component U2.
-\t (00:10:17) Can not select unplaced component U2.
-\i (00:10:17) xname_flush 
-\i (00:11:35) exit 
-\e (00:11:36) Do you want to save the changes you made to C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/RAK833_RPIGATEWAY.brd?
-\i (00:11:36) fillin yes 
-\t (00:11:37)     Journal end - Sun Jun 14 17:45:12 2020
+\i (00:01:16) zoom out 161.2321 365.7365
+\i (00:01:16) trapsize 15399
+\i (00:01:17) move 
+\t (00:01:17) last pick:  162.0000 367.0000
+\t (00:01:17) Moving J1 / HEADER 20X2_HEADER40X2PITCH100M / HEADER40X2PITCH100MIL.
+\t (00:01:17) Pick new location for the element(s).
+\i (00:01:17) roam x -96 
+\i (00:01:17) roam x -96
+\i (00:01:18) roam x -96 
+\i (00:01:18) roam x -96
+\i (00:01:18) roam x -96 
+\i (00:01:18) roam x -64
+\i (00:01:18) roam y -96 
+\i (00:01:18) roam y -80
+\i (00:01:19) zoom in 1 
+\i (00:01:19) setwindow pcb
+\i (00:01:19) zoom in 76.3812 381.2899
+\i (00:01:19) trapsize 7700
+\i (00:01:19) zoom in 1 
+\i (00:01:19) setwindow pcb
+\i (00:01:19) zoom in 74.5333 380.5199
+\i (00:01:19) trapsize 3850
+\i (00:01:19) roam x -96 
+\i (00:01:19) roam x -96
+\i (00:01:19) roam x -96 
+\i (00:01:19) roam x -96
+\i (00:01:22) pick grid 65.4475 377.6710
+\t (00:01:22) last pick:  65.0000 378.0000
+\i (00:01:22) generaledit 
+\i (00:01:31) move 
+\t (00:01:31) last pick:  65.0000 378.0000
+\t (00:01:31) Moving J1 / HEADER 20X2_HEADER40X2PITCH100M / HEADER40X2PITCH100MIL.
+\t (00:01:31) Pick new location for the element(s).
+\i (00:01:45) pick grid 65.6015 377.9790
+\t (00:01:45) last pick:  66.0000 378.0000
+\i (00:01:45) generaledit 
+\i (00:02:06) zoom in 1 
+\i (00:02:06) setwindow pcb
+\i (00:02:06) zoom in 60.9817 377.5940
+\i (00:02:06) trapsize 1925
+\i (00:02:12) zoom out 1 
+\i (00:02:12) setwindow pcb
+\i (00:02:12) zoom out 62.9837 376.3621
+\i (00:02:12) trapsize 3850
+\i (00:02:13) drag_start grid 63.4456 379.1341
+\i (00:02:13) move 
+\t (00:02:14) last pick:  66.0000 378.0000
+\t (00:02:14) Moving J1 / HEADER 20X2_HEADER40X2PITCH100M / HEADER40X2PITCH100MIL.
+\t (00:02:14) Pick new location for the element(s).
+\i (00:02:17) drag_stop grid 64.7546 377.5171
+\i (00:02:18) generaledit 
+\i (00:02:38) pick grid 70.8374 389.6057
+\t (00:02:38) last pick:  71.0000 390.0000
+\i (00:02:38) zoom in 1 
+\i (00:02:38) setwindow pcb
+\i (00:02:38) zoom in 59.0568 379.3651
+\i (00:02:38) trapsize 1925
+\i (00:02:41) drag_start grid 62.5602 379.2496
+\i (00:02:41) move 
+\t (00:02:41) last pick:  65.0000 378.0000
+\t (00:02:41) Moving J1 / HEADER 20X2_HEADER40X2PITCH100M / HEADER40X2PITCH100MIL.
+\t (00:02:41) Pick new location for the element(s).
+\i (00:02:56) move 
+\t (00:02:56) last pick:  65.0000 378.0000
+\t (00:02:56) Moving J1 / HEADER 20X2_HEADER40X2PITCH100M / HEADER40X2PITCH100MIL.
+\t (00:02:56) Pick new location for the element(s).
+\i (00:02:57) drag_stop grid 63.8307 377.5556
+\i (00:02:57) generaledit 
+\i (00:02:58) move 
+\t (00:02:58) last pick:  64.0000 378.0000
+\t (00:02:58) Moving J1 / HEADER 20X2_HEADER40X2PITCH100M / HEADER40X2PITCH100MIL.
+\t (00:02:58) Pick new location for the element(s).
+\i (00:03:06) ipick 2 
+\t (00:03:06) last pick:  66.0000 378.0000
+\i (00:03:06) generaledit 
+\i (00:03:36) zoom in 1 
+\i (00:03:36) setwindow pcb
+\i (00:03:36) zoom in 63.7152 380.2505
+\i (00:03:36) trapsize 962
+\i (00:03:36) zoom in 1 
+\i (00:03:36) setwindow pcb
+\i (00:03:36) zoom in 63.7344 380.1929
+\i (00:03:36) trapsize 481
+\i (00:03:37) zoom in 1 
+\i (00:03:37) setwindow pcb
+\i (00:03:37) zoom in 63.7729 380.0870
+\i (00:03:37) trapsize 241
+\i (00:03:37) zoom in 1 
+\i (00:03:37) setwindow pcb
+\i (00:03:37) zoom in 63.7873 380.0629
+\i (00:03:37) trapsize 120
+\i (00:03:38) zoom out 1 
+\i (00:03:38) setwindow pcb
+\i (00:03:38) zoom out 63.7897 380.0557
+\i (00:03:38) trapsize 241
+\i (00:03:38) zoom out 1 
+\i (00:03:38) setwindow pcb
+\i (00:03:38) zoom out 63.7993 380.0269
+\i (00:03:38) trapsize 481
+\i (00:03:38) zoom out 1 
+\i (00:03:38) setwindow pcb
+\i (00:03:38) zoom out 63.7994 380.0269
+\i (00:03:38) trapsize 962
+\i (00:03:38) zoom out 1 
+\i (00:03:38) setwindow pcb
+\i (00:03:38) zoom out 63.7994 380.0269
+\i (00:03:38) trapsize 1925
+\i (00:03:38) zoom out 1 
+\i (00:03:38) setwindow pcb
+\i (00:03:38) zoom out 63.7993 380.0269
+\i (00:03:38) trapsize 3850
+\i (00:03:38) zoom out 1 
+\i (00:03:38) setwindow pcb
+\i (00:03:38) zoom out 63.7993 380.0269
+\i (00:03:38) trapsize 7700
+\i (00:03:39) zoom in 1 
+\i (00:03:39) setwindow pcb
+\i (00:03:39) zoom in 89.5160 381.8747
+\i (00:03:39) trapsize 3850
+\i (00:03:40) zoom in 1 
+\i (00:03:40) setwindow pcb
+\i (00:03:40) zoom in 103.2983 378.3329
+\i (00:03:40) trapsize 1925
+\i (00:03:40) zoom in 1 
+\i (00:03:40) setwindow pcb
+\i (00:03:40) zoom in 104.4148 378.1019
+\i (00:03:40) trapsize 962
+\i (00:03:40) zoom in 1 
+\i (00:03:40) setwindow pcb
+\i (00:03:40) zoom in 107.5910 377.3705
+\i (00:03:40) trapsize 481
+\i (00:03:41) zoom out 1 
+\i (00:03:41) setwindow pcb
+\i (00:03:41) zoom out 107.5910 377.3705
+\i (00:03:41) trapsize 962
+\i (00:03:41) zoom out 1 
+\i (00:03:41) setwindow pcb
+\i (00:03:41) zoom out 107.5911 377.3897
+\i (00:03:41) trapsize 1925
+\i (00:03:41) zoom out 1 
+\i (00:03:41) setwindow pcb
+\i (00:03:41) zoom out 107.5910 377.3897
+\i (00:03:41) trapsize 3850
+\i (00:03:42) zoom in 1 
+\i (00:03:42) setwindow pcb
+\i (00:03:42) zoom in 69.7858 382.6255
+\i (00:03:42) trapsize 1925
+\i (00:03:42) zoom in 1 
+\i (00:03:42) setwindow pcb
+\i (00:03:42) zoom in 63.1256 380.5851
+\i (00:03:42) trapsize 962
+\i (00:03:43) zoom in 1 
+\i (00:03:43) setwindow pcb
+\i (00:03:43) zoom in 62.9717 380.1809
+\i (00:03:43) trapsize 481
+\i (00:03:44) zoom in 1 
+\i (00:03:44) setwindow pcb
+\i (00:03:44) zoom in 63.2893 379.4591
+\i (00:03:44) trapsize 241
+\i (00:03:45) zoom in 1 
+\i (00:03:45) setwindow pcb
+\i (00:03:45) zoom in 63.2989 379.4495
+\i (00:03:45) trapsize 120
+\i (00:03:45) zoom out 1 
+\i (00:03:45) setwindow pcb
+\i (00:03:45) zoom out 63.2989 379.4495
+\i (00:03:45) trapsize 241
+\i (00:03:45) zoom out 1 
+\i (00:03:45) setwindow pcb
+\i (00:03:45) zoom out 63.2989 379.4495
+\i (00:03:45) trapsize 481
+\i (00:03:45) zoom out 1 
+\i (00:03:45) setwindow pcb
+\i (00:03:45) zoom out 63.2990 379.4496
+\i (00:03:45) trapsize 962
+\i (00:03:50) ipick 0 5 
+\t (00:03:50) last pick:  66.0000 383.0000
+\i (00:03:53) drag_start grid 63.4337 379.4303
+\i (00:03:53) move 
+\t (00:03:53) last pick:  66.0000 378.0000
+\t (00:03:53) Moving J1 / HEADER 20X2_HEADER40X2PITCH100M / HEADER40X2PITCH100MIL.
+\t (00:03:53) Pick new location for the element(s).
+\i (00:03:53) move 
+\t (00:03:54) last pick:  66.0000 378.0000
+\t (00:03:54) Moving J1 / HEADER 20X2_HEADER40X2PITCH100M / HEADER40X2PITCH100MIL.
+\t (00:03:54) Pick new location for the element(s).
+\i (00:03:54) drag_stop grid tgl 63.6070 381.1820
+\i (00:03:54) generaledit 
+\i (00:03:57) ipick 0 5 
+\t (00:03:57) last pick:  64.0000 386.0000
+\i (00:03:59) zoom out 1 
+\i (00:03:59) setwindow pcb
+\i (00:03:59) zoom out 64.4154 381.1820
+\i (00:03:59) trapsize 1925
+\i (00:03:59) zoom out 1 
+\i (00:03:59) setwindow pcb
+\i (00:03:59) zoom out 64.4155 381.1049
+\i (00:03:59) trapsize 3850
+\i (00:04:01) move 
+\t (00:04:01) Select element(s) to move.
+\i (00:04:02) pick grid 64.0305 381.6439
+\t (00:04:02) last pick:  64.0000 382.0000
+\t (00:04:02) last pick:  64.0000 381.0000
+\t (00:04:02) Moving J1 / HEADER 20X2_HEADER40X2PITCH100M / HEADER40X2PITCH100MIL.
+\t (00:04:02) Pick new location for the element(s).
+\i (00:04:05) ipick 0 5 
+\t (00:04:05) last pick:  64.0000 386.0000
+\i (00:04:10) ipick 0 -5 
+\t (00:04:10) last pick:  64.0000 381.0000
+\i (00:04:27) drag_start grid 84.2805 384.0308
+\i (00:04:28) drag_stop 85.5125 375.5612
+\t (00:04:28) last pick:  64.0000 386.0000
+\t (00:04:28) Moving J1 / HEADER 20X2_HEADER40X2PITCH100M / HEADER40X2PITCH100MIL.
+\t (00:04:28) Pick new location for the element(s).
+\i (00:04:32) pick grid 64.4925 378.3330
+\t (00:04:32) last pick:  64.0000 378.0000
+\i (00:04:33) pick grid 75.8109 386.2637
+\t (00:04:33) last pick:  76.0000 386.0000
+\i (00:04:35) done 
+\i (00:04:35) generaledit 
+\i (00:04:35) save 
+\i (00:04:37) fillin yes 
+\i (00:04:37) generaledit 
+\i (00:04:37) zoom out 1 
+\i (00:04:37) setwindow pcb
+\i (00:04:37) zoom out 108.0724 370.0174
+\i (00:04:37) trapsize 7700
+\i (00:04:37) zoom out 1 
+\i (00:04:37) setwindow pcb
+\i (00:04:37) zoom out 136.4376 366.9691
+\i (00:04:37) trapsize 15399
+\i (00:04:38) zoom in 1 
+\i (00:04:38) setwindow pcb
+\i (00:04:38) zoom in 115.8025 307.9899
+\i (00:04:38) trapsize 7700
+\i (00:04:38) pick grid 132.7418 333.3987
+\t (00:04:39) last pick:  133.0000 333.0000
+\i (00:04:39) roam x -96 
+\i (00:04:39) roam x -96
+\i (00:04:39) roam x -96 
+\i (00:04:39) roam x -96
+\i (00:04:39) roam y -96 
+\i (00:04:39) roam y -96
+\i (00:04:39) roam x -96 
+\i (00:04:39) roam x -96
+\i (00:04:39) roam y -96 
+\i (00:04:39) roam y -96
+\i (00:04:46) zoom in 1 
+\i (00:04:46) setwindow pcb
+\i (00:04:46) zoom in 85.7740 372.2005
+\i (00:04:46) trapsize 3850
+\i (00:04:47) roam y -96 
+\i (00:04:47) roam y -96
+\i (00:04:47) zoom in 1 
+\i (00:04:47) setwindow pcb
+\i (00:04:47) zoom in 87.3909 387.4456
+\i (00:04:47) trapsize 1925
+\i (00:04:47) zoom in 1 
+\i (00:04:47) setwindow pcb
+\i (00:04:47) zoom in 86.2745 383.9038
+\i (00:04:47) trapsize 962
+\i (00:04:48) zoom in 1 
+\i (00:04:48) setwindow pcb
+\i (00:04:48) zoom in 86.7943 379.1685
+\i (00:04:48) trapsize 481
+\i (00:04:49) roam y 96 
+\i (00:04:49) roam y 96
+\i (00:04:49) roam y 96 
+\i (00:04:49) roam y 96
+\i (00:04:49) zoom out 1 
+\i (00:04:49) setwindow pcb
+\i (00:04:49) zoom out 86.8135 377.1844
+\i (00:04:49) trapsize 962
+\i (00:04:49) zoom out 1 
+\i (00:04:49) setwindow pcb
+\i (00:04:49) zoom out 86.8136 377.1844
+\i (00:04:49) trapsize 1925
+\i (00:04:50) zoom out 1 
+\i (00:04:50) setwindow pcb
+\i (00:04:50) zoom out 86.8135 377.1845
+\i (00:04:50) trapsize 3850
+\i (00:04:50) roam y 96 
+\i (00:04:50) roam y 96
+\i (00:04:50) roam x -96 
+\i (00:04:50) roam x -96
+\i (00:04:51) roam x -96 
+\i (00:04:51) roam x -96
+\i (00:04:51) zoom out 1 
+\i (00:04:51) setwindow pcb
+\i (00:04:51) zoom out 71.9916 369.6594
+\i (00:04:51) trapsize 7700
+\i (00:04:51) roam x -96 
+\i (00:04:52) zoom out 1 
+\i (00:04:52) setwindow pcb
+\i (00:04:52) zoom out 66.8329 351.8778
+\i (00:04:52) trapsize 15399
+\i (00:04:52) roam x -96 
+\i (00:04:55) drag_start grid 104.4071 304.6020
+\i (00:04:55) move 
+\t (00:04:55) last pick:  88.9000 297.1800
+\t (00:04:55) Moving U3 / ZM5202_ZM5202_A_ZM5202_ZM5202AU / ZM5202_A.
+\t (00:04:55) Pick new location for the element(s).
+\i (00:04:55) drag_stop grid 86.8519 353.8797
+\i (00:04:56) generaledit 
+\i (00:04:56) exit 
+\e (00:04:56) Do you want to save the changes you made to C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/RAK833_RPIGATEWAY.brd?
+\i (00:04:57) fillin yes 
+\t (00:04:58)     Journal end - Sun Jun 14 18:06:19 2020

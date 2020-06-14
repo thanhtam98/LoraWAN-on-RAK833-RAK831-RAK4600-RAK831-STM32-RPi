@@ -13,8 +13,8 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources" ".\library1.olb")
-      (Select "Design Resources" ".\library1.olb" "RAK4600"))
+      (Path "Design Resources"
+         "c:\git\thesislorawannode\hw\footprint_tam\4. library\library1.olb"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -24,7 +24,8 @@
     (Doc
       (Type "COrPrmBrowserDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 78 1404 78 395"))
+        (Placement "44 0 1 -1 -1 -8 -31 104 1140 104 425"))
       (Path "C:\GIT\THESISLORAWANNODE\HW\FOOTPRINT_TAM\4. LIBRARY\LIBRARY1.OLB")
-      (Package "RAK4600")
-      (PartType "1"))))
+      (Package "MM60-52B1-E1-R650")
+      (PartType "1")))
+  (ISPCBBASICLICENSE "false"))
