@@ -1,0 +1,92 @@
+(ExpressProject "RAK833_RpiGateway"
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "..\rak4600_sm32node\allegro\library1.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\rak833_rpigateway.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x"))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (MPSSessionName "NguyenThanhTam")
+  (PartMRUSelector
+    (RAK_PCIE
+      (FullPartName "RAK_PCIE.Normal")
+      (LibraryName
+         "C:\GIT\THESISLORAWANNODE\HW\RAK4600_SM32NODE\ALLEGRO\LIBRARY1.OLB")
+      (DeviceIndex "0"))
+    (PCM3000/SO
+      (FullPartName "PCM3000/SO.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\MISC2.OLB")
+      (DeviceIndex "0"))
+    ("HEADER 20X2"
+      (FullPartName "HEADER 20X2.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\GIT\ThesisLorawanNode\HW\RAK833_RPiGateway\rak833_rpigateway.dsn")
+      (Path "Design Resources"
+         "C:\GIT\ThesisLorawanNode\HW\RAK833_RPiGateway\rak833_rpigateway.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources"
+         "C:\GIT\ThesisLorawanNode\HW\RAK833_RPiGateway\rak833_rpigateway.dsn"
+         "Design Cache")
+      (Path "Design Resources" "Library")
+      (Path "Design Resources" "Library"
+         "..\rak4600_sm32node\allegro\library1.olb")
+      (Select "Design Resources"
+         "C:\GIT\ThesisLorawanNode\HW\RAK833_RPiGateway\rak833_rpigateway.dsn"
+         "SCHEMATIC1" "2.Concentrator"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 282"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 52 1382 52 373")
+        (Scroll "-360 0")
+        (Zoom "58")
+        (Occurrence "/"))
+      (Path
+         "C:\GIT\THESISLORAWANNODE\HW\RAK833_RPIGATEWAY\RAK833_RPIGATEWAY.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "2.Concentrator"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 1140 104 425")
+        (Scroll "-213 0")
+        (Zoom "58")
+        (Occurrence "/"))
+      (Path
+         "C:\GIT\THESISLORAWANNODE\HW\RAK833_RPIGATEWAY\RAK833_RPIGATEWAY.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "1.Power"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 130 1166 130 451")
+        (Scroll "-213 0")
+        (Zoom "58")
+        (Occurrence "/"))
+      (Path
+         "C:\GIT\THESISLORAWANNODE\HW\RAK833_RPIGATEWAY\RAK833_RPIGATEWAY.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "3.Zwave"))
+    (Doc
+      (Type "COrPrmBrowserDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 1140 104 425"))
+      (Path "C:\GIT\ThesisLorawanNode\HW\RAK4600_SM32Node\allegro\LIBRARY1.OLB")
+      (Package "RAK_PCIE")
+      (PartType "1"))))

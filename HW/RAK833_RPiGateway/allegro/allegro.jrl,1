@@ -1,0 +1,313 @@
+\t (00:00:00) allegro 17.2 S052 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Sun Jun 14 17:33:36 2020
+\t (00:00:00)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=19228 CPUs=4
+\t (00:00:00) CmdLine= C:\Cadence\SPB_17.2\tools\bin\allegro.exe -mpssession NguyenThanhTam C:\GIT\THESISLORAWANNODE\HW\RAK833_RPIGATEWAY\allegro\RAK833_RPIGATEWAY.brd
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+   (00:00:01) Searching for nsWare programs v2.78
+   (00:00:01) 	NsWare directory found: E:/CAD/pcbenv/nsWare/
+   (00:00:01) 	NsWare programs must reside in this directory!
+   (00:00:01) function AFn_OpenDesign redefined
+   (00:00:01) function PinVia_Overlap_FinishEnterFun redefined
+   (00:00:01) function Find_Point_On_Line_From_Distant redefined
+   (00:00:01) function Find_Point_Quadrature_Line redefined
+   (00:00:01) function Line_Line_Intersect redefined
+   (00:00:01) function _getPinsNet redefined
+   (00:00:01) function _getBranchs redefined
+   (00:00:01) function _getPaths redefined
+   (00:00:01) function _get2PointsPath redefined
+   (00:00:01) function _checkElementList redefined
+   (00:00:01) function _getSurroundPoints redefined
+   (00:00:01) function _getListPointsLPaths redefined
+   (00:00:01) function _checkPathPoint redefined
+   (00:00:01) function _deleteElementList redefined
+   (00:00:01) function _checkElementList redefined
+   (00:00:01) function _deleteElementList redefined
+   (00:00:01) function Find_Point_On_Line_From_Distant redefined
+   (00:00:01) function Find_Point_Quadrature_Line redefined
+   (00:00:01) function Is_Point_On_List redefined
+   (00:00:01) function Line_Line_Intersect redefined
+   (00:00:01) function Line_Line_Distant redefined
+\t (00:00:01) Opening existing design...
+\i (00:00:01) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged RAK833_RPIGATEWAY
+\d (00:00:01) Design opened: C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/RAK833_RPIGATEWAY.brd
+\i (00:00:02) trapsize 9953
+\i (00:00:02) trapsize 10294
+\i (00:00:02) trapsize 8692
+\i (00:00:02) trapsize 14630
+\i (00:00:03) generaledit 
+\i (00:00:07) pick grid 6934.60 11850.26
+\t (00:00:07) last pick:  6900.00 11900.00
+\i (00:00:18) done 
+\i (00:00:19) cmgr_spac 
+\i (00:00:20) setwindow cmgr
+\i (00:00:20) cm newView ( kConsmgr worksheet 78:Spacing "79:Spacing Constraint Set" "80:All Layers" "167:All Layers" )
+\i (00:00:20) cm select ( frame ( kConsmgr workbook 78:Spacing "79:Spacing Constraint Set" "80:All Layers" ) )
+\i (00:00:20) cm select ( frame ( kConsmgr workbook 78:Spacing "79:Spacing Constraint Set" "80:All Layers" ) )
+\i (00:00:20) cm expand ( row ( Design "RAK833_RPIGATEWAY" ) )
+\i (00:00:20) cm selectDesignTab ( kConsmgr worksheet 78:Spacing "79:Spacing Constraint Set" "80:All Layers" "167:All Layers" ) 0
+\i (00:00:20) setwindow pcb
+\i (00:00:20) trapsize 14630
+\i (00:00:20) generaledit 
+\i (00:00:23) QtSignal menuFile menuImport Triggered Constraints...
+\i (00:00:31) QtSignal BaseFileDlgWithScope AQFileDialog finished 1
+\i (00:00:31) QtFillin E:/TTTN/Orcad/BKSTEK_RulesTemplate.dcf
+\i (00:00:31) QtFillin ReportPath C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/Report.xml
+\i (00:00:31) setwindow cmgr
+\i (00:00:31) cm close ( frame ( kConsmgr workbook 78:Spacing "79:Spacing Constraint Set" "80:All Layers" ) )
+\i (00:00:32) cm newView ( kConsmgr worksheet 78:Spacing "79:Spacing Constraint Set" "80:All Layers" "167:All Layers" )
+\i (00:00:32) setwindow pcb
+\i (00:00:32) QtSignal m_domainSelector WS_Spacing itemSelectionChanged
+\i (00:00:32) QtSignal m_domainSelector WS_Spacing itemSelectionChanged "Spacing Constraint Set" +
+\i (00:00:32) QtSignal "All Layers"
+\i (00:00:32) setwindow cmgr
+\i (00:00:32) cm select ( frame ( kConsmgr workbook 78:Spacing "79:Spacing Constraint Set" "80:All Layers" ) )
+\i (00:00:32) cm select ( frame ( kConsmgr workbook 78:Spacing "79:Spacing Constraint Set" "80:All Layers" ) )
+\i (00:00:32) cm expand ( row ( Design "RAK833_RPIGATEWAY" ) )
+\i (00:00:32) cm expand ( row ( Design "RAK833_RPIGATEWAY" ) )
+\i (00:00:32) cm selectDesignTab ( kConsmgr worksheet 78:Spacing "79:Spacing Constraint Set" "80:All Layers" "167:All Layers" ) 0
+\i (00:00:32) setwindow pcb
+\i (00:00:32) QtSignal m_domainSelector WS_Spacing itemSelectionChanged
+\i (00:00:32) QtSignal m_domainSelector WS_Spacing itemSelectionChanged "Spacing Constraint Set" +
+\i (00:00:32) QtSignal "All Layers"
+\i (00:00:32) QtSignal m_domainSelector WS_Spacing itemSelectionChanged
+\i (00:00:32) QtSignal m_domainSelector WS_Spacing itemSelectionChanged "Spacing Constraint Set" +
+\i (00:00:32) QtSignal "All Layers"
+\i (00:00:32) setwindow cmgr
+\i (00:00:32) cm newView ( kConsmgr worksheet 78:Spacing "79:Spacing Constraint Set" "80:All Layers" "167:All Layers" )
+\i (00:00:32) setwindow pcb
+\i (00:00:32) QtSignal m_domainSelector WS_Spacing itemSelectionChanged
+\i (00:00:32) QtSignal m_domainSelector WS_Spacing itemSelectionChanged "Spacing Constraint Set" +
+\i (00:00:32) QtSignal "All Layers"
+\i (00:00:34) QtSignal m_domainSelector WS_Spacing itemSelectionChanged
+\i (00:00:34) QtSignal m_domainSelector WS_Spacing itemSelectionChanged "Spacing Constraint Set" +
+\i (00:00:34) QtSignal "All Layers"
+\i (00:00:36) setwindow cmgr
+\i (00:00:36) cm close ( frame ( kConsmgr workbook 78:Spacing "79:Spacing Constraint Set" "80:All Layers" ) )
+\i (00:00:37) cm exit
+\i (00:00:37) setwindow pcb
+\i (00:00:37) QtSignal m_domainSelector WS_Spacing itemSelectionChanged
+\i (00:00:38) pick grid 16736.66 11703.96
+\t (00:00:38) last pick:  16700.00 11700.00
+\i (00:00:42) pick grid 17380.38 10533.56
+\t (00:00:42) last pick:  17400.00 10500.00
+\i (00:00:51) xdehilite 
+\i (00:00:51) xname_flush 
+\i (00:00:51) done 
+\i (00:00:51) xhilite 
+\i (00:00:51) xname_flush 
+\i (00:00:51) done 
+\i (00:00:52) generaledit 
+\i (00:00:55) xdehilite 
+\i (00:00:55) xname_flush 
+\i (00:00:55) done 
+\i (00:00:55) generaledit 
+\i (00:00:56) xdehilite 
+\i (00:00:56) xname_flush 
+\i (00:00:56) done 
+\i (00:00:56) generaledit 
+\i (00:00:57) xdehilite 
+\i (00:00:57) xname_flush 
+\i (00:00:57) done 
+\i (00:00:57) generaledit 
+\i (00:00:59) xdehilite 
+\i (00:00:59) xname_flush 
+\i (00:00:59) done 
+\i (00:00:59) generaledit 
+\i (00:01:07) board outline 
+   (00:01:07) Loading consmgr.cxt 
+   (00:01:08) Loading acns_formula.cxt 
+   (00:01:08) Loading floor.cxt 
+   (00:01:08) Loading fputil.cxt 
+\i (00:01:10) pick grid 907.06 15068.85
+\t (00:01:10) last pick:  900.00 15100.00
+\i (00:01:13) pick grid 8543.89 10533.56
+\t (00:01:13) last pick:  8500.00 10500.00
+\i (00:01:14) setwindow form.fpbdoutline
+\i (00:01:14) FORM fpbdoutline done  
+\i (00:01:14) setwindow pcb
+\i (00:01:14) generaledit 
+\i (00:01:15) zoom in 1 
+\i (00:01:15) setwindow pcb
+\i (00:01:15) zoom in 2399.31 14864.03
+\i (00:01:15) trapsize 7315
+\i (00:01:15) zoom in 1 
+\i (00:01:15) setwindow pcb
+\i (00:01:15) zoom in 2399.32 14864.03
+\i (00:01:15) trapsize 3657
+\i (00:01:16) zoom out 1 
+\i (00:01:16) setwindow pcb
+\i (00:01:16) zoom out 2516.36 14790.89
+\i (00:01:16) trapsize 7315
+\i (00:01:17) place manual 
+\i (00:01:21) setwindow form.plc_manual
+\i (00:01:21) FORM plc_manual tree 'MULTISEL YES' U4 'Components by refdes' 
+\t (00:01:21) Placing U4 / CAT25C02_0_TSSOP-8_CAT25256 / TSSOP-8 on Top.
+\i (00:01:21) FORM plc_manual tree  U4 'Components by refdes' 
+\i (00:01:22) FORM plc_manual tree 'MULTISEL YES' U3 'Components by refdes' 
+\e (00:01:22) Cannot load symbol 'ZM5202_A'
+\i (00:01:22) FORM plc_manual tree  U3 'Components by refdes' 
+\i (00:01:23) FORM plc_manual tree 'MULTISEL NO' U3 'Components by refdes' 
+\t (00:01:23) Placing U4 / CAT25C02_0_TSSOP-8_CAT25256 / TSSOP-8 on Top.
+\i (00:01:24) FORM plc_manual tree 'MULTISEL NO' U4 'Components by refdes' 
+\i (00:01:24) FORM plc_manual tree  U4 'Components by refdes' 
+\i (00:01:24) FORM plc_manual tree 'MULTISEL YES' U3 'Components by refdes' 
+\e (00:01:24) Cannot load symbol 'ZM5202_A'
+\i (00:01:24) FORM plc_manual tree  U3 'Components by refdes' 
+\i (00:01:31) FORM plc_manual tree 'MULTISEL NO' U3 'Components by refdes' 
+\i (00:01:31) FORM plc_manual tree 'MULTISEL YES' U2 'Components by refdes' 
+\t (00:01:31) Placing U2 / RAK_PCIE_CONN_PCIE_52POS_RAK_PC / CONN_PCIE_52POS on Top.
+\i (00:01:31) FORM plc_manual tree  U2 'Components by refdes' 
+\i (00:01:38) setwindow pcb
+\i (00:01:38) pick grid 3789.16 12552.50
+\t (00:01:38) last pick:  3800.00 12600.00
+\e (00:01:38) ERROR(SPMHGE-82): Pin numbers do not match between symbol and component. Run dev_check on device file for more information.
+\t (00:01:38) Placing U2 / RAK_PCIE_CONN_PCIE_52POS_RAK_PC / CONN_PCIE_52POS on Top.
+\i (00:01:48) setwindow form.plc_manual
+\i (00:01:48) FORM plc_manual done  
+\i (00:01:48) setwindow pcb
+\i (00:01:48) generaledit 
+\i (00:02:02) save 
+\i (00:02:04) fillin yes 
+\i (00:02:05) generaledit 
+\i (00:02:07) xrefdes U2.22 
+\t (00:02:07) Can not select unplaced component U2.
+\i (00:02:07) xname_flush 
+\i (00:02:08) xdehilite 
+\i (00:02:08) xrefdes U2.22 
+\t (00:02:08) Can not select unplaced component U2.
+\i (00:02:08) xname_flush 
+\i (00:02:08) done 
+\i (00:02:08) xhilite 
+\i (00:02:08) xrefdes U2 
+\t (00:02:08) Can not select unplaced component U2.
+\t (00:02:08) Can not select unplaced component U2.
+\i (00:02:08) xname_flush 
+\i (00:02:08) done 
+\i (00:02:08) generaledit 
+\i (00:02:09) pick grid 5661.79 12552.50
+\t (00:02:09) last pick:  5700.00 12600.00
+\i (00:02:10) xdehilite 
+\i (00:02:10) xrefdes U2 
+\t (00:02:10) Can not select unplaced component U2.
+\t (00:02:10) Can not select unplaced component U2.
+\i (00:02:10) xname_flush 
+\i (00:02:10) done 
+\i (00:02:11) xhilite 
+\i (00:02:11) xrefdes J1.9 
+\t (00:02:11) Can not select unplaced component J1.
+\i (00:02:11) xname_flush 
+\i (00:02:11) done 
+\i (00:02:11) generaledit 
+\i (00:02:11) xdehilite 
+\i (00:02:11) xrefdes J1.9 
+\t (00:02:11) Can not select unplaced component J1.
+\i (00:02:11) xname_flush 
+\i (00:02:11) done 
+\i (00:02:12) xhilite 
+\i (00:02:12) xrefdes J1 
+\t (00:02:12) Can not select unplaced component J1.
+\t (00:02:12) Can not select unplaced component J1.
+\i (00:02:12) xname_flush 
+\i (00:02:12) done 
+\i (00:02:12) generaledit 
+\i (00:02:14) xdehilite 
+\i (00:02:14) xrefdes J1 
+\t (00:02:14) Can not select unplaced component J1.
+\t (00:02:14) Can not select unplaced component J1.
+\i (00:02:14) xname_flush 
+\i (00:02:14) done 
+\i (00:02:14) generaledit 
+\i (00:02:16) place manual 
+\i (00:02:22) setwindow form.plc_manual
+\i (00:02:22) FORM plc_manual tree 'MULTISEL YES' U1 'Components by refdes' 
+\t (00:02:22) Placing U1 / PMIC_SOT23-6_SOT23-6_AP3211 / SOT23-6 on Top.
+\i (00:02:22) FORM plc_manual tree  U1 'Components by refdes' 
+\i (00:02:23) FORM plc_manual tree 'MULTISEL NO' U1 'Components by refdes' 
+\i (00:02:24) FORM plc_manual tree 'MULTISEL YES' U2 'Components by refdes' 
+\t (00:02:24) Placing U2 / RAK_PCIE_CONN_PCIE_52POS_RAK_PC / CONN_PCIE_52POS on Top.
+\i (00:02:24) FORM plc_manual tree  U2 'Components by refdes' 
+\i (00:02:24) FORM plc_manual tree 'MULTISEL NO' U2 'Components by refdes' 
+\i (00:02:25) FORM plc_manual tree 'MULTISEL YES' U3 'Components by refdes' 
+\e (00:02:25) Cannot load symbol 'ZM5202_A'
+\i (00:02:25) FORM plc_manual tree  U3 'Components by refdes' 
+\i (00:02:25) FORM plc_manual tree 'MULTISEL NO' U3 'Components by refdes' 
+\i (00:02:30) FORM plc_manual tree 'MULTISEL YES' J1 'Components by refdes' 
+\t (00:02:30) Placing J1 / HEADER 20X2_HEADER40X2PITCH100M / HEADER40X2PITCH100MIL on Top.
+\i (00:02:30) FORM plc_manual tree  J1 'Components by refdes' 
+\i (00:02:33) setwindow pcb
+\i (00:02:33) pick grid 3145.44 14088.65
+\t (00:02:33) last pick:  3100.00 14100.00
+\i (00:02:35) pick grid 3218.59 13035.29
+\t (00:02:35) last pick:  3200.00 13000.00
+\t (00:02:35) Moving J1 / HEADER 20X2_HEADER40X2PITCH100M / HEADER40X2PITCH100MIL.
+\t (00:02:35) last pick:  3100.00 14100.00
+\i (00:02:36) iangle -90.00 
+\t (00:02:36) last pick:  2700.00 0.00
+\i (00:02:37) iangle -90.00 
+\t (00:02:37) last pick:  2700.00 0.00
+\i (00:02:37) iangle -90.00 
+\t (00:02:37) last pick:  2700.00 0.00
+\i (00:02:38) pick grid 2648.02 14059.39
+\t (00:02:38) last pick:  2600.00 14100.00
+\i (00:02:41) setwindow form.plc_manual
+\i (00:02:41) FORM plc_manual tree 'MULTISEL YES' J2 'Components by refdes' 
+\t (00:02:41) Placing J2 / USB MIN_6_CON5_MICROUSB_SKT_SM_ / CON5_MICROUSB_SKT_SM on Top.
+\i (00:02:41) FORM plc_manual tree  J2 'Components by refdes' 
+\i (00:02:43) setwindow pcb
+\i (00:02:43) pick grid 1887.27 13649.75
+\t (00:02:43) last pick:  1900.00 13600.00
+\i (00:02:46) setwindow form.plc_manual
+\i (00:02:46) FORM plc_manual tree 'MULTISEL YES' U3 'Components by refdes' 
+\e (00:02:46) Cannot load symbol 'ZM5202_A'
+\i (00:02:46) FORM plc_manual tree  U3 'Components by refdes' 
+\i (00:02:46) FORM plc_manual tree 'MULTISEL NO' U3 'Components by refdes' 
+\i (00:02:47) FORM plc_manual tree 'MULTISEL YES' U4 'Components by refdes' 
+\t (00:02:47) Placing U4 / CAT25C02_0_TSSOP-8_CAT25256 / TSSOP-8 on Top.
+\i (00:02:47) FORM plc_manual tree  U4 'Components by refdes' 
+\i (00:02:48) FORM plc_manual tree 'MULTISEL NO' U4 'Components by refdes' 
+\i (00:02:48) FORM plc_manual tree 'MULTISEL YES' R12 'Components by refdes' 
+\t (00:02:48) Placing R12 / RES-SM0402_0_R0603_DISCRETE_10K / R0603 on Top.
+\i (00:02:48) FORM plc_manual tree  R12 'Components by refdes' 
+\i (00:02:49) FORM plc_manual tree 'MULTISEL YES' U1 'Components by refdes' 
+\i (00:02:49) FORM plc_manual tree  U1 'Components by refdes' 
+\i (00:02:49) FORM plc_manual tree 'MULTISEL NO' R12 'Components by refdes' 
+\t (00:02:49) Placing U1 / PMIC_SOT23-6_SOT23-6_AP3211 / SOT23-6 on Top.
+\i (00:02:49) FORM plc_manual tree  R12 'Components by refdes' 
+\i (00:02:50) FORM plc_manual tree 'MULTISEL NO' U1 'Components by refdes' 
+\i (00:02:50) FORM plc_manual tree  U1 'Components by refdes' 
+\i (00:02:50) FORM plc_manual tree 'MULTISEL YES' U2 'Components by refdes' 
+\t (00:02:50) Placing U2 / RAK_PCIE_CONN_PCIE_52POS_RAK_PC / CONN_PCIE_52POS on Top.
+\i (00:02:50) FORM plc_manual tree  U2 'Components by refdes' 
+\i (00:02:55) FORM plc_manual cancel  
+\i (00:02:55) setwindow pcb
+\i (00:02:55) generaledit 
+\i (00:06:13) xrefdes U2 
+\t (00:06:13) Can not select unplaced component U2.
+\t (00:06:13) Can not select unplaced component U2.
+\i (00:06:13) xname_flush 
+\i (00:07:06) xrefdes U2 
+\t (00:07:06) Can not select unplaced component U2.
+\t (00:07:06) Can not select unplaced component U2.
+\i (00:07:06) xname_flush 
+\i (00:09:07) xrefdes U2 
+\t (00:09:07) Can not select unplaced component U2.
+\t (00:09:07) Can not select unplaced component U2.
+\i (00:09:07) xname_flush 
+\t (00:10:01) Performing autosave...
+\t (00:10:01) Autosave successful
+\i (00:10:17) xdehilite 
+\i (00:10:17) xrefdes U2 
+\t (00:10:17) Can not select unplaced component U2.
+\t (00:10:17) Can not select unplaced component U2.
+\i (00:10:17) xname_flush 
+\i (00:10:17) done 
+\i (00:10:17) generaledit 
+\i (00:10:17) xrefdes U2 
+\t (00:10:17) Can not select unplaced component U2.
+\t (00:10:17) Can not select unplaced component U2.
+\i (00:10:17) xname_flush 
+\i (00:11:35) exit 
+\e (00:11:36) Do you want to save the changes you made to C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/RAK833_RPIGATEWAY.brd?
+\i (00:11:36) fillin yes 
+\t (00:11:37)     Journal end - Sun Jun 14 17:45:12 2020

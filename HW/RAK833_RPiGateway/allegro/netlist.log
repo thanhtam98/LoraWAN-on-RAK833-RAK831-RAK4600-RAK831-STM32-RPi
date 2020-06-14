@@ -1,0 +1,29 @@
+{ Using PSTWRITER 17.2.0 d001Jun-14-2020 at 17:45:17 }
+
+#1 WARNING(ORCAP-36038): "No_connect" property on Pin "U2.19" ignored for U2: SCHEMATIC1, 2.Concentrator (4.40, 2.10). Connecting pin to net "EXTERNALGPS".
+#2 WARNING(ORCAP-36038): "No_connect" property on Pin "U2.17" ignored for U2: SCHEMATIC1, 2.Concentrator (4.40, 2.10). Connecting pin to net "SPDT_SEL".
+#3 WARNING(ORCAP-36038): "No_connect" property on Pin "J2.4" ignored for J2: SCHEMATIC1, 2.Concentrator (0.30, 4.10). Connecting pin to net "N7999903".
+#4 WARNING(ORCAP-36038): "No_connect" property on Pin "U3.4" ignored for U3: SCHEMATIC1, 3.Zwave (4.20, 1.70). Connecting pin to net "ZM_INT1".
+#5 WARNING(ORCAP-36038): "No_connect" property on Pin "J1.8" ignored for J1: SCHEMATIC1, 2.Concentrator (1.00, 0.80). Connecting pin to net "ZM_RX".
+#6 WARNING(ORCAP-36038): "No_connect" property on Pin "J1.12" ignored for J1: SCHEMATIC1, 2.Concentrator (1.00, 0.80). Connecting pin to net "ZM_RESET".
+#7 WARNING(ORCAP-36038): "No_connect" property on Pin "U3.3" ignored for U3: SCHEMATIC1, 3.Zwave (4.20, 1.70). Connecting pin to net "ZM_INT0".
+#8 WARNING(ORCAP-36038): "No_connect" property on Pin "J1.10" ignored for J1: SCHEMATIC1, 2.Concentrator (1.00, 0.80). Connecting pin to net "ZM_TX".
+#9 WARNING(ORCAP-36006): Part Name "HEADER 20X2_HEADER40X2PITCH100MIL_HEADER 20X2" is renamed to "HEADER 20X2_HEADER40X2PITCH100M".
+#10 WARNING(ORCAP-36006): Part Name "USB MIN_6_CON5_MICROUSB_SKT_SM_HUM011D-5-S" is renamed to "USB MIN_6_CON5_MICROUSB_SKT_SM_".
+#11 WARNING(ORCAP-36006): Part Name "RAK_PCIE_CONN_PCIE_52POS_RAK_PCIE" is renamed to "RAK_PCIE_CONN_PCIE_52POS_RAK_PC".
+#12 WARNING(ORCAP-36006): Part Name "ZM5202_ZM5202_A_ZM5202_ZM5202AU-CME3R" is renamed to "ZM5202_ZM5202_A_ZM5202_ZM5202AU".
+#13 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#1" as visible power pin of same name already exists in Package ZM5202 , U3: SCHEMATIC1, 3.Zwave (4.20, 1.70).
+#14 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#6" as visible power pin of same name already exists in Package ZM5202 , U3: SCHEMATIC1, 3.Zwave (4.20, 1.70).
+#15 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#12" as visible power pin of same name already exists in Package ZM5202 , U3: SCHEMATIC1, 3.Zwave (4.20, 1.70).
+#16 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#16" as visible power pin of same name already exists in Package ZM5202 , U3: SCHEMATIC1, 3.Zwave (4.20, 1.70).
+#17 WARNING(ORCAP-36042): Pin "GND" is renamed to "GND#17" as visible power pin of same name already exists in Package ZM5202 , U3: SCHEMATIC1, 3.Zwave (4.20, 1.70).
+INFO(ORCAP-36080): Scanning netlist files ...
+
+Loading... C:\GIT\THESISLORAWANNODE\HW\RAK833_RPIGATEWAY\allegro/pstchip.dat
+
+Loading... C:\GIT\THESISLORAWANNODE\HW\RAK833_RPIGATEWAY\allegro/pstchip.dat
+
+Loading... C:\GIT\THESISLORAWANNODE\HW\RAK833_RPIGATEWAY\allegro/pstchip.dat
+
+Loading... C:\GIT\THESISLORAWANNODE\HW\RAK833_RPIGATEWAY\allegro/pstxnet.dat
+packaging the design view...

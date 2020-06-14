@@ -1,0 +1,64 @@
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   1  |
+|------------------------------------------------------------------------------|
+|  C:.../ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/RAK833_RPIGATEWAY.brd  |
+|                                                    Sun Jun 14 17:45:18 2020  |
+|------------------------------------------------------------------------------|
+| COMPONENT DEFINITION added to design                                         |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    device type                                                               |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ MOUNTING HOLE_MH_3MM_1_HOLE 4MM
+ RAK_PCIE_CONN_PCIE_52POS_RAK_PC
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   2  |
+|------------------------------------------------------------------------------|
+|  C:.../ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/RAK833_RPIGATEWAY.brd  |
+|                                                    Sun Jun 14 17:45:18 2020  |
+|------------------------------------------------------------------------------|
+| COMPONENTS ADDED to design                                                   |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        |    device type                                           |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ MH1                 MOUNTING HOLE_MH_3MM_1_HOLE 4MM 
+ MH2                 MOUNTING HOLE_MH_3MM_1_HOLE 4MM 
+ MH3                 MOUNTING HOLE_MH_3MM_1_HOLE 4MM 
+ MH4                 MOUNTING HOLE_MH_3MM_1_HOLE 4MM 
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   3  |
+|------------------------------------------------------------------------------|
+|  C:.../ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/RAK833_RPIGATEWAY.brd  |
+|                                                    Sun Jun 14 17:45:18 2020  |
+|------------------------------------------------------------------------------|
+| COMPONENTS CHANGED from one device type to another in design                 |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        | new device type     |   x   |   y   |  old  device type  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ U2                  RAK_PCIE_CONN_PCIE_52POS_RAK_PC                 RAK_PCIE_CONN_PCIE_52POS_RAK_PC
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   4  |
+|------------------------------------------------------------------------------|
+|  C:.../ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/RAK833_RPIGATEWAY.brd  |
+|                                                    Sun Jun 14 17:45:18 2020  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ MH1.1                          PRIM_FILE      .\pstchip.dat
+ MH2.1                          PRIM_FILE      .\pstchip.dat
+ MH3.1                          PRIM_FILE      .\pstchip.dat
+ MH4.1                          PRIM_FILE      .\pstchip.dat
+ U2.9                           PRIM_FILE      .\pstchip.dat
+|------------------------------------------------------------------------------|
+|       Comp definitions added:       2                                        |
+|       Components added      :       4                                        |
+|       Components changed    :       1                                        |
+|       Slot property added   :       5                                        |
+|                                                                              |
+|   Total ECO changes reported:      12                                        |
+|------------------------------------------------------------------------------|

@@ -1,0 +1,348 @@
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   1  |
+|------------------------------------------------------------------------------|
+|  C:.../THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/RAK833_RPIGATEWAY.brd  |
+|                                                    Sun Jun 14 17:33:30 2020  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  3.3V         pins ADDED TO this new net
+                                 C8.1           C9.1           C10.1          
+                                 C11.1          C12.1          C13.1          
+                                 U2.2           U2.24          U2.39          
+                                 U2.41          U2.52          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  3V3          pins ADDED TO this new net
+                                 C5.1           C6.1           C7.1           
+                                 L1.2           R2.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  ANTEN        pins ADDED TO this new net
+                                 C18.1          E1.1           L2.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  EXTERNALGPS  pins ADDED TO this new net
+                                 U2.19          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  GND          pins ADDED TO this new net
+                                 C2.2           C3.2           C4.2           
+                                 C5.2           C6.2           C7.2           
+                                 C8.2           C9.2           C10.2          
+                                 C11.2          C12.2          C13.2          
+                                 C14.1          C15.2          C16.2          
+                                 C17.2          C18.2          C19.2          
+                                 D1.1           D2.1           J1.7           
+                                 J2.5           J2.6           J2.7           
+                                 J2.8           J2.9           J2.10          
+                                 J2.11          J3.2           R3.2           
+                                 R5.1           R9.1           U1.2           
+                                 U2.4           U2.9           U2.15          
+                                 U2.18          U2.21          U2.26          
+                                 U2.27          U2.29          U2.34          
+                                 U2.35          U2.37          U2.40          
+                                 U2.43          U2.50          U3.1           
+                                 U3.6           U3.12          U3.16          
+                                 U3.17          U4.4           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  LED          pins ADDED TO this new net
+                                 R11.1          U3.5           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N7996678     pins ADDED TO this new net
+                                 C1.1           U1.1           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N7996682     pins ADDED TO this new net
+                                 C1.2           D1.2           L1.1           
+                                 U1.6           
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   2  |
+|------------------------------------------------------------------------------|
+|  C:.../THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/RAK833_RPIGATEWAY.brd  |
+|                                                    Sun Jun 14 17:33:30 2020  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  N7996842     pins ADDED TO this new net
+                                 R1.2           U1.4           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N7996854     pins ADDED TO this new net
+                                 R2.1           R3.1           U1.3           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N7997918     pins ADDED TO this new net
+                                 C16.1          R10.2          U3.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N7999815     pins ADDED TO this new net
+                                 J2.1           R6.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N7999903     pins ADDED TO this new net
+                                 J2.4           R9.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N79981601    pins ADDED TO this new net
+                                 D2.2           R11.2          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  RF           pins ADDED TO this new net
+                                 C17.1          L2.1           U3.18          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  RPI_5V       pins ADDED TO this new net
+                                 J1.2           J1.4           R4.1           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  SPDT_SEL     pins ADDED TO this new net
+                                 R5.2           U2.17          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  SPI_CE       pins ADDED TO this new net
+                                 J1.22          U2.51          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  SPI_CLK      pins ADDED TO this new net
+                                 J1.21          U2.45          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  SPI_MISO     pins ADDED TO this new net
+                                 J1.19          U2.47          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  SPI_MOSI     pins ADDED TO this new net
+                                 J1.17          U2.49          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  SPI_RST      pins ADDED TO this new net
+                                 J1.37          U2.22          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  USB_D+       pins ADDED TO this new net
+                                 R8.1           U2.38          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   3  |
+|------------------------------------------------------------------------------|
+|  C:.../THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/RAK833_RPIGATEWAY.brd  |
+|                                                    Sun Jun 14 17:33:30 2020  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  USB_D-       pins ADDED TO this new net
+                                 R7.1           U2.36          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  USB_DM       pins ADDED TO this new net
+                                 J2.2           R7.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  USB_DP       pins ADDED TO this new net
+                                 J2.3           R8.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VCC3.3V      pins ADDED TO this new net
+                                 C14.2          C15.1          C19.1          
+                                 J1.1           J3.1           R12.1          
+                                 U3.11          U4.3           U4.7           
+                                 U4.8           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VCC5V        pins ADDED TO this new net
+                                 C2.1           C3.1           C4.1           
+                                 R1.1           R4.2           R6.1           
+                                 U1.5           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  ZM_INT0      pins ADDED TO this new net
+                                 U3.3           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  ZM_INT1      pins ADDED TO this new net
+                                 U3.4           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  ZM_RESET     pins ADDED TO this new net
+                                 J1.12          J3.3           R10.1          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  ZM_RX        pins ADDED TO this new net
+                                 J1.8           U3.10          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  ZM_TX        pins ADDED TO this new net
+                                 J1.10          U3.15          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  ZWAVE_SPI_CS pins ADDED TO this new net
+                                 R12.2          U3.14          U4.1           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  ZWAVE_SPI_MISO pins ADDED TO this new net
+                                 J3.6           U3.7           U4.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  ZWAVE_SPI_MOSI pins ADDED TO this new net
+                                 J3.4           U3.9           U4.5           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  ZWAVE_SPI_SCLK pins ADDED TO this new net
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   4  |
+|------------------------------------------------------------------------------|
+|  C:.../THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/RAK833_RPIGATEWAY.brd  |
+|                                                    Sun Jun 14 17:33:30 2020  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                 J3.5           U3.8           U4.6           
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   5  |
+|------------------------------------------------------------------------------|
+|  C:.../THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/RAK833_RPIGATEWAY.brd  |
+|                                                    Sun Jun 14 17:33:30 2020  |
+|------------------------------------------------------------------------------|
+| COMPONENT DEFINITION added to design                                         |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    device type                                                               |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ ANTENNA_0_HEADER_1_3MM_ANTENNA
+ C-6PF/50V-SMD0805_C0603_6PF
+ C-10PF/50V-SMD0805_C0603_10PF
+ CAP 0603_C0603_100NF
+ CAP NP_C0603_0.1UF
+ CAP NP_C0603_DISCRETE_0.1UF_
+ CAP NP_C0603_DISCRETE_10NF
+ CAP NP_CAP_1210_10U/35V
+ CAP NP_CAP_1210_22U/6.3V
+ CAP_C0603_10UF_
+ CAP_CAP_AL_D_100UF/35V
+ CAP_CAP_AL_D_220U/16V
+ CAT25C02_0_TSSOP-8_CAT25256
+ HEADER 6_HEADER-6_ZW_JTAG
+ HEADER 20X2_HEADER40X2PITCH100M
+ INDUCTOR_IND_6X6MM_8.8UH/1.7A
+ L-8.2NH-SMD0805_C0603_8.2NH
+ LED_LED0805_LED
+ PMIC_SOT23-6_SOT23-6_AP3211
+ RAK_PCIE_CONN_PCIE_52POS_RAK_PC
+ RES-SM0402_0_R0603_DISCRETE_1R
+ RES-SM0402_0_R0603_DISCRETE_10K
+ RES-SM0402_0_R0603_DISCRETE_30K
+ RES-SM0402_0_R0603_DISCRETE_22
+ RES-SM0402_0_R0603_DISCRETE_360
+ RESISTOR_R0603_0R/NC
+ RESISTOR_R0603_22R
+ SS34_2_SOD123_1N5819
+ USB MIN_6_CON5_MICROUSB_SKT_SM_
+ ZM5202_ZM5202_A_ZM5202_ZM5202AU
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   6  |
+|------------------------------------------------------------------------------|
+|  C:.../THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/RAK833_RPIGATEWAY.brd  |
+|                                                    Sun Jun 14 17:33:30 2020  |
+|------------------------------------------------------------------------------|
+| COMPONENTS ADDED to design                                                   |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        |    device type                                           |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ C1                  CAP NP_C0603_DISCRETE_10NF 
+ C2                  CAP_CAP_AL_D_100UF/35V 
+ C3                  CAP 0603_C0603_100NF  
+ C4                  CAP NP_CAP_1210_10U/35V 
+ C5                  CAP NP_CAP_1210_22U/6.3V 
+ C6                  CAP_CAP_AL_D_220U/16V 
+ C7                  CAP 0603_C0603_100NF  
+ C8                  CAP NP_CAP_1210_10U/35V 
+ C9                  CAP NP_CAP_1210_10U/35V 
+ C10                 CAP NP_CAP_1210_10U/35V 
+ C11                 CAP NP_CAP_1210_10U/35V 
+ C12                 CAP NP_CAP_1210_10U/35V 
+ C13                 CAP NP_CAP_1210_10U/35V 
+ C14                 CAP NP_C0603_DISCRETE_0.1UF_ 
+ C15                 CAP_C0603_10UF_       
+ C16                 CAP NP_C0603_0.1UF    
+ C17                 C-10PF/50V-SMD0805_C0603_10PF 
+ C18                 C-6PF/50V-SMD0805_C0603_6PF 
+ C19                 CAP NP_C0603_0.1UF    
+ D1                  SS34_2_SOD123_1N5819  
+ D2                  LED_LED0805_LED       
+ E1                  ANTENNA_0_HEADER_1_3MM_ANTENNA 
+ J1                  HEADER 20X2_HEADER40X2PITCH100M 
+ J2                  USB MIN_6_CON5_MICROUSB_SKT_SM_ 
+ J3                  HEADER 6_HEADER-6_ZW_JTAG 
+ L1                  INDUCTOR_IND_6X6MM_8.8UH/1.7A 
+ L2                  L-8.2NH-SMD0805_C0603_8.2NH 
+ R1                  RES-SM0402_0_R0603_DISCRETE_10K 
+ R2                  RES-SM0402_0_R0603_DISCRETE_30K 
+ R3                  RES-SM0402_0_R0603_DISCRETE_10K 
+ R4                  RESISTOR_R0603_0R/NC  
+ R5                  RES-SM0402_0_R0603_DISCRETE_1R 
+ R6                  RESISTOR_R0603_0R/NC  
+ R7                  RESISTOR_R0603_22R    
+ R8                  RESISTOR_R0603_22R    
+ R9                  RESISTOR_R0603_0R/NC  
+ R10                 RES-SM0402_0_R0603_DISCRETE_22 
+ R11                 RES-SM0402_0_R0603_DISCRETE_360 
+ R12                 RES-SM0402_0_R0603_DISCRETE_10K 
+ U1                  PMIC_SOT23-6_SOT23-6_AP3211 
+ U2                  RAK_PCIE_CONN_PCIE_52POS_RAK_PC 
+ U3                  ZM5202_ZM5202_A_ZM5202_ZM5202AU 
+ U4                  CAT25C02_0_TSSOP-8_CAT25256 
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   7  |
+|------------------------------------------------------------------------------|
+|  C:.../THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/RAK833_RPIGATEWAY.brd  |
+|                                                    Sun Jun 14 17:33:30 2020  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ C1.2                           PRIM_FILE      .\pstchip.dat
+ C2.2                           PRIM_FILE      .\pstchip.dat
+ C3.2                           PRIM_FILE      .\pstchip.dat
+ C4.2                           PRIM_FILE      .\pstchip.dat
+ C5.2                           PRIM_FILE      .\pstchip.dat
+ C6.2                           PRIM_FILE      .\pstchip.dat
+ C7.2                           PRIM_FILE      .\pstchip.dat
+ C8.2                           PRIM_FILE      .\pstchip.dat
+ C9.2                           PRIM_FILE      .\pstchip.dat
+ C10.2                          PRIM_FILE      .\pstchip.dat
+ C11.2                          PRIM_FILE      .\pstchip.dat
+ C12.2                          PRIM_FILE      .\pstchip.dat
+ C13.2                          PRIM_FILE      .\pstchip.dat
+ C14.2                          PRIM_FILE      .\pstchip.dat
+ C15.2                          PRIM_FILE      .\pstchip.dat
+ C16.2                          PRIM_FILE      .\pstchip.dat
+ C17.2                          PRIM_FILE      .\pstchip.dat
+ C18.2                          PRIM_FILE      .\pstchip.dat
+ C19.2                          PRIM_FILE      .\pstchip.dat
+ D1.2                           PRIM_FILE      .\pstchip.dat
+ D2.1                           PRIM_FILE      .\pstchip.dat
+ E1.1                           PRIM_FILE      .\pstchip.dat
+ J1.9                           PRIM_FILE      .\pstchip.dat
+ J2.4                           PRIM_FILE      .\pstchip.dat
+ J3.6                           PRIM_FILE      .\pstchip.dat
+ L1.2                           PRIM_FILE      .\pstchip.dat
+ L2.2                           PRIM_FILE      .\pstchip.dat
+ R1.2                           PRIM_FILE      .\pstchip.dat
+ R2.2                           PRIM_FILE      .\pstchip.dat
+ R3.2                           PRIM_FILE      .\pstchip.dat
+ R4.2                           PRIM_FILE      .\pstchip.dat
+ R5.2                           PRIM_FILE      .\pstchip.dat
+ R6.2                           PRIM_FILE      .\pstchip.dat
+ R7.2                           PRIM_FILE      .\pstchip.dat
+ R8.2                           PRIM_FILE      .\pstchip.dat
+ R9.2                           PRIM_FILE      .\pstchip.dat
+ R10.2                          PRIM_FILE      .\pstchip.dat
+ R11.2                          PRIM_FILE      .\pstchip.dat
+ R12.2                          PRIM_FILE      .\pstchip.dat
+ U1.6                           PRIM_FILE      .\pstchip.dat
+ U2.9                           PRIM_FILE      .\pstchip.dat
+ U3.14                          PRIM_FILE      .\pstchip.dat
+ U4.3                           PRIM_FILE      .\pstchip.dat
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   8  |
+|------------------------------------------------------------------------------|
+|  C:.../THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/RAK833_RPIGATEWAY.brd  |
+|                                                    Sun Jun 14 17:33:30 2020  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|------------------------------------------------------------------------------|
+|       Nets changed          :     159                                        |
+|       Comp definitions added:      30                                        |
+|       Components added      :      43                                        |
+|       Slot property added   :      43                                        |
+|                                                                              |
+|   Total ECO changes reported:     275                                        |
+|------------------------------------------------------------------------------|
