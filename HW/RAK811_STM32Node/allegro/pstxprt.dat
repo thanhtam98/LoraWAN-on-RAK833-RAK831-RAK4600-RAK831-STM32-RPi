@@ -1,5 +1,5 @@
 FILE_TYPE = EXPANDEDPARTLIST;
-{ Using PSTWRITER 17.2.0 d001Jun-14-2020 at 14:10:43 }
+{ Using PSTWRITER 17.2.0 d001Jun-14-2020 at 23:11:12 }
 DIRECTIVES
  PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
  ROOT_DRAWING='STM32F103_RAK811_THESISNODE';
@@ -391,9 +391,9 @@ PART_NAME
  D6 'LED_0_LED0805_LED':;
 
 SECTION_NUMBER 1
- '@STM32F103_RAK811_THESISNODE.SCHEMATIC1(SCH_1):INS8065817@STM32F4_CONTROLLER.LED_0.NORMAL(CHIPS)':
- C_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):ins8065817@stm32f4_controller.\led_0.normal\(chips)',
- P_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):page2_ins8065817@stm32f4_controller.\led_0.normal\(chips)',
+ '@STM32F103_RAK811_THESISNODE.SCHEMATIC1(SCH_1):INS8126554@STM32F4_CONTROLLER.LED_0.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):ins8126554@stm32f4_controller.\led_0.normal\(chips)',
+ P_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):page2_ins8126554@stm32f4_controller.\led_0.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 
@@ -401,9 +401,9 @@ PART_NAME
  D7 'LED_0_LED0805_LED':;
 
 SECTION_NUMBER 1
- '@STM32F103_RAK811_THESISNODE.SCHEMATIC1(SCH_1):INS8066305@STM32F4_CONTROLLER.LED_0.NORMAL(CHIPS)':
- C_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):ins8066305@stm32f4_controller.\led_0.normal\(chips)',
- P_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):page2_ins8066305@stm32f4_controller.\led_0.normal\(chips)',
+ '@STM32F103_RAK811_THESISNODE.SCHEMATIC1(SCH_1):INS8126570@STM32F4_CONTROLLER.LED_0.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):ins8126570@stm32f4_controller.\led_0.normal\(chips)',
+ P_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):page2_ins8126570@stm32f4_controller.\led_0.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 
@@ -411,9 +411,9 @@ PART_NAME
  D8 'LED_0_LED0805_LED':;
 
 SECTION_NUMBER 1
- '@STM32F103_RAK811_THESISNODE.SCHEMATIC1(SCH_1):INS8076361@STM32F4_CONTROLLER.LED_0.NORMAL(CHIPS)':
- C_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):ins8076361@stm32f4_controller.\led_0.normal\(chips)',
- P_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):page2_ins8076361@stm32f4_controller.\led_0.normal\(chips)',
+ '@STM32F103_RAK811_THESISNODE.SCHEMATIC1(SCH_1):INS8126586@STM32F4_CONTROLLER.LED_0.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):ins8126586@stm32f4_controller.\led_0.normal\(chips)',
+ P_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):page2_ins8126586@stm32f4_controller.\led_0.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 
@@ -421,9 +421,9 @@ PART_NAME
  D9 'LED_0_LED0805_LED':;
 
 SECTION_NUMBER 1
- '@STM32F103_RAK811_THESISNODE.SCHEMATIC1(SCH_1):INS8076511@STM32F4_CONTROLLER.LED_0.NORMAL(CHIPS)':
- C_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):ins8076511@stm32f4_controller.\led_0.normal\(chips)',
- P_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):page2_ins8076511@stm32f4_controller.\led_0.normal\(chips)',
+ '@STM32F103_RAK811_THESISNODE.SCHEMATIC1(SCH_1):INS8126602@STM32F4_CONTROLLER.LED_0.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):ins8126602@stm32f4_controller.\led_0.normal\(chips)',
+ P_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):page2_ins8126602@stm32f4_controller.\led_0.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 
@@ -641,9 +641,9 @@ PART_NAME
  R10 'RESISTOR 0603_R0603_4K7':;
 
 SECTION_NUMBER 1
- '@STM32F103_RAK811_THESISNODE.SCHEMATIC1(SCH_1):INS8076341@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
- C_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):ins8076341@autotalab.\resistor 0603.normal\(chips)',
- P_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):page2_ins8076341@autotalab.\resistor 0603.normal\(chips)',
+ '@STM32F103_RAK811_THESISNODE.SCHEMATIC1(SCH_1):INS8126470@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):ins8126470@autotalab.\resistor 0603.normal\(chips)',
+ P_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):page2_ins8126470@autotalab.\resistor 0603.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 
@@ -651,9 +651,9 @@ PART_NAME
  R11 'RESISTOR 0603_R0603_4K7':;
 
 SECTION_NUMBER 1
- '@STM32F103_RAK811_THESISNODE.SCHEMATIC1(SCH_1):INS8076491@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
- C_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):ins8076491@autotalab.\resistor 0603.normal\(chips)',
- P_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):page2_ins8076491@autotalab.\resistor 0603.normal\(chips)',
+ '@STM32F103_RAK811_THESISNODE.SCHEMATIC1(SCH_1):INS8126486@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):ins8126486@autotalab.\resistor 0603.normal\(chips)',
+ P_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):page2_ins8126486@autotalab.\resistor 0603.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 
@@ -831,9 +831,9 @@ PART_NAME
  R8 'RESISTOR 0603_R0603_4K7':;
 
 SECTION_NUMBER 1
- '@STM32F103_RAK811_THESISNODE.SCHEMATIC1(SCH_1):INS8065945@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
- C_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):ins8065945@autotalab.\resistor 0603.normal\(chips)',
- P_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):page2_ins8065945@autotalab.\resistor 0603.normal\(chips)',
+ '@STM32F103_RAK811_THESISNODE.SCHEMATIC1(SCH_1):INS8126438@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):ins8126438@autotalab.\resistor 0603.normal\(chips)',
+ P_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):page2_ins8126438@autotalab.\resistor 0603.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 
@@ -841,9 +841,9 @@ PART_NAME
  R9 'RESISTOR 0603_R0603_4K7':;
 
 SECTION_NUMBER 1
- '@STM32F103_RAK811_THESISNODE.SCHEMATIC1(SCH_1):INS8065551@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
- C_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):ins8065551@autotalab.\resistor 0603.normal\(chips)',
- P_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):page2_ins8065551@autotalab.\resistor 0603.normal\(chips)',
+ '@STM32F103_RAK811_THESISNODE.SCHEMATIC1(SCH_1):INS8126454@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):ins8126454@autotalab.\resistor 0603.normal\(chips)',
+ P_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):page2_ins8126454@autotalab.\resistor 0603.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 

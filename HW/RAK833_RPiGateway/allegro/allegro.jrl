@@ -1,44 +1,201 @@
-\t (00:00:05) allegro 17.2 S052 Windows SPB 64-bit Edition
-\t (00:00:05)     Journal start - Sun Jun 14 21:02:59 2020
-\t (00:00:05)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=8076 CPUs=4
-\t (00:00:05) CmdLine= C:\Cadence\SPB_17.2\tools\bin\allegro.exe
-\t (00:00:05) 
-   (00:00:05) Loading axlcore.cxt 
-   (00:00:06) Searching for nsWare programs v2.78
-   (00:00:06) 	NsWare directory found: E:/CAD/pcbenv/nsWare/
-   (00:00:06) 	NsWare programs must reside in this directory!
-   (00:00:06) function AFn_OpenDesign redefined
-   (00:00:06) function PinVia_Overlap_FinishEnterFun redefined
-   (00:00:06) function Find_Point_On_Line_From_Distant redefined
-   (00:00:06) function Find_Point_Quadrature_Line redefined
-   (00:00:06) function Line_Line_Intersect redefined
-   (00:00:06) function _getPinsNet redefined
-   (00:00:06) function _getBranchs redefined
-   (00:00:06) function _getPaths redefined
-   (00:00:06) function _get2PointsPath redefined
-   (00:00:06) function _checkElementList redefined
-   (00:00:06) function _getSurroundPoints redefined
-   (00:00:06) function _getListPointsLPaths redefined
-   (00:00:06) function _checkPathPoint redefined
-   (00:00:06) function _deleteElementList redefined
-   (00:00:06) function _checkElementList redefined
-   (00:00:06) function _deleteElementList redefined
-   (00:00:06) function Find_Point_On_Line_From_Distant redefined
-   (00:00:06) function Find_Point_Quadrature_Line redefined
-   (00:00:06) function Is_Point_On_List redefined
-   (00:00:06) function Line_Line_Intersect redefined
-   (00:00:06) function Line_Line_Distant redefined
-\t (00:00:07) Opening existing design...
-\i (00:00:07) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged RAK833_RPIGATEWAY
-\d (00:00:07) Design opened: C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/RAK833_RPIGATEWAY.brd
-\i (00:00:08) trapsize 32833
-\i (00:00:08) trapsize 34654
-\i (00:00:08) trapsize 27963
-\i (00:00:08) trapsize 27963
-\i (00:00:09) generaledit 
-\i (00:00:14) pick grid 171.6921 192.9970
-\t (00:00:14) last pick:  172.0000 193.0000
-\i (00:00:20) opencd C:/GIT/THESISLORAWANNODE/HW/RAK811_STM32NODE/allegro/STM32F103_RAK811_THESISNODE.brd 
-\t (00:00:20) Opening existing design...
-\i (00:00:20) trapsize 5463
-\t (00:00:20)     Journal end - Sun Jun 14 21:03:14 2020
+\t (00:00:00) allegro 17.2 S052 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Sun Jun 14 21:50:36 2020
+\t (00:00:00)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=16436 CPUs=4
+\t (00:00:00) CmdLine= C:\Cadence\SPB_17.2\tools\bin\allegro.exe
+\t (00:00:00) 
+   (00:00:01) Loading axlcore.cxt 
+   (00:00:02) Searching for nsWare programs v2.78
+   (00:00:02) 	NsWare directory found: E:/CAD/pcbenv/nsWare/
+   (00:00:02) 	NsWare programs must reside in this directory!
+   (00:00:02) function AFn_OpenDesign redefined
+   (00:00:02) function PinVia_Overlap_FinishEnterFun redefined
+   (00:00:02) function Find_Point_On_Line_From_Distant redefined
+   (00:00:02) function Find_Point_Quadrature_Line redefined
+   (00:00:02) function Line_Line_Intersect redefined
+   (00:00:02) function _getPinsNet redefined
+   (00:00:02) function _getBranchs redefined
+   (00:00:02) function _getPaths redefined
+   (00:00:02) function _get2PointsPath redefined
+   (00:00:02) function _checkElementList redefined
+   (00:00:02) function _getSurroundPoints redefined
+   (00:00:02) function _getListPointsLPaths redefined
+   (00:00:02) function _checkPathPoint redefined
+   (00:00:02) function _deleteElementList redefined
+   (00:00:02) function _checkElementList redefined
+   (00:00:02) function _deleteElementList redefined
+   (00:00:02) function Find_Point_On_Line_From_Distant redefined
+   (00:00:02) function Find_Point_Quadrature_Line redefined
+   (00:00:02) function Is_Point_On_List redefined
+   (00:00:02) function Line_Line_Intersect redefined
+   (00:00:02) function Line_Line_Distant redefined
+\t (00:00:02) Opening existing design...
+\i (00:00:02) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged RAK833_RPIGATEWAY
+\d (00:00:02) Design opened: C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/RAK833_RPIGATEWAY.brd
+\i (00:00:02) trapsize 32833
+\i (00:00:02) trapsize 34654
+\i (00:00:03) trapsize 27963
+\i (00:00:03) trapsize 27963
+\i (00:00:03) generaledit 
+\i (00:11:21) xname_flush 
+\i (00:11:22) xdehilite 
+\i (00:11:23) xname_flush 
+\i (00:11:23) done 
+\i (00:11:23) generaledit 
+\i (00:11:24) xname_flush 
+\i (00:11:34) xname_flush 
+\i (00:11:43) xname_flush 
+\i (00:11:46) xdehilite 
+\i (00:11:46) xname_flush 
+\i (00:11:46) done 
+\i (00:11:46) xhilite 
+\i (00:11:47) xname_flush 
+\i (00:11:47) done 
+\i (00:11:47) generaledit 
+\i (00:11:47) xdehilite 
+\i (00:11:48) xname_flush 
+\i (00:11:48) done 
+\i (00:11:48) xhilite 
+\i (00:11:48) xname_flush 
+\i (00:11:48) done 
+\i (00:11:48) generaledit 
+\i (00:11:49) xdehilite 
+\i (00:11:49) xname_flush 
+\i (00:11:49) done 
+\i (00:11:49) xhilite 
+\i (00:11:50) xname_flush 
+\i (00:11:50) done 
+\i (00:11:50) generaledit 
+\i (00:11:53) xdehilite 
+\i (00:11:53) xname_flush 
+\i (00:11:53) done 
+\i (00:11:54) generaledit 
+\i (00:11:54) xname_flush 
+\i (00:11:55) xdehilite 
+\i (00:11:55) xname_flush 
+\i (00:11:55) done 
+\i (00:11:56) generaledit 
+\i (00:11:56) xname_flush 
+\i (00:12:02) xname_flush 
+\i (00:12:05) xdehilite 
+\i (00:12:05) xname_flush 
+\i (00:12:05) done 
+\i (00:12:05) generaledit 
+\i (00:12:06) xname_flush 
+\i (00:12:08) xdehilite 
+\i (00:12:08) xname_flush 
+\i (00:12:08) done 
+\i (00:12:08) generaledit 
+\i (00:12:09) xname_flush 
+\i (00:12:10) xdehilite 
+\i (00:12:11) xname_flush 
+\i (00:12:11) done 
+\i (00:12:11) generaledit 
+\i (00:12:11) xname_flush 
+\i (00:12:12) xdehilite 
+\i (00:12:12) xname_flush 
+\i (00:12:12) done 
+\i (00:12:13) generaledit 
+\i (00:12:15) xname_flush 
+\i (00:12:16) xdehilite 
+\i (00:12:16) xname_flush 
+\i (00:12:16) done 
+\i (00:12:16) xhilite 
+\i (00:12:16) xname_flush 
+\i (00:12:16) done 
+\i (00:12:17) generaledit 
+\i (00:12:17) xdehilite 
+\i (00:12:17) xname_flush 
+\i (00:12:17) done 
+\i (00:12:17) xhilite 
+\i (00:12:17) xname_flush 
+\i (00:12:17) done 
+\i (00:12:18) xdehilite 
+\i (00:12:18) xname_flush 
+\i (00:12:18) done 
+\i (00:12:18) generaledit 
+\i (00:12:18) xname_flush 
+\i (00:12:20) xdehilite 
+\i (00:12:20) xname_flush 
+\i (00:12:20) done 
+\i (00:12:21) xhilite 
+\i (00:12:21) xname_flush 
+\i (00:12:21) done 
+\i (00:12:21) generaledit 
+\i (00:12:26) xdehilite 
+\i (00:12:26) xname_flush 
+\i (00:12:26) done 
+\i (00:12:27) generaledit 
+\i (00:12:27) xname_flush 
+\i (00:12:28) xdehilite 
+\i (00:12:28) xname_flush 
+\i (00:12:28) done 
+\i (00:12:28) generaledit 
+\i (00:12:28) xname_flush 
+\i (00:12:32) xname_flush 
+\i (00:12:34) xdehilite 
+\i (00:12:35) xname_flush 
+\i (00:12:35) done 
+\i (00:12:35) generaledit 
+\i (00:12:35) xname_flush 
+\i (00:12:36) xdehilite 
+\i (00:12:36) xname_flush 
+\i (00:12:36) done 
+\i (00:12:37) generaledit 
+\i (00:12:38) xname_flush 
+\i (00:12:40) xdehilite 
+\i (00:12:40) xname_flush 
+\i (00:12:40) done 
+\i (00:12:41) generaledit 
+\i (00:13:36) xname_flush 
+\i (00:13:57) xdehilite 
+\i (00:13:57) xname_flush 
+\i (00:13:57) done 
+\i (00:13:58) generaledit 
+\i (00:13:59) xname_flush 
+\i (00:14:02) xdehilite 
+\i (00:14:02) xname_flush 
+\i (00:14:02) done 
+\i (00:14:02) generaledit 
+\i (00:14:03) xname_flush 
+\i (00:14:06) xdehilite 
+\i (00:14:07) xname_flush 
+\i (00:14:07) done 
+\i (00:14:07) xhilite 
+\i (00:14:07) xname_flush 
+\i (00:14:07) done 
+\i (00:14:07) generaledit 
+\i (00:14:10) xdehilite 
+\i (00:14:10) xname_flush 
+\i (00:14:10) done 
+\i (00:14:10) generaledit 
+\t (00:20:02) Performing autosave...
+\t (00:20:02) Autosave successful
+\i (00:21:52) xname_flush 
+\i (00:21:52) xdehilite 
+\i (00:21:53) xname_flush 
+\i (00:21:53) done 
+\i (00:21:53) xhilite 
+\i (00:21:53) xname_flush 
+\i (00:21:53) done 
+\i (00:21:53) generaledit 
+\i (00:21:54) xname_flush 
+\i (00:26:34) xdehilite 
+\i (00:26:34) xname_flush 
+\i (00:26:34) done 
+\i (00:26:34) generaledit 
+\i (00:26:35) xname_flush 
+\i (00:26:35) xname_flush 
+\t (00:30:02) Performing autosave...
+\t (00:30:02) Autosave successful
+\i (00:56:38) xhilite 
+\i (00:56:39) xname_flush 
+\i (00:56:39) done 
+\i (00:56:39) generaledit 
+\i (00:56:51) xhilite 
+\i (00:56:51) xname_flush 
+\i (00:56:51) done 
+\i (00:56:51) generaledit 
+\i (00:56:55) exit 
+\e (00:56:55) Do you want to save the changes you made to RAK833_RPIGATEWAY.brd?
+\i (00:56:56) fillin no 
+\t (00:56:57)     Journal end - Sun Jun 14 22:47:33 2020

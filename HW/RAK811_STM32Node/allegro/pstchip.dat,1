@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.2.0 d001Jun-14-2020 at 10:54:39}
+{ Using PSTWRITER 17.2.0 d001Jun-14-2020 at 13:56:54}
 primitive 'SW PUSHBUTTON-SPST-2_0_B3U-1000';
   pin
     '1':
@@ -204,7 +204,22 @@ primitive 'DIODE_DO214AC_SMA_1N4007';
     VALUE='1N4007';
   end_body;
 end_primitive;
-primitive 'SS34_2_SOD123_1N5819';
+primitive 'DIODE_SOD80_1N4007';
+  pin
+    'A':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    'K':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='DIODE';
+    JEDEC_TYPE='SOD80';
+    VALUE='1N4007';
+  end_body;
+end_primitive;
+primitive 'SS34_2_DO214AC_SMA_1N5819';
   pin
     'ANODE':
       PIN_NUMBER='(1)';
@@ -215,7 +230,7 @@ primitive 'SS34_2_SOD123_1N5819';
   end_pin;
   body
     PART_NAME='SS34_2';
-    JEDEC_TYPE='SOD123';
+    JEDEC_TYPE='DO214AC_SMA';
     VALUE='1N5819';
   end_body;
 end_primitive;
@@ -505,6 +520,18 @@ primitive 'INDUCTOR_IND_6X6MM_8.8UH/1.7A';
     PART_NAME='INDUCTOR';
     JEDEC_TYPE='IND_6x6mm';
     VALUE='8.8uH/1.7A';
+  end_body;
+end_primitive;
+primitive 'MOUNTING HOLE_MH_3MM_1_HOLE 4MM';
+  pin
+    'MH':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='MOUNTING HOLE';
+    JEDEC_TYPE='mh_3mm_1';
+    VALUE='HOLE 4mm';
   end_body;
 end_primitive;
 primitive 'RES-SM0402_0_R0603_DISCRETE_10K';
