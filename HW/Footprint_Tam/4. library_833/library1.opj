@@ -13,8 +13,11 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources" ".\library1.olb")
-      (Select "Design Resources" ".\library1.olb" "mPCIe_Connector"))
+      (Path "Design Resources"
+         "C:\GIT\ThesisLorawanNode\HW\Footprint_Tam\4. library_833\library1.olb")
+      (Select "Design Resources"
+         "C:\GIT\ThesisLorawanNode\HW\Footprint_Tam\4. library_833\library1.olb"
+         "mPCIe_Connector"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -24,7 +27,7 @@
     (Doc
       (Type "COrPrmBrowserDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 104 1434 104 425"))
+        (Placement "44 2 3 -1 -1 -8 -31 26 1208 26 273"))
       (Path
          "C:\GIT\THESISLORAWANNODE\HW\FOOTPRINT_TAM\4. LIBRARY_833\LIBRARY1.OLB")
       (Package "MPCIE_CONNECTOR")
@@ -32,7 +35,7 @@
     (Doc
       (Type "COrPrmBrowserDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 130 1460 130 451"))
+        (Placement "44 0 1 -1 -1 -8 -31 52 1234 52 299"))
       (Path
          "C:\GIT\THESISLORAWANNODE\HW\FOOTPRINT_TAM\4. LIBRARY_833\LIBRARY1.OLB")
       (Package "RAK4600")
