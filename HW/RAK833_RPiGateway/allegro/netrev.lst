@@ -2,9 +2,9 @@
 (                                                                     )
 (    Allegro Netrev Import Logic                                      )
 (                                                                     )
-(    Drawing          : RAK833_RPIGATEWAY.brd                         )
+(    Drawing          : RAK833_RPIGATEWAY_v1.brd                      )
 (    Software Version : 17.2S052                                      )
-(    Date/Time        : Sun Jun 14 17:45:18 2020                      )
+(    Date/Time        : Mon Jun 15 08:56:28 2020                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -19,15 +19,15 @@ Missing symbol has error:    No
 DRC update:                  Yes
 Schematic directory:         'C:\GIT\THESISLORAWANNODE\HW\RAK833_RPIGATEWAY\allegro'
 Design Directory:            'C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro'
-Old design name:             'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/RAK833_RPIGATEWAY.brd'
+Old design name:             'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/RAK833_RPIGATEWAY_v1.brd'
 New design name:             'C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/RAK833_RPIGATEWAY.brd'
 
-CmdLine: netrev.exe -y 1 -i C:\GIT\THESISLORAWANNODE\HW\RAK833_RPIGATEWAY\allegro C:\GIT\ThesisLorawanNode\HW\RAK833_RPiGateway\allegro\RAK833_RPIGATEWAY.brd C:\GIT\THESISLORAWANNODE\HW\RAK833_RPIGATEWAY\allegro\RAK833_RPIGATEWAY.brd
+CmdLine: netrev.exe -y 1 -i C:\GIT\THESISLORAWANNODE\HW\RAK833_RPIGATEWAY\allegro C:\GIT\ThesisLorawanNode\HW\RAK833_RPiGateway\allegro\RAK833_RPIGATEWAY_v1.brd C:\GIT\THESISLORAWANNODE\HW\RAK833_RPIGATEWAY\allegro\RAK833_RPIGATEWAY.brd
 
 ------ Preparing to read pst files ------
 
 Starting to read C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/pstchip.dat 
-   Finished reading C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/pstchip.dat (00:00:00.04)
+   Finished reading C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/pstchip.dat (00:00:00.06)
 Starting to read C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/pstxprt.dat 
    Finished reading C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/pstxprt.dat (00:00:00.00)
 Starting to read C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/pstxnet.dat 
@@ -35,13 +35,6 @@ Starting to read C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/pstxnet.d
 
 ------ Oversights/Warnings/Errors ------
 
-
-#1   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
-
-WARNING(SPMHNI-194): Symbol 'ZM5202_A' used by RefDes U3 for device 'ZM5202_ZM5202_A_ZM5202_ZM5202AU' not found. 
-The symbol either does not exist in the library path (PSMPATH) or is an old symbol from a previous release.  
-
-Set the correct library path if not set or use dbdoctor to migrate old symb
 
 ------ Library Paths ------
 MODULEPATH =  . 
@@ -71,7 +64,7 @@ PADPATH =  E:/TTTN/Orcad/lib/0_Lib/1_Footprint
 ------ Summary Statistics ------
 
 
-netrev run on Jun 14 17:45:18 2020
+netrev run on Jun 15 8:56:28 2020
    DESIGN NAME : 'RAK833_RPIGATEWAY'
    PACKAGING ON Feb 18 2019 18:33:40
 
@@ -94,8 +87,8 @@ netrev run on Jun 14 17:45:18 2020
 
  No error detected
  No oversight detected
-  1 warnings detected
+ No warning detected
 
-cpu time      0:03:13
+cpu time      0:02:33
 elapsed time  0:00:02
 

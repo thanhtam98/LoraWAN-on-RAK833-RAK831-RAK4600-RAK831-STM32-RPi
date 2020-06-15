@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.2.0 d001Jun-14-2020 at 17:33:30}
+{ Using PSTWRITER 17.2.0 d001Jun-15-2020 at 08:48:25}
 primitive 'CAP NP_C0603_DISCRETE_10NF';
   pin
     '1':
@@ -16,7 +16,7 @@ primitive 'CAP NP_C0603_DISCRETE_10NF';
     VALUE='10nF';
   end_body;
 end_primitive;
-primitive 'CAP NP_CAP_1210_10U/35V';
+primitive 'CAP NP_C0603_10U/35V';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -27,7 +27,7 @@ primitive 'CAP NP_CAP_1210_10U/35V';
   end_pin;
   body
     PART_NAME='CAP NP';
-    JEDEC_TYPE='cap_1210';
+    JEDEC_TYPE='C0603';
     VALUE='10u/35V';
   end_body;
 end_primitive;
@@ -135,6 +135,21 @@ primitive 'CAP 0603_C0603_100NF';
     PART_NAME='Cap 0603';
     JEDEC_TYPE='C0603';
     VALUE='100nF';
+  end_body;
+end_primitive;
+primitive 'CAP NP_CAP_1210_10U/35V';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='CAP NP';
+    JEDEC_TYPE='cap_1210';
+    VALUE='10u/35V';
   end_body;
 end_primitive;
 primitive 'CAP NP_CAP_1210_22U/6.3V';
@@ -437,6 +452,18 @@ primitive 'L-8.2NH-SMD0805_C0603_8.2NH';
     VALUE='8.2nH';
   end_body;
 end_primitive;
+primitive 'MOUNTING HOLE_MH_3MM_1_HOLE 4MM';
+  pin
+    'MH':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='MOUNTING HOLE';
+    JEDEC_TYPE='mh_3mm_1';
+    VALUE='HOLE 4mm';
+  end_body;
+end_primitive;
 primitive 'RES-SM0402_0_R0603_DISCRETE_10K';
   pin
     '1':
@@ -731,6 +758,30 @@ primitive 'RAK_PCIE_CONN_PCIE_52POS_RAK_PC';
       PINUSE='UNSPEC';
     'PIN52':
       PIN_NUMBER='(52)';
+      PINUSE='UNSPEC';
+    'NC_A1':
+      PIN_NUMBER='(A1)';
+      PINUSE='UNSPEC';
+    'NC_A3':
+      PIN_NUMBER='(A3)';
+      PINUSE='UNSPEC';
+    'NC_A5':
+      PIN_NUMBER='(A5)';
+      PINUSE='UNSPEC';
+    'NC_A7':
+      PIN_NUMBER='(A7)';
+      PINUSE='UNSPEC';
+    'NC_A8':
+      PIN_NUMBER='(A8)';
+      PINUSE='UNSPEC';
+    'NC_A6':
+      PIN_NUMBER='(A6)';
+      PINUSE='UNSPEC';
+    'NC_A4':
+      PIN_NUMBER='(A4)';
+      PINUSE='UNSPEC';
+    'NC_A2':
+      PIN_NUMBER='(A2)';
       PINUSE='UNSPEC';
   end_pin;
   body

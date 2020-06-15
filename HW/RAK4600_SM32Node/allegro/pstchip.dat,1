@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.2.0 d001Jun-14-2020 at 09:42:49}
+{ Using PSTWRITER 17.2.0 d001Jun-14-2020 at 15:17:40}
 primitive 'SW PUSHBUTTON-SPST-2_0_B3U-1000';
   pin
     '1':
@@ -504,6 +504,18 @@ primitive 'INDUCTOR_IND_6X6MM_8.8UH/1.7A';
     PART_NAME='INDUCTOR';
     JEDEC_TYPE='IND_6x6mm';
     VALUE='8.8uH/1.7A';
+  end_body;
+end_primitive;
+primitive 'MOUNTING HOLE_MH_3MM_1_HOLE 4MM';
+  pin
+    'MH':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='MOUNTING HOLE';
+    JEDEC_TYPE='mh_3mm_1';
+    VALUE='HOLE 4mm';
   end_body;
 end_primitive;
 primitive 'RES-SM0402_0_R0603_DISCRETE_10K';

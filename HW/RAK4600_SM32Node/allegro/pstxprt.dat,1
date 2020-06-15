@@ -1,5 +1,5 @@
 FILE_TYPE = EXPANDEDPARTLIST;
-{ Using PSTWRITER 17.2.0 d001Jun-14-2020 at 09:42:49 }
+{ Using PSTWRITER 17.2.0 d001Jun-14-2020 at 15:17:40 }
 DIRECTIVES
  PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
  ROOT_DRAWING='STM32F103_RAK4600_THESISNODE';
@@ -604,6 +604,46 @@ SECTION_NUMBER 1
  '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8095779@DISCRETE.INDUCTOR.NORMAL(CHIPS)':
  C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8095779@discrete.\inductor.normal\(chips)',
  P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page1_ins8095779@discrete.\inductor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ MH1 'MOUNTING HOLE_MH_3MM_1_HOLE 4MM':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8125481@HUY_LIB.MOUNTING HOLE.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8125481@huy_lib.\mounting hole.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8125481@huy_lib.\mounting hole.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ MH2 'MOUNTING HOLE_MH_3MM_1_HOLE 4MM':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8125495@HUY_LIB.MOUNTING HOLE.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8125495@huy_lib.\mounting hole.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8125495@huy_lib.\mounting hole.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ MH3 'MOUNTING HOLE_MH_3MM_1_HOLE 4MM':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8125509@HUY_LIB.MOUNTING HOLE.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8125509@huy_lib.\mounting hole.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8125509@huy_lib.\mounting hole.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ MH4 'MOUNTING HOLE_MH_3MM_1_HOLE 4MM':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK4600_THESISNODE.SCHEMATIC1(SCH_1):INS8125523@HUY_LIB.MOUNTING HOLE.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):ins8125523@huy_lib.\mounting hole.normal\(chips)',
+ P_PATH='@stm32f103_rak4600_thesisnode.schematic1(sch_1):page2_ins8125523@huy_lib.\mounting hole.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 

@@ -1,0 +1,19 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Shape Dynamic Status Report                                      )
+(                                                                     )
+(    Drawing          : STM32F103_RAK811_THESISNODE.brd               )
+(    Software Version : 17.2S052                                      )
+(    Date/Time        : Mon Jun 15 12:55:11 2020                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+  Dynamic shapes out of date: 1 out of 8
+  Current fill mode         : SMOOTH
+
+
+  <<<  ETCH  >>>
+
+    Layer = TOP
+       State: No Etch      Point on shape: (3330.00 14670.00)  Net: Dummy Net

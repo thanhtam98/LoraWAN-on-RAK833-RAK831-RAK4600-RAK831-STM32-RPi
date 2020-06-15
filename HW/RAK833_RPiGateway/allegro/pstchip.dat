@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.2.0 d001Jun-14-2020 at 17:45:18}
+{ Using PSTWRITER 17.2.0 d001Jun-15-2020 at 08:56:27}
 primitive 'CAP NP_C0603_DISCRETE_10NF';
   pin
     '1':
@@ -16,7 +16,7 @@ primitive 'CAP NP_C0603_DISCRETE_10NF';
     VALUE='10nF';
   end_body;
 end_primitive;
-primitive 'CAP NP_CAP_1210_10U/35V';
+primitive 'CAP NP_C0603_10U/35V';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -27,7 +27,7 @@ primitive 'CAP NP_CAP_1210_10U/35V';
   end_pin;
   body
     PART_NAME='CAP NP';
-    JEDEC_TYPE='cap_1210';
+    JEDEC_TYPE='C0603';
     VALUE='10u/35V';
   end_body;
 end_primitive;
@@ -135,6 +135,21 @@ primitive 'CAP 0603_C0603_100NF';
     PART_NAME='Cap 0603';
     JEDEC_TYPE='C0603';
     VALUE='100nF';
+  end_body;
+end_primitive;
+primitive 'CAP NP_CAP_1210_10U/35V';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='CAP NP';
+    JEDEC_TYPE='cap_1210';
+    VALUE='10u/35V';
   end_body;
 end_primitive;
 primitive 'CAP NP_CAP_1210_22U/6.3V';

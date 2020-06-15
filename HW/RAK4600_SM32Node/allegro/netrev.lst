@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : STM32F103_RAK4600_THESISNODE.brd              )
 (    Software Version : 17.2S052                                      )
-(    Date/Time        : Sun Jun 14 15:18:03 2020                      )
+(    Date/Time        : Mon Jun 15 08:25:08 2020                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -27,7 +27,7 @@ CmdLine: netrev.exe -y 1 -i C:\GIT\THESISLORAWANNODE\HW\RAK4600_SM32NODE\allegro
 ------ Preparing to read pst files ------
 
 Starting to read C:/GIT/THESISLORAWANNODE/HW/RAK4600_SM32NODE/allegro/pstchip.dat 
-   Finished reading C:/GIT/THESISLORAWANNODE/HW/RAK4600_SM32NODE/allegro/pstchip.dat (00:00:00.04)
+   Finished reading C:/GIT/THESISLORAWANNODE/HW/RAK4600_SM32NODE/allegro/pstchip.dat (00:00:00.06)
 Starting to read C:/GIT/THESISLORAWANNODE/HW/RAK4600_SM32NODE/allegro/pstxprt.dat 
    Finished reading C:/GIT/THESISLORAWANNODE/HW/RAK4600_SM32NODE/allegro/pstxprt.dat (00:00:00.00)
 Starting to read C:/GIT/THESISLORAWANNODE/HW/RAK4600_SM32NODE/allegro/pstxnet.dat 
@@ -64,7 +64,7 @@ PADPATH =  E:/TTTN/Orcad/lib/0_Lib/1_Footprint
 ------ Summary Statistics ------
 
 
-netrev run on Jun 14 15:18:03 2020
+netrev run on Jun 15 8:25:08 2020
    DESIGN NAME : 'STM32F103_RAK4600_THESISNODE'
    PACKAGING ON Feb 18 2019 18:33:40
 
@@ -89,6 +89,6 @@ netrev run on Jun 14 15:18:03 2020
  No oversight detected
  No warning detected
 
-cpu time      0:02:28
-elapsed time  0:00:01
+cpu time      0:02:37
+elapsed time  0:00:02
 

@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : STM32F103_RAK811_THESISNODE.brd               )
 (    Software Version : 17.2S052                                      )
-(    Date/Time        : Sun Jun 14 22:47:26 2020                      )
+(    Date/Time        : Mon Jun 15 13:44:51 2020                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -20,7 +20,7 @@
  ========= check standalone text              0:00:00
  ========= check standalone rectangles        0:00:00
 
- ..... Total number of DRC errors  132
+ ..... Total number of DRC errors  128
 
  ..... DRC update completed, total CPU time   0:00:00
  *************************************************************************
