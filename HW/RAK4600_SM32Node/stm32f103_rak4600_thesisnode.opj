@@ -89,8 +89,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 26 1356 26 347")
-        (Scroll "-423 0")
-        (Zoom "45")
+        (Scroll "-360 0")
+        (Zoom "58")
         (Occurrence "/"))
       (Path
          "C:\GIT\THESISLORAWANNODE\HW\RAK4600_SM32NODE\STM32F103_RAK4600_THESISNODE.DSN")
@@ -100,8 +100,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 104 1434 104 425")
-        (Scroll "-139 65")
-        (Zoom "66")
+        (Scroll "-314 0")
+        (Zoom "43")
         (Occurrence "/"))
       (Path
          "C:\GIT\THESISLORAWANNODE\HW\RAK4600_SM32NODE\STM32F103_RAK4600_THESISNODE.DSN")
@@ -111,8 +111,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 130 1460 130 451")
-        (Scroll "-139 280")
-        (Zoom "66")
+        (Scroll "-314 0")
+        (Zoom "43")
         (Occurrence "/"))
       (Path
          "C:\GIT\THESISLORAWANNODE\HW\RAK4600_SM32NODE\STM32F103_RAK4600_THESISNODE.DSN")
@@ -122,8 +122,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 104 1290 104 355")
-        (Scroll "252 0")
-        (Zoom "100")
+        (Scroll "409 0")
+        (Zoom "172")
         (Occurrence "/"))
       (Path
          "C:\GIT\THESISLORAWANNODE\HW\RAK4600_SM32NODE\STM32F103_RAK4600_THESISNODE.DSN")

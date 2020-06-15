@@ -7415,4 +7415,778 @@
 \i (07:00:41) zoom out 1 
 \i (07:00:41) setwindow pcb
 \i (07:00:41) zoom out 4374.43 14675.94
-\i (07:00
+\i (07:00:41) trapsize 839
+\i (07:00:41) zoom out 1 
+\i (07:00:41) setwindow pcb
+\i (07:00:41) zoom out 4371.07 14674.27
+\i (07:00:41) trapsize 1679
+\i (07:00:42) zoom in 1 
+\i (07:00:42) setwindow pcb
+\i (07:00:42) zoom in 3897.71 14667.55
+\i (07:00:42) trapsize 839
+\i (07:00:42) zoom in 1 
+\i (07:00:42) setwindow pcb
+\i (07:00:42) zoom in 3897.71 14667.55
+\i (07:00:42) trapsize 420
+\i (07:00:43) roam y 96 
+\i (07:00:43) roam y 96
+\i (07:00:43) zoom out 1 
+\i (07:00:43) setwindow pcb
+\i (07:00:43) zoom out 3897.71 14586.98
+\i (07:00:43) trapsize 839
+\i (07:00:43) zoom out 1 
+\i (07:00:43) setwindow pcb
+\i (07:00:43) zoom out 3902.75 14588.65
+\i (07:00:43) trapsize 1679
+\i (07:00:43) done 
+\i (07:00:43) generaledit 
+\i (07:00:43) roam y 96 
+\i (07:00:43) roam y 96
+\i (07:00:44) roam x -96 
+\i (07:00:44) roam x -96
+\i (07:00:44) roam y 96 
+\i (07:00:44) roam y 96
+\i (07:00:44) roam y 96 
+\i (07:00:44) roam y 96
+\i (07:00:44) roam y 96 
+\i (07:00:44) roam y 96
+\i (07:00:45) zoom in 1 
+\i (07:00:45) setwindow pcb
+\i (07:00:45) zoom in 3729.84 12837.88
+\i (07:00:45) trapsize 839
+\i (07:00:45) roam x 96 
+\i (07:00:45) roam x 96
+\i (07:00:45) zoom out 1 
+\i (07:00:45) setwindow pcb
+\i (07:00:45) zoom out 4033.66 12794.24
+\i (07:00:45) trapsize 1679
+\i (07:00:45) roam x 96 
+\i (07:00:45) roam x 96
+\i (07:00:46) roam x 96 
+\i (07:00:46) roam x 96
+\i (07:00:46) roam x 96 
+\i (07:00:46) roam x 96
+\i (07:00:46) zoom in 1 
+\i (07:00:46) setwindow pcb
+\i (07:00:46) zoom in 4955.21 13129.96
+\i (07:00:46) trapsize 839
+\i (07:00:46) roam y -96 
+\i (07:00:46) roam y -96
+\i (07:00:47) roam y -96 
+\i (07:00:47) roam y -96
+\i (07:00:47) roam y -96 
+\i (07:00:47) roam y -96
+\i (07:00:47) roam y -96 
+\i (07:00:47) roam y -96
+\i (07:00:48) roam y -96 
+\i (07:00:48) roam y -96
+\i (07:00:48) done 
+\i (07:00:48) generaledit 
+\i (07:00:48) roam x -96 
+\i (07:00:48) roam x -96
+\i (07:00:48) roam y -96 
+\i (07:00:48) roam y -96
+\i (07:00:49) roam y -96 
+\i (07:00:49) roam y -96
+\i (07:00:49) roam x -96 
+\i (07:00:49) roam x -96
+\i (07:00:49) roam x -96 
+\i (07:00:49) roam x -96
+\i (07:00:50) roam x -96 
+\i (07:00:50) roam x -96
+\i (07:00:50) roam x -96 
+\i (07:00:50) roam x -96
+\i (07:00:50) roam x -96 
+\i (07:00:50) roam x -96
+\i (07:00:50) roam x -96 
+\i (07:00:50) roam x -96
+\i (07:00:50) roam y 96 
+\i (07:00:50) roam y 96
+\i (07:00:50) roam y 96 
+\i (07:00:50) roam y 96
+\i (07:00:50) zoom out 1 
+\i (07:00:50) setwindow pcb
+\i (07:00:50) zoom out 3739.91 14224.40
+\i (07:00:50) trapsize 1679
+\i (07:00:50) done 
+\i (07:00:51) generaledit 
+\i (07:00:51) roam x -96 
+\i (07:00:51) roam x -96
+\i (07:00:51) roam y 96 
+\i (07:00:51) roam y 96
+\i (07:00:51) roam y 96 
+\i (07:00:51) roam y 96
+\i (07:00:52) done 
+\i (07:00:52) generaledit 
+\i (07:00:52) zoom out 1 
+\i (07:00:52) setwindow pcb
+\i (07:00:52) zoom out 3330.33 13223.96
+\t (07:00:52) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
+\i (07:00:52) trapsize 3357
+\i (07:00:53) zoom in 1 
+\i (07:00:53) setwindow pcb
+\i (07:00:53) zoom in 3330.34 13223.96
+\t (07:00:53) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
+\i (07:00:53) trapsize 1679
+\i (07:00:53) roam x 96 
+\i (07:00:53) roam x 96
+\i (07:00:53) done 
+\i (07:00:54) generaledit 
+\i (07:00:54) zoom out 1 
+\i (07:00:54) setwindow pcb
+\i (07:00:54) zoom out 3652.62 13223.96
+\t (07:00:54) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
+\i (07:00:54) trapsize 3357
+\i (07:00:55) save 
+\i (07:00:55) fillin yes 
+\i (07:00:55) generaledit 
+\i (07:03:06) save 
+\i (07:03:07) fillin yes 
+\i (07:03:08) generaledit 
+\i (07:04:41) xdehilite 
+\i (07:04:41) xNet Vcc5v 
+\i (07:04:41) xname_flush 
+\i (07:04:41) done 
+\i (07:04:41) generaledit 
+\i (07:04:41) xNet Vin 
+\i (07:04:41) xNet Gnd 
+\i (07:04:41) xNet Vcc5v 
+\i (07:04:41) xrefdes C5 
+\i (07:04:41) xrefdes D5 
+\i (07:04:41) xrefdes R4 
+\i (07:04:41) xrefdes C3 
+\i (07:04:41) xNet N8093259 
+\i (07:04:41) xrefdes R3 
+\i (07:04:41) xNet Vcc3.3V 
+\i (07:04:41) xrefdes C8 
+\i (07:04:41) xrefdes C6 
+\i (07:04:41) xrefdes C1 
+\i (07:04:41) xrefdes R1 
+\i (07:04:41) xrefdes D2 
+\i (07:04:41) xrefdes R2 
+\i (07:04:41) xrefdes R5 
+\i (07:04:41) xrefdes C4 
+\i (07:04:41) xNet N8122117 
+\i (07:04:41) xNet N8094931 
+\i (07:04:41) xrefdes U2 
+\i (07:04:41) xrefdes C2 
+\i (07:04:41) xNet N8093255 
+\i (07:04:41) xNet N8027159 
+\i (07:04:41) xNet N8093419 
+\i (07:04:41) xNet N8095077 
+\i (07:04:41) xNet N8093431 
+\i (07:04:41) xrefdes C7 
+\i (07:04:41) xrefdes D1 
+\i (07:04:41) xrefdes D4 
+\i (07:04:41) xrefdes L1 
+\i (07:04:41) xrefdes D3 
+\i (07:04:41) xrefdes R6 
+\i (07:04:41) xrefdes J1 
+\i (07:04:41) xrefdes J2 
+\i (07:04:41) xrefdes U1 
+\i (07:04:41) xname_flush 
+\i (07:04:44) xNet Vin 
+\i (07:04:44) xNet Gnd 
+\i (07:04:44) xNet Vcc5v 
+\i (07:04:44) xrefdes C5 
+\i (07:04:44) xrefdes D5 
+\i (07:04:44) xrefdes R4 
+\i (07:04:44) xrefdes C3 
+\i (07:04:44) xNet N8093259 
+\i (07:04:44) xrefdes R3 
+\i (07:04:44) xNet Vcc3.3V 
+\i (07:04:44) xrefdes C8 
+\i (07:04:44) xrefdes C6 
+\i (07:04:44) xrefdes C1 
+\i (07:04:44) xrefdes R1 
+\i (07:04:44) xrefdes D2 
+\i (07:04:44) xrefdes R2 
+\i (07:04:44) xrefdes R5 
+\i (07:04:44) xrefdes C4 
+\i (07:04:44) xNet N8122117 
+\i (07:04:44) xNet N8094931 
+\i (07:04:44) xrefdes U2 
+\i (07:04:44) xrefdes C2 
+\i (07:04:44) xNet N8093255 
+\i (07:04:44) xNet N8027159 
+\i (07:04:44) xNet N8093419 
+\i (07:04:44) xNet N8095077 
+\i (07:04:44) xNet N8093431 
+\i (07:04:44) xrefdes C7 
+\i (07:04:44) xrefdes D1 
+\i (07:04:44) xrefdes D4 
+\i (07:04:44) xrefdes L1 
+\i (07:04:44) xrefdes D3 
+\i (07:04:44) xrefdes R6 
+\i (07:04:44) xrefdes J1 
+\i (07:04:44) xrefdes J2 
+\i (07:04:44) xrefdes U1 
+\i (07:04:44) xname_flush 
+\i (07:04:48) xrefdes C5 
+\i (07:04:48) xrefdes D5 
+\i (07:04:48) xrefdes R4 
+\i (07:04:48) xrefdes C3 
+\i (07:04:48) xrefdes R3 
+\i (07:04:48) xrefdes C8 
+\i (07:04:48) xrefdes C6 
+\i (07:04:48) xrefdes C1 
+\i (07:04:48) xrefdes R1 
+\i (07:04:48) xrefdes D2 
+\i (07:04:48) xrefdes R2 
+\i (07:04:48) xrefdes R5 
+\i (07:04:48) xrefdes C4 
+\i (07:04:48) xrefdes U2 
+\i (07:04:48) xrefdes C2 
+\i (07:04:48) xrefdes C7 
+\i (07:04:48) xrefdes D1 
+\i (07:04:48) xrefdes D4 
+\i (07:04:48) xrefdes L1 
+\i (07:04:48) xrefdes D3 
+\i (07:04:48) xrefdes R6 
+\i (07:04:48) xrefdes J1 
+\i (07:04:48) xrefdes J2 
+\i (07:04:48) xrefdes U1 
+\i (07:04:48) xname_flush 
+\i (07:04:53) xname_flush 
+\i (07:05:06) pick grid 5807.94 13989.39
+\t (07:05:06) last pick:  5810.00 13990.00
+\i (07:05:06) zoom in 1 
+\i (07:05:06) setwindow pcb
+\i (07:05:06) zoom in 5102.93 13573.10
+\t (07:05:06) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
+\i (07:05:07) trapsize 1679
+\i (07:05:07) zoom out 1 
+\i (07:05:07) setwindow pcb
+\i (07:05:07) zoom out 5102.93 13569.74
+\t (07:05:07) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
+\i (07:05:07) trapsize 3357
+\i (07:07:08) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasMousePressEvent 555 350 555 394 1 1 0 +
+\i (07:07:08) QtSignal 4070.67 14451.9 202.986
+\i (07:07:09) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasMouseReleaseEvent 555 350 555 394 1 0 +
+\i (07:07:09) QtSignal 0 4070.67 14451.9 202.986
+\i (07:07:10) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasMousePressEvent 464 412 464 456 4 4 0 +
+\i (07:07:10) QtSignal 3927.82 13648 249.914
+\i (07:07:10) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasPanEvent 3927.82 13648 249.914 3917.2 +
+\i (07:07:10) QtSignal 13658.4 249.76
+\i (07:07:10) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasPanEvent 3927.83 13648 249.915 3906.47 +
+\i (07:07:10) QtSignal 13679.3 249.065
+\i (07:07:10) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasPanEvent 3927.86 13648 249.916 3922.55 +
+\i (07:07:10) QtSignal 13653.2 249.838
+\i (07:07:10) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasPanEvent 3927.87 13648 249.916 3900.35 +
+\i (07:07:10) QtSignal 13757.8 245.207
+\i (07:07:10) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasPanEvent 3927.91 13647.8 249.921 3927.78 +
+\i (07:07:10) QtSignal 13658.3 249.381
+\i (07:07:10) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasPanEvent 3927.91 13647.8 249.922 3917.04 +
+\i (07:07:10) QtSignal 13679.2 248.687
+\i (07:07:10) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasPanEvent 3927.92 13647.8 249.923 3927.8 +
+\i (07:07:10) QtSignal 13658.3 249.383
+\i (07:07:10) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasPanEvent 3927.92 13647.8 249.924 3933.11 +
+\i (07:07:10) QtSignal 13653.1 249.461
+\i (07:07:10) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasMouseReleaseEvent 478 385 478 429 4 0 +
+\i (07:07:10) QtSignal 0 3927.92 13647.8 249.925
+\i (07:07:22) QtSignal pcb3dViewer pcb3dViewerCanvas keyPressEvent 16777248 33554432 false 1
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasMousePressEvent 447 412 447 456 4 4 33554432 +
+\i (07:07:23) QtSignal 3904.66 13331.7 30.3133
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3904.66 13331.7 30.3133 3899.24 +
+\i (07:07:23) QtSignal 13337 30.2346
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3899.19 13336.9 28.9153 3888.38 +
+\i (07:07:23) QtSignal 13347.5 29.0216
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3888.25 13347.4 26.9119 3888.14 +
+\i (07:07:23) QtSignal 13358.1 26.7566
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3888.23 13358.2 28.0753 3865.26 +
+\i (07:07:23) QtSignal 13561.4 31.713
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3862.86 13539.5 143.581 3857.15 +
+\i (07:07:23) QtSignal 13562.8 156.471
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3859.11 13555.1 170.618 3853.3 +
+\i (07:07:23) QtSignal 13614.4 206.985
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3859.31 13582.9 252.215 3870.65 +
+\i (07:07:23) QtSignal 13641.3 299.081
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3878.36 13587.9 353.414 3873.49 +
+\i (07:07:23) QtSignal 13597.9 366.238
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3875.37 13586.1 375.723 3881.52 +
+\i (07:07:23) QtSignal 13603.1 396.213
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3885.07 13578.7 414.039 3885.9 +
+\i (07:07:23) QtSignal 13590.9 431.673
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3888.59 13570.6 444.828 3884.47 +
+\i (07:07:23) QtSignal 13584.2 468.125
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3887.89 13557.7 483.328 3893.38 +
+\i (07:07:23) QtSignal 13608.2 577.591
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3903.12 13465 633.895 3905.98 +
+\i (07:07:23) QtSignal 13475.4 675.351
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3911.82 13410.8 687.984 3921.57 +
+\i (07:07:23) QtSignal 13419.9 745.595
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3928.09 13320.4 753.403 3929.9 +
+\i (07:07:23) QtSignal 13320.6 774.74
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3932.55 13283.7 774.057 3934.43 +
+\i (07:07:23) QtSignal 13282.9 795.373
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3937 13245 792.798 3937.98 +
+\i (07:07:23) QtSignal 13244.1 803.419
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3939.33 13224.9 801.378 3940.32 +
+\i (07:07:23) QtSignal 13223.7 811.971
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3941.65 13204.4 809.425 3943.67 +
+\i (07:07:23) QtSignal 13201.5 830.542
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3946.02 13161.9 823.899 3951.86 +
+\i (07:07:23) QtSignal 13161.4 828.692
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3952.56 13150.1 826.418 3953.61 +
+\i (07:07:23) QtSignal 13148 836.863
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3954.58 13128 832.481 3951.92 +
+\i (07:07:23) QtSignal 13121.7 858.904
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3954 13071.9 845.793 3963.13 +
+\i (07:07:23) QtSignal 13061.9 881.124
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3965.28 12987.5 855.671 3964.97 +
+\i (07:07:23) QtSignal 12969.7 900.74
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3966.02 12875.7 857.987 3968.27 +
+\i (07:07:23) QtSignal 12865.7 876.829
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3969.37 12824.3 853.586 3968.03 +
+\i (07:07:23) QtSignal 12804.8 886.053
+\i (07:07:23) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3969.14 12733.4 839.576 3966.69 +
+\i (07:07:23) QtSignal 12717.5 861.571
+\i (07:07:24) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3968.16 12668.1 823.752 3961.02 +
+\i (07:07:24) QtSignal 12646.8 849.135
+\i (07:07:24) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3963.53 12589.6 798.655 3965.91 +
+\i (07:07:24) QtSignal 12575 814.113
+\i (07:07:24) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3968.19 12537.3 776.363 3965.91 +
+\i (07:07:24) QtSignal 12517.5 794.966
+\i (07:07:24) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3968.6 12472.6 744.746 3961.7 +
+\i (07:07:24) QtSignal 12446.9 765.659
+\i (07:07:24) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3965.72 12396.3 700.375 3958.96 +
+\i (07:07:24) QtSignal 12369 719.192
+\i (07:07:24) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3964.44 12322.1 648.08 3961.14 +
+\i (07:07:24) QtSignal 12307.8 656.384
+\i (07:07:24) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3964.78 12286.2 618.982 3961.54 +
+\i (07:07:24) QtSignal 12271.5 626.715
+\i (07:07:24) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3965.57 12251 587.953 3963.79 +
+\i (07:07:24) QtSignal 12226.6 599.987
+\i (07:07:24) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3970.63 12194.9 531.865 3958.46 +
+\i (07:07:24) QtSignal 12168 541.871
+\i (07:07:24) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3966.99 12140.5 470.866 3961.1 +
+\i (07:07:24) QtSignal 12108.7 481.047
+\i (07:07:24) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3973.04 12081 390.856 3970.26 +
+\i (07:07:24) QtSignal 12064.7 394.691
+\i (07:07:24) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3977.17 12053.5 348.315 3970.11 +
+\i (07:07:24) QtSignal 12030.9 352.173
+\i (07:07:24) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3980.17 12018.5 288.618 3977.63 +
+\i (07:07:24) QtSignal 12001.9 290.92
+\i (07:07:24) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3985.87 11994.8 242.317 3983.44 +
+\i (07:07:24) QtSignal 11978.1 243.975
+\i (07:07:24) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3992.08 11972.8 194.531 3985.53 +
+\i (07:07:24) QtSignal 11949.8 195.298
+\i (07:07:24) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3997.92 11945.7 127.847 3991.62 +
+\i (07:07:24) QtSignal 11922.6 127.316
+\i (07:07:24) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4005.27 11922.2 58.6394 4003.3 +
+\i (07:07:24) QtSignal 11905.4 57.8349
+\i (07:07:24) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4014.17 11907.5 6.02293 4008.32 +
+\i (07:07:24) QtSignal 11884.4 3.29278
+\i (07:07:24) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4023.73 11890.6 -67.0413 +
+\i (07:07:24) QtSignal 4019.79 11884.4 -68.7064
+\i (07:07:24) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4024.1 11886.6 -86.5564 4024.85 +
+\i (07:07:24) QtSignal 11859.6 -89.9742
+\i (07:07:24) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4045.22 11873.9 -178.069 +
+\i (07:07:24) QtSignal 4041.4 11867.8 -180.242
+\i (07:07:24) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4045.96 11871.5 -198.329 +
+\i (07:07:24) QtSignal 4044.68 11855.1 -202.201
+\i (07:07:24) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4058.04 11867.6 -255.3 4060.64 +
+\i (07:07:24) QtSignal 11857.4 -257.249
+\i (07:07:24) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4069.47 11866.8 -292.067 +
+\i (07:07:24) QtSignal 4065.78 11860.7 -294.739
+\i (07:07:25) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4070.57 11866.1 -312.934 +
+\i (07:07:25) QtSignal 4064.22 11870.1 -313.409
+\i (07:07:25) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4059.71 11865.3 -297.124 +
+\i (07:07:25) QtSignal 4063.37 11871.3 -294.329
+\i (07:07:25) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4058.33 11866.2 -276.28 4062.02 +
+\i (07:07:25) QtSignal 11872.3 -273.608
+\i (07:07:25) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4057.17 11867.4 -255.564 +
+\i (07:07:25) QtSignal 4060.9 11873.5 -253.016
+\i (07:07:25) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4056.25 11869 -234.982 4060.01 +
+\i (07:07:25) QtSignal 11875.1 -232.558
+\i (07:07:26) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4055.56 11870.9 -214.542 +
+\i (07:07:26) QtSignal 4049.24 11875.1 -215.14
+\i (07:07:26) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4045.11 11871.4 -198.591 +
+\i (07:07:26) QtSignal 4048.9 11877.5 -196.292
+\i (07:07:26) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4044.37 11873.8 -178.331 +
+\i (07:07:26) QtSignal 4038.08 11878 -179.054
+\i (07:07:26) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4033.88 11874.8 -162.57 4037.7 +
+\i (07:07:26) QtSignal 11880.9 -160.396
+\i (07:07:26) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasMouseReleaseEvent 562 259 562 303 4 0 +
+\i (07:07:26) QtSignal 33554432 4033.1 11877.7 -142.5
+\i (07:07:26) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasWheelEvent 482 495 482 539 0 0 120
+\i (07:07:26) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasWheelEvent 492 522 492 566 0 0 120
+\i (07:07:27) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasWheelEvent 557 591 557 635 0 0 120
+\i (07:07:28) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasWheelEvent 577 474 577 518 0 0 -120
+\i (07:07:29) QtSignal pcb3dViewer pcb3dViewerCanvas keyPressEvent 16777248 33554432 false 1
+\i (07:07:29) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasMousePressEvent 595 363 595 407 4 4 33554432 +
+\i (07:07:29) QtSignal 4374.74 12690.6 11.086
+\i (07:07:29) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4374.74 12690.6 11.086 4373.11 +
+\i (07:07:29) QtSignal 12697.7 11.8994
+\i (07:07:29) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4368.65 12694.8 29.0385 4369.7 +
+\i (07:07:29) QtSignal 12706.1 30.9845
+\i (07:07:29) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4364.44 12703.3 50.9286 4339.41 +
+\i (07:07:29) QtSignal 12853.7 60.867
+\i (07:07:29) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4232.71 12858.6 317.72 4236.12 +
+\i (07:07:29) QtSignal 12869 314.123
+\i (07:07:29) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4232.02 12874.9 326.868 4228.96 +
+\i (07:07:29) QtSignal 13046.9 240.369
+\i (07:07:29) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4128.51 13169.5 421.898 4142.94 +
+\i (07:07:29) QtSignal 13201.6 362.398
+\i (07:07:29) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4125.39 13267.6 390.841 4138.94 +
+\i (07:07:29) QtSignal 13276 362.059
+\i (07:07:29) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4135.22 13298.1 367.016 4137.58 +
+\i (07:07:29) QtSignal 13299.1 360.221
+\i (07:07:29) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4137.01 13305.2 360.952 4139.39 +
+\i (07:07:29) QtSignal 13306.1 354.138
+\i (07:07:29) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4138.88 13312 354.71 4155.46 +
+\i (07:07:29) QtSignal 13315.9 318.362
+\i (07:07:29) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4152.94 13337.6 320.361 4155.4 +
+\i (07:07:29) QtSignal 13337.3 313.53
+\i (07:07:29) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4155.3 13342.1 313.294 4174.76 +
+\i (07:07:29) QtSignal 13339.1 270.196
+\i (07:07:29) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4173.33 13357.3 270.091 4173.63 +
+\i (07:07:29) QtSignal 13354.8 258.881
+\i (07:07:29) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4174.22 13365.4 256.42 4181.61 +
+\i (07:07:29) QtSignal 13359.8 236.707
+\i (07:07:29) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4181.88 13368.2 234.754 4184.32 +
+\i (07:07:29) QtSignal 13365.8 228.341
+\i (07:07:29) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4184.52 13368.3 227.507 4182.32 +
+\i (07:07:29) QtSignal 13366.9 223.077
+\i (07:07:29) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4182.97 13373.5 220.599 4187.59 +
+\i (07:07:29) QtSignal 13372.4 218.675
+\i (07:07:30) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4187.15 13368.1 220.324 4187.92 +
+\i (07:07:30) QtSignal 13351.2 177.576
+\i (07:07:30) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4190.19 13380.1 165.768 4194.77 +
+\i (07:07:30) QtSignal 13378.5 164.053
+\i (07:07:30) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4194.21 13374.2 166.599 4196.62 +
+\i (07:07:30) QtSignal 13358.7 141.116
+\i (07:07:30) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4197.95 13370.6 134.315 4195.64 +
+\i (07:07:30) QtSignal 13368.1 130.464
+\i (07:07:30) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4196.36 13372.7 126.967 4193.96 +
+\i (07:07:30) QtSignal 13363.1 114.063
+\i (07:07:30) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4195.21 13371.9 107.109 4192.86 +
+\i (07:07:30) QtSignal 13369.1 103.48
+\i (07:07:30) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4193.45 13373.2 99.8959 4193.09 +
+\i (07:07:30) QtSignal 13358 82.7071
+\i (07:07:30) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4193.92 13365 76.6258 4191.53 +
+\i (07:07:30) QtSignal 13361.9 73.3014
+\i (07:07:30) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4192.03 13365.3 69.6694 4186.96 +
+\i (07:07:30) QtSignal 13350.6 55.3053
+\i (07:07:30) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4188.03 13359.3 45.6757 4185.6 +
+\i (07:07:30) QtSignal 13355.9 42.6854
+\i (07:07:30) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4185.93 13358.7 39.1129 4182.8 +
+\i (07:07:30) QtSignal 13337.2 21.9981
+\i (07:07:30) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4183.3 13342.9 15.0506 4180.84 +
+\i (07:07:30) QtSignal 13339.2 12.4935
+\i (07:07:30) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4181.06 13341.3 9.08379 4178.6 +
+\i (07:07:30) QtSignal 13337.5 6.60236
+\i (07:07:30) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4178.78 13339.6 3.23594 4176.32 +
+\i (07:07:30) QtSignal 13335.8 0.831024
+\i (07:07:30) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4176.46 13337.7 -2.49013 +
+\i (07:07:30) QtSignal 4154.27 13303 -23.4392
+\i (07:07:30) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4154.14 13315 -48.0624 4151.68 +
+\i (07:07:30) QtSignal 13310.8 -49.6658
+\i (07:07:30) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4151.54 13311.9 -52.4137 +
+\i (07:07:30) QtSignal 4141.71 13294.9 -58.4945
+\i (07:07:30) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4141.01 13298.4 -68.2773 +
+\i (07:07:30) QtSignal 4138.57 13294 -69.4602
+\i (07:07:30) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4138.35 13294.8 -71.8488 +
+\i (07:07:30) QtSignal 4128.65 13277.2 -76.239
+\i (07:07:30) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4127.71 13279.4 -84.5018 +
+\i (07:07:30) QtSignal 4125.33 13274.9 -85.255
+\i (07:07:30) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4125.06 13275.4 -87.2497 +
+\i (07:07:30) QtSignal 4117.94 13261.8 -89.2493
+\i (07:07:31) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4117.15 13262.9 -94.4739 +
+\i (07:07:31) QtSignal 4114.82 13258.3 -94.8792
+\i (07:07:31) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4114.54 13258.6 -96.5388 +
+\i (07:07:31) QtSignal 4112.22 13254 -96.8567
+\i (07:07:31) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4111.95 13254.2 -98.432 4109.64 +
+\i (07:07:31) QtSignal 13249.6 -98.6625
+\i (07:07:31) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 4109.37 13249.8 -100.15 4107.08 +
+\i (07:07:31) QtSignal 13245.2 -100.293
+\i (07:07:32) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasMouseReleaseEvent 447 466 447 510 4 0 +
+\i (07:07:32) QtSignal 33554432 4106.82 13245.4 -101.695
+\i (07:07:32) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasWheelEvent 447 466 447 510 0 0 -120
+\i (07:07:33) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasMousePressEvent 460 400 460 444 1 1 0 +
+\i (07:07:33) QtSignal 3859.47 13496.4 -27.0229
+\i (07:07:33) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasMouseReleaseEvent 460 400 460 444 1 0 +
+\i (07:07:33) QtSignal 0 3859.47 13496.4 -27.0229
+\i (07:07:38) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasWheelEvent 481 266 481 310 0 0 120
+\i (07:07:38) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasWheelEvent 485 282 485 326 0 0 120
+\i (07:07:39) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasWheelEvent 503 332 503 376 0 0 120
+\i (07:07:41) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasWheelEvent 504 329 504 373 0 0 -120
+\i (07:07:45) QtSignal pcb3dViewer pcb3dViewer closed
+\i (07:07:49) zoom in 1 
+\i (07:07:49) setwindow pcb
+\i (07:07:49) zoom in 4277.07 13536.18
+\t (07:07:49) Grids are drawn 20.00, 20.00 apart for enhanced viewing.
+\i (07:07:49) trapsize 1679
+\i (07:07:50) zoom out 1 
+\i (07:07:50) setwindow pcb
+\i (07:07:50) zoom out 4273.71 13536.18
+\t (07:07:50) Grids are drawn 40.00, 40.00 apart for enhanced viewing.
+\i (07:07:50) trapsize 3357
+\i (07:07:54) define grid 
+\t (07:07:54) Spacing fields allow simple equations to aid calculations; prefix with =
+\i (07:07:56) setwindow form.grid
+\i (07:07:56) FORM grid display NO 
+\i (07:07:57) FORM grid done  
+\i (07:07:58) setwindow pcb
+\i (07:07:58) zoom in 1 
+\i (07:07:58) setwindow pcb
+\i (07:07:58) zoom in 5267.44 12468.59
+\i (07:07:58) trapsize 1679
+\i (07:07:58) zoom out 1 
+\i (07:07:58) setwindow pcb
+\i (07:07:58) zoom out 5267.45 12468.60
+\i (07:07:58) trapsize 3357
+\i (07:07:59) zoom in 1 
+\i (07:07:59) setwindow pcb
+\i (07:07:59) zoom in 4549.01 14046.47
+\i (07:07:59) trapsize 1679
+\t (07:12:54) Performing autosave...
+\t (07:12:54) Autosave successful
+\i (07:12:58) zoom out 1 
+\i (07:12:58) setwindow pcb
+\i (07:12:58) zoom out 4958.59 14382.19
+\i (07:12:58) trapsize 3357
+\i (07:12:59) zoom in 1 
+\i (07:12:59) setwindow pcb
+\i (07:12:59) zoom in 4408.00 14053.19
+\i (07:12:59) trapsize 1679
+\i (07:13:03) zoom out 1 
+\i (07:13:03) setwindow pcb
+\i (07:13:03) zoom out 4411.36 13962.55
+\i (07:13:03) trapsize 3357
+\i (07:13:04) zoom in 1 
+\i (07:13:04) setwindow pcb
+\i (07:13:04) zoom in 4565.80 14251.26
+\i (07:13:04) trapsize 1679
+\i (07:13:05) zoom out 1 
+\i (07:13:05) setwindow pcb
+\i (07:13:05) zoom out 4565.80 14251.27
+\i (07:13:05) trapsize 3357
+\i (07:13:06) zoom in 1 
+\i (07:13:06) setwindow pcb
+\i (07:13:06) zoom in 4565.80 14251.26
+\i (07:13:06) trapsize 1679
+\i (07:13:38) zoom in 1 
+\i (07:13:38) setwindow pcb
+\i (07:13:38) zoom in 4199.86 14691.06
+\i (07:13:38) trapsize 839
+\i (07:13:39) zoom in 1 
+\i (07:13:39) setwindow pcb
+\i (07:13:39) zoom in 4261.98 14722.96
+\i (07:13:39) trapsize 420
+\i (07:13:39) pick grid 4278.77 14618.05
+\t (07:13:39) last pick:  4280.00 14620.00
+\i (07:13:39) roam x 96 
+\i (07:13:39) roam x 96
+\i (07:13:40) roam x 96 
+\i (07:13:40) roam x 96
+\i (07:13:40) add connect 
+\t (07:13:41) Pick first element.
+\i (07:13:41) pick grid 4386.16 14691.91
+\t (07:13:41) last pick:  4390.00 14690.00
+\t (07:13:41) last pick:  4376.06 14720.00
+\t (07:13:41) Target Symbol Pin is defined from TOP to BOTTOM.
+\t (07:13:41) last pick:  4376.06 14720.00
+\i (07:13:42) oops 
+\t (07:13:42) last pick:  4376.06 14720.00
+\t (07:13:42) Pick first element.
+\i (07:13:42) roam y -96 
+\i (07:13:42) roam y -96
+\i (07:13:42) zoom out 1 
+\i (07:13:42) setwindow pcb
+\i (07:13:42) zoom out 4364.34 14681.82
+\i (07:13:42) trapsize 839
+\i (07:13:43) roam y 96 
+\i (07:13:43) roam y 96
+\i (07:13:44) roam y 96 
+\i (07:13:44) roam y 96
+\i (07:13:44) zoom out 1 
+\i (07:13:44) setwindow pcb
+\i (07:13:44) zoom out 4431.49 14274.76
+\i (07:13:44) trapsize 1679
+\i (07:13:45) roam y 96 
+\i (07:13:45) roam y 96
+\i (07:13:45) done 
+\i (07:13:45) generaledit 
+\i (07:13:45) roam x -96 
+\i (07:13:45) roam x -96
+\e (07:13:45) Command not found: sd
+\i (07:13:46) roam y 96 
+\i (07:13:46) roam y 96
+\i (07:13:46) roam x -96 
+\i (07:13:46) roam x -96
+\i (07:13:46) roam x -96 
+\i (07:13:46) roam x -96
+\i (07:13:47) zoom in 1 
+\i (07:13:47) setwindow pcb
+\i (07:13:47) zoom in 2836.82 12894.96
+\i (07:13:47) trapsize 839
+\i (07:13:47) add connect 
+\t (07:13:48) Pick first element.
+\i (07:13:48) roam x 96 
+\i (07:13:48) roam x 96
+\i (07:13:48) roam y 96 
+\i (07:13:48) roam y 96
+\i (07:13:49) pick grid 2924.11 12601.20
+\t (07:13:49) last pick:  2920.00 12600.00
+\t (07:13:49) last pick:  2880.00 12604.00
+\t (07:13:49) Target Symbol Pin is defined from TOP to BOTTOM.
+\t (07:13:49) last pick:  2880.00 12604.00
+\i (07:13:49) mouse_pos 3058.40 12636.45
+\i (07:13:49) mouse_pos 3009.72 12651.56
+\i (07:13:51) oops 
+\t (07:13:51) last pick:  2880.00 12604.00
+\t (07:13:51) Pick first element.
+\i (07:13:52) shape add 
+\i (07:13:55) pick grid 2719.32 12713.67
+\t (07:13:55) last pick:  2720.00 12710.00
+\i (07:13:56) pick grid 2979.50 12765.70
+\t (07:13:56) last pick:  2980.00 12770.00
+\i (07:13:57) pick grid 3003.00 12886.56
+\t (07:13:57) last pick:  3000.00 12890.00
+\i (07:13:58) pick grid 2914.04 12957.06
+\t (07:13:58) last pick:  2910.00 12960.00
+\i (07:13:58) roam y -96 
+\i (07:13:58) roam y -96
+\i (07:13:59) oops 
+\t (07:13:59) last pick:  3000.00 12890.00
+\i (07:14:02) pick grid 2964.40 12945.31
+\t (07:14:02) last pick:  2960.00 12950.00
+\i (07:14:03) pick grid 2942.57 13066.17
+\t (07:14:03) last pick:  2940.00 13070.00
+\i (07:14:03) roam y -96 
+\i (07:14:03) roam y -96
+\i (07:14:04) pick grid 2950.97 13296.14
+\t (07:14:04) last pick:  2950.00 13300.00
+\i (07:14:05) pick grid 3006.36 13331.39
+\t (07:14:05) last pick:  3010.00 13330.00
+\i (07:14:06) pick grid 3065.11 13316.28
+\t (07:14:06) last pick:  3070.00 13320.00
+\i (07:14:06) roam y 96 
+\i (07:14:06) roam y 96
+\i (07:14:10) pick grid 3061.75 13175.27
+\t (07:14:10) last pick:  3060.00 13180.00
+\i (07:14:11) oops 
+\t (07:14:11) last pick:  3070.00 13320.00
+\i (07:14:11) pick grid 3088.61 12983.91
+\t (07:14:11) last pick:  3090.00 12980.00
+\i (07:14:13) pick grid 3085.25 12643.16
+\t (07:14:13) last pick:  3090.00 12640.00
+\i (07:14:13) roam y 96 
+\i (07:14:13) roam y 96
+\i (07:14:14) pick grid 3053.36 12537.41
+\t (07:14:14) last pick:  3050.00 12540.00
+\i (07:14:15) pick grid 2784.79 12547.49
+\t (07:14:15) last pick:  2780.00 12550.00
+\i (07:14:18) oops 
+\t (07:14:18) last pick:  3050.00 12540.00
+\i (07:14:18) pick grid 2764.64 12542.45
+\t (07:14:18) last pick:  2760.00 12540.00
+\i (07:14:19) pick grid 2724.36 12611.27
+\t (07:14:19) last pick:  2720.00 12610.00
+\i (07:14:20) pick grid 2717.64 12705.27
+\t (07:14:20) last pick:  2720.00 12710.00
+\i (07:14:24) done 
+\i (07:14:24) generaledit 
+\i (07:14:25) shape select 
+\i (07:14:26) pick grid 3073.50 13111.49
+\t (07:14:26) last pick:  3070.00 13110.00
+\i (07:14:26) prepopup 3029.86 13136.67
+\i (07:14:28) pop net list 
+\i (07:14:29) pick grid 3068.47 12720.38
+\t (07:14:29) last radius: 3070.00 ; last angle: 192.000 Degrees
+\t (07:14:29) Assigning selected shape to net: GND
+\i (07:14:29) done 
+\i (07:14:29) generaledit 
+\i (07:14:29) roam y -96 
+\i (07:14:29) roam y -96
+\i (07:14:31) done 
+\i (07:14:31) generaledit 
+\i (07:14:32) roam y -96 
+\i (07:14:32) roam y -96
+\i (07:14:32) roam x -96 
+\i (07:14:32) roam x -96
+\i (07:14:33) done 
+\i (07:14:33) generaledit 
+\i (07:14:33) zoom in 1 
+\i (07:14:33) setwindow pcb
+\i (07:14:33) zoom in 2611.89 13002.38
+\i (07:14:33) trapsize 420
+\i (07:14:34) roam y -96 
+\i (07:14:34) roam y -96
+\i (07:14:34) zoom out 1 
+\i (07:14:34) setwindow pcb
+\i (07:14:34) zoom out 2677.35 13147.58
+\i (07:14:34) trapsize 839
+\i (07:14:35) roam y 96 
+\i (07:14:35) roam y 96
+\i (07:14:35) roam y -96 
+\i (07:14:35) roam y -96
+\i (07:14:37) roam y -96 
+\i (07:14:37) roam y -96
+\i (07:14:37) roam y -96 
+\i (07:14:37) roam y -96
+\i (07:14:37) zoom out 1 
+\i (07:14:37) setwindow pcb
+\i (07:14:37) zoom out 2799.89 13796.36
+\i (07:14:37) trapsize 1679
+\i (07:14:38) roam y 96 
+\i (07:14:38) roam y 96
+\i (07:14:38) zoom in 1 
+\i (07:14:38) setwindow pcb
+\i (07:14:38) zoom in 2752.90 13270.96
+\i (07:14:38) trapsize 839
+\i (07:14:38) add connect 
+\t (07:14:39) Pick first element.
+\i (07:14:39) roam y -96 
+\i (07:14:39) roam y -96
+\i (07:14:39) zoom in 1 
+\i (07:14:39) setwindow pcb
+\i (07:14:39) zoom in 2616.94 13464.00
+\i (07:14:39) trapsize 420
+\i (07:14:40) roam y -96 
+\i (07:14:40) roam y -96
+\i (07:14:41) pick grid 2644.64 13554.64
+\t (07:14:41) last pick:  2640.00 13550.00
+\t (07:14:41) last pick:  2650.00 13560.00
+\t (07:14:41) Target Symbol Pin is defined on TOP.
+\t (07:14:41) last pick:  2650.00 13560.00
+\i (07:14:41) mouse_pos 2614.42 13508.48
+\i (07:14:42) pick grid 2613.58 13503.44
+\t (07:14:42) last pick:  2610.00 13500.00
+\t (07:14:42) No DRC errors detected.
+\t (07:14:42) Pick first element.
+\i (07:14:43) roam y -96 
+\i (07:14:43) roam y -96
+\i (07:14:43) zoom out 1 
+\i (07:14:43) setwindow pcb
+\i (07:14:43) zoom out 2801.58 13712.43
+\i (07:14:43) trapsize 839
+\i (07:14:43) roam y -96 
+\i (07:14:43) roam y -96
+\i (07:14:43) done 
+\i (07:14:44) generaledit 
+\i (07:14:44) zoom in 1 
+\i (07:14:44) setwindow pcb
+\i (07:14:44) zoom in 2825.09 13717.46
+\i (07:14:44) trapsize 420
+\i (07:14:45) shape add 
+\i (07:14:46) shape add rect 
+\i (07:14:47) pick grid 2691.65 13844.20
+\t (07:14:47) last pick:  2690.00 13840.00
+\i (07:14:48) oops 
+\i (07:14:49) shape add 
+\i (07:14:50) zoom out 1 
+\i (07:14:50) setwindow pcb
+\i (07:14:50) zoom out 2762.15 13730.06
+\i (07:14:50) trapsize 839
+\i (07:14:50) zoom out 1 
+\i (07:14:50) setwindow pcb
+\i (07:14:50) zoom out 2762.14 13726.70
+\i (07:14:50) trapsize 1679
+\i (07:14:51) done 
+\i (07:14:51) generaledit 
+\i (07:14:52) exit 
+\e (07:14:52) Do you want to save the changes you made to C:/GIT/THESISLORAWANNODE/HW/RAK811_STM32NODE/allegro/STM32F103_RAK811_THESISNODE.brd?
+\i (07:14:53) fillin yes 
+\t (07:14:54)     Journal end - Mon Jun 15 08:19:06 2020
