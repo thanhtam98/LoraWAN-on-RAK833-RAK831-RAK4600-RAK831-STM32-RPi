@@ -1,4 +1,4 @@
-{ Using PSTWRITER 17.2.0 d001Jun-14-2020 at 23:11:11 }
+{ Using PSTWRITER 17.2.0 d001Jun-16-2020 at 09:15:15 }
 
 #1 WARNING(ORCAP-36038): "No_connect" property on Pin "U3.11" ignored for U3: SCHEMATIC1, 2.MCU (7.80, 0.80). Connecting pin to net "RS485_RDE_MASTER".
 #2 WARNING(ORCAP-36038): "No_connect" property on Pin "B1.2" ignored for B1: SCHEMATIC1, 2.MCU (5.90, 6.40). Connecting pin to net "GND".

@@ -1,0 +1,26 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Shape Island Report                                              )
+(                                                                     )
+(    Drawing          : STM32F103_RAK4600_THESISNODE.brd              )
+(    Software Version : 17.2S052                                      )
+(    Date/Time        : Tue Jun 16 12:26:33 2020                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+  Total islands on design: 7
+
+
+  <<<  ETCH  >>>
+
+    Layer = TOP
+	Point on shape: (4260.00 13996.04)  Net: GND
+
+    Layer = BOTTOM
+	Point on shape: (4209.95 12995.98)  Net: GND
+	Point on shape: (4803.41 14565.98)  Net: GND
+	Point on shape: (4816.87 14465.98)  Net: GND
+	Point on shape: (4995.84 13847.90)  Net: GND
+	Point on shape: (5073.84 13815.89)  Net: GND
+	Point on shape: (4603.09 13605.98)  Net: GND

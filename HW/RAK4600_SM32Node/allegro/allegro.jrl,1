@@ -1,21 +1,990 @@
-\t (02:45:58) allegro 17.2 S052 Windows SPB 64-bit Edition
-\t (02:45:58)     Journal start - Mon Jun 15 12:51:00 2020
-\t (02:45:58)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=17068 CPUs=4
-\t (02:45:58) CmdLine= C:\Cadence\SPB_17.2\tools\bin\allegro.exe
-\t (02:45:58) 
-\d (02:45:58) Design opened: C:/GIT/THESISLORAWANNODE/HW/RAK4600_SM32NODE/allegro/STM32F103_RAK4600_THESISNODE.brd
-\i (02:45:59) generaledit 
-\i (02:46:00) zoom in 1 
-\i (02:46:00) setwindow pcb
-\i (02:46:00) zoom in 4572.05 14409.46
-\i (02:46:00) trapsize 1624
-\i (02:46:04) zoom out 1 
-\i (02:46:04) setwindow pcb
-\i (02:46:04) zoom out 4546.08 14367.25
-\i (02:46:04) trapsize 3247
-\i (02:46:05) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "Start Page"
-\i (02:46:09) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged STM32F103_RAK4600_THESISNODE
-\i (02:46:09) opencd C:/GIT/THESISLORAWANNODE/HW/RAK811_STM32NODE/allegro/STM32F103_RAK811_THESISNODE.brd 
-\t (02:46:09) Opening existing design...
-\i (02:46:10) trapsize 3027
-\t (02:46:10)     Journal end - Mon Jun 15 12:51:11 2020
+\t (00:00:01) allegro 17.2 S052 Windows SPB 64-bit Edition
+\t (00:00:01)     Journal start - Tue Jun 16 12:16:48 2020
+\t (00:00:01)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=7056 CPUs=4
+\t (00:00:01) CmdLine= C:\Cadence\SPB_17.2\tools\bin\allegro.exe -mpssession NguyenThanhTam C:\GIT\THESISLORAWANNODE\HW\RAK4600_SM32NODE\allegro\STM32F103_RAK4600_THESISNODE.brd
+\t (00:00:01) 
+   (00:00:02) Loading axlcore.cxt 
+   (00:00:03) Searching for nsWare programs v2.78
+   (00:00:03) 	NsWare directory found: E:/CAD/pcbenv/nsWare/
+   (00:00:03) 	NsWare programs must reside in this directory!
+   (00:00:03) function AFn_OpenDesign redefined
+   (00:00:03) function PinVia_Overlap_FinishEnterFun redefined
+   (00:00:03) function Find_Point_On_Line_From_Distant redefined
+   (00:00:03) function Find_Point_Quadrature_Line redefined
+   (00:00:03) function Line_Line_Intersect redefined
+   (00:00:03) function _getPinsNet redefined
+   (00:00:03) function _getBranchs redefined
+   (00:00:03) function _getPaths redefined
+   (00:00:03) function _get2PointsPath redefined
+   (00:00:03) function _checkElementList redefined
+   (00:00:03) function _getSurroundPoints redefined
+   (00:00:03) function _getListPointsLPaths redefined
+   (00:00:03) function _checkPathPoint redefined
+   (00:00:03) function _deleteElementList redefined
+   (00:00:03) function _checkElementList redefined
+   (00:00:03) function _deleteElementList redefined
+   (00:00:03) function Find_Point_On_Line_From_Distant redefined
+   (00:00:03) function Find_Point_Quadrature_Line redefined
+   (00:00:03) function Is_Point_On_List redefined
+   (00:00:03) function Line_Line_Intersect redefined
+   (00:00:03) function Line_Line_Distant redefined
+\t (00:00:05) Opening existing design...
+\i (00:00:05) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged STM32F103_RAK4600_THESISNODE
+\d (00:00:05) Design opened: C:/GIT/THESISLORAWANNODE/HW/RAK4600_SM32NODE/allegro/STM32F103_RAK4600_THESISNODE.brd
+\i (00:00:06) trapsize 1143
+\i (00:00:06) trapsize 1206
+\i (00:00:07) trapsize 973
+\i (00:00:07) trapsize 973
+\i (00:00:08) generaledit 
+\i (00:00:14) status 
+\i (00:00:14) generaledit 
+\i (00:00:17) setwindow form.status
+\i (00:00:17) FORM status fromto_color 1 
+\i (00:00:17) setwindow pcb
+\i (00:00:17) reports ucn 
+\i (00:00:17) generaledit 
+\i (00:00:20) zoom center 
+\t (00:00:20) Pick center for the new display.
+\i (00:00:20) pick 4775.00 13560.00 
+\t (00:00:20) last pick:  4775.00 13560.00
+\i (00:00:20) trapsize 973
+\i (00:00:21) zoom center 
+\t (00:00:21) Pick center for the new display.
+\i (00:00:21) pick 4160.63 14220.83 
+\t (00:00:21) last pick:  4160.63 14220.83
+\i (00:00:21) trapsize 973
+\i (00:00:25) zoom out 1 
+\i (00:00:25) setwindow pcb
+\i (00:00:25) zoom out 4479.86 14128.37
+\i (00:00:25) trapsize 1947
+\i (00:00:25) zoom out 1 
+\i (00:00:25) setwindow pcb
+\i (00:00:25) zoom out 4475.97 14093.34
+\i (00:00:25) trapsize 3893
+\i (00:00:26) zoom in 1 
+\i (00:00:26) setwindow pcb
+\i (00:00:26) zoom in 4172.31 13558.55
+\i (00:00:26) trapsize 1947
+\i (00:00:29) zoom center 
+\t (00:00:29) Pick center for the new display.
+\i (00:00:29) pick 2827.48 13500.00 
+\t (00:00:29) last pick:  2827.48 13500.00
+\i (00:00:29) trapsize 1947
+\i (00:00:31) zoom center 
+\t (00:00:31) Pick center for the new display.
+\i (00:00:31) pick 2838.11 13280.00 
+\t (00:00:31) last pick:  2838.11 13280.00
+\i (00:00:31) trapsize 1947
+\i (00:00:32) zoom center 
+\t (00:00:32) Pick center for the new display.
+\i (00:00:32) pick 2827.48 13500.00 
+\t (00:00:32) last pick:  2827.48 13500.00
+\i (00:00:32) trapsize 1947
+\i (00:00:37) zoom in 1 
+\i (00:00:37) setwindow pcb
+\i (00:00:37) zoom in 2130.63 13338.44
+\i (00:00:37) trapsize 973
+\i (00:00:39) zoom in 1 
+\i (00:00:39) setwindow pcb
+\i (00:00:39) zoom in 2827.49 13328.71
+\i (00:00:39) trapsize 487
+\i (00:00:47) pick grid 2401.20 13456.21
+\t (00:00:47) last pick:  2400.00 13460.00
+\i (00:00:49) pick grid 2792.45 13367.65
+\t (00:00:49) last pick:  2790.00 13370.00
+\i (00:00:51) shape select 
+\i (00:00:52) pick grid 2734.06 13380.30
+\t (00:00:52) last pick:  2730.00 13380.00
+\i (00:00:53) pick grid 2384.66 13440.64
+\t (00:00:53) last pick:  2380.00 13440.00
+\w (00:00:53) WARNING(SPMHGE-604): No editable vertex was found.
+\i (00:00:54) pick grid 2414.83 13421.18
+\t (00:00:54) last pick:  2410.00 13420.00
+\w (00:00:54) WARNING(SPMHGE-604): No editable vertex was found.
+\i (00:00:55) shape select 
+\i (00:00:56) pick grid 2809.00 13351.10
+\t (00:00:56) last pick:  2810.00 13350.00
+\i (00:00:56) prepopup 2775.91 13345.26
+\i (00:00:57) reject 
+\i (00:01:00) prepopup 2752.55 13354.02
+\i (00:01:03) pop net list 
+\i (00:01:03) pick grid 2826.52 13434.80
+\t (00:01:03) last radius: 2830.00 ; last angle: 263.000 Degrees
+\t (00:01:03) Assigning selected shape to net: GND
+\i (00:01:04) pick grid 2820.68 13436.75
+\t (00:01:04) last pick:  2820.00 13440.00
+\w (00:01:04) WARNING(SPMHGE-604): No editable vertex was found.
+\i (00:01:09) zoom in 1 
+\i (00:01:09) setwindow pcb
+\i (00:01:09) zoom in 2742.82 13393.92
+\i (00:01:09) trapsize 243
+\i (00:01:09) zoom in 1 
+\i (00:01:09) setwindow pcb
+\i (00:01:09) zoom in 2742.82 13391.49
+\i (00:01:09) trapsize 122
+\i (00:01:10) prepopup 2738.93 13379.57
+\i (00:01:11) pop net list 
+\i (00:01:13) pick grid 2737.22 13426.05
+\t (00:01:13) last radius: 2740.00 ; last angle: 263.000 Degrees
+\t (00:01:13) Assigning selected shape to net: N8128146
+\i (00:01:13) zoom out 1 
+\i (00:01:13) setwindow pcb
+\i (00:01:13) zoom out 2741.85 13405.85
+\i (00:01:13) trapsize 243
+\i (00:01:14) zoom out 1 
+\i (00:01:14) setwindow pcb
+\i (00:01:14) zoom out 2741.84 13404.39
+\i (00:01:14) trapsize 487
+\i (00:01:14) zoom out 1 
+\i (00:01:14) setwindow pcb
+\i (00:01:14) zoom out 2741.85 13404.40
+\i (00:01:14) trapsize 973
+\i (00:01:14) zoom in 1 
+\i (00:01:14) setwindow pcb
+\i (00:01:14) zoom in 2743.80 13404.40
+\i (00:01:14) trapsize 487
+\i (00:01:17) done 
+\i (00:01:17) generaledit 
+\i (00:01:17) roam y -96 
+\i (00:01:17) roam y -96
+\i (00:01:18) zoom center 
+\t (00:01:18) Pick center for the new display.
+\i (00:01:18) pick 2740.00 13430.00 
+\t (00:01:18) last pick:  2740.00 13430.00
+\i (00:01:18) trapsize 487
+\i (00:01:20) zoom center 
+\t (00:01:20) Pick center for the new display.
+\i (00:01:20) pick 2657.40 13386.85 
+\t (00:01:20) last pick:  2657.40 13386.85
+\i (00:01:20) trapsize 487
+\i (00:01:21) zoom center 
+\t (00:01:21) Pick center for the new display.
+\i (00:01:21) pick 2740.00 13430.00 
+\t (00:01:21) last pick:  2740.00 13430.00
+\i (00:01:21) trapsize 487
+\i (00:01:22) zoom center 
+\t (00:01:22) Pick center for the new display.
+\i (00:01:22) pick 4160.63 14220.83 
+\t (00:01:22) last pick:  4160.63 14220.83
+\i (00:01:22) trapsize 487
+\i (00:01:22) zoom center 
+\t (00:01:22) Pick center for the new display.
+\i (00:01:22) pick 4160.63 14220.83 
+\t (00:01:22) last pick:  4160.63 14220.83
+\i (00:01:23) trapsize 487
+\i (00:01:23) zoom center 
+\t (00:01:23) Pick center for the new display.
+\i (00:01:23) pick 5019.83 13481.89 
+\t (00:01:23) last pick:  5019.83 13481.89
+\i (00:01:23) trapsize 487
+\i (00:01:24) zoom in 1 
+\i (00:01:24) setwindow pcb
+\i (00:01:24) zoom in 4985.77 13514.50
+\i (00:01:24) trapsize 243
+\i (00:01:25) zoom in 1 
+\i (00:01:25) setwindow pcb
+\i (00:01:25) zoom in 5014.97 13476.06
+\i (00:01:25) trapsize 122
+\i (00:01:26) zoom out 1 
+\i (00:01:26) setwindow pcb
+\i (00:01:26) zoom out 4998.67 13473.63
+\i (00:01:26) trapsize 243
+\i (00:01:27) pick grid 5058.52 13456.11
+\t (00:01:27) last pick:  5060.00 13460.00
+\i (00:01:27) zoom out 1 
+\i (00:01:27) setwindow pcb
+\i (00:01:27) zoom out 5058.52 13456.11
+\i (00:01:27) trapsize 487
+\i (00:01:28) zoom in 1 
+\i (00:01:28) setwindow pcb
+\i (00:01:28) zoom in 4859.97 13500.89
+\i (00:01:28) trapsize 243
+\i (00:01:29) zoom out 1 
+\i (00:01:29) setwindow pcb
+\i (00:01:29) zoom out 4860.95 13500.89
+\i (00:01:29) trapsize 487
+\i (00:01:31) zoom out 1 
+\i (00:01:31) setwindow pcb
+\i (00:01:31) zoom out 4829.81 13751.02
+\i (00:01:31) trapsize 973
+\i (00:01:33) roam y -96 
+\i (00:01:33) roam y -96
+\i (00:01:34) roam y -96 
+\i (00:01:34) roam y -96
+\i (00:01:37) zoom in 1 
+\i (00:01:37) setwindow pcb
+\i (00:01:37) zoom in 4794.76 13409.59
+\i (00:01:37) trapsize 487
+\i (00:01:38) zoom in 1 
+\i (00:01:38) setwindow pcb
+\i (00:01:38) zoom in 4841.48 13387.20
+\i (00:01:38) trapsize 243
+\i (00:01:38) roam y 96 
+\i (00:01:38) roam y 96
+\i (00:01:38) roam y 96 
+\i (00:01:39) roam y 96
+\i (00:01:39) zoom out 1 
+\i (00:01:39) setwindow pcb
+\i (00:01:39) zoom out 4848.78 13319.39
+\i (00:01:39) trapsize 487
+\i (00:01:42) zoom out 1 
+\i (00:01:43) setwindow pcb
+\i (00:01:43) zoom out 4919.84 13616.23
+\i (00:01:43) trapsize 973
+\i (00:01:45) roam x -96 
+\i (00:01:45) roam x -96
+\i (00:01:45) zoom in 1 
+\i (00:01:45) setwindow pcb
+\i (00:01:45) zoom in 4728.10 13602.61
+\i (00:01:45) trapsize 487
+\i (00:01:50) add connect 
+\t (00:01:51) Pick first element.
+\i (00:01:53) setwindow form.mini
+\i (00:01:53) FORM mini active_subclass TOP 
+\t (00:01:54) Pick first element.
+\i (00:01:55) FORM mini alt_subclass BOTTOM 
+\t (00:01:55) Pick first element.
+\i (00:01:55) FORM mini alt_subclass TOP 
+\t (00:01:55) Pick first element.
+\i (00:01:56) FORM mini alt_subclass BOTTOM 
+\t (00:01:56) Pick first element.
+\i (00:01:57) setwindow pcb
+\i (00:01:57) pick grid 4648.30 13622.07
+\t (00:01:57) last pick:  4650.00 13620.00
+\t (00:01:57) last pick:  4675.00 13620.00
+\t (00:01:57) Target Vertical Line Segment is defined on BOTTOM.
+\t (00:01:57) last pick:  4675.00 13620.00
+\i (00:01:58) zoom out 1 
+\i (00:01:58) setwindow pcb
+\i (00:01:58) zoom out 4688.20 13588.98
+\i (00:01:58) trapsize 973
+\i (00:01:58) roam y -96 
+\i (00:01:58) roam y -96
+\i (00:02:02) zoom in 1 
+\i (00:02:02) setwindow pcb
+\i (00:02:02) zoom in 4641.48 13551.69
+\i (00:02:02) trapsize 487
+\i (00:02:03) zoom in 1 
+\i (00:02:03) setwindow pcb
+\i (00:02:03) zoom in 4641.48 13551.69
+\i (00:02:03) trapsize 243
+\i (00:02:05) pick grid 4639.54 13535.14
+\t (00:02:05) last pick:  4640.00 13540.00
+\t (00:02:05) No DRC errors detected.
+\i (00:02:07) pick grid 4615.69 13499.13
+\t (00:02:07) last pick:  4620.00 13500.00
+\t (00:02:07) No DRC errors detected.
+\i (00:02:07) pick grid dbl 4618.13 13501.56
+\t (00:02:07) last pick:  4620.00 13500.00
+\t (00:02:07) VIA044D024 used for drill.
+\t (00:02:07) No DRC errors detected.
+\t (00:02:07) Pick first element.
+\i (00:02:08) done 
+\i (00:02:08) generaledit 
+\i (00:02:09) roam x -96 
+\i (00:02:09) roam x -96
+\i (00:02:09) roam x -96 
+\i (00:02:09) roam x -96
+\i (00:02:10) pick grid 4579.13 13499.62
+\t (00:02:10) last pick:  4580.00 13500.00
+\i (00:02:10) slide 
+\t (00:02:11) Waiting for the destination pick.
+\i (00:02:11) pick grid 4546.52 13493.78
+\t (00:02:11) last pick:  4550.00 13490.00
+\t (00:02:12) No DRC errors detected.
+\i (00:02:12) generaledit 
+\i (00:02:12) pick grid 4564.53 13501.56
+\t (00:02:12) last pick:  4560.00 13500.00
+\i (00:02:13) slide 
+\t (00:02:14) Waiting for the destination pick.
+\i (00:02:14) pick grid 4524.63 13478.69
+\t (00:02:14) last pick:  4520.00 13480.00
+\t (00:02:14) No DRC errors detected.
+\i (00:02:15) generaledit 
+\i (00:02:15) roam x -96 
+\i (00:02:15) roam x -96
+\i (00:02:15) roam x -96 
+\i (00:02:15) roam x -96
+\i (00:02:15) done 
+\i (00:02:15) generaledit 
+\i (00:02:16) roam x -96 
+\i (00:02:16) roam x -96
+\i (00:02:16) pick grid 4440.93 13456.31
+\t (00:02:16) last pick:  4440.00 13460.00
+\i (00:02:18) delete 
+\i (00:02:18) generaledit 
+\i (00:02:20) pick grid 4528.53 13472.37
+\t (00:02:20) last pick:  4530.00 13470.00
+\i (00:02:20) slide 
+\t (00:02:20) Waiting for the destination pick.
+\i (00:02:21) pick grid 4435.10 13482.10
+\t (00:02:21) last pick:  4440.00 13480.00
+\t (00:02:21) No DRC errors detected.
+\i (00:02:21) generaledit 
+\i (00:02:21) roam x 96 
+\i (00:02:21) roam x 96
+\i (00:02:21) zoom out 1 
+\i (00:02:21) setwindow pcb
+\i (00:02:21) zoom out 4618.06 13521.03
+\i (00:02:21) trapsize 487
+\i (00:02:22) roam x 96 
+\i (00:02:22) roam x 96
+\i (00:02:22) zoom in 1 
+\i (00:02:22) setwindow pcb
+\i (00:02:22) zoom in 4653.16 13513.25
+\i (00:02:22) trapsize 243
+\i (00:02:23) done 
+\i (00:02:23) generaledit 
+\i (00:02:23) pick grid 4640.02 13529.79
+\t (00:02:23) last pick:  4640.00 13530.00
+\i (00:02:24) slide 
+\t (00:02:24) Waiting for the destination pick.
+\i (00:02:25) pick grid 4614.23 13528.33
+\t (00:02:25) last pick:  4610.00 13530.00
+\t (00:02:25) No DRC errors detected.
+\i (00:02:25) generaledit 
+\i (00:02:26) roam x 96 
+\i (00:02:26) roam x 96
+\i (00:02:26) roam x 96 
+\i (00:02:26) roam x 96
+\i (00:02:27) zoom out 1 
+\i (00:02:27) setwindow pcb
+\i (00:02:27) zoom out 4776.21 13518.60
+\i (00:02:27) trapsize 487
+\i (00:02:28) roam x 96 
+\i (00:02:28) roam x 96
+\i (00:02:28) done 
+\i (00:02:28) generaledit 
+\i (00:02:32) done 
+\i (00:02:32) generaledit 
+\i (00:02:33) add connect 
+\t (00:02:34) Pick first element.
+\i (00:02:34) pick grid 4663.87 13422.25
+\t (00:02:34) last pick:  4660.00 13420.00
+\t (00:02:34) Target Vertical Line Segment is defined on BOTTOM.
+\t (00:02:34) last pick:  4660.00 13420.00
+\i (00:02:35) pick grid 4657.05 13425.17
+\t (00:02:35) last pick:  4660.00 13430.00
+\t (00:02:35) No DRC errors detected.
+\t (00:02:35) Pick first element.
+\i (00:02:35) pick grid dbl 4657.05 13425.17
+\t (00:02:35) last pick:  4660.00 13430.00
+\t (00:02:35) Pick first element.
+\t (00:02:35) Target Vertical Line Segment is defined on BOTTOM.
+\t (00:02:35) last pick:  4660.00 13430.00
+\i (00:02:35) mouse_pos 4724.21 13409.60
+\i (00:02:36) pick grid 4674.57 13424.20
+\t (00:02:36) last pick:  4670.00 13420.00
+\t (00:02:36) No DRC errors detected.
+\t (00:02:36) Pick first element.
+\i (00:02:37) pick grid dbl 4670.68 13424.20
+\t (00:02:37) last pick:  4670.00 13420.00
+\t (00:02:37) Pick first element.
+\t (00:02:37) Target Vertical Line Segment is defined on BOTTOM.
+\t (00:02:37) last pick:  4670.00 13420.00
+\i (00:02:37) pick grid 4670.68 13424.20
+\t (00:02:37) last pick:  4670.00 13420.00
+\w (00:02:37) WARNING(SPMHAC-22): The pick was ignored.  It is the same as the previous pick.
+\i (00:02:37) oops 
+\t (00:02:37) last pick:  4670.00 13420.00
+\t (00:02:37) Pick first element.
+\i (00:02:38) oops 
+\t (00:02:38) last pick:  4670.00 13420.00
+\t (00:02:38) Pick first element.
+\i (00:02:38) pick grid 4879.93 13499.14
+\t (00:02:38) last pick:  4880.00 13500.00
+\t (00:02:38) Target Vertical Line Segment is defined on BOTTOM.
+\t (00:02:38) last pick:  4880.00 13500.00
+\i (00:02:39) add connect 
+\t (00:02:40) Pick first element.
+\i (00:02:40) pick grid 4863.39 13489.41
+\t (00:02:40) last pick:  4860.00 13490.00
+\t (00:02:40) last pick:  4880.00 13500.00
+\t (00:02:40) Target Vertical Line Segment is defined on BOTTOM.
+\t (00:02:40) last pick:  4880.00 13500.00
+\i (00:02:40) mouse_pos 4816.67 13384.29
+\i (00:02:41) mouse_pos 4786.50 13402.79
+\i (00:02:43) prepopup 4836.13 13419.33
+\i (00:02:46) pop dyn_option_select 'Change Active Layer@:@TOP' 
+\i (00:02:51) setwindow form.mini
+\i (00:02:51) FORM mini acon_line_width 20 
+\i (00:02:52) setwindow pcb
+\i (00:02:52) pick grid 4814.72 13415.44
+\t (00:02:52) last pick:  4810.00 13420.00
+\t (00:02:52) No DRC errors detected.
+\i (00:02:53) mouse_pos 4814.72 13416.41
+\i (00:02:53) mouse_pos 4793.31 13419.33
+\i (00:02:55) pick grid 4634.67 13420.30
+\t (00:02:55) last pick:  4630.00 13420.00
+\t (00:02:55) No DRC errors detected.
+\t (00:02:55) last pick:  4630.00 13390.00
+\i (00:02:56) pick grid dbl 4625.91 13422.25
+\t (00:02:56) last pick:  4630.00 13420.00
+\t (00:02:56) VIA044D024 used for drill.
+\t (00:02:56) DRC error(s) created.
+\t (00:02:56) Pick first element.
+\i (00:02:56) pick grid 4624.94 13422.25
+\t (00:02:56) last pick:  4620.00 13420.00
+\t (00:02:56) Pick first element.
+\t (00:02:56) Target Via is defined from TOP to BOTTOM.
+\t (00:02:56) last pick:  4620.00 13420.00
+\i (00:02:57) done 
+\i (00:02:57) generaledit 
+\i (00:02:58) pick grid 4636.62 13390.13
+\t (00:02:58) last pick:  4640.00 13390.00
+\i (00:02:59) slide 
+\t (00:02:59) Waiting for the destination pick.
+\t (00:03:00) Start slide location has pre-existing DRC errors.
+\i (00:03:00) pick grid 4616.18 13414.46
+\t (00:03:00) last pick:  4620.00 13410.00
+\t (00:03:00) No DRC errors detected.
+\i (00:03:01) generaledit 
+\i (00:03:02) pick grid 4733.94 13382.35
+\t (00:03:02) last pick:  4730.00 13380.00
+\i (00:03:03) slide 
+\t (00:03:03) Waiting for the destination pick.
+\i (00:03:04) pick grid 4721.29 13414.46
+\t (00:03:04) last pick:  4720.00 13410.00
+\t (00:03:04) No DRC errors detected.
+\i (00:03:05) generaledit 
+\i (00:03:05) roam x 96 
+\i (00:03:05) roam x 96
+\i (00:03:05) roam x 96 
+\i (00:03:05) roam x 96
+\i (00:03:05) roam x 96 
+\i (00:03:05) roam x 96
+\i (00:03:06) zoom in 1 
+\i (00:03:06) setwindow pcb
+\i (00:03:06) zoom in 5044.41 13472.86
+\i (00:03:06) trapsize 243
+\i (00:03:06) zoom out 1 
+\i (00:03:06) setwindow pcb
+\i (00:03:06) zoom out 5026.89 13456.31
+\i (00:03:06) trapsize 487
+\i (00:03:07) zoom out 1 
+\i (00:03:07) setwindow pcb
+\i (00:03:07) zoom out 5035.65 13400.84
+\i (00:03:07) trapsize 973
+\i (00:03:11) roam x 96 
+\i (00:03:11) roam x 96
+\i (00:03:12) roam y -96 
+\i (00:03:12) roam y -96
+\i (00:03:12) roam y -96 
+\i (00:03:12) roam y -96
+\i (00:03:12) roam y -96 
+\i (00:03:12) roam y -96
+\i (00:03:14) pick grid 5271.18 14443.19
+\t (00:03:14) last pick:  5270.00 14440.00
+\i (00:03:16) shape select 
+\i (00:03:17) pick grid 5173.86 14445.14
+\t (00:03:17) last pick:  5170.00 14450.00
+\i (00:03:19) roam y 96 
+\i (00:03:19) roam y 96
+\i (00:03:19) roam y 96 
+\i (00:03:19) roam y 96
+\i (00:03:19) roam y 96 
+\i (00:03:19) roam y 96
+\i (00:03:19) roam y 96 
+\i (00:03:19) roam y 96
+\i (00:03:20) roam y 96 
+\i (00:03:20) roam y 96
+\i (00:03:20) pick grid 5255.61 13065.06
+\t (00:03:20) last pick:  5260.00 13070.00
+\w (00:03:20) WARNING(SPMHGE-604): No editable vertex was found.
+\i (00:03:22) shape select 
+\i (00:03:22) pick grid 5409.38 13403.75
+\t (00:03:22) last pick:  5410.00 13400.00
+\i (00:03:23) pick grid 5259.50 13047.54
+\t (00:03:23) last pick:  5260.00 13050.00
+\i (00:03:24) pick grid 4874.09 13006.66
+\t (00:03:24) last pick:  4870.00 13010.00
+\w (00:03:24) WARNING(SPMHGE-604): No editable vertex was found.
+\i (00:03:25) pick grid 4901.34 13037.81
+\t (00:03:25) last pick:  4900.00 13040.00
+\w (00:03:25) WARNING(SPMHGE-604): No editable vertex was found.
+\i (00:03:26) shape select 
+\i (00:03:27) pick grid 4901.34 13037.81
+\t (00:03:27) last pick:  4900.00 13040.00
+\i (00:03:30) drag_start grid 5265.34 13067.00
+\t (00:03:30) last pick:  5270.00 13067.00
+\i (00:03:30) drag_stop grid 5302.33 13070.90
+\t (00:03:30) No DRC errors detected.
+\i (00:03:32) done 
+\i (00:03:32) generaledit 
+\i (00:03:33) roam y -96 
+\i (00:03:33) roam y -96
+\i (00:03:34) zoom in 1 
+\i (00:03:34) setwindow pcb
+\i (00:03:34) zoom in 5027.87 13432.94
+\i (00:03:34) trapsize 487
+\i (00:03:35) zoom in 1 
+\i (00:03:35) setwindow pcb
+\i (00:03:35) zoom in 5025.92 13449.49
+\i (00:03:35) trapsize 243
+\i (00:03:36) zoom out 1 
+\i (00:03:36) setwindow pcb
+\i (00:03:36) zoom out 5019.11 13458.25
+\i (00:03:36) trapsize 487
+\i (00:03:36) zoom out 1 
+\i (00:03:36) setwindow pcb
+\i (00:03:36) zoom out 5021.06 13457.27
+\i (00:03:36) trapsize 973
+\i (00:03:36) zoom out 1 
+\i (00:03:36) setwindow pcb
+\i (00:03:36) zoom out 5165.11 13373.57
+\i (00:03:36) trapsize 1947
+\i (00:03:55) zoom in 1 
+\i (00:03:55) setwindow pcb
+\i (00:03:55) zoom in 3837.58 13611.06
+\i (00:03:55) trapsize 973
+\i (00:03:55) zoom in 1 
+\i (00:03:55) setwindow pcb
+\i (00:03:55) zoom in 3818.12 13585.76
+\i (00:03:55) trapsize 487
+\i (00:03:58) zoom out 1 
+\i (00:03:58) setwindow pcb
+\i (00:03:58) zoom out 3929.07 13622.74
+\i (00:03:58) trapsize 973
+\i (00:03:58) roam x -96 
+\i (00:03:58) roam x -96
+\i (00:03:58) roam x -96 
+\i (00:03:58) roam x -96
+\i (00:03:58) zoom in 1 
+\i (00:03:58) setwindow pcb
+\i (00:03:58) zoom in 3682.82 13577.98
+\i (00:03:58) trapsize 487
+\i (00:03:59) zoom in 1 
+\i (00:03:59) setwindow pcb
+\i (00:03:59) zoom in 3828.82 13599.39
+\i (00:03:59) trapsize 243
+\i (00:04:03) zoom out 1 
+\i (00:04:03) setwindow pcb
+\i (00:04:03) zoom out 3841.95 13587.22
+\i (00:04:03) trapsize 487
+\i (00:04:03) zoom out 1 
+\i (00:04:03) setwindow pcb
+\i (00:04:03) zoom out 3841.96 13587.23
+\i (00:04:03) trapsize 973
+\i (00:04:03) roam y -96 
+\i (00:04:03) roam y -96
+\i (00:04:04) roam y -96 
+\i (00:04:04) roam y -96
+\i (00:04:04) roam y -96 
+\i (00:04:04) roam y -96
+\i (00:04:04) roam x 96 
+\i (00:04:04) roam x 96
+\i (00:04:04) roam x 96 
+\i (00:04:04) roam x 96
+\i (00:04:09) shape add rect 
+\i (00:04:11) setwindow form.mini
+\i (00:04:11) FORM mini subclass TOP 
+\i (00:04:12) setwindow pcb
+\i (00:04:12) roam x 96 
+\i (00:04:12) roam x 96
+\i (00:04:17) roam y -96 
+\i (00:04:17) roam y -96
+\i (00:04:22) shape edit boundary 
+\i (00:04:23) zoom in 1 
+\i (00:04:23) setwindow pcb
+\i (00:04:23) zoom in 4617.15 14486.01
+\i (00:04:23) trapsize 487
+\i (00:04:24) pick grid 4742.71 14556.09
+\t (00:04:24) last pick:  4740.00 14560.00
+\t (00:04:24) Pick the edit starting point on the shape boundary.
+\i (00:04:27) pick grid 4690.15 14551.22
+\t (00:04:27) last pick:  4690.00 14550.00
+\t (00:04:27) Pick the next vertex or the closing point on the shape.
+\i (00:04:29) pick grid 4565.57 14408.15
+\t (00:04:29) last pick:  4570.00 14410.00
+\t (00:04:29) Pick the next vertex or the closing point on the shape.
+\i (00:04:31) zoom out 1 
+\i (00:04:31) setwindow pcb
+\i (00:04:31) zoom out 4563.63 14203.77
+\i (00:04:31) trapsize 973
+\i (00:04:32) pick grid 4563.62 14203.76
+\t (00:04:32) last pick:  4560.00 14200.00
+\t (00:04:32) Pick the next vertex or the closing point on the shape.
+\i (00:04:32) pick grid 4468.24 14123.96
+\t (00:04:32) last pick:  4470.00 14120.00
+\t (00:04:33) Pick the next vertex or the closing point on the shape.
+\i (00:04:34) pick grid 4330.04 14155.10
+\t (00:04:34) last pick:  4330.00 14160.00
+\t (00:04:34) Pick the next vertex or the closing point on the shape.
+\i (00:04:35) pick grid 4341.72 14456.81
+\t (00:04:35) last pick:  4340.00 14460.00
+\t (00:04:35) Pick the next vertex or the closing point on the shape.
+\i (00:04:37) oops 
+\t (00:04:37) last pick:  4330.00 14160.00
+\t (00:04:37) Pick the next vertex or the closing point on the shape.
+\i (00:04:38) pick grid 4314.47 14511.31
+\t (00:04:38) last pick:  4310.00 14510.00
+\t (00:04:38) Pick the next vertex or the closing point on the shape.
+\i (00:04:40) pick grid 4236.61 14546.35
+\t (00:04:40) last pick:  4240.00 14550.00
+\t (00:04:40) Pick DONE or a start point on another shape or void boundary.
+\i (00:04:40) done 
+\i (00:04:41) generaledit 
+\i (00:04:41) roam y 96 
+\i (00:04:41) roam y 96
+\i (00:04:41) roam y 96 
+\i (00:04:41) roam y 96
+\i (00:04:42) zoom in 1 
+\i (00:04:42) setwindow pcb
+\i (00:04:42) zoom in 4433.21 14075.30
+\i (00:04:42) trapsize 487
+\i (00:04:43) pick grid 4522.75 14086.98
+\t (00:04:43) last pick:  4520.00 14090.00
+\i (00:04:44) slide 
+\t (00:04:45) Waiting for the destination pick.
+\i (00:04:45) pick grid 4540.27 14087.95
+\t (00:04:45) last pick:  4540.00 14090.00
+\t (00:04:45) No DRC errors detected.
+\i (00:04:46) generaledit 
+\i (00:04:47) shape edit boundary 
+\i (00:04:50) roam y -96 
+\i (00:04:50) roam y -96
+\i (00:04:50) roam y -96 
+\i (00:04:50) roam y -96
+\i (00:04:56) pick grid 4224.93 14559.01
+\t (00:04:56) last pick:  4220.00 14560.00
+\t (00:04:56) Pick the edit starting point on the shape boundary.
+\i (00:04:57) pick grid 4185.03 14550.25
+\t (00:04:57) last pick:  4190.00 14550.00
+\t (00:04:57) Pick the next vertex or the closing point on the shape.
+\i (00:04:59) pick grid 4264.83 14382.85
+\t (00:04:59) last pick:  4260.00 14380.00
+\t (00:04:59) Pick the next vertex or the closing point on the shape.
+\i (00:05:00) roam y 96 
+\i (00:05:00) roam y 96
+\i (00:05:00) roam y 96 
+\i (00:05:00) roam y 96
+\i (00:05:00) roam y 96 
+\i (00:05:00) roam y 96
+\i (00:05:01) roam y 96 
+\i (00:05:01) roam y 96
+\i (00:05:02) pick grid 4272.62 13884.54
+\t (00:05:02) last pick:  4270.00 13880.00
+\t (00:05:02) Pick the next vertex or the closing point on the shape.
+\i (00:05:04) pick grid 4505.23 13852.42
+\t (00:05:04) last pick:  4510.00 13850.00
+\t (00:05:04) Pick the next vertex or the closing point on the shape.
+\i (00:05:05) pick grid 4595.74 13862.15
+\t (00:05:05) last pick:  4600.00 13860.00
+\t (00:05:05) Pick the next vertex or the closing point on the shape.
+\i (00:05:05) roam y -96 
+\i (00:05:05) roam y -96
+\i (00:05:05) roam y -96 
+\i (00:05:05) roam y -96
+\i (00:05:05) roam y -96 
+\i (00:05:05) roam y -96
+\i (00:05:06) roam y -96 
+\i (00:05:06) roam y -96
+\i (00:05:09) pick grid 4644.41 14486.01
+\t (00:05:09) last pick:  4640.00 14490.00
+\t (00:05:09) Pick DONE or a start point on another shape or void boundary.
+\i (00:05:09) done 
+\i (00:05:09) generaledit 
+\i (00:05:10) roam y -96 
+\i (00:05:10) roam y -96
+\i (00:05:10) roam x 96 
+\i (00:05:10) roam x 96
+\i (00:05:11) roam x 96 
+\i (00:05:11) roam x 96
+\i (00:05:11) zoom in 1 
+\i (00:05:11) setwindow pcb
+\i (00:05:11) zoom in 4729.07 14534.68
+\i (00:05:11) trapsize 243
+\i (00:05:12) roam y -96 
+\i (00:05:12) roam y -96
+\i (00:05:12) shape edit boundary 
+\i (00:05:15) pick grid 4689.66 14529.14
+\t (00:05:15) last pick:  4690.00 14530.00
+\t (00:05:16) Pick the edit starting point on the shape boundary.
+\i (00:05:18) shape select 
+\i (00:05:19) pick grid 4761.19 14562.72
+\t (00:05:19) last pick:  4760.00 14560.00
+\i (00:05:22) drag_start grid 4800.61 14563.20
+\t (00:05:22) last pick:  4801.90 14561.90
+\i (00:05:24) drag_stop grid 4735.89 14595.81
+\t (00:05:24) No DRC errors detected.
+\i (00:05:25) drag_start grid 4711.55 14572.45
+\t (00:05:25) last pick:  4712.00 14572.00
+\i (00:05:26) drag_stop grid 4724.69 14565.64
+\t (00:05:26) No DRC errors detected.
+\i (00:05:28) drag_start grid 4719.34 14572.45
+\t (00:05:28) last pick:  4720.89 14570.89
+\i (00:05:28) drag_stop grid 4724.21 14564.18
+\t (00:05:28) No DRC errors detected.
+\i (00:05:29) zoom out 1 
+\i (00:05:29) setwindow pcb
+\i (00:05:29) zoom out 4724.21 14558.82
+\i (00:05:29) trapsize 487
+\i (00:05:29) zoom out 1 
+\i (00:05:29) setwindow pcb
+\i (00:05:29) zoom out 4724.21 14547.15
+\i (00:05:29) trapsize 973
+\i (00:05:29) roam x -96 
+\i (00:05:29) roam x -96
+\i (00:05:30) done 
+\i (00:05:30) generaledit 
+\i (00:05:31) roam y 96 
+\i (00:05:31) roam y 96
+\i (00:05:35) roam y 96 
+\i (00:05:35) roam y 96
+\i (00:05:37) pick grid 4533.45 14083.08
+\t (00:05:37) last pick:  4530.00 14080.00
+\i (00:05:38) prepopup 4533.45 14083.08
+\i (00:05:39) pop dyn_option_select @:@Copy 
+\i (00:05:39) copy 
+\i (00:05:40) pick grid 4438.07 14018.85
+\t (00:05:40) last pick:  4440.00 14020.00
+\i (00:05:42) pick grid 4443.91 13942.93
+\t (00:05:42) last pick:  4440.00 13940.00
+\i (00:05:44) pick grid 4438.07 14123.96
+\t (00:05:44) last pick:  4440.00 14120.00
+\i (00:05:49) pick grid 4436.12 14195.98
+\t (00:05:49) last pick:  4440.00 14200.00
+\i (00:05:50) pick grid 4535.39 14197.93
+\t (00:05:50) last pick:  4540.00 14200.00
+\i (00:05:53) pick grid 4535.39 14016.90
+\t (00:05:53) last pick:  4540.00 14020.00
+\i (00:05:53) pick grid 4537.34 13944.88
+\t (00:05:53) last pick:  4540.00 13940.00
+\i (00:05:54) done 
+\i (00:05:54) generaledit 
+\i (00:05:54) roam y 96 
+\i (00:05:54) roam y 96
+\i (00:05:55) zoom out 1 
+\i (00:05:55) setwindow pcb
+\i (00:05:55) zoom out 4512.04 13758.02
+\i (00:05:55) trapsize 1947
+\i (00:05:56) save 
+\i (00:05:57) fillin yes 
+\i (00:05:57) generaledit 
+\i (00:06:04) setwindow text
+\i (00:06:04) close 
+\i (00:06:08) setwindow pcb
+\i (00:06:08) status 
+\i (00:06:08) generaledit 
+\i (00:06:12) setwindow form.status
+\i (00:06:12) FORM status refresh  
+\i (00:06:12) FORM status refresh  
+\i (00:06:12) FORM status refresh  
+\i (00:06:13) FORM status refresh  
+\i (00:06:14) FORM status shorts_drc_color 1 
+\i (00:06:14) setwindow pcb
+\i (00:06:14) reports drc_shorts 
+\i (00:06:14) generaledit 
+\i (00:06:16) zoom center 
+\t (00:06:16) Pick center for the new display.
+\i (00:06:16) pick 4495.00 13265.00 
+\t (00:06:16) last pick:  4495.00 13265.00
+\i (00:06:16) trapsize 1947
+\i (00:06:17) zoom center 
+\t (00:06:17) Pick center for the new display.
+\i (00:06:17) pick 4495.00 13240.00 
+\t (00:06:17) last pick:  4495.00 13240.00
+\i (00:06:17) trapsize 1947
+\i (00:06:18) zoom in 1 
+\i (00:06:18) setwindow pcb
+\i (00:06:18) zoom in 5526.66 13125.15
+\i (00:06:18) trapsize 973
+\i (00:06:18) zoom in 1 
+\i (00:06:18) setwindow pcb
+\i (00:06:18) zoom in 5538.34 13041.45
+\i (00:06:18) trapsize 487
+\i (00:06:18) zoom in 1 
+\i (00:06:18) setwindow pcb
+\i (00:06:18) zoom in 5539.31 13037.56
+\i (00:06:18) trapsize 243
+\i (00:06:18) zoom in 1 
+\i (00:06:18) setwindow pcb
+\i (00:06:18) zoom in 5539.31 13037.56
+\i (00:06:18) trapsize 122
+\i (00:06:18) zoom in 1 
+\i (00:06:18) setwindow pcb
+\i (00:06:18) zoom in 5539.32 13037.56
+\i (00:06:18) trapsize 61
+\i (00:06:19) zoom center 
+\t (00:06:19) Pick center for the new display.
+\i (00:06:19) pick 4495.00 13265.00 
+\t (00:06:19) last pick:  4495.00 13265.00
+\i (00:06:19) trapsize 61
+\i (00:06:21) zoom out 1 
+\i (00:06:21) setwindow pcb
+\i (00:06:21) zoom out 4520.06 13275.77
+\i (00:06:21) trapsize 122
+\i (00:06:21) zoom out 1 
+\i (00:06:21) setwindow pcb
+\i (00:06:21) zoom out 4520.56 13272.36
+\i (00:06:21) trapsize 243
+\i (00:06:29) zoom center 
+\t (00:06:29) Pick center for the new display.
+\i (00:06:29) pick 4495.00 13240.00 
+\t (00:06:29) last pick:  4495.00 13240.00
+\i (00:06:29) trapsize 243
+\i (00:06:30) zoom center 
+\t (00:06:30) Pick center for the new display.
+\i (00:06:30) pick 4495.00 13265.00 
+\t (00:06:30) last pick:  4495.00 13265.00
+\i (00:06:30) trapsize 243
+\i (00:06:37) zoom out 1 
+\i (00:06:37) setwindow pcb
+\i (00:06:37) zoom out 4427.85 13231.67
+\i (00:06:37) trapsize 487
+\i (00:06:38) zoom in 1 
+\i (00:06:38) setwindow pcb
+\i (00:06:38) zoom in 4360.70 13143.11
+\i (00:06:38) trapsize 243
+\i (00:06:48) pick grid 4542.21 13265.24
+\t (00:06:48) last pick:  4540.00 13270.00
+\i (00:06:49) done 
+\i (00:06:49) generaledit 
+\i (00:06:50) drag_start grid 4420.07 13245.29
+\i (00:06:50) move 
+\t (00:06:51) last pick:  4460.00 13240.00
+\t (00:06:51) Moving C21 / CAP NP_C0805_DISCRETE_0.1UF / C0805.
+\t (00:06:51) Pick new location for the element(s).
+\i (00:06:52) drag_stop grid 4455.59 13255.51
+\i (00:06:52) generaledit 
+\i (00:06:54) pick grid 4529.07 13313.90
+\t (00:06:54) last pick:  4530.00 13310.00
+\i (00:06:55) setwindow form.mini
+\i (00:06:55) FORM mini subclass BOTTOM 
+\i (00:06:57) setwindow pcb
+\i (00:06:57) pick grid 4519.34 13308.06
+\t (00:06:57) last pick:  4520.00 13310.00
+\i (00:06:57) swap components 
+\t (00:06:57) No valid items selected for the current operation, exiting.
+\i (00:06:57) generaledit 
+\i (00:06:58) delete 
+\i (00:06:59) generaledit 
+\i (00:07:00) pick grid 4500.36 13292.98
+\t (00:07:00) last pick:  4500.00 13290.00
+\i (00:07:00) pick grid 4498.90 13288.60
+\t (00:07:00) last pick:  4500.00 13290.00
+\i (00:07:01) delete 
+\i (00:07:01) generaledit 
+\i (00:07:02) pick grid 4359.24 13230.70
+\t (00:07:02) last pick:  4360.00 13230.00
+\i (00:07:02) delete 
+\i (00:07:02) generaledit 
+\i (00:07:03) pick grid 4346.59 13201.99
+\t (00:07:03) last pick:  4350.00 13200.00
+\i (00:07:03) delete 
+\i (00:07:04) generaledit 
+\i (00:07:05) add connect 
+\t (00:07:05) Pick first element.
+\i (00:07:06) pick grid 4344.65 13158.19
+\t (00:07:06) last pick:  4340.00 13160.00
+\t (00:07:06) last pick:  4345.00 13145.00
+\t (00:07:06) last pick:  4345.00 13145.00
+\i (00:07:06) mouse_pos 4343.67 13203.93
+\i (00:07:08) mouse_pos 4341.24 13182.52
+\i (00:07:08) mouse_pos 4330.54 13144.57
+\i (00:07:09) pick grid 4330.54 13144.57
+\t (00:07:09) last pick:  4330.00 13140.00
+\t (00:07:09) No DRC errors detected.
+\t (00:07:09) Pick first element.
+\i (00:07:10) pick grid 4339.78 13136.78
+\t (00:07:10) last pick:  4340.00 13140.00
+\t (00:07:10) Pick first element.
+\t (00:07:10) last pick:  4345.00 13145.00
+\t (00:07:10) last pick:  4345.00 13145.00
+\i (00:07:10) mouse_pos 4339.78 13136.78
+\i (00:07:10) pick grid 4346.11 13102.23
+\t (00:07:10) last pick:  4350.00 13100.00
+\t (00:07:11) No DRC errors detected.
+\t (00:07:11) Pick first element.
+\i (00:07:12) add connect 
+\t (00:07:13) Pick first element.
+\i (00:07:13) pick grid 4496.47 13263.78
+\t (00:07:13) last pick:  4500.00 13260.00
+\t (00:07:13) last pick:  4495.00 13260.00
+\t (00:07:13) Target Symbol Pin is defined on BOTTOM.
+\t (00:07:13) last pick:  4495.00 13260.00
+\i (00:07:13) mouse_pos 4497.92 13181.55
+\i (00:07:14) pick grid 4497.92 13181.55
+\t (00:07:14) last pick:  4500.00 13180.00
+\t (00:07:14) No DRC errors detected.
+\t (00:07:14) Pick first element.
+\i (00:07:15) pick grid 4494.03 13255.51
+\t (00:07:15) last pick:  4490.00 13260.00
+\t (00:07:15) Pick first element.
+\t (00:07:15) last pick:  4495.00 13260.00
+\t (00:07:15) last pick:  4495.00 13260.00
+\i (00:07:18) pick grid 4498.90 13264.76
+\t (00:07:18) last pick:  4500.00 13260.00
+\t (00:07:18) No DRC errors detected.
+\t (00:07:18) last pick:  4495.00 13260.00
+\i (00:07:18) done 
+\i (00:07:19) generaledit 
+\i (00:07:19) zoom out 1 
+\i (00:07:19) setwindow pcb
+\i (00:07:19) zoom out 4497.44 13241.40
+\i (00:07:19) trapsize 487
+\i (00:07:19) roam y 96 
+\i (00:07:19) roam y 96
+\i (00:07:21) zoom in 1 
+\i (00:07:21) setwindow pcb
+\i (00:07:21) zoom in 4369.95 12846.20
+\i (00:07:21) trapsize 243
+\i (00:07:22) zoom in 1 
+\i (00:07:22) setwindow pcb
+\i (00:07:22) zoom in 4362.17 12887.08
+\i (00:07:22) trapsize 122
+\i (00:07:22) zoom out 1 
+\i (00:07:22) setwindow pcb
+\i (00:07:22) zoom out 4360.95 12895.84
+\i (00:07:22) trapsize 243
+\i (00:07:23) zoom out 1 
+\i (00:07:23) setwindow pcb
+\i (00:07:23) zoom out 4369.23 12903.63
+\i (00:07:23) trapsize 487
+\i (00:07:23) roam y -96 
+\i (00:07:23) roam y -96
+\i (00:07:24) zoom in 1 
+\i (00:07:24) setwindow pcb
+\i (00:07:24) zoom in 4504.50 13166.38
+\i (00:07:24) trapsize 243
+\i (00:07:25) roam y -96 
+\i (00:07:25) roam y -96
+\i (00:07:25) zoom out 1 
+\i (00:07:25) setwindow pcb
+\i (00:07:25) zoom out 4506.94 13228.67
+\i (00:07:25) trapsize 487
+\i (00:07:25) done 
+\i (00:07:25) generaledit 
+\i (00:07:51) zoom out 1 
+\i (00:07:51) setwindow pcb
+\i (00:07:51) zoom out 4637.34 13216.02
+\i (00:07:51) trapsize 973
+\i (00:07:52) zoom out 1 
+\i (00:07:52) setwindow pcb
+\i (00:07:52) zoom out 4705.47 13241.31
+\i (00:07:52) trapsize 1946
+\i (00:07:53) zoom out 1 
+\i (00:07:53) setwindow pcb
+\i (00:07:53) zoom out 4810.58 13397.03
+\i (00:07:53) trapsize 3893
+\i (00:07:53) zoom in 1 
+\i (00:07:53) setwindow pcb
+\i (00:07:53) zoom in 4943.84 13147.89
+\i (00:07:53) trapsize 1946
+\i (00:07:54) pick grid 4827.06 12081.27
+\t (00:07:54) last pick:  4830.00 12080.00
+\i (00:07:55) setwindow text
+\i (00:07:55) close 
+\i (00:07:56) setwindow pcb
+\i (00:07:56) pick grid 4503.96 12120.19
+\t (00:07:56) last pick:  4500.00 12120.00
+\i (00:07:56) save 
+\i (00:07:57) fillin yes 
+\i (00:07:58) generaledit 
+\i (00:08:00) setwindow form.status
+\i (00:08:00) FORM status done  
+\i (00:08:04) setwindow pcb
+\i (00:08:04) exit 
+\e (00:08:04) Do you want to save the changes you made to C:/GIT/THESISLORAWANNODE/HW/RAK4600_SM32NODE/allegro/STM32F103_RAK4600_THESISNODE.brd?
+\i (00:08:05) fillin yes 
+\t (00:08:06)     Journal end - Tue Jun 16 12:24:53 2020

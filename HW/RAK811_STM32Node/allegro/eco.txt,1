@@ -3,84 +3,17 @@
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
 |  C:.../HW/RAK811_STM32Node/allegro/STM32F103_RAK811_THESISNODE.brd           |
-|                                                    Sun Jun 14 22:47:26 2020  |
+|                                                    Tue Jun 16 09:06:43 2020  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-  GND          pins MOVED FROM this net (to net name listed on right)
-                                 D6.2            3255.00 14300.0
-                                                                     GPIO_LED_0
-                                 D7.2            3305.00 14290.0
-                                                                     GPIO_LED_1
-                                 D8.2            3275.00 14320.0
-                                                                     GPIO_LED_2
-                                 D9.2            3265.00 14300.0
-                                                                     GPIO_LED_3
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  GPIO_LED_0   pins MOVED FROM this net (to net name listed on right)
-                                 R8.2            3220.00 14210.0
-                                                                        VCC3.3V
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  GPIO_LED_1   pins MOVED FROM this net (to net name listed on right)
-                                 R9.2            3150.00 14310.0
-                                                                        VCC3.3V
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  GPIO_LED_2   pins MOVED FROM this net (to net name listed on right)
-                                 R10.2           3530.00 14320.0
-                                                                        VCC3.3V
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  GPIO_LED_3   pins MOVED FROM this net (to net name listed on right)
-                                 R11.2           3200.00 14260.0
-                                                                        VCC3.3V
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N8036997     net RENAMED (to net name listed on right)           N80658270    
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N8037045     net RENAMED (to net name listed on right)           N80655610    
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N8076359     net RENAMED (to net name listed on right)           N80763510    
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N8076509     net RENAMED (to net name listed on right)           N80765010    
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  PULSE_IN     pins MOVED FROM this net (to net name listed on right)
-                                 U3.18           3550.16 13652.9
-                                                                        SW_IN_1
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  RS485_A_SLAVE pins ADDED TO this existing net (pins not previously on any net)
-                                 J6.1            4821.58 12680.0
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  RS485_B_SLAVE pins ADDED TO this existing net (pins not previously on any net)
-                                 J6.2            5018.42 12680.0
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  SW_IN_1      pins MOVED FROM this net (to net name listed on right)
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   2  |
+  N8088251     pins MOVED FROM this net (to net name listed on right)
+                                 U10.21          4114.25 13978.2
+                                                                            GND
 |------------------------------------------------------------------------------|
-|  C:.../HW/RAK811_STM32Node/allegro/STM32F103_RAK811_THESISNODE.brd           |
-|                                                    Sun Jun 14 22:47:26 2020  |
-|------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-                                 U3.16           3510.79 13652.9
-                                                                       PULSE_IN
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  VCC_5V       pins MOVED FROM this net (to net name listed on right)
-                                 C4.1            2723.38 14040.0
-                                                                          VCC5V
-                                 C5.1            2950.00 13820.0
-                                                                          VCC5V
-                                 C6.1            2959.06 13720.0
-                                                                          VCC5V
-                                 L1.2            3012.52 13500.0
-                                                                          VCC5V
-                                 R5.2            2650.00 13620.0
-                                                                          VCC5V
-|------------------------------------------------------------------------------|
-|       Nets changed          :      21                                        |
+|       Nets changed          :       1                                        |
 |                                                                              |
-|   Total ECO changes reported:      21                                        |
+|   Total ECO changes reported:       1                                        |
 |------------------------------------------------------------------------------|

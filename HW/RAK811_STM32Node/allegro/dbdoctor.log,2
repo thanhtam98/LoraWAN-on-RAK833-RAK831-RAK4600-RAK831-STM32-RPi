@@ -1,0 +1,14 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    DBDOCTOR                                                         )
+(                                                                     )
+(    Drawing          : STM32F103_RAK811_THESISNODE.brd               )
+(    Software Version : 17.2S052                                      )
+(    Date/Time        : Tue Jun 16 09:30:47 2020                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+WARNING Deleted redundant via at (3050.00 13960.00) on net GND.
+
+1 warnings, 0 errors detected, 0 errors could be fixed.

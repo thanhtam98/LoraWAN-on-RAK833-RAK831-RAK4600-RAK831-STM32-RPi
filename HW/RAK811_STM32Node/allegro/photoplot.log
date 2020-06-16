@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : STM32F103_RAK811_THESISNODE.brd               )
 (    Software Version : 17.2S052                                      )
-(    Date/Time        : Mon Jun 15 15:49:30 2020                      )
+(    Date/Time        : Tue Jun 16 10:14:41 2020                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -44,7 +44,7 @@ Results from parameter file ...
   Suppress unconnected internal pads  NO
   Draw holes only                     NO
 
-    WARNING: Film contains objects with associated DRCs (119).
+    WARNING: Film contains objects with associated DRCs (123).
            In the design editor view this film and enable visibility for the
            associated DRC layer. Verify the DRCs are approved exceptions to your rules.
 
@@ -111,9 +111,6 @@ Results from parameter file ...
   Suppress unconnected internal pads  NO
   Draw holes only                     NO
 
-    WARNING: Film contains objects with associated DRCs (4).
-           In the design editor view this film and enable visibility for the
-           associated DRC layer. Verify the DRCs are approved exceptions to your rules.
 
 
   APERTURES USED (UNIT = IN):
@@ -150,7 +147,7 @@ Results from parameter file ...
   OBLONG     0.16000     x 0.12000      90.000 NO     DARK 
   OBLONG     0.18000     x 0.07000       0.000 NO     DARK 
 
-     BOTTOM created with warnings
+     BOTTOM created.
 
 
 ================================================================
@@ -170,12 +167,6 @@ Results from parameter file ...
   Suppress unconnected internal pads  NO
   Draw holes only                     NO
 
-    WARNING: text composed 0 width line found at (2507.00 12721.50) in MIL
-           ... using undefined line width of 6.00 MIL
-
-    WARNING: text having Multiple 0 width lines; all will be treated the same as the first.
-           ... using undefined line width of 6.00 MIL
-
     WARNING: 0 width line found at (2559.96 13470.00) in MIL
            ... using undefined line width of 6.00 MIL
 
@@ -188,9 +179,7 @@ Results from parameter file ...
   ---------------------------------------------------------
   TYPE       SIZE/NAME                   ROT   MIRROR MODE 
   ---------------------------------------------------------
-  CIRCLE     0.00100                                  DARK 
   CIRCLE     0.00500                                  DARK 
-  CIRCLE     0.00591                                  DARK 
   CIRCLE     0.00600                                  DARK 
   CIRCLE     0.00787                                  DARK 
   CIRCLE     0.00800                                  DARK 
@@ -225,9 +214,7 @@ Results from parameter file ...
   ---------------------------------------------------------
   CIRCLE     0.00197                                  DARK 
   CIRCLE     0.00200                                  DARK 
-  CIRCLE     0.00300                                  DARK 
   CIRCLE     0.00394                                  DARK 
-  CIRCLE     0.00500                                  DARK 
   CIRCLE     0.00600                                  DARK 
   CIRCLE     0.00800                                  DARK 
 
@@ -258,6 +245,7 @@ Results from parameter file ...
   TYPE       SIZE/NAME                   ROT   MIRROR MODE 
   ---------------------------------------------------------
   CIRCLE     0.00500                                  DARK 
+  CIRCLE     0.00800                                  DARK 
   CIRCLE     0.08500                                  DARK 
   CIRCLE     0.09000                                  DARK 
   CIRCLE     0.11000                                  DARK 
@@ -316,6 +304,7 @@ Results from parameter file ...
   TYPE       SIZE/NAME                   ROT   MIRROR MODE 
   ---------------------------------------------------------
   CIRCLE     0.00500                                  DARK 
+  CIRCLE     0.00800                                  DARK 
   CIRCLE     0.04800                                  DARK 
   CIRCLE     0.08500                                  DARK 
   CIRCLE     0.09000                                  DARK 
@@ -369,6 +358,7 @@ Results from parameter file ...
   TYPE       SIZE/NAME                   ROT   MIRROR MODE 
   ---------------------------------------------------------
   CIRCLE     0.00500                                  DARK 
+  CIRCLE     0.00800                                  DARK 
   SQUARE     0.04724                     0.000 NO     DARK 
   RECTANGLE  0.03200     x 0.06700      90.000 NO     DARK 
   RECTANGLE  0.03500     x 0.03200       0.000 NO     DARK 
@@ -413,6 +403,7 @@ Results from parameter file ...
   TYPE       SIZE/NAME                   ROT   MIRROR MODE 
   ---------------------------------------------------------
   CIRCLE     0.00500                                  DARK 
+  CIRCLE     0.00800                                  DARK 
   RECTANGLE  0.03500     x 0.03200       0.000 NO     DARK 
   RECTANGLE  0.03500     x 0.03200      90.000 NO     DARK 
   RECTANGLE  0.04500     x 0.05000       0.000 NO     DARK 
@@ -449,10 +440,8 @@ Results from parameter file ...
   ---------------------------------------------------------
   TYPE       SIZE/NAME                   ROT   MIRROR MODE 
   ---------------------------------------------------------
-  CIRCLE     0.00100                                  DARK 
   CIRCLE     0.00400                                  DARK 
   CIRCLE     0.00500                                  DARK 
-  CIRCLE     0.00591                                  DARK 
   CIRCLE     0.00600                                  DARK 
   CIRCLE     0.00787                                  DARK 
   CIRCLE     0.00800                                  DARK 
@@ -485,11 +474,8 @@ Results from parameter file ...
   ---------------------------------------------------------
   TYPE       SIZE/NAME                   ROT   MIRROR MODE 
   ---------------------------------------------------------
-  CIRCLE     0.00200                                  DARK 
-  CIRCLE     0.00300                                  DARK 
   CIRCLE     0.00394                                  DARK 
   CIRCLE     0.00400                                  DARK 
-  CIRCLE     0.00500                                  DARK 
   CIRCLE     0.00600                                  DARK 
   CIRCLE     0.00800                                  DARK 
 
@@ -520,6 +506,7 @@ Results from parameter file ...
   TYPE       SIZE/NAME                   ROT   MIRROR MODE 
   ---------------------------------------------------------
   CIRCLE     0.00500                                  DARK 
+  CIRCLE     0.00800                                  DARK 
 
      FAB created.
 
@@ -548,6 +535,7 @@ Results from parameter file ...
   TYPE       SIZE/NAME                   ROT   MIRROR MODE 
   ---------------------------------------------------------
   CIRCLE     0.00500                                  DARK 
+  CIRCLE     0.00800                                  DARK 
 
      PANEL created.
 
@@ -555,7 +543,7 @@ Results from parameter file ...
 ------------------------------------------------------
  SUMMARY:
         TOP created with warnings
-        BOTTOM created with warnings
+        BOTTOM created.
         SILK_TOP created with warnings
         SILK_BOTTOM created.
         SMASK_TOP created.

@@ -3,74 +3,21 @@
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
 |  C:.../HW/RAK811_STM32Node/allegro/STM32F103_RAK811_THESISNODE.brd           |
-|                                                    Sun Jun 14 23:11:13 2020  |
+|                                                    Tue Jun 16 09:15:17 2020  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-  GPIO_LED_0   pins MOVED FROM this net (to net name listed on right)
-                                 D6.2            3740.00 14335.0
-                                                                      N81264481
+  RAK811_RX    pins MOVED FROM this net (to net name listed on right)
+                                 U3.31           3747.01 13849.8
+                                                                      RAK811_TX
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  GPIO_LED_1   pins MOVED FROM this net (to net name listed on right)
-                                 D7.2            3660.00 14335.0
-                                                                      N81264641
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  GPIO_LED_2   pins MOVED FROM this net (to net name listed on right)
-                                 D8.2            3560.00 14335.0
-                                                                      N81264801
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  GPIO_LED_3   pins MOVED FROM this net (to net name listed on right)
-                                 D9.2            3460.00 14335.0
-                                                                      N81264961
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N80655610    pins MOVED FROM this net (to net name listed on right)
-                                 D7.1            3660.00 14265.0
-                                                                        VCC3.3V
-                                 R9.1            3700.00 14190.0
-                                                                     GPIO_LED_1
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N80658270    pins MOVED FROM this net (to net name listed on right)
-                                 D6.1            3740.00 14265.0
-                                                                        VCC3.3V
-                                 R8.1            3760.00 14190.0
-                                                                     GPIO_LED_0
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N80763510    pins MOVED FROM this net (to net name listed on right)
-                                 D8.1            3560.00 14265.0
-                                                                        VCC3.3V
-                                 R10.1           3640.00 14190.0
-                                                                     GPIO_LED_2
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N80765010    pins MOVED FROM this net (to net name listed on right)
-                                 D9.1            3460.00 14265.0
-                                                                        VCC3.3V
-                                 R11.1           3580.00 14190.0
-                                                                     GPIO_LED_3
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  VCC3.3V      pins MOVED FROM this net (to net name listed on right)
-                                 R8.2            3760.00 14130.0
-                                                                      N81264481
-                                 R9.2            3700.00 14130.0
-                                                                      N81264641
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   2  |
+  RAK811_TX    pins MOVED FROM this net (to net name listed on right)
+                                 U3.30           3747.01 13830.1
+                                                                      RAK811_RX
 |------------------------------------------------------------------------------|
-|  C:.../HW/RAK811_STM32Node/allegro/STM32F103_RAK811_THESISNODE.brd           |
-|                                                    Sun Jun 14 23:11:13 2020  |
-|------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-                                 R10.2           3640.00 14130.0
-                                                                      N81264801
-                                 R11.2           3580.00 14130.0
-                                                                      N81264961
-|------------------------------------------------------------------------------|
-|       Nets changed          :      16                                        |
+|       Nets changed          :       2                                        |
 |                                                                              |
-|   Total ECO changes reported:      16                                        |
+|   Total ECO changes reported:       2                                        |
 |------------------------------------------------------------------------------|

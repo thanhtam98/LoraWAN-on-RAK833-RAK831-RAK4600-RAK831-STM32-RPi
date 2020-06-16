@@ -2,259 +2,22 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
-|  C:.../HW/RAK811_STM32Node/allegro/STM32F103_RAK811_THESISNODE.brd           |
-|                                                    Mon Jun 15 08:22:28 2020  |
+|  C:.../HW/RAK4600_SM32Node/allegro/STM32F103_RAK4600_THESISNODE.brd          |
+|                                                    Tue Jun 16 12:16:45 2020  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-  BOOT0        pins MOVED FROM this net (to net name listed on right)
-                                 U10.17          4404.61 13673.1
-                                                                         RF_OUT
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  BOOT1        pins ADDED TO this new net
-                                 J16.2                          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  GND          pins ADDED TO this existing net (pins not previously on any net)
-                                 J15.4                          
-                                 J15.8                          
-                                 J16.3                          
-                                 U10.8           4669.37 14069.1
-                                 U10.13          4669.37 13823.1
-                                 U10.14          4552.24 13673.1
-                                 U10.16          4453.82 13673.1
-                                 U10.39          4404.61 14566.8
-                                 U10.42          4552.24 14566.8
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  I2C1_SCL     pins ADDED TO this new net
-                                 J13.7           4880.00 13340.0
-                                 U10.5           4669.37 14216.8
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  I2C1_SDA     pins ADDED TO this new net
-                                 J13.8           4880.00 13240.0
-                                 U10.4           4669.37 14266.0
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N8027159     net RENAMED (to net name listed on right)           N8127918     
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N8037733     net RENAMED (to net name listed on right)           N8131059     
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N8037737     net RENAMED (to net name listed on right)           N8130973     
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N8037917     net RENAMED (to net name listed on right)           N8130891     
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N8051947     net RENAMED (to net name listed on right)           N8130895     
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N8065468     net RENAMED (to net name listed on right)           N8130573     
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N8080772     net RENAMED (to net name listed on right)           N8133594     
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N8086219     net RENAMED (to net name listed on right)           N8133586     
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N8086247     net RENAMED (to net name listed on right)           N8133946     
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N8086295     net RENAMED (to net name listed on right)           N8133954     
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   2  |
+  N8109169     pins MOVED FROM this net (to net name listed on right)
+                                 U10.18          4474.61 14616.8
+                                                                            GND
+                                 U10.19          4523.82 14616.8
+                                                                            GND
+                                 U10.20          4573.03 14616.8
+                                                                            GND
 |------------------------------------------------------------------------------|
-|  C:.../HW/RAK811_STM32Node/allegro/STM32F103_RAK811_THESISNODE.brd           |
-|                                                    Mon Jun 15 08:22:28 2020  |
-|------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-  N8093255     net RENAMED (to net name listed on right)           N8128142     
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N8093259     net RENAMED (to net name listed on right)           N8128146     
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N8093419     net RENAMED (to net name listed on right)           N8128370     
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N8093431     net RENAMED (to net name listed on right)           N8128382     
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N8094931     net RENAMED (to net name listed on right)           N8128274     
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N8095077     net RENAMED (to net name listed on right)           N8128270     
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N8099397     net RENAMED (to net name listed on right)           N8134186     
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N8099405     net RENAMED (to net name listed on right)           N8134194     
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N8109169     pins ADDED TO this new net
-                                 U10.18          4355.39 13673.1
-                                 U10.19          4306.18 13673.1
-                                 U10.20          4256.97 13673.1
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N8122117     net RENAMED (to net name listed on right)           N8128278     
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N81264481    net RENAMED (to net name listed on right)           N81312031    
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N81264641    net RENAMED (to net name listed on right)           N81312191    
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N81264801    net RENAMED (to net name listed on right)           N81312351    
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N81264961    net RENAMED (to net name listed on right)           N81312511    
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  NFC1         pins ADDED TO this new net
-                                 J13.3           4880.00 13740.0
-                                 U10.6           4669.37 14167.6
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  NFC2         pins ADDED TO this new net
-                                 J13.4           4880.00 13640.0
-                                 U10.7           4669.37 14118.3
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  P0.14        pins ADDED TO this new net
-                                 J15.6                          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  P0.17        pins ADDED TO this new net
-                                 U10.24          4090.63 13921.5
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   3  |
-|------------------------------------------------------------------------------|
-|  C:.../HW/RAK811_STM32Node/allegro/STM32F103_RAK811_THESISNODE.brd           |
-|                                                    Mon Jun 15 08:22:28 2020  |
-|------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-  P0.18        pins ADDED TO this new net
-                                 J15.7                          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  RAK811_RST   pins MOVED FROM this net (to net name listed on right)
-                                 C25.1           4000.00 14155.0
-                                                                    RAK4600_RST
-                                 J14.1           4880.00 14180.0
-                                                                    RAK4600_RST
-                                 R22.2           4000.00 14210.0
-                                                                    RAK4600_RST
-                                 U3.29           3747.01 13810.4
-                                                                    RAK4600_RST
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  RAK811_RX    pins MOVED FROM this net (to net name listed on right)
-                                 J14.2           4880.00 14280.0
-                                                                     RAK4600_RX
-                                 U3.31           3747.01 13849.8
-                                                                     RAK4600_RX
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  RAK811_TX    pins MOVED FROM this net (to net name listed on right)
-                                 J14.3           4880.00 14380.0
-                                                                     RAK4600_TX
-                                 U3.30           3747.01 13830.1
-                                                                     RAK4600_TX
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  RAK4600_RST  pins ADDED TO this new net
-                                 J15.5                          
-                                 U10.36          4256.97 14566.8
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  RAK4600_RX   pins ADDED TO this new net
-                                 J13.2           4880.00 13840.0
-                                 U10.10          4669.37 13970.7
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  RAK4600_TX   pins ADDED TO this new net
-                                 J13.1           4880.00 13940.0
-                                 U10.9           4669.37 14019.9
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  SWCLK        pins ADDED TO this new net
-                                 J13.6           4880.00 13440.0
-                                 U10.38          4355.39 14566.8
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  SWDIO        pins ADDED TO this new net
-                                 J13.5           4880.00 13540.0
-                                 U10.37          4306.18 14566.8
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   4  |
-|------------------------------------------------------------------------------|
-|  C:.../HW/RAK811_STM32Node/allegro/STM32F103_RAK811_THESISNODE.brd           |
-|                                                    Mon Jun 15 08:22:28 2020  |
-|------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-  UART1_RX     pins ADDED TO this new net
-                                 J15.3                          
-                                 U10.22          4090.63 13823.1
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  UART1_TX     pins ADDED TO this new net
-                                 J15.2                          
-                                 U10.23          4090.63 13872.3
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  VCC3.3V      pins ADDED TO this existing net (pins not previously on any net)
-                                 J15.1                          
-                                 J16.1                          
-                                 U10.40          4453.82 14566.8
-                                 U10.41          4503.03 14566.8
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   5  |
-|------------------------------------------------------------------------------|
-|  C:.../HW/RAK811_STM32Node/allegro/STM32F103_RAK811_THESISNODE.brd           |
-|                                                    Mon Jun 15 08:22:28 2020  |
-|------------------------------------------------------------------------------|
-| COMPONENT DEFINITION added to design                                         |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    device type                                                               |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- CON8_HEADER_8_CON8
- HEADER 3_HEADER3PITCH100MIL_HEA
- RAK4600_RAK4600_RAK4600
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   6  |
-|------------------------------------------------------------------------------|
-|  C:.../HW/RAK811_STM32Node/allegro/STM32F103_RAK811_THESISNODE.brd           |
-|                                                    Mon Jun 15 08:22:28 2020  |
-|------------------------------------------------------------------------------|
-| COMPONENTS ADDED to design                                                   |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    ref des        |    device type                                           |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- J15                 CON8_HEADER_8_CON8    
- J16                 HEADER 3_HEADER3PITCH100MIL_HEA 
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   7  |
-|------------------------------------------------------------------------------|
-|  C:.../HW/RAK811_STM32Node/allegro/STM32F103_RAK811_THESISNODE.brd           |
-|                                                    Mon Jun 15 08:22:28 2020  |
-|------------------------------------------------------------------------------|
-| COMPONENTS CHANGED from one device type to another in design                 |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    ref des        | new device type     |   x   |   y   |  old  device type  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- C23                 CAP NP_C0805_DISCRETE_0.1UF 4670.00 13600.0 CAP NP_C0805_DISCRETE_4.7UF
- J13                 CON8_HEADER_8_CON8    4880.00 13940.0 HEADER 3_HEADER3PITCH100MIL_RAK
- J14                 HEADER 3_HEADER3PITCH100MIL_HEA 4880.00 14280.0 HEADER 3_HEADER3PITCH100MIL_R_1
- U10                 RAK4600_RAK4600_RAK4600 4380.00 14120.0 RAK811_RAK811_RAK811
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   8  |
-|------------------------------------------------------------------------------|
-|  C:.../HW/RAK811_STM32Node/allegro/STM32F103_RAK811_THESISNODE.brd           |
-|                                                    Mon Jun 15 08:22:28 2020  |
-|------------------------------------------------------------------------------|
-| SLOT PROPERTIES added to design                                              |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   slot_id    |   x   |   y   |   property   |             value              |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- C23.2          4670.00 13600.0 PRIM_FILE      .\pstchip.dat
- J13.8          4880.00 13940.0 PRIM_FILE      .\pstchip.dat
- J14.3          4880.00 14280.0 PRIM_FILE      .\pstchip.dat
- J15.8                          PRIM_FILE      .\pstchip.dat
- J16.3                          PRIM_FILE      .\pstchip.dat
- U10.10         4380.00 14120.0 PRIM_FILE      .\pstchip.dat
-|------------------------------------------------------------------------------|
-|       Nets changed          :      74                                        |
-|       Comp definitions added:       3                                        |
-|       Components added      :       2                                        |
-|       Components changed    :       4                                        |
-|       Slot property added   :       6                                        |
+|       Nets changed          :       3                                        |
 |                                                                              |
-|   Total ECO changes reported:      89                                        |
+|   Total ECO changes reported:       3                                        |
 |------------------------------------------------------------------------------|

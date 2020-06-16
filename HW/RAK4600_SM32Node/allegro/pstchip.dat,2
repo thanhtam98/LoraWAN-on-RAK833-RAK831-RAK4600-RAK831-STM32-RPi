@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.2.0 d001Jun-14-2020 at 15:18:02}
+{ Using PSTWRITER 17.2.0 d001Jun-16-2020 at 10:32:42}
 primitive 'SW PUSHBUTTON-SPST-2_0_B3U-1000';
   pin
     '1':
@@ -32,22 +32,6 @@ primitive 'CAP NP_C0603_DISCRETE_10NF';
     VALUE='10nF';
   end_body;
 end_primitive;
-primitive 'CAP NP_0_C0603_0.1UF/6.3V_C0603';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='CAP NP_0';
-    JEDEC_TYPE='c0603';
-    VALUE='0.1uF/6.3V';
-    PART_NUMBER='C0603C104K8RACTU';
-  end_body;
-end_primitive;
 primitive 'CAP NP_0_C0603_0.1UF_C0603C104K';
   pin
     '1':
@@ -61,6 +45,22 @@ primitive 'CAP NP_0_C0603_0.1UF_C0603C104K';
     PART_NAME='CAP NP_0';
     JEDEC_TYPE='c0603';
     VALUE='0.1uF';
+    PART_NUMBER='C0603C104K8RACTU';
+  end_body;
+end_primitive;
+primitive 'CAP NP_0_C0603_0.1UF/6.3V_C0603';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='CAP NP_0';
+    JEDEC_TYPE='c0603';
+    VALUE='0.1uF/6.3V';
     PART_NUMBER='C0603C104K8RACTU';
   end_body;
 end_primitive;
@@ -80,21 +80,6 @@ primitive 'CAP NP_0_C0603_18PF_CL10C180JB8';
     PART_NUMBER='CL10C180JB8NNNC';
   end_body;
 end_primitive;
-primitive 'CAP_CAP_AL_D_100UF/35V';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='CAP';
-    JEDEC_TYPE='CAP_AL_D';
-    VALUE='100uF/35V';
-  end_body;
-end_primitive;
 primitive 'CAP NP_C0805_DISCRETE_0.1UF';
   pin
     '1':
@@ -109,6 +94,21 @@ primitive 'CAP NP_C0805_DISCRETE_0.1UF';
     JEDEC_TYPE='C0805';
     CLASS='DISCRETE';
     VALUE='0.1uF';
+  end_body;
+end_primitive;
+primitive 'CAP_CAP_AL_D_100UF/35V';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='CAP';
+    JEDEC_TYPE='CAP_AL_D';
+    VALUE='100uF/35V';
   end_body;
 end_primitive;
 primitive 'CAP_CAP_AL_D_220U/16V';
@@ -126,21 +126,6 @@ primitive 'CAP_CAP_AL_D_220U/16V';
     VALUE='220u/16V';
   end_body;
 end_primitive;
-primitive 'CAP NP_CAP_1210_22U/6.3V';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='CAP NP';
-    JEDEC_TYPE='cap_1210';
-    VALUE='22u/6.3V';
-  end_body;
-end_primitive;
 primitive 'CAP 0603_C0603_100NF';
   pin
     '1':
@@ -154,6 +139,21 @@ primitive 'CAP 0603_C0603_100NF';
     PART_NAME='Cap 0603';
     JEDEC_TYPE='C0603';
     VALUE='100nF';
+  end_body;
+end_primitive;
+primitive 'CAP NP_CAP_1210_22U/6.3V';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='CAP NP';
+    JEDEC_TYPE='cap_1210';
+    VALUE='22u/6.3V';
   end_body;
 end_primitive;
 primitive 'CAP NP_C0603_DISCRETE_100NF_C06';
@@ -188,7 +188,22 @@ primitive 'DIODE_DO214AC_SMA_1N4007';
     VALUE='1N4007';
   end_body;
 end_primitive;
-primitive 'SS34_2_SOD123_1N5819';
+primitive 'DIODE_SOD80_1N4007';
+  pin
+    'A':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    'K':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='DIODE';
+    JEDEC_TYPE='SOD80';
+    VALUE='1N4007';
+  end_body;
+end_primitive;
+primitive 'SS34_2_DO214AC_SMA_1N5819';
   pin
     'ANODE':
       PIN_NUMBER='(1)';
@@ -199,7 +214,7 @@ primitive 'SS34_2_SOD123_1N5819';
   end_pin;
   body
     PART_NAME='SS34_2';
-    JEDEC_TYPE='SOD123';
+    JEDEC_TYPE='DO214AC_SMA';
     VALUE='1N5819';
   end_body;
 end_primitive;
@@ -332,24 +347,6 @@ primitive 'CON8_HEADER_8_CON8';
     VALUE='CON8';
   end_body;
 end_primitive;
-primitive 'HEADER 3_HEADER3PITCH100MIL_HEA';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-    '3':
-      PIN_NUMBER='(3)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='HEADER 3';
-    JEDEC_TYPE='Header3pitch100mil';
-    VALUE='HEADER 3';
-  end_body;
-end_primitive;
 primitive 'CONN JACK PWR_CONN_JACK_DC_12VD';
   pin
     '3':
@@ -392,7 +389,7 @@ primitive 'HEADER 5_HEADER_5_JTAG/STSW';
     VALUE='JTAG/STSW';
   end_body;
 end_primitive;
-primitive 'HEADER 3_HEADER3PITCH100MIL_RS4';
+primitive 'HEADER 3_HEADER3PITCH100MIL_MCU';
   pin
     '1':
       PIN_NUMBER='(1)';
@@ -407,7 +404,7 @@ primitive 'HEADER 3_HEADER3PITCH100MIL_RS4';
   body
     PART_NAME='HEADER 3';
     JEDEC_TYPE='Header3pitch100mil';
-    VALUE='RS485/DBG';
+    VALUE='MCU_DBG';
   end_body;
 end_primitive;
 primitive 'HEADER 2_DOMINO2_5_RAS485_MASTE';
@@ -643,7 +640,7 @@ primitive 'SW PUSHBUTTON-SPST-2_TACT_SWITC';
   end_pin;
   body
     PART_NAME='SW PUSHBUTTON-SPST-2';
-    JEDEC_TYPE='Tact_Switch_12x12x7mm_dip';
+    JEDEC_TYPE='tact_switch_12x12x7mm_smd';
     VALUE='DETECT SW';
   end_body;
 end_primitive;

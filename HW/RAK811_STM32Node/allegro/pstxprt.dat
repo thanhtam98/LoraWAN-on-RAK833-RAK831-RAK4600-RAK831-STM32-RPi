@@ -1,5 +1,5 @@
 FILE_TYPE = EXPANDEDPARTLIST;
-{ Using PSTWRITER 17.2.0 d001Jun-14-2020 at 23:11:12 }
+{ Using PSTWRITER 17.2.0 d001Jun-16-2020 at 09:15:16 }
 DIRECTIVES
  PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
  ROOT_DRAWING='STM32F103_RAK811_THESISNODE';
@@ -774,6 +774,36 @@ SECTION_NUMBER 1
  '@STM32F103_RAK811_THESISNODE.SCHEMATIC1(SCH_1):INS8088381@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
  C_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):ins8088381@autotalab.\resistor 0603.normal\(chips)',
  P_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):page4_ins8088381@autotalab.\resistor 0603.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R23 'RESISTOR 0603_R0603_100R':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK811_THESISNODE.SCHEMATIC1(SCH_1):INS8128469@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):ins8128469@autotalab.\resistor 0603.normal\(chips)',
+ P_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):page3_ins8128469@autotalab.\resistor 0603.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R24 'RESISTOR 0603_R0603_100R':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK811_THESISNODE.SCHEMATIC1(SCH_1):INS8128498@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):ins8128498@autotalab.\resistor 0603.normal\(chips)',
+ P_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):page3_ins8128498@autotalab.\resistor 0603.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R25 'RESISTOR 0603_R0603_100R':;
+
+SECTION_NUMBER 1
+ '@STM32F103_RAK811_THESISNODE.SCHEMATIC1(SCH_1):INS8128527@AUTOTALAB.RESISTOR 0603.NORMAL(CHIPS)':
+ C_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):ins8128527@autotalab.\resistor 0603.normal\(chips)',
+ P_PATH='@stm32f103_rak811_thesisnode.schematic1(sch_1):page3_ins8128527@autotalab.\resistor 0603.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 

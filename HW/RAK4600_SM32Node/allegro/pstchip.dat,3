@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.2.0 d001Jun-15-2020 at 08:22:26}
+{ Using PSTWRITER 17.2.0 d001Jun-16-2020 at 12:16:43}
 primitive 'SW PUSHBUTTON-SPST-2_0_B3U-1000';
   pin
     '1':
@@ -345,24 +345,6 @@ primitive 'CON8_HEADER_8_CON8';
     PART_NAME='CON8';
     JEDEC_TYPE='header_8';
     VALUE='CON8';
-  end_body;
-end_primitive;
-primitive 'HEADER 3_HEADER3PITCH100MIL_HEA';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-    '3':
-      PIN_NUMBER='(3)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='HEADER 3';
-    JEDEC_TYPE='Header3pitch100mil';
-    VALUE='HEADER 3';
   end_body;
 end_primitive;
 primitive 'CONN JACK PWR_CONN_JACK_DC_12VD';
