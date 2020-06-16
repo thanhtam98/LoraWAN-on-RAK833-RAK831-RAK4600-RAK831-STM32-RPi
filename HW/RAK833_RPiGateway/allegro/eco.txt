@@ -2,52 +2,10 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
-|  C:.../HW/RAK833_RPiGateway/allegro/RAK833_RPIGATEWAY_v1.brd                 |
-|                                                    Mon Jun 15 08:56:28 2020  |
+|  C:.../ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/RAK833_RPIGATEWAY.brd  |
+|                                                    Tue Jun 16 15:02:56 2020  |
 |------------------------------------------------------------------------------|
-| COMPONENT DEFINITION added to design                                         |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    device type                                                               |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- CAP NP_C0603_10U/35V
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   2  |
 |------------------------------------------------------------------------------|
-|  C:.../HW/RAK833_RPiGateway/allegro/RAK833_RPIGATEWAY_v1.brd                 |
-|                                                    Mon Jun 15 08:56:28 2020  |
-|------------------------------------------------------------------------------|
-| COMPONENTS CHANGED from one device type to another in design                 |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    ref des        | new device type     |   x   |   y   |  old  device type  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- C8                  CAP NP_C0603_10U/35V                  CAP NP_CAP_1210_10U/35V
- C9                  CAP NP_C0603_10U/35V                  CAP NP_CAP_1210_10U/35V
- C10                 CAP NP_C0603_10U/35V                  CAP NP_CAP_1210_10U/35V
- C11                 CAP NP_C0603_10U/35V                  CAP NP_CAP_1210_10U/35V
- C12                 CAP NP_C0603_10U/35V                  CAP NP_CAP_1210_10U/35V
- C13                 CAP NP_C0603_10U/35V                  CAP NP_CAP_1210_10U/35V
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   3  |
-|------------------------------------------------------------------------------|
-|  C:.../HW/RAK833_RPiGateway/allegro/RAK833_RPIGATEWAY_v1.brd                 |
-|                                                    Mon Jun 15 08:56:28 2020  |
-|------------------------------------------------------------------------------|
-| SLOT PROPERTIES added to design                                              |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   slot_id    |   x   |   y   |   property   |             value              |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- C8.2                           PRIM_FILE      .\pstchip.dat
- C9.2                           PRIM_FILE      .\pstchip.dat
- C10.2                          PRIM_FILE      .\pstchip.dat
- C11.2                          PRIM_FILE      .\pstchip.dat
- C12.2                          PRIM_FILE      .\pstchip.dat
- C13.2                          PRIM_FILE      .\pstchip.dat
-|------------------------------------------------------------------------------|
-|       Comp definitions added:       1                                        |
-|       Components changed    :       6                                        |
-|       Slot property added   :       6                                        |
 |                                                                              |
-|   Total ECO changes reported:      13                                        |
+|   Total ECO changes reported:       0                                        |
 |------------------------------------------------------------------------------|

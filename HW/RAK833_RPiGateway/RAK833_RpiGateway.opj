@@ -55,7 +55,7 @@
     (FLDSTUFF_inst_or_occurrence "0")
     (FLDSTUFF_Create_Report_File "FALSE")
     ("Allegro Netlist Input Board File"
-       "C:\GIT\ThesisLorawanNode\HW\RAK833_RPiGateway\allegro\RAK833_RPIGATEWAY_v1.brd"))
+       "C:\GIT\ThesisLorawanNode\HW\RAK833_RPiGateway\allegro\RAK833_RPIGATEWAY.brd"))
   (Folder "Outputs"
     (File ".\allegro\pstxnet.dat"
       (Type "Report")
@@ -95,14 +95,14 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 282"))
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 282"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 104 1140 104 425")
-        (Scroll "0 0")
-        (Zoom "116")
+        (Scroll "814 39")
+        (Zoom "232")
         (Occurrence "/"))
       (Path
          "C:\GIT\THESISLORAWANNODE\HW\RAK833_RPIGATEWAY\RAK833_RPIGATEWAY.DSN")
@@ -112,8 +112,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 130 1166 130 451")
-        (Scroll "766 239")
-        (Zoom "232")
+        (Scroll "0 84")
+        (Zoom "116")
         (Occurrence "/"))
       (Path
          "C:\GIT\THESISLORAWANNODE\HW\RAK833_RPIGATEWAY\RAK833_RPIGATEWAY.DSN")
@@ -122,9 +122,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 52 1088 52 373")
-        (Scroll "814 10")
-        (Zoom "232")
+        (Placement "44 0 1 -1 -1 -8 -31 52 1088 52 373")
+        (Scroll "0 252")
+        (Zoom "116")
         (Occurrence "/"))
       (Path
          "C:\GIT\THESISLORAWANNODE\HW\RAK833_RPIGATEWAY\RAK833_RPIGATEWAY.DSN")

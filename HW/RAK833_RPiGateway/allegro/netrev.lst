@@ -2,9 +2,9 @@
 (                                                                     )
 (    Allegro Netrev Import Logic                                      )
 (                                                                     )
-(    Drawing          : RAK833_RPIGATEWAY_v1.brd                      )
+(    Drawing          : RAK833_RPIGATEWAY.brd                         )
 (    Software Version : 17.2S052                                      )
-(    Date/Time        : Mon Jun 15 08:56:28 2020                      )
+(    Date/Time        : Tue Jun 16 15:02:56 2020                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -19,15 +19,15 @@ Missing symbol has error:    No
 DRC update:                  Yes
 Schematic directory:         'C:\GIT\THESISLORAWANNODE\HW\RAK833_RPIGATEWAY\allegro'
 Design Directory:            'C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro'
-Old design name:             'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/RAK833_RPIGATEWAY_v1.brd'
+Old design name:             'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/RAK833_RPIGATEWAY.brd'
 New design name:             'C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/RAK833_RPIGATEWAY.brd'
 
-CmdLine: netrev.exe -y 1 -i C:\GIT\THESISLORAWANNODE\HW\RAK833_RPIGATEWAY\allegro C:\GIT\ThesisLorawanNode\HW\RAK833_RPiGateway\allegro\RAK833_RPIGATEWAY_v1.brd C:\GIT\THESISLORAWANNODE\HW\RAK833_RPIGATEWAY\allegro\RAK833_RPIGATEWAY.brd
+CmdLine: netrev.exe -y 1 -i C:\GIT\THESISLORAWANNODE\HW\RAK833_RPIGATEWAY\allegro C:\GIT\ThesisLorawanNode\HW\RAK833_RPiGateway\allegro\RAK833_RPIGATEWAY.brd C:\GIT\THESISLORAWANNODE\HW\RAK833_RPIGATEWAY\allegro\RAK833_RPIGATEWAY.brd
 
 ------ Preparing to read pst files ------
 
 Starting to read C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/pstchip.dat 
-   Finished reading C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/pstchip.dat (00:00:00.06)
+   Finished reading C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/pstchip.dat (00:00:00.08)
 Starting to read C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/pstxprt.dat 
    Finished reading C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/pstxprt.dat (00:00:00.00)
 Starting to read C:/GIT/THESISLORAWANNODE/HW/RAK833_RPIGATEWAY/allegro/pstxnet.dat 
@@ -64,7 +64,7 @@ PADPATH =  E:/TTTN/Orcad/lib/0_Lib/1_Footprint
 ------ Summary Statistics ------
 
 
-netrev run on Jun 15 8:56:28 2020
+netrev run on Jun 16 15:02:56 2020
    DESIGN NAME : 'RAK833_RPIGATEWAY'
    PACKAGING ON Feb 18 2019 18:33:40
 
@@ -89,6 +89,6 @@ netrev run on Jun 15 8:56:28 2020
  No oversight detected
  No warning detected
 
-cpu time      0:02:33
+cpu time      0:04:01
 elapsed time  0:00:02
 

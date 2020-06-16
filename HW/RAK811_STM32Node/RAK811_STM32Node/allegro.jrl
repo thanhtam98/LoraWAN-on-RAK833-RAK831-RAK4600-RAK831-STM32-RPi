@@ -1,0 +1,249 @@
+\t (00:00:00) allegro 17.2 S052 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Tue Jun 16 13:36:13 2020
+\t (00:00:00)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=19072 CPUs=4
+\t (00:00:00) CmdLine= c:\cadence\spb_17.2\tools\bin\allegro.exe C:\GIT\ThesisLorawanNode\HW\RAK811_STM32Node\RAK811_STM32Node\STM32F103_RAK811_THESISNODE.brd
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+   (00:00:01) Searching for nsWare programs v2.78
+   (00:00:01) 	NsWare directory found: E:/CAD/pcbenv/nsWare/
+   (00:00:01) 	NsWare programs must reside in this directory!
+   (00:00:01) function AFn_OpenDesign redefined
+   (00:00:01) function PinVia_Overlap_FinishEnterFun redefined
+   (00:00:01) function Find_Point_On_Line_From_Distant redefined
+   (00:00:01) function Find_Point_Quadrature_Line redefined
+   (00:00:01) function Line_Line_Intersect redefined
+   (00:00:01) function _getPinsNet redefined
+   (00:00:01) function _getBranchs redefined
+   (00:00:01) function _getPaths redefined
+   (00:00:01) function _get2PointsPath redefined
+   (00:00:01) function _checkElementList redefined
+   (00:00:01) function _getSurroundPoints redefined
+   (00:00:01) function _getListPointsLPaths redefined
+   (00:00:01) function _checkPathPoint redefined
+   (00:00:01) function _deleteElementList redefined
+   (00:00:01) function _checkElementList redefined
+   (00:00:01) function _deleteElementList redefined
+   (00:00:01) function Find_Point_On_Line_From_Distant redefined
+   (00:00:01) function Find_Point_Quadrature_Line redefined
+   (00:00:01) function Is_Point_On_List redefined
+   (00:00:01) function Line_Line_Intersect redefined
+   (00:00:01) function Line_Line_Distant redefined
+\t (00:00:01) Opening existing design...
+\i (00:00:01) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged STM32F103_RAK811_THESISNODE
+\d (00:00:01) Design opened: C:/GIT/ThesisLorawanNode/HW/RAK811_STM32Node/RAK811_STM32Node/STM32F103_RAK811_THESISNODE.brd
+\i (00:00:01) trapsize 3191
+\i (00:00:02) trapsize 3368
+\i (00:00:02) trapsize 2717
+\i (00:00:02) trapsize 2717
+\i (00:00:03) generaledit 
+\i (00:00:04) zoom in 1 
+\i (00:00:04) setwindow pcb
+\i (00:00:04) zoom in 2870.29 12698.52
+\i (00:00:04) trapsize 1359
+\i (00:00:04) zoom in 1 
+\i (00:00:04) setwindow pcb
+\i (00:00:04) zoom in 2870.29 12701.24
+\i (00:00:04) trapsize 679
+\i (00:00:05) zoom out 1 
+\i (00:00:05) setwindow pcb
+\i (00:00:05) zoom out 2892.03 12839.83
+\i (00:00:05) trapsize 1359
+\i (00:00:05) zoom out 1 
+\i (00:00:05) setwindow pcb
+\i (00:00:05) zoom out 2892.04 12839.83
+\i (00:00:05) trapsize 2717
+\i (00:00:06) pick grid 3826.80 12318.09
+\t (00:00:06) last pick:  3830.00 12320.00
+\i (00:00:07) roam x 96 
+\i (00:00:07) roam x 96
+\i (00:00:07) roam x 96 
+\i (00:00:07) roam x 96
+\i (00:00:07) zoom in 1 
+\i (00:00:07) setwindow pcb
+\i (00:00:07) zoom in 4831.47 13377.86
+\i (00:00:07) trapsize 1359
+\i (00:00:08) roam y -96 
+\i (00:00:08) roam y -96
+\i (00:00:09) roam x -96 
+\i (00:00:09) roam x -96
+\i (00:00:09) zoom out 1 
+\i (00:00:09) setwindow pcb
+\i (00:00:09) zoom out 4570.59 13309.59
+\i (00:00:09) trapsize 2717
+\i (00:00:10) roam y -96 
+\i (00:00:10) roam y -96
+\i (00:00:10) zoom in 1 
+\i (00:00:10) setwindow pcb
+\i (00:00:10) zoom in 4277.11 14103.09
+\i (00:00:10) trapsize 1359
+\i (00:00:11) roam x -96 
+\i (00:00:11) roam x -96
+\i (00:00:11) roam y 96 
+\i (00:00:11) roam y 96
+\i (00:00:11) zoom in 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom in 3459.19 13157.43
+\i (00:00:11) trapsize 679
+\i (00:00:11) roam y 96 
+\i (00:00:11) roam y 96
+\i (00:00:12) zoom out 1 
+\i (00:00:12) setwindow pcb
+\i (00:00:12) zoom out 3464.62 13028.29
+\i (00:00:12) trapsize 1359
+\i (00:00:12) zoom out 1 
+\i (00:00:12) setwindow pcb
+\i (00:00:12) zoom out 3480.93 13036.45
+\i (00:00:12) trapsize 2717
+\i (00:00:13) roam x 96 
+\i (00:00:13) roam x 96
+\i (00:00:13) roam y 96 
+\i (00:00:13) roam y 96
+\i (00:00:13) zoom out 1 
+\i (00:00:13) setwindow pcb
+\i (00:00:13) zoom out 4179.30 12815.07
+\i (00:00:13) trapsize 5435
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out 4260.82 11478.32
+\i (00:00:14) trapsize 10869
+\i (00:00:14) zoom in 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom in 9478.15 12739.18
+\i (00:00:14) trapsize 5435
+\i (00:00:14) roam y -96 
+\i (00:00:14) roam y -96
+\i (00:00:24) roam x -96 
+\i (00:00:24) roam x -96
+\i (00:00:24) zoom out 1 
+\i (00:00:24) setwindow pcb
+\i (00:00:24) zoom out 9565.11 11489.00
+\i (00:00:24) trapsize 10869
+\i (00:00:24) roam y -96 
+\i (00:00:24) roam x -96 
+\i (00:00:24) zoom in 1 
+\i (00:00:24) setwindow pcb
+\i (00:00:24) zoom in 3999.95 12913.09
+\i (00:00:24) trapsize 5435
+\i (00:00:25) roam y -96 
+\i (00:00:25) roam y -96
+\i (00:00:25) zoom in 1 
+\i (00:00:25) setwindow pcb
+\i (00:00:25) zoom in 3619.53 13608.53
+\i (00:00:25) trapsize 2717
+\i (00:00:25) roam x -96 
+\i (00:00:25) roam x -96
+\i (00:00:26) roam x -96 
+\i (00:00:26) roam x -96
+\i (00:00:26) zoom in 1 
+\i (00:00:26) setwindow pcb
+\i (00:00:26) zoom in 2505.40 12624.85
+\i (00:00:26) trapsize 1359
+\i (00:00:26) roam y -96 
+\i (00:00:26) roam y -96
+\i (00:00:27) zoom in 1 
+\i (00:00:27) setwindow pcb
+\i (00:00:27) zoom in 3081.48 12687.32
+\i (00:00:27) trapsize 679
+\i (00:00:27) zoom in 1 
+\i (00:00:27) setwindow pcb
+\i (00:00:27) zoom in 3081.48 12687.32
+\i (00:00:27) trapsize 340
+\i (00:00:29) zoom out 1 
+\i (00:00:29) setwindow pcb
+\i (00:00:29) zoom out 3113.41 12762.05
+\i (00:00:29) trapsize 679
+\i (00:00:29) zoom out 1 
+\i (00:00:29) setwindow pcb
+\i (00:00:29) zoom out 3112.05 12755.26
+\i (00:00:29) trapsize 1359
+\i (00:00:29) zoom out 1 
+\i (00:00:29) setwindow pcb
+\i (00:00:29) zoom out 3112.05 12749.82
+\i (00:00:29) trapsize 2717
+\i (00:00:30) roam y -96 
+\i (00:00:30) roam y -96
+\i (00:00:30) roam x 96 
+\i (00:00:30) roam x 96
+\i (00:00:30) roam x 96 
+\i (00:00:30) roam x 96
+\i (00:00:31) zoom out 1 
+\i (00:00:31) setwindow pcb
+\i (00:00:31) zoom out 5635.81 13831.35
+\i (00:00:31) trapsize 5435
+\i (00:00:31) zoom out 1 
+\i (00:00:31) setwindow pcb
+\i (00:00:31) zoom out 7249.91 13831.36
+\i (00:00:31) trapsize 10869
+\i (00:00:32) drag_start grid 12412.90 10369.64
+\i (00:00:33) drag_stop 5586.89 15282.62
+\i (00:00:35) delete 
+\i (00:00:35) generaledit 
+\i (00:00:35) roam x -96 
+\i (00:00:36) pick grid 7217.31 14434.81
+\t (00:00:36) last pick:  7220.00 14430.00
+\i (00:00:36) roam x -96 
+\i (00:00:36) zoom in 1 
+\i (00:00:36) setwindow pcb
+\i (00:00:36) zoom in 5565.15 15108.71
+\i (00:00:36) trapsize 5435
+\i (00:00:36) roam x -96 
+\i (00:00:36) roam x -96
+\i (00:00:37) roam x -96 
+\i (00:00:37) roam x -96
+\i (00:00:46) ncdrill legend 
+   (00:00:46) Loading mfg.cxt 
+\i (00:00:48) setwindow form.nc_drilllegend
+\i (00:00:48) FORM nc_drilllegend done  
+\i (00:00:50) setwindow pcb
+\i (00:00:50) pick grid 5608.63 14750.03
+\t (00:00:50) last pick:  5610.00 14750.00
+\t (00:00:50) NC Drill Legend generation successful
+\i (00:00:50) generaledit 
+\i (00:00:56) nctape_full 
+\i (00:00:59) setwindow form.nc_drill
+\i (00:00:59) FORM nc_drill auto_tool_select YES 
+\i (00:01:03) FORM nc_drill repeat_codes NO 
+\i (00:01:12) FORM nc_drill tape_name STM32F103_RAK811_THESISNODE_auto.drl 
+\i (00:01:13) FORM nc_drill execute  
+\t (00:01:13) Starting Generating NC Drill...
+\i (00:01:18) FORM nc_drill auto_tool_select NO 
+\i (00:01:18) FORM nc_drill repeat_codes YES 
+\i (00:01:23) FORM nc_drill tape_name STM32F103_RAK811_THESISNODE_repeat.drl 
+\i (00:01:24) FORM nc_drill execute  
+\t (00:01:24) Starting Generating NC Drill...
+\i (00:01:26) setwindow pcb
+\i (00:01:26) zoom in 1 
+\i (00:01:26) setwindow pcb
+\i (00:01:26) zoom in 2576.05 12923.96
+\i (00:01:26) trapsize 2717
+\i (00:01:27) zoom in 1 
+\i (00:01:27) setwindow pcb
+\i (00:01:27) zoom in 2641.27 12706.58
+\i (00:01:27) trapsize 1359
+\i (00:01:27) zoom in 1 
+\i (00:01:27) setwindow pcb
+\i (00:01:27) zoom in 2720.07 12589.73
+\i (00:01:27) trapsize 679
+\i (00:01:28) pick grid 3175.23 12369.63
+\t (00:01:28) last pick:  3180.00 12370.00
+\i (00:01:30) pick grid 3110.01 12687.55
+\t (00:01:30) last pick:  3110.00 12690.00
+\i (00:02:12) pick grid 3187.46 12398.16
+\t (00:02:12) last pick:  3190.00 12400.00
+\i (00:02:12) zoom out 1 
+\i (00:02:13) setwindow pcb
+\i (00:02:13) zoom out 2941.54 12767.72
+\i (00:02:13) trapsize 1359
+\i (00:02:13) zoom in 1 
+\i (00:02:13) setwindow pcb
+\i (00:02:13) zoom in 2941.54 12767.72
+\i (00:02:13) trapsize 679
+\i (00:02:35) setwindow form.nc_drill
+\i (00:02:35) FORM nc_drill execute  
+\t (00:02:36) Starting Generating NC Drill...
+\w (00:10:01) Save pending
+\i (00:11:46) setwindow pcb
+\i (00:11:46) exit 
+\e (00:11:46) Do you want to save the changes you made to STM32F103_RAK811_THESISNODE.brd?
+\i (00:11:47) fillin no 
+\t (00:11:47)     Journal end - Tue Jun 16 13:48:00 2020
