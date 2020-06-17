@@ -1,0 +1,62 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Create_devices LOG file                                          )
+(                                                                     )
+(    Drawing          : STM32F103_RAK4600_THESISNODE.brd              )
+(    Software Version : 17.2S052                                      )
+(    Date/Time        : Wed Jun 17 09:11:54 2020                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/con8_header_8_con8.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/rak4600_rak4600_rak4600.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/mountinghole_mh_3mm_1_hole4mm.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/diode_sod80_1n4007.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/ss34_2_do214ac_sma_1n5819.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/swpushbutton-spst-2_tact_switc.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/header2_domino2_5_sw_in2.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/header3_domino3_5_onewire.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/header2_domino2_5_pulse_in.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/header3_header3pitch100mil_mcu.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/header2_domino2_5_ras485_maste.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/header2_domino2_5_rs485_slave.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/header3_domino3_5_analog_in1.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/header2_domino2_5_sw_in1.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/header3_domino3_5_analog_in2.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/capnp_c0603_discrete_10nf.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/cap_cap_al_d_100uf35v.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/cap_cap_al_d_220u16v.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/cap0603_c0603_100nf.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/capnp_cap_1210_22u63v.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/inductor_ind_6x6mm_88uh17a.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/res-sm0402_0_r0603_discrete_10k.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/resistor0603_r0603_100r.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/resistor0603_r0603_1k.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/res-sm0402_0_r0603_discrete_49.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/pmic_sot23-6_sot23-6_ap3211.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/rt9193-33gb_1_sot-223_lm11175v.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/opto_optosmd_opto.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/74hc14_so_14_74hc14.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/swpushbutton-spst-2_0_b3u-1000.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/capnp_c0603_discrete_100nf_c06.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/capnp_0_c0603_18pf_cl10c180jb8.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/capnp_0_c0603_01uf63v_c0603.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/capnp_c0805_discrete_01uf.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/capnp_0_c0603_01uf_c0603c104k.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/diode_do214ac_sma_1n4007.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/led_0_led0805_led.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/antenna_1_sma_edge_antenna_opti.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/header2_header2-pitch3p96-b2p_.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/connjackpwr_conn_jack_dc_12vd.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/header5_header_5_jtagstsw.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/resistor0603_r0603_4k7.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/resistor0603_r0603_10k.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/resistor_0_r0603_47k_rc0603jr-.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/stm32f103c8t6_lqfp_48_stm32f103.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/max485_1_soic-8_max485.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/crystal-4_0_cry3225_m_12m-18ppm.txt': written successfully.
+
+  Created device files: 47
+

@@ -1,415 +1,47 @@
-\t (00:25:47) allegro 17.2 S052 Windows SPB 64-bit Edition
-\t (00:25:47)     Journal start - Tue Jun 16 19:13:12 2020
-\t (00:25:47)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=17300 CPUs=4
-\t (00:25:47) CmdLine= C:\Cadence\SPB_17.2\tools\bin\allegro.exe
-\t (00:25:47) 
-\d (00:25:47) Design opened: C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/STM32F103_RAK4600_THESISNODE.brd
-\i (00:25:47) generaledit 
-\i (00:25:48) zoom in 1 
-\i (00:25:48) setwindow pcb
-\i (00:25:48) zoom in 1818.83 14720.40
-\i (00:25:48) trapsize 6063
-\i (00:25:48) zoom in 1 
-\i (00:25:48) setwindow pcb
-\i (00:25:48) zoom in 1818.84 14684.02
-\i (00:25:48) trapsize 3031
-\i (00:25:49) zoom in 1 
-\i (00:25:49) setwindow pcb
-\i (00:25:49) zoom in 2406.93 14265.69
-\i (00:25:49) trapsize 1516
-\i (00:25:50) zoom out 1 
-\i (00:25:50) setwindow pcb
-\i (00:25:50) zoom out 2412.99 14262.66
-\i (00:25:50) trapsize 3031
-\i (00:25:51) vis 
-\i (00:25:52) generaledit 
-\i (00:25:53) setwindow form.working_visible_form
-\i (00:25:53) FORM working_visible_form place_top YES 
-\i (00:25:54) setwindow pcb
-\i (00:25:54) zoom in 1 
-\i (00:25:54) setwindow pcb
-\i (00:25:54) zoom in 2807.07 13856.45
-\i (00:25:54) trapsize 1516
-\i (00:25:55) setwindow form.working_visible_form
-\i (00:25:55) FORM working_visible_form visible_all YES 
-\i (00:26:14) setwindow pcb
-\i (00:26:14) pick grid 5401.93 13565.44
-\t (00:26:14) last pick:  5400.00 13570.00
-\i (00:26:14) zoom in 1 
-\i (00:26:14) setwindow pcb
-\i (00:26:14) zoom in 3725.58 13332.03
-\i (00:26:14) trapsize 758
-\i (00:33:49) zoom out 1 
-\i (00:33:49) setwindow pcb
-\i (00:33:49) zoom out 4545.57 13516.95
-\i (00:33:49) trapsize 1516
-\i (00:33:50) zoom out 1 
-\i (00:33:50) setwindow pcb
-\i (00:33:50) zoom out 4475.85 13526.04
-\i (00:33:50) trapsize 3031
-\i (00:33:50) zoom in 1 
-\i (00:33:50) setwindow pcb
-\i (00:33:50) zoom in 4128.74 14344.51
-\i (00:33:50) trapsize 1516
-\i (00:33:51) zoom out 1 
-\i (00:33:51) setwindow pcb
-\i (00:33:51) zoom out 5486.80 13726.11
-\i (00:33:51) trapsize 3031
-\i (00:33:52) pick grid 6117.33 13823.12
-\t (00:33:52) last pick:  6120.00 13820.00
-\i (00:33:53) drag_start grid 1746.08 15466.13
-\i (00:33:53) drag_stop 5893.01 12101.30
-\i (00:33:54) pick grid 5911.20 12101.30
-\t (00:33:54) last pick:  5910.00 12100.00
-\i (00:35:31) zoom in 1 
-\i (00:35:31) setwindow pcb
-\i (00:35:31) zoom in 4601.64 13568.49
-\i (00:35:31) trapsize 1516
-\i (00:35:32) zoom in 1 
-\i (00:35:32) setwindow pcb
-\i (00:35:32) zoom in 4601.64 13568.49
-\i (00:35:32) trapsize 758
-\i (00:35:33) roam x -96 
-\i (00:35:33) roam x -96
-\i (00:35:33) roam x 96 
-\i (00:35:33) roam x 96
-\i (00:35:33) roam y 96 
-\i (00:35:33) roam y 96
-\i (00:35:33) roam x -96 
-\i (00:35:33) roam x -96
-\i (00:35:33) roam y 96 
-\i (00:35:33) roam y 96
-\i (00:35:33) roam x 96 
-\i (00:35:33) roam x 96
-\i (00:35:33) roam x -96 
-\i (00:35:33) roam x -96
-\i (00:35:33) roam y 96 
-\i (00:35:33) roam y 96
-\i (00:35:33) roam x 96 
-\i (00:35:33) roam x 96
-\i (00:35:33) roam x -96 
-\i (00:35:33) roam x -96
-\i (00:35:34) roam y 96 
-\i (00:35:34) roam y 96
-\e (00:35:34) Command not found: ad
-\i (00:35:34) roam y 96 
-\i (00:35:34) roam y 96
-\i (00:35:34) roam y 96 
-\i (00:35:34) roam y 96
-\i (00:35:34) roam y 96 
-\i (00:35:34) roam y 96
-\i (00:35:34) roam y -96 
-\i (00:35:34) roam y -96
-\i (00:35:34) roam y -96 
-\i (00:35:34) roam y -96
-\i (00:35:35) roam y -96 
-\i (00:35:35) roam y -96
-\i (00:35:35) roam y -96 
-\i (00:35:35) roam y -96
-\i (00:35:35) roam y -96 
-\i (00:35:35) roam y -96
-\i (00:35:35) roam x 96 
-\i (00:35:35) roam x 96
-\i (00:35:35) roam y 96 
-\i (00:35:35) roam y 96
-\i (00:35:35) roam x 96 
-\i (00:35:35) roam x 96
-\i (00:35:35) roam x -96 
-\i (00:35:35) roam x -96
-\i (00:35:35) roam x 96 
-\i (00:35:35) roam x 96
-\i (00:35:35) roam y 96 
-\i (00:35:35) roam y 96
-\i (00:35:36) roam x -96 
-\i (00:35:36) roam x -96
-\i (00:35:36) roam y -96 
-\i (00:35:36) roam y -96
-\i (00:35:36) roam y -96 
-\i (00:35:36) roam y -96
-\i (00:35:36) roam y -96 
-\i (00:35:36) roam y -96
-\i (00:35:36) roam y -96 
-\i (00:35:36) roam y -96
-\i (00:35:36) roam x -96 
-\i (00:35:36) roam x -96
-\i (00:35:37) roam y -96 
-\i (00:35:37) roam y -96
-\i (00:35:37) roam x -96 
-\i (00:35:37) roam x -96
-\i (00:35:37) roam y -96 
-\i (00:35:37) roam y -96
-\i (00:35:37) roam x -96 
-\i (00:35:37) roam x -96
-\i (00:35:37) roam y -96 
-\i (00:35:37) roam y -96
-\i (00:35:37) roam x -96 
-\i (00:35:37) roam x -96
-\i (00:35:37) roam y -96 
-\i (00:35:37) roam y -96
-\i (00:35:37) roam x -96 
-\i (00:35:37) roam x -96
-\i (00:35:37) roam y -96 
-\i (00:35:37) roam y -96
-\i (00:35:38) roam y -96 
-\i (00:35:38) roam y -96
-\i (00:35:38) roam y 96 
-\i (00:35:38) roam y 96
-\i (00:35:38) roam y 96 
-\i (00:35:38) roam y 96
-\i (00:35:38) roam x -96 
-\i (00:35:38) roam x -96
-\i (00:35:38) roam x -96 
-\i (00:35:38) roam x -96
-\i (00:35:38) roam y 96 
-\i (00:35:38) roam y 96
-\i (00:35:39) roam y 96 
-\i (00:35:39) roam y 96
-\i (00:35:39) roam y 96 
-\i (00:35:39) roam y 96
-\i (00:35:39) roam y 96 
-\i (00:35:39) roam y 96
-\i (00:35:39) roam y 96 
-\i (00:35:39) roam y 96
-\i (00:35:39) roam x 96 
-\i (00:35:39) roam x 96
-\i (00:35:39) roam x 96 
-\i (00:35:39) roam x 96
-\i (00:35:40) roam x 96 
-\i (00:35:40) roam x 96
-\i (00:35:40) roam y 96 
-\i (00:35:40) roam y 96
-\i (00:35:40) roam x -96 
-\i (00:35:40) roam x -96
-\i (00:35:40) roam y -96 
-\i (00:35:40) roam y -96
-\i (00:35:40) roam x 96 
-\i (00:35:40) roam x 96
-\i (00:35:40) roam x -96 
-\i (00:35:40) roam x -96
-\i (00:35:40) roam x 96 
-\i (00:35:40) roam x 96
-\i (00:35:40) roam y -96 
-\i (00:35:40) roam y -96
-\i (00:35:40) roam x -96 
-\i (00:35:40) roam x -96
-\i (00:35:41) roam y 96 
-\i (00:35:41) roam y 96
-\i (00:35:41) roam y 96 
-\i (00:35:41) roam y 96
-\i (00:35:41) roam y 96 
-\i (00:35:41) roam y 96
-\i (00:35:41) roam x 96 
-\i (00:35:41) roam x 96
-\i (00:35:42) roam y -96 
-\i (00:35:42) roam y -96
-\i (00:35:42) roam x 96 
-\i (00:35:42) roam x 96
-\i (00:35:42) roam y -96 
-\i (00:35:42) roam y -96
-\i (00:35:42) roam y 96 
-\i (00:35:42) roam y 96
-\i (00:35:43) roam x -96 
-\i (00:35:43) roam x -96
-\i (00:35:43) roam y 96 
-\i (00:35:43) roam y 96
-\i (00:35:43) roam y 96 
-\i (00:35:43) roam y 96
-\i (00:35:43) roam y 96 
-\i (00:35:43) roam y 96
-\i (00:35:44) roam y 96 
-\i (00:35:44) roam y 96
-\i (00:35:44) roam y 96 
-\i (00:35:44) roam y 96
-\i (00:35:44) roam x -96 
-\i (00:35:44) roam x -96
-\i (00:35:44) roam x 96 
-\i (00:35:44) roam x 96
-\i (00:35:44) roam y -96 
-\i (00:35:44) roam y -96
-\i (00:35:45) roam x 96 
-\i (00:35:45) roam x 96
-\i (00:35:45) roam y 96 
-\i (00:35:45) roam y 96
-\i (00:35:45) roam x -96 
-\i (00:35:45) roam x -96
-\i (00:35:45) roam y -96 
-\i (00:35:45) roam y -96
-\i (00:35:45) roam x 96 
-\i (00:35:45) roam x 96
-\i (00:35:46) roam y -96 
-\i (00:35:46) roam y -96
-\i (00:35:46) roam x -96 
-\i (00:35:46) roam x -96
-\i (00:35:46) roam y 96 
-\i (00:35:46) roam y 96
-\i (00:35:46) roam y 96 
-\i (00:35:46) roam y 96
-\i (00:35:47) roam y 96 
-\i (00:35:47) roam y 96
-\i (00:35:47) roam y 96 
-\i (00:35:47) roam y 96
-\i (00:35:47) roam y -96 
-\i (00:35:47) roam y -96
-\i (00:35:47) roam y -96 
-\i (00:35:47) roam y -96
-\i (00:35:48) roam y -96 
-\i (00:35:48) roam y -96
-\i (00:35:48) roam y -96 
-\i (00:35:48) roam y -96
-\i (00:35:48) roam y -96 
-\i (00:35:48) roam y -96
-\i (00:35:48) roam x -96 
-\i (00:35:48) roam x -96
-\i (00:35:48) roam y -96 
-\i (00:35:48) roam y -96
-\i (00:35:48) roam y -96 
-\i (00:35:49) roam y -96
-\i (00:35:49) roam y -96 
-\i (00:35:49) roam y -96
-\i (00:35:49) roam y -96 
-\i (00:35:49) roam y -96
-\i (00:35:49) roam y -96 
-\i (00:35:49) roam y -96
-\i (00:35:49) roam y -96 
-\i (00:35:49) roam y -96
-\i (00:35:49) roam x 96 
-\i (00:35:49) roam x 96
-\i (00:35:50) roam y 96 
-\i (00:35:50) roam y 96
-\e (00:35:50) Command not found: da
-\i (00:35:50) roam x 96 
-\i (00:35:50) roam x 96
-\i (00:35:50) roam y 96 
-\i (00:35:50) roam y 96
-\i (00:35:50) roam x -96 
-\i (00:35:50) roam x -96
-\i (00:35:50) roam y -96 
-\i (00:35:50) roam y -96
-\i (00:35:50) roam x 96 
-\i (00:35:50) roam x 96
-\i (00:35:50) roam y -96 
-\i (00:35:50) roam y -96
-\i (00:35:51) roam y -96 
-\i (00:35:51) roam y -96
-\i (00:35:51) roam y -96 
-\i (00:35:51) roam y -96
-\i (00:35:51) roam y -96 
-\i (00:35:51) roam y -96
-\i (00:35:51) roam y -96 
-\i (00:35:51) roam y -96
-\i (00:35:56) replay g20 #replace to define grid or use scriptmode +continue 
-\i (00:35:56) version 13.6 
-\t (00:35:56) Script version: 13.6
-\i (00:35:56) scriptmode +invisible 
-\i (00:35:56) setwindow pcb 
-\i (00:35:56) define grid 
-\t (00:35:57) Spacing fields allow simple equations to aid calculations; prefix with =
-\i (00:35:57) setwindow form.grid 
-\i (00:35:57) FORM grid non_etch non_etch_x_grids 20.00 
-\i (00:35:57) FORM grid non_etch non_etch_y_grids 20.00 
-\i (00:35:57) FORM grid all_etch all_etch_x_grids 20 
-\i (00:35:57) FORM grid all_etch all_etch_y_grids 20 
-\i (00:35:57) FORM grid done 
-\i (00:35:57) trapsize 758
-\i (00:36:00) define grid 
-\t (00:36:00) Spacing fields allow simple equations to aid calculations; prefix with =
-\t (00:40:12) Performing autosave...
-\t (00:40:13) Autosave successful
-\i (00:44:09) xname_flush 
-\i (00:44:12) xdehilite 
-\i (00:44:12) xname_flush 
-\i (00:44:12) done 
-\i (00:44:12) xhilite 
-\i (00:44:12) xname_flush 
-\i (00:44:12) done 
-\i (00:44:13) generaledit 
-\i (00:44:19) xdehilite 
-\i (00:44:20) xname_flush 
-\i (00:44:20) done 
-\i (00:44:20) generaledit 
-\i (00:44:20) xname_flush 
-\i (00:44:23) xname_flush 
-\i (00:44:27) xdehilite 
-\i (00:44:27) xname_flush 
-\i (00:44:27) done 
-\i (00:44:27) xhilite 
-\i (00:44:27) xname_flush 
-\i (00:44:27) done 
-\i (00:44:27) generaledit 
-\i (00:44:28) xdehilite 
-\i (00:44:29) xname_flush 
-\i (00:44:29) done 
-\i (00:44:29) generaledit 
-\i (00:44:29) xname_flush 
-\i (00:44:30) xdehilite 
-\i (00:44:30) xname_flush 
-\i (00:44:30) done 
-\i (00:44:30) xhilite 
-\i (00:44:30) xname_flush 
-\i (00:44:30) done 
-\i (00:44:30) generaledit 
-\i (00:45:53) xdehilite 
-\i (00:45:54) xname_flush 
-\i (00:45:54) done 
-\i (00:45:54) xhilite 
-\i (00:45:54) xname_flush 
-\i (00:45:54) done 
-\i (00:45:54) generaledit 
-\i (00:45:54) xdehilite 
-\i (00:45:54) xname_flush 
-\i (00:45:54) done 
-\i (00:45:55) xhilite 
-\i (00:45:55) xname_flush 
-\i (00:45:55) done 
-\i (00:45:55) xdehilite 
-\i (00:45:55) xname_flush 
-\i (00:45:55) done 
-\i (00:45:55) xhilite 
-\i (00:45:55) xname_flush 
-\i (00:45:55) done 
-\i (00:45:55) generaledit 
-\i (00:45:59) xdehilite 
-\i (00:46:00) xname_flush 
-\i (00:46:00) done 
-\i (00:46:00) generaledit 
-\i (00:48:00) status 
-\i (00:48:00) generaledit 
-\i (00:48:31) setwindow form.grid
-\i (00:48:31) FORM grid done  
-\i (00:48:31) setwindow pcb
-\i (00:48:31) zoom out 1 
-\i (00:48:31) setwindow pcb
-\i (00:48:31) zoom out 4448.55 14696.13
-\i (00:48:31) trapsize 1516
-\i (00:48:31) zoom out 1 
-\i (00:48:31) setwindow pcb
-\i (00:48:31) zoom out 4421.27 14647.63
-\i (00:48:31) trapsize 3031
-\i (00:48:32) zoom in 1 
-\i (00:48:32) setwindow pcb
-\i (00:48:32) zoom in 3680.10 13556.33
-\i (00:48:32) trapsize 1516
-\i (00:48:32) zoom in 1 
-\i (00:48:32) setwindow pcb
-\i (00:48:32) zoom in 3680.10 13553.30
-\i (00:48:32) trapsize 758
-\i (00:48:32) zoom out 1 
-\i (00:48:32) setwindow pcb
-\i (00:48:32) zoom out 3680.10 13553.30
-\i (00:48:32) trapsize 1516
-\i (00:48:34) pick grid 5653.54 13595.74
-\t (00:48:34) last pick:  5660.00 13600.00
-\t (00:50:13) Performing autosave...
-\t (00:50:13) Autosave successful
-\i (00:53:37) zoom out 1 
-\i (00:53:37) setwindow pcb
-\i (00:53:37) zoom out 3352.72 13429.01
-\i (00:53:37) trapsize 3031
-\i (00:53:38) zoom in 1 
-\i (00:53:38) setwindow pcb
-\i (00:53:38) zoom in 3219.34 13895.85
-\i (00:53:38) trapsize 1516
-\i (00:53:50) exit 
-\e (00:53:50) Do you want to save the changes you made to STM32F103_RAK4600_THESISNODE.brd?
-\i (00:53:51) fillin yes 
-\t (00:53:52)     Journal end - Tue Jun 16 19:41:16 2020
+\t (00:00:00) allegro 17.2 S052 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Wed Jun 17 09:11:38 2020
+\t (00:00:00)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=21168 CPUs=4
+\t (00:00:00) CmdLine= c:\cadence\spb_17.2\tools\bin\allegro.exe C:\GIT\ThesisLorawanNode\HW\RAK4600_SM32Node\allegro\STM32F103_RAK4600_THESISNODE.brd
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+   (00:00:00) Searching for nsWare programs v2.78
+   (00:00:00) 	NsWare directory found: E:/CAD/pcbenv/nsWare/
+   (00:00:01) 	NsWare programs must reside in this directory!
+   (00:00:01) function AFn_OpenDesign redefined
+   (00:00:01) function PinVia_Overlap_FinishEnterFun redefined
+   (00:00:01) function Find_Point_On_Line_From_Distant redefined
+   (00:00:01) function Find_Point_Quadrature_Line redefined
+   (00:00:01) function Line_Line_Intersect redefined
+   (00:00:01) function _getPinsNet redefined
+   (00:00:01) function _getBranchs redefined
+   (00:00:01) function _getPaths redefined
+   (00:00:01) function _get2PointsPath redefined
+   (00:00:01) function _checkElementList redefined
+   (00:00:01) function _getSurroundPoints redefined
+   (00:00:01) function _getListPointsLPaths redefined
+   (00:00:01) function _checkPathPoint redefined
+   (00:00:01) function _deleteElementList redefined
+   (00:00:01) function _checkElementList redefined
+   (00:00:01) function _deleteElementList redefined
+   (00:00:01) function Find_Point_On_Line_From_Distant redefined
+   (00:00:01) function Find_Point_Quadrature_Line redefined
+   (00:00:01) function Is_Point_On_List redefined
+   (00:00:01) function Line_Line_Intersect redefined
+   (00:00:01) function Line_Line_Distant redefined
+\t (00:00:03) Opening existing design...
+\i (00:00:03) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged STM32F103_RAK4600_THESISNODE
+\d (00:00:03) Design opened: C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/STM32F103_RAK4600_THESISNODE.brd
+\i (00:00:04) trapsize 3246
+\i (00:00:04) trapsize 3427
+\i (00:00:04) trapsize 2752
+\i (00:00:04) trapsize 2752
+\i (00:00:05) generaledit 
+\i (00:00:14) dlib 
+\i (00:00:16) setwindow form.dlib
+\i (00:00:16) FORM dlib execute  
+\t (00:00:16) Starting Cadence export libraries...
+\i (00:00:30) FORM dlib cancel  
+\i (00:00:30) setwindow pcb
+\i (00:00:30) generaledit 
+\i (00:00:31) exit 
+\t (00:00:32)     Journal end - Wed Jun 17 09:12:09 2020
