@@ -58,8 +58,12 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define RAK811_RST_Pin GPIO_PIN_8
-#define RAK811_RST_GPIO_Port GPIOA
+#define RAK_RST_Pin GPIO_PIN_8
+#define RAK_RST_GPIO_Port GPIOA
+#define RAK_TX_Pin GPIO_PIN_9
+#define RAK_TX_GPIO_Port GPIOA
+#define RAK_RX_Pin GPIO_PIN_10
+#define RAK_RX_GPIO_Port GPIOA
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
