@@ -178,6 +178,7 @@ uint8_t rak_join(void) {
 	memset(commandSendBuffer, 0, RAK_MAX_RECV_LEN);
 	strcat(commandSendBuffer, "at+join");
 	rak_send_raw(commandSendBuffer);
+
 	for (uint8_t u8tryPerSec = 0; u8tryPerSec < MAX_TIME_OUT; u8tryPerSec++) {
 		osDelay(1000);
 		if (gotCommandRecvFlag == 1) {

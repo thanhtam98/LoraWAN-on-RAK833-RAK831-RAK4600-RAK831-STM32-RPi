@@ -14,6 +14,7 @@
 #include "rak.h"
 #include "mbtask.h"
 #include "envtask.h"
+#include "sharedmem.h"
 /**/
 osThreadId modbusTaskHandle;
 osThreadId loraTaskHandle;
@@ -23,21 +24,28 @@ void vAppDefault(void) {
 
 	/*Task initialization*/
 
-//	osThreadDef(modbusTaskHandle, vModBusTask, osPriorityNormal, 0, 128);
-//	modbusTaskHandle = osThreadCreate(osThread(modbusTaskHandle), NULL);
 	osThreadDef(loraTaskHandle, vRakTask, osPriorityNormal, 0, 128);
 	loraTaskHandle = osThreadCreate(osThread(loraTaskHandle), NULL);
-//	osThreadDef(envTaskHandle, vEnvTask, osPriorityNormal, 0, 128);
-//	envTaskHandle = osThreadCreate(osThread(envTaskHandle), NULL);
+	printf("\r\n MemFree: %d", xPortGetFreeHeapSize());
 
-	char *p= "\r\n NTT";
+	osThreadDef(modbusTaskHandle, vModBusTask, osPriorityNormal, 0, 256);
+	modbusTaskHandle = osThreadCreate(osThread(modbusTaskHandle), NULL);
+	printf("\r\n MemFree: %d", xPortGetFreeHeapSize());
+
+	osThreadDef(envTaskHandle, vEnvTask, osPriorityNormal, 0, 512);
+	envTaskHandle = osThreadCreate(osThread(envTaskHandle), NULL);
+
+	printf("\r\n MemFree: %d", xPortGetFreeHeapSize());
+
+	osDelay(1000);
+	printf("\r\n MemFree: %d", xPortGetFreeHeapSize());
+
+	char *p = "\r\n NTT";
+	DHT11_DATA_TypeDef DHT_DATA;
 	while (1) {
-		//HAL_UART_Transmit(&huart1,p,6,100);
-		osDelay(5000);
-//		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, 1);
-//		osDelay(1000);
-//		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, 0);
-//		osDelay(1000);
+		printf("\r\nMemFree:%d", xPortGetFreeHeapSize());
+		osDelay(1000);
+		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_7);
 	}
 }
 

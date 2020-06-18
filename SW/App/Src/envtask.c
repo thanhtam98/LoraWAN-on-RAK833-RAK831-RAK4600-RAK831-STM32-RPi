@@ -17,24 +17,19 @@
 
 void vEnvTask(void const *arg)
 {
-	uint32_t adcRead1;
-	uint32_t adcRead2;
 	uint32_t temperature;
-	float vsense = 3.3/1023;
-	float 	temp;
-	HAL_ADC_Start(&hadc1);
 	DHT11_DATA_TypeDef DHT_DATA;
 	while(1)
 	{
 //		delay_us(1000000);
 
-		HAL_ADC_Start(&hadc1);
+//		HAL_ADC_Start(&hadc1);
 		osDelay(1200);
-		HAL_ADC_PollForConversion(&hadc1, 100);
-		adcRead1 = HAL_ADC_GetValue(&hadc1);
-		HAL_ADC_Stop (&hadc1);
+//		HAL_ADC_PollForConversion(&hadc1, 100);
+//		adcRead1 = HAL_ADC_GetValue(&hadc1);
+//		HAL_ADC_Stop (&hadc1);
 		DHT11_ReadData(&DHT_DATA);
-		uiMemSet(FUNC_READ_LIGH_ADR, adcRead1);
+//		uiMemSet(FUNC_READ_LIGH_ADR, adcRead1);
 		uiMemSet(FUNC_READ_TEMP_ADR, DHT_DATA.temp_int);
 		uiMemSet(FUNC_READ_HUMD_ADR, DHT_DATA.humi_int);
 

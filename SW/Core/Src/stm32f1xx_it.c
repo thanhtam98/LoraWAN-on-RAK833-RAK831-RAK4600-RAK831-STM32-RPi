@@ -26,11 +26,15 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "rak.h"
+#include "mb.h"
+#include "mbport.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN TD */
-
+//extern BOOL( *pxMBFrameCBByteReceived ) ( void );
+//extern BOOL( *pxMBFrameCBTransmitterEmpty ) ( void );
 /* USER CODE END TD */
 
 /* Private define ------------------------------------------------------------*/
@@ -45,6 +49,7 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
+extern uint16_t downcounter;
 
 /* USER CODE END PV */
 
@@ -59,6 +64,7 @@
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
+extern TIM_HandleTypeDef htim3;
 extern UART_HandleTypeDef huart1;
 extern UART_HandleTypeDef huart2;
 extern UART_HandleTypeDef huart3;
@@ -179,6 +185,25 @@ void TIM1_UP_IRQHandler(void)
 }
 
 /**
+  * @brief This function handles TIM3 global interrupt.
+  */
+void TIM3_IRQHandler(void)
+{
+  /* USER CODE BEGIN TIM3_IRQn 0 */
+	if (__HAL_TIM_GET_FLAG(&htim3, TIM_FLAG_UPDATE) != RESET
+			&& __HAL_TIM_GET_IT_SOURCE(&htim3, TIM_IT_UPDATE) != RESET) {
+		__HAL_TIM_CLEAR_IT(&htim3, TIM_IT_UPDATE);
+		if (!--downcounter)
+			pxMBPortCBTimerExpired();
+	}
+  /* USER CODE END TIM3_IRQn 0 */
+  HAL_TIM_IRQHandler(&htim3);
+  /* USER CODE BEGIN TIM3_IRQn 1 */
+
+  /* USER CODE END TIM3_IRQn 1 */
+}
+
+/**
   * @brief This function handles USART1 global interrupt.
   */
 void USART1_IRQHandler(void)
@@ -192,8 +217,6 @@ void USART1_IRQHandler(void)
 		rak_recv_isr();
 		__HAL_UART_CLEAR_PEFLAG(&huart1);
 		__HAL_UART_ENABLE_IT(&huart1, UART_IT_RXNE);
-
-
 
 		return;
 	}
@@ -224,7 +247,26 @@ void USART2_IRQHandler(void)
 void USART3_IRQHandler(void)
 {
   /* USER CODE BEGIN USART3_IRQn 0 */
+	uint32_t tmp_flag = __HAL_UART_GET_FLAG(&huart3, UART_FLAG_RXNE);
+	uint32_t tmp_it_source = __HAL_UART_GET_IT_SOURCE(&huart3, UART_IT_RXNE);
 
+	if ((tmp_flag != RESET) && (tmp_it_source != RESET)) {
+
+//		uint8_t recv = (uint8_t) ((huart3).Instance->DR & (uint8_t) 0x00FF);
+//		HAL_UART_Transmit(&huart3, &recv, 1, 10);
+		pxMBFrameCBByteReceived();
+
+		__HAL_UART_CLEAR_PEFLAG(&huart3);
+		__HAL_UART_ENABLE_IT(&huart3, UART_IT_RXNE);
+
+		return;
+	}
+
+	if ((__HAL_UART_GET_FLAG(&huart3, UART_FLAG_TXE) != RESET)
+			&& (__HAL_UART_GET_IT_SOURCE(&huart3, UART_IT_TXE) != RESET)) {
+		pxMBFrameCBTransmitterEmpty();
+		return;
+	}
   /* USER CODE END USART3_IRQn 0 */
   HAL_UART_IRQHandler(&huart3);
   /* USER CODE BEGIN USART3_IRQn 1 */

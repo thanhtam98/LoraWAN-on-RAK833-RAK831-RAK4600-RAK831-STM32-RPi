@@ -29,7 +29,7 @@
 //static void prvvUARTTxReadyISR( void );
 //static void prvvUARTRxISR( void );
 /* -----------------------    variables     ---------------------------------*/
-extern UART_HandleTypeDef huart2;
+extern UART_HandleTypeDef huart3;
 
 /* ----------------------- Start implementation -----------------------------*/
 void vMBPortSerialEnable(BOOL xRxEnable, BOOL xTxEnable) {
@@ -40,17 +40,17 @@ void vMBPortSerialEnable(BOOL xRxEnable, BOOL xTxEnable) {
 	if (xRxEnable) {
 //			HAL_GPIO_WritePin(USART3_RDE_GPIO_Port, USART3_RDE_Pin, 0);
 //			HAL_GPIO_WritePin(USART3_LED_GPIO_Port, USART3_LED_Pin, 0);
-		__HAL_UART_ENABLE_IT(&huart2, UART_IT_RXNE);
+		__HAL_UART_ENABLE_IT(&huart3, UART_IT_RXNE);
 	} else {
-		__HAL_UART_DISABLE_IT(&huart2, UART_IT_RXNE);
+		__HAL_UART_DISABLE_IT(&huart3, UART_IT_RXNE);
 	}
 
 	if (xTxEnable) {
 //		HAL_GPIO_WritePin(USART3_LED_GPIO_Port, USART3_LED_Pin, 1);
 //		HAL_GPIO_WritePin(USART3_RDE_GPIO_Port, USART3_RDE_Pin, 1);
-		__HAL_UART_ENABLE_IT(&huart2, UART_IT_TXE);
+		__HAL_UART_ENABLE_IT(&huart3, UART_IT_TXE);
 	} else {
-		__HAL_UART_DISABLE_IT(&huart2, UART_IT_TXE);
+		__HAL_UART_DISABLE_IT(&huart3, UART_IT_TXE);
 	}
 }
 
@@ -67,7 +67,7 @@ BOOL xMBPortSerialPutByte(CHAR ucByte) {
 	/* Put a byte in the UARTs transmit buffer. This function is called
 	 * by the protocol stack if pxMBFrameCBTransmitterEmpty( ) has been
 	 * called. */
-	return (HAL_OK == HAL_UART_Transmit(&huart2, (uint8_t*) &ucByte, 1, 10));
+	return (HAL_OK == HAL_UART_Transmit(&huart3, (uint8_t*) &ucByte, 1, 10));
 }
 
 BOOL xMBPortSerialGetByte(CHAR * pucByte) {
@@ -75,7 +75,7 @@ BOOL xMBPortSerialGetByte(CHAR * pucByte) {
 	 * by the protocol stack after pxMBFrameCBByteReceived( ) has been called.
 	 */
 //	HAL_GPIO_WritePin(USART3_LED_GPIO_Port, USART3_LED_Pin, 1);
-	*pucByte = (uint8_t) (huart2.Instance->DR & (uint8_t) 0x00FF);
+	*pucByte = (uint8_t) (huart3.Instance->DR & (uint8_t) 0x00FF);
 //	HAL_GPIO_WritePin(USART3_LED_GPIO_Port, USART3_LED_Pin, 0);
 	return TRUE;
 }

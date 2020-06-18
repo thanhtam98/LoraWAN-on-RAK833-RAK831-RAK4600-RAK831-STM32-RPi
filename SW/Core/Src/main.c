@@ -22,7 +22,7 @@
 #include "main.h"
 #include "cmsis_os.h"
 #include "adc.h"
-#include "rtc.h"
+#include "i2c.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -96,12 +96,18 @@ int main(void)
   MX_USART1_UART_Init();
   MX_USART2_UART_Init();
   MX_USART3_UART_Init();
-  MX_RTC_Init();
   MX_TIM4_Init();
+  MX_TIM3_Init();
+  MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start(&htim4);
   char *p="NTT \r\n";
   __HAL_UART_ENABLE_IT(&huart1, UART_IT_RXNE);
+  __HAL_UART_ENABLE_IT(&huart3, UART_IT_RXNE);
+//  HAL_Delay(101);
+//  HAL_UART_Transmit(&huart2,p,6,100);
+//  HAL_UART_Transmit(&huart3,p,6,100);
+  printf("Test printf \r\n");
 //  while(1)
 //  {
 //	  HAL_UART_Transmit(&huart1,p,6,100);
@@ -142,10 +148,9 @@ void SystemClock_Config(void)
 
   /** Initializes the CPU, AHB and APB busses clocks 
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_LSI;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
-  RCC_OscInitStruct.LSIState = RCC_LSI_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI_DIV2;
   RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL6;
@@ -166,8 +171,7 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_RTC|RCC_PERIPHCLK_ADC;
-  PeriphClkInit.RTCClockSelection = RCC_RTCCLKSOURCE_LSI;
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_ADC;
   PeriphClkInit.AdcClockSelection = RCC_ADCPCLK2_DIV6;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {
@@ -180,6 +184,21 @@ void delay_us(uint32_t time) {
 	__HAL_TIM_SET_COUNTER(&htim4, 0);
 	while (__HAL_TIM_GET_COUNTER(&htim4) < time)
 		;
+}
+
+/* USER CODE BEGIN 4 */
+PUTCHAR_PROTOTYPE
+{
+  /* Place your implementation of fputc here */
+  /* e.g. write a character to the USART */
+//  USART_SendData(EVAL_COM1, (uint8_t) ch);
+	HAL_UART_Transmit(&huart2, (uint8_t *)&ch, 1, 0xFFFF);
+
+  /* Loop until the end of transmission */
+//  while (USART_GetFlagStatus(EVAL_COM1, USART_FLAG_TC) == RESET)
+//  {}
+
+  return ch;
 }
 /* USER CODE END 4 */
 

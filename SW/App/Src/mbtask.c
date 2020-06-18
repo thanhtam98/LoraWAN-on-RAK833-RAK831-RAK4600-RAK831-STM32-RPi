@@ -11,7 +11,7 @@
 #include "mb.h"
 #include "mbport.h"
 
-
+extern osTimerId myTimer01Handle;
 #define REG_INPUT_START 1000
 #define REG_INPUT_NREGS 8
 
@@ -21,20 +21,13 @@ static USHORT usRegInputBuf[REG_INPUT_NREGS];
 void vModBusTask(void const * argument)
 { 
   /* ABCDEF */
-  usRegInputBuf[0] = 11;
-  usRegInputBuf[1] = 22;
-  usRegInputBuf[2] = 33;
-  usRegInputBuf[3] = 44;
-  usRegInputBuf[4] = 55;
-  usRegInputBuf[5] = 66;
-  usRegInputBuf[6] = 77;
-  usRegInputBuf[7] = 88;  
 
   eMBErrorCode eStatus = eMBInit( MB_RTU, 1, 3, 9600, MB_PAR_NONE );
   eStatus = eMBEnable();
-
+//  osTimerStart(myTimer01Handle, 1);
 	  while(1) {
 		eMBPoll();
+		osDelay(10);
 	  }
 }
 

@@ -1,0 +1,32 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Dump Library Log                                                 )
+(                                                                     )
+(    Software Version : 17.2S052                                      )
+(    Date/Time        : Thu Jun 18 18:21:03 2020                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+*** file: C:/GIT/ThesisLorawanNode/HW/ExportFootprint/db9_fe.dra ***
+
+
+
+  *** Creating padstacks. ***
+
+  TH_SQU_80_CIR_45 being dumped.
+
+  TH_CIR_162_OVAL_130X50 being dumped.
+
+  TH_CIR_80_CIR_45 being dumped.
+
+
+
+*********************** Summary *********************
+ERRORs reported:                           0
+
+Number of padstacks dumped:                3
+
+Total number of symbols dumped:            0
+*****************************************************
+
