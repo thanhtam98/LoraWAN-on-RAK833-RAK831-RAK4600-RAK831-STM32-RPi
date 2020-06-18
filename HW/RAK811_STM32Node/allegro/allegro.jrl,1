@@ -1,172 +1,79 @@
-\t (00:00:02) allegro 17.2 S052 Windows SPB 64-bit Edition
-\t (00:00:02)     Journal start - Wed Jun 17 09:10:06 2020
-\t (00:00:02)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=13380 CPUs=4
-\t (00:00:02) CmdLine= c:\cadence\spb_17.2\tools\bin\allegro.exe C:\GIT\ThesisLorawanNode\HW\RAK811_STM32Node\allegro\STM32F103_RAK811_THESISNODE.brd
-\t (00:00:02) 
-   (00:00:02) Loading axlcore.cxt 
-   (00:00:02) Searching for nsWare programs v2.78
-   (00:00:02) 	NsWare directory found: E:/CAD/pcbenv/nsWare/
-   (00:00:02) 	NsWare programs must reside in this directory!
-   (00:00:02) function AFn_OpenDesign redefined
-   (00:00:02) function PinVia_Overlap_FinishEnterFun redefined
-   (00:00:02) function Find_Point_On_Line_From_Distant redefined
-   (00:00:02) function Find_Point_Quadrature_Line redefined
-   (00:00:02) function Line_Line_Intersect redefined
-   (00:00:02) function _getPinsNet redefined
-   (00:00:02) function _getBranchs redefined
-   (00:00:02) function _getPaths redefined
-   (00:00:02) function _get2PointsPath redefined
-   (00:00:02) function _checkElementList redefined
-   (00:00:02) function _getSurroundPoints redefined
-   (00:00:02) function _getListPointsLPaths redefined
-   (00:00:02) function _checkPathPoint redefined
-   (00:00:02) function _deleteElementList redefined
-   (00:00:02) function _checkElementList redefined
-   (00:00:02) function _deleteElementList redefined
-   (00:00:02) function Find_Point_On_Line_From_Distant redefined
-   (00:00:02) function Find_Point_Quadrature_Line redefined
-   (00:00:02) function Is_Point_On_List redefined
-   (00:00:02) function Line_Line_Intersect redefined
-   (00:00:02) function Line_Line_Distant redefined
-\t (00:00:04) Opening existing design...
-\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged STM32F103_RAK811_THESISNODE
-\d (00:00:04) Design opened: C:/GIT/ThesisLorawanNode/HW/RAK811_STM32Node/allegro/STM32F103_RAK811_THESISNODE.brd
-\i (00:00:05) trapsize 6492
-\i (00:00:05) trapsize 6854
-\i (00:00:05) trapsize 5504
-\i (00:00:05) trapsize 5504
-\i (00:00:06) generaledit 
-\i (00:00:06) zoom out 1 
+\t (00:00:00) allegro 17.2 S052 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Wed Jun 17 09:12:17 2020
+\t (00:00:00)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=5844 CPUs=4
+\t (00:00:00) CmdLine= c:\cadence\spb_17.2\tools\bin\allegro.exe C:\GIT\ThesisLorawanNode\HW\RAK811_STM32Node\allegro\STM32F103_RAK811_THESISNODE.brd
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+   (00:00:01) Searching for nsWare programs v2.78
+   (00:00:01) 	NsWare directory found: E:/CAD/pcbenv/nsWare/
+   (00:00:01) 	NsWare programs must reside in this directory!
+   (00:00:01) function AFn_OpenDesign redefined
+   (00:00:01) function PinVia_Overlap_FinishEnterFun redefined
+   (00:00:01) function Find_Point_On_Line_From_Distant redefined
+   (00:00:01) function Find_Point_Quadrature_Line redefined
+   (00:00:01) function Line_Line_Intersect redefined
+   (00:00:01) function _getPinsNet redefined
+   (00:00:01) function _getBranchs redefined
+   (00:00:01) function _getPaths redefined
+   (00:00:01) function _get2PointsPath redefined
+   (00:00:01) function _checkElementList redefined
+   (00:00:01) function _getSurroundPoints redefined
+   (00:00:01) function _getListPointsLPaths redefined
+   (00:00:01) function _checkPathPoint redefined
+   (00:00:01) function _deleteElementList redefined
+   (00:00:01) function _checkElementList redefined
+   (00:00:01) function _deleteElementList redefined
+   (00:00:01) function Find_Point_On_Line_From_Distant redefined
+   (00:00:01) function Find_Point_Quadrature_Line redefined
+   (00:00:01) function Is_Point_On_List redefined
+   (00:00:01) function Line_Line_Intersect redefined
+   (00:00:01) function Line_Line_Distant redefined
+\t (00:00:03) Opening existing design...
+\i (00:00:03) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged STM32F103_RAK811_THESISNODE
+\d (00:00:03) Design opened: C:/GIT/ThesisLorawanNode/HW/RAK811_STM32Node/allegro/STM32F103_RAK811_THESISNODE.brd
+\i (00:00:04) trapsize 3246
+\i (00:00:04) trapsize 3427
+\i (00:00:04) trapsize 2752
+\i (00:00:04) trapsize 2752
+\i (00:00:05) generaledit 
+\i (00:00:06) zoom in 1 
 \i (00:00:06) setwindow pcb
-\i (00:00:06) zoom out 2706.84 16382.60
-\i (00:00:06) trapsize 11009
+\i (00:00:06) zoom in 3853.00 13251.59
+\i (00:00:06) trapsize 1376
 \i (00:00:07) zoom in 1 
 \i (00:00:07) setwindow pcb
-\i (00:00:07) zoom in 2509.95 14049.71
-\i (00:00:07) trapsize 5504
-\i (00:00:07) zoom in 1 
-\i (00:00:07) setwindow pcb
-\i (00:00:07) zoom in 3467.70 14413.00
-\i (00:00:07) trapsize 2752
-\i (00:00:14) move 
-\t (00:00:15) Select element(s) to move.
-\i (00:00:17) shape select 
-\i (00:00:18) pick grid 3539.25 13543.32
-\t (00:00:18) last pick:  3540.00 13540.00
-\i (00:00:20) delete 
-\i (00:00:22) pick grid 3808.96 13746.98
-\t (00:00:22) last pick:  3810.00 13750.00
-\t (00:00:22) Dynamic Shape "Gnd, Boundary/Bottom"
-\i (00:00:23) delete 
-\i (00:00:24) add connect 
-\t (00:00:24) Pick first element.
-\i (00:00:25) save 
-\i (00:00:26) fillin yes 
-\i (00:00:26) generaledit 
-\i (00:00:27) zoom in 1 
-\i (00:00:27) setwindow pcb
-\i (00:00:27) zoom in 3390.64 13361.68
-\i (00:00:27) trapsize 1376
-\i (00:00:28) zoom in 1 
+\i (00:00:07) zoom in 3891.53 13482.77
+\i (00:00:07) trapsize 688
+\i (00:00:08) zoom out 1 
+\i (00:00:08) setwindow pcb
+\i (00:00:08) zoom out 3967.21 13383.69
+\i (00:00:08) trapsize 1376
+\i (00:00:09) setwindow form.mini
+\i (00:00:09) FORM mini subclass TOP 
+\i (00:00:10) setwindow pcb
+\i (00:00:10) zoom out 1 
+\i (00:00:10) setwindow pcb
+\i (00:00:10) zoom out 3645.21 13350.67
+\i (00:00:10) trapsize 2752
+\i (00:00:18) dlib 
+\i (00:00:21) setwindow form.dlib
+\i (00:00:21) FORM dlib execute  
+\t (00:00:21) Starting Cadence export libraries...
+\i (00:00:27) FORM dlib cancel  
 \i (00:00:28) setwindow pcb
-\i (00:00:28) zoom in 3775.94 13295.63
-\i (00:00:28) trapsize 688
-\i (00:00:30) zoom out 1 
-\i (00:00:30) setwindow pcb
-\i (00:00:30) zoom out 3832.36 13151.15
-\i (00:00:30) trapsize 1376
-\i (00:00:30) zoom out 1 
-\i (00:00:30) setwindow pcb
-\i (00:00:30) zoom out 3810.34 13129.13
-\i (00:00:30) trapsize 2752
-\i (00:00:31) pick grid 5731.33 13679.55
-\t (00:00:31) last pick:  5730.00 13680.00
-\i (00:00:31) roam y -96 
-\i (00:00:31) roam y -96
-\i (00:00:32) roam y 96 
-\i (00:00:32) roam y 96
-\i (00:00:32) roam x 96 
-\i (00:00:32) roam x 96
-\i (00:00:33) zoom in 1 
-\i (00:00:33) setwindow pcb
-\i (00:00:33) zoom in 3830.96 13248.72
-\i (00:00:33) trapsize 1376
-\i (00:00:33) zoom out 1 
-\i (00:00:33) setwindow pcb
-\i (00:00:33) zoom out 3830.96 13248.73
-\i (00:00:33) trapsize 2752
-\i (00:00:34) roam y 96 
-\i (00:00:34) roam y 96
-\i (00:00:35) zoom in 1 
-\i (00:00:35) setwindow pcb
-\i (00:00:35) zoom in 3253.01 13964.27
-\i (00:00:35) trapsize 1376
-\i (00:00:35) zoom in 1 
-\i (00:00:35) setwindow pcb
-\i (00:00:35) zoom in 3442.91 13290.00
-\i (00:00:35) trapsize 688
-\i (00:00:38) zoom out 1 
-\i (00:00:38) setwindow pcb
-\i (00:00:38) zoom out 3866.74 13250.10
-\i (00:00:38) trapsize 1376
-\i (00:00:39) zoom out 1 
-\i (00:00:39) setwindow pcb
-\i (00:00:39) zoom out 3866.75 13263.86
-\i (00:00:39) trapsize 2752
-\i (00:00:39) zoom in 1 
-\i (00:00:39) setwindow pcb
-\i (00:00:39) zoom in 2881.48 13027.19
-\i (00:00:39) trapsize 1376
-\i (00:00:39) zoom in 1 
-\i (00:00:39) setwindow pcb
-\i (00:00:39) zoom in 2881.49 13018.94
-\i (00:00:39) trapsize 688
-\i (00:00:40) zoom in 1 
-\i (00:00:40) setwindow pcb
-\i (00:00:40) zoom in 2881.49 13018.94
-\i (00:00:40) trapsize 344
-\i (00:00:40) roam x 96 
-\i (00:00:41) roam x 96
-\i (00:00:41) roam x 96 
-\i (00:00:41) roam x 96
-\i (00:00:41) roam x 96 
-\i (00:00:41) roam x 96
-\i (00:00:41) zoom out 1 
-\i (00:00:41) setwindow pcb
-\i (00:00:41) zoom out 3079.63 13018.94
-\i (00:00:41) trapsize 688
-\i (00:00:42) roam x 96 
-\i (00:00:42) roam x 96
-\i (00:00:42) roam x 96 
-\i (00:00:42) roam x 96
-\i (00:00:43) roam y -96 
-\i (00:00:43) roam y -96
-\i (00:00:44) zoom out 1 
-\i (00:00:44) setwindow pcb
-\i (00:00:44) zoom out 3876.36 13657.41
-\i (00:00:44) trapsize 1376
-\i (00:00:45) roam x 96 
-\i (00:00:45) roam x 96
-\i (00:00:45) roam x 96 
-\i (00:00:45) roam x 96
-\i (00:00:47) setwindow form.mini
-\i (00:00:47) FORM mini subclass TOP 
-\i (00:00:47) setwindow pcb
-\i (00:00:47) roam y -96 
-\i (00:00:47) roam y -96
-\i (00:00:48) roam y -96 
-\i (00:00:48) roam y -96
-\i (00:00:48) roam x 96 
-\i (00:00:48) roam x 96
-\i (00:00:49) zoom out 1 
-\i (00:00:49) setwindow pcb
-\i (00:00:49) zoom out 4210.75 13493.65
-\i (00:00:49) trapsize 2752
-\i (00:00:49) zoom in 1 
-\i (00:00:49) setwindow pcb
-\i (00:00:49) zoom in 3616.28 13620.26
-\i (00:00:49) trapsize 1376
-\i (00:00:50) roam y 96 
-\i (00:00:50) roam y 96
-\i (00:00:59) exit 
-\t (00:00:59)     Journal end - Wed Jun 17 09:11:04 2020
+\i (00:00:28) generaledit 
+\i (00:00:29) zoom in 1 
+\i (00:00:29) setwindow pcb
+\i (00:00:29) zoom in 4399.30 14005.67
+\i (00:00:29) trapsize 1376
+\i (00:00:31) zoom out 1 
+\i (00:00:31) setwindow pcb
+\i (00:00:31) zoom out 4770.84 13925.86
+\i (00:00:31) trapsize 2752
+\i (00:00:34) dlib 
+\i (00:00:36) setwindow form.dlib
+\i (00:00:36) FORM dlib execute  
+\t (00:00:36) Starting Cadence export libraries...
+\i (00:00:42) setwindow pcb
+\i (00:00:42) exit 
+\t (00:00:42)     Journal end - Wed Jun 17 09:12:58 2020

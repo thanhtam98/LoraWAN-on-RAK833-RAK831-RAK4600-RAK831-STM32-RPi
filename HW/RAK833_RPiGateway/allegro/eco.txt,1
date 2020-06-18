@@ -2,26 +2,10 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
-|  C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/AUTOSAVE.brd          |
-|                                                    Tue Jun 16 15:02:43 2020  |
+|  C:.../ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/RAK833_RPIGATEWAY.brd  |
+|                                                    Tue Jun 16 15:02:56 2020  |
 |------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-  3V3          pins MOVED FROM this net (to net name listed on right)
-                                 C5.1            3800.00 13080.9
-                                                                           3.3V
-                                 C6.1            4120.00 13123.3
-                                                                           3.3V
-                                 C7.1            3900.00 13130.0
-                                                                           3.3V
-                                 L1.2            3632.52 13080.0
-                                                                           3.3V
-                                 R2.2            3610.00 13360.0
-                                                                           3.3V
 |------------------------------------------------------------------------------|
-|       Nets changed          :       5                                        |
 |                                                                              |
-|   Total ECO changes reported:       5                                        |
+|   Total ECO changes reported:       0                                        |
 |------------------------------------------------------------------------------|

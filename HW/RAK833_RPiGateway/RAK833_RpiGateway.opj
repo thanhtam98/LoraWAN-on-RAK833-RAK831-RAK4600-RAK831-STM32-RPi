@@ -90,7 +90,9 @@
       (Path "Design Resources"
          "c:\git\thesislorawannode\hw\rak833_rpigateway\rak833_rpigateway.dsn"
          "SCHEMATIC1")
-      (Path "Outputs"))
+      (Path "Outputs")
+      (Select "Design Resources"
+         "c:\git\thesislorawannode\hw\rak833_rpigateway\rak833_rpigateway.dsn"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -112,8 +114,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 130 1166 130 451")
-        (Scroll "0 84")
-        (Zoom "116")
+        (Scroll "-111 0")
+        (Zoom "79")
         (Occurrence "/"))
       (Path
          "C:\GIT\THESISLORAWANNODE\HW\RAK833_RPIGATEWAY\RAK833_RPIGATEWAY.DSN")
@@ -123,8 +125,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 52 1088 52 373")
-        (Scroll "0 252")
-        (Zoom "116")
+        (Scroll "0 549")
+        (Zoom "158")
         (Occurrence "/"))
       (Path
          "C:\GIT\THESISLORAWANNODE\HW\RAK833_RPIGATEWAY\RAK833_RPIGATEWAY.DSN")

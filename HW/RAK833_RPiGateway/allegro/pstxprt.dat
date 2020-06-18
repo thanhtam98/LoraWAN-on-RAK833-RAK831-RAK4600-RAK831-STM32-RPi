@@ -1,5 +1,5 @@
 FILE_TYPE = EXPANDEDPARTLIST;
-{ Using PSTWRITER 17.2.0 d001Jun-16-2020 at 15:02:55 }
+{ Using PSTWRITER 17.2.0 d001Jun-17-2020 at 16:31:26 }
 DIRECTIVES
  PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
  ROOT_DRAWING='RAK833_RPIGATEWAY';
@@ -234,6 +234,16 @@ SECTION_NUMBER 1
  '@RAK833_RPIGATEWAY.SCHEMATIC1(SCH_1):INS102@CONNECTOR.HEADER 20X2.NORMAL(CHIPS)':
  C_PATH='@rak833_rpigateway.schematic1(sch_1):ins102@connector.\header 20x2.normal\(chips)',
  P_PATH='@rak833_rpigateway.schematic1(sch_1):page2_ins102@connector.\header 20x2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J14 'HEADER 3_HEADER3PITCH100MIL_Z_D':;
+
+SECTION_NUMBER 1
+ '@RAK833_RPIGATEWAY.SCHEMATIC1(SCH_1):INS8088531@CONNECTOR.HEADER 3.NORMAL(CHIPS)':
+ C_PATH='@rak833_rpigateway.schematic1(sch_1):ins8088531@connector.\header 3.normal\(chips)',
+ P_PATH='@rak833_rpigateway.schematic1(sch_1):page2_ins8088531@connector.\header 3.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 

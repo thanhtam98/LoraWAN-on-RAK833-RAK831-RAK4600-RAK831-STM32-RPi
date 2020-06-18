@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 17.2.0 d001Jun-16-2020 at 15:02:55}
+{ Using PSTWRITER 17.2.0 d001Jun-17-2020 at 16:31:26}
 primitive 'CAP NP_C0603_DISCRETE_10NF';
   pin
     '1':
@@ -351,6 +351,24 @@ primitive 'HEADER 20X2_HEADER40X2PITCH100M';
     PART_NAME='HEADER 20X2';
     JEDEC_TYPE='Header40x2pitch100mil';
     VALUE='HEADER 20X2';
+  end_body;
+end_primitive;
+primitive 'HEADER 3_HEADER3PITCH100MIL_Z_D';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    '3':
+      PIN_NUMBER='(3)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='HEADER 3';
+    JEDEC_TYPE='Header3pitch100mil';
+    VALUE='Z_DBG';
   end_body;
 end_primitive;
 primitive 'USB MIN_6_CON5_MICROUSB_SKT_SM_';

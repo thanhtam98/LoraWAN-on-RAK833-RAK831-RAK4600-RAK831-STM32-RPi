@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : RAK833_RPIGATEWAY.brd                         )
 (    Software Version : 17.2S052                                      )
-(    Date/Time        : Tue Jun 16 15:02:56 2020                      )
+(    Date/Time        : Wed Jun 17 16:31:28 2020                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -64,7 +64,7 @@ PADPATH =  E:/TTTN/Orcad/lib/0_Lib/1_Footprint
 ------ Summary Statistics ------
 
 
-netrev run on Jun 16 15:02:56 2020
+netrev run on Jun 17 16:31:28 2020
    DESIGN NAME : 'RAK833_RPIGATEWAY'
    PACKAGING ON Feb 18 2019 18:33:40
 
@@ -89,6 +89,6 @@ netrev run on Jun 16 15:02:56 2020
  No oversight detected
  No warning detected
 
-cpu time      0:04:01
-elapsed time  0:00:02
+cpu time      0:03:11
+elapsed time  0:00:01
 

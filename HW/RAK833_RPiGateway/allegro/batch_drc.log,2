@@ -2,9 +2,9 @@
 (                                                                     )
 (    DRC Update                                                       )
 (                                                                     )
-(    Drawing          : RAK833_RPIGATEWAY_v1.brd                      )
+(    Drawing          : RAK833_RPIGATEWAY.brd                         )
 (    Software Version : 17.2S052                                      )
-(    Date/Time        : Tue Jun 16 15:00:55 2020                      )
+(    Date/Time        : Tue Jun 16 15:02:57 2020                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -20,7 +20,7 @@
  ========= check standalone text              0:00:00
  ========= check standalone rectangles        0:00:00
 
- ..... Total number of DRC errors  62
+ ..... Total number of DRC errors  64
 
  ..... DRC update completed, total CPU time   0:00:00
  *************************************************************************
