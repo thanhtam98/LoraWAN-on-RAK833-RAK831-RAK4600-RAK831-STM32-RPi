@@ -37,6 +37,12 @@ extern "C" {
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
+extern uint8_t PRINTF_EN;
+
+
+#define DBG(fmt,...) if (PRINTF_EN == 1) printf(fmt,##__VA_ARGS__)
+
+
 #ifdef __GNUC__
 /* With GCC/RAISONANCE, small printf (option LD Linker->Libraries->Small printf
    set to 'Yes') calls __io_putchar() */

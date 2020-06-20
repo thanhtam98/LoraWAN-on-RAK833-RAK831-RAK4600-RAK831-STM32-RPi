@@ -28,7 +28,7 @@
 #include "rak.h"
 #include "mb.h"
 #include "mbport.h"
-
+#include "command.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -233,7 +233,17 @@ void USART1_IRQHandler(void)
 void USART2_IRQHandler(void)
 {
   /* USER CODE BEGIN USART2_IRQn 0 */
+	uint32_t tmp_flag = __HAL_UART_GET_FLAG(&huart2, UART_FLAG_RXNE);
+	uint32_t tmp_it_source = __HAL_UART_GET_IT_SOURCE(&huart2, UART_IT_RXNE);
 
+	if ((tmp_flag != RESET) && (tmp_it_source != RESET)) {
+		/*Call rak handler*/
+		command_recv_callback_irq(&huart2);
+		__HAL_UART_CLEAR_PEFLAG(&huart2);
+		__HAL_UART_ENABLE_IT(&huart2, UART_IT_RXNE);
+
+		return;
+	}
   /* USER CODE END USART2_IRQn 0 */
   HAL_UART_IRQHandler(&huart2);
   /* USER CODE BEGIN USART2_IRQn 1 */

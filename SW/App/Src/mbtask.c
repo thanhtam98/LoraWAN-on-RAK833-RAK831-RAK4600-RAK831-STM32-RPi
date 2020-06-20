@@ -77,7 +77,7 @@ eMBRegHoldingCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs,
 //   REG_HOLDING_START = S_REG_HOLDING_START;
 //   REG_HOLDING_NREGS = S_REG_HOLDING_NREGS;
 //   usRegHoldStart = usSRegHoldStart;
-   printf("\r\n MB callback function");
+   DBG("\r\n MB callback function");
    usAddress--;
    if (usAddress < MEM_MAX_SIZE)
 		{
@@ -89,7 +89,7 @@ eMBRegHoldingCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs,
 				break;
 				case MB_REG_WRITE:
 					uiMemSet(usAddress, *(pucRegBuffer+1) );
-					 printf("\r\n MB callback uiMemSet: adr: %d val: %d",usAddress,*(pucRegBuffer+1) );
+					 DBG("\r\n MB callback uiMemSet: adr: %d val: %d",usAddress,*(pucRegBuffer+1) );
 				break;
 			}
 		   }

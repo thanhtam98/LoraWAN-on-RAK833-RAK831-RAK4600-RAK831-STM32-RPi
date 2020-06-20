@@ -49,7 +49,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+uint8_t PRINTF_EN	= 1;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -104,6 +104,7 @@ int main(void)
   char *p="NTT \r\n";
   __HAL_UART_ENABLE_IT(&huart1, UART_IT_RXNE);
   __HAL_UART_ENABLE_IT(&huart3, UART_IT_RXNE);
+  __HAL_UART_ENABLE_IT(&huart2, UART_IT_RXNE);
 //  HAL_Delay(101);
 //  HAL_UART_Transmit(&huart2,p,6,100);
 //  HAL_UART_Transmit(&huart3,p,6,100);

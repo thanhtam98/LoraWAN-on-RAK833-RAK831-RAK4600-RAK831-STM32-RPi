@@ -103,12 +103,12 @@ void DHT11_ReadData(DHT11_DATA_TypeDef *DHT11_DATA) {
 		if (DHT11_DATA->check_sum
 				== (DHT11_DATA->humi_int + DHT11_DATA->humi_deci
 						+ DHT11_DATA->temp_int + DHT11_DATA->temp_deci)) {
-			printf("\r\n Get ok: Humid %d,%d Temp %d,%d ", DHT11_DATA->humi_int,
+			DBG("\r\n Get ok: Humid %d,%d Temp %d,%d ", DHT11_DATA->humi_int,
 					DHT11_DATA->humi_deci, DHT11_DATA->temp_int,
 					DHT11_DATA->temp_deci);
 		} else {
 
-			printf(
+			DBG(
 					"\r\n Get fail:  HumidH %d HumidL %d TempH %d TempL %d Check %d ",
 					DHT11_DATA->humi_int, DHT11_DATA->humi_deci,
 					DHT11_DATA->temp_int, DHT11_DATA->temp_deci,
@@ -117,7 +117,7 @@ void DHT11_ReadData(DHT11_DATA_TypeDef *DHT11_DATA) {
 		DHT_Set_Output();
 		DHT_HignPin();
 	} else {
-		printf("\r\n Fail to start DHT");
+		DBG("\r\n Fail to start DHT");
 		DHT_Set_Output();
 		DHT_HignPin();
 	}

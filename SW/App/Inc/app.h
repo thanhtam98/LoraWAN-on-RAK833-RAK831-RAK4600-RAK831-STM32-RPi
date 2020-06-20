@@ -10,7 +10,7 @@
 
 
 void vAppDefault(void);
-
+void vAppConfiguration(void);
 
 
 
