@@ -29,7 +29,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "param.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -100,15 +100,36 @@ int main(void)
   MX_TIM3_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-  HAL_TIM_Base_Start(&htim4);
+
+  /*Force to enale periphral manually */
   char *p="NTT \r\n";
+  HAL_TIM_Base_Start(&htim4);
   __HAL_UART_ENABLE_IT(&huart1, UART_IT_RXNE);
   __HAL_UART_ENABLE_IT(&huart3, UART_IT_RXNE);
   __HAL_UART_ENABLE_IT(&huart2, UART_IT_RXNE);
 //  HAL_Delay(101);
 //  HAL_UART_Transmit(&huart2,p,6,100);
 //  HAL_UART_Transmit(&huart3,p,6,100);
-  printf("Test printf \r\n");
+  printf("---------- IOT Node ----------  \r\n");
+
+  /*Load pre-paramter from eepROm*/
+
+  v_epr_load(PARAM_LOAD_ALL);
+  if (PARAM[NODE_HAVE_PARAM_ADR] != 0 )
+  {
+	  /* Found pre-param from eeprom and apply it*/
+
+	  USER_USART3_UART_Init(); // Modbus re-config
+
+	  /*Todo: LORAWAN*/
+
+  }
+  else
+  {
+
+	  /*Notify to the Led and jump in to vAppConfiguationTask !!**/
+  }
+
 //  while(1)
 //  {
 //	  HAL_UART_Transmit(&huart1,p,6,100);
@@ -118,6 +139,7 @@ int main(void)
 //	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
 //	HAL_Delay(1000);
 //  }
+  printf("Booting to RTOS   \r\n");
   /* USER CODE END 2 */
 
   /* Call init function for freertos objects (in freertos.c) */

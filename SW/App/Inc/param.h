@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdint.h>
+#include  "epprom.h"
 
 /**
  *
@@ -19,8 +20,8 @@
 #define NODE_MB_BAUD_ADR			5
 #define NODE_MB_DATABITS_ADR		6
 #define NODE_MB_PARTITY_ADR			7
-
-#define NODE_MB_DEFAULT_LEN			8
+#define NODE_MB_STOPBITS_ADR		8
+#define NODE_MB_DEFAULT_LEN			9
 //#define NODE_MB_
 /**/
 #define NODE_LRWAN_BASE 			20
@@ -47,8 +48,13 @@ typedef struct
  *
  * */
 
-#define PARAM_MAX_SIZE 			48
+#define PARAM_MAX_SIZE 			96
 #define PARAM_LOAD_ALL			0xFFFF
+
+
+
+extern uint8_t PARAM[EEP_MAX_SIZE];
+
 
 uint8_t u_mem_get(uint16_t usAdr);
 void u_mem_set(uint16_t usAdr, uint8_t uVal);

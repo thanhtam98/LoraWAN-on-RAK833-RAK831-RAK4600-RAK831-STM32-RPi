@@ -50,12 +50,12 @@ uint8_t at24_write_bytes(uint16_t DevAddress, uint16_t MemAddress, uint8_t *pDat
 	if (TxBufferSize > 16) return ERR_MAX_SIZE;
 	while (HAL_I2C_Mem_Write(&at24_i2c, (uint16_t) DevAddress, (uint16_t) MemAddress,
 	I2C_MEMADD_SIZE_8BIT, (uint8_t*) pData, (uint16_t) TxBufferSize, 1000)
-			!= HAL_OK && TimeOut < 10) {
+			!= HAL_OK && TimeOut < 3) {
 		DBG("Write Error \r\n");
-		osDelay(1000);
+		HAL_Delay(1000);
 		TimeOut++;
 	}
-	if (TimeOut > 10) return ERR_TIMEOUT;
+	if (TimeOut >2) return ERR_TIMEOUT;
 	return OK;
 
 }
@@ -69,12 +69,12 @@ uint8_t at24_read_bytes(uint16_t DevAddress, uint16_t MemAddress, uint8_t *pData
 	if (RxBufferSize > 16) return ERR_MAX_SIZE;
 	while (HAL_I2C_Mem_Read(&at24_i2c, (uint16_t) DevAddress, (uint16_t) MemAddress,
 	I2C_MEMADD_SIZE_8BIT, (uint8_t*) pData, (uint16_t) RxBufferSize, 1000)
-			!= HAL_OK && TimeOut < 10) {
+			!= HAL_OK && TimeOut < 3) {
 		DBG("Read Error \r\n");
-		osDelay(1000);
+		HAL_Delay(1000);
 		TimeOut++;
 	}
-	if (TimeOut > 10) return ERR_TIMEOUT;
+	if (TimeOut > 2) return ERR_TIMEOUT;
 	return OK;
 }
 

@@ -31,7 +31,7 @@ void command_recv_callback_irq(UART_HandleTypeDef *huart) {
 	receivedChar = (uint8_t) ((*huart).Instance->DR & (uint8_t) 0x00FF);
 
 	if (isEcho == 1)
-		HAL_UART_Transmit(huart, &receivedChar, 1, 100);
+//		HAL_UART_Transmit_IT(huart, &receivedChar, 1);
 
 //	__HAL_UART_ENABLE_IT(&huart1, UART_IT_RXNE);
 	if (receivedChar != 13) {
@@ -49,7 +49,7 @@ void command_recv_callback_irq(UART_HandleTypeDef *huart) {
 			gotCommandFlag = 1;
 		}
 		if (isEcho == 1)
-			HAL_UART_Transmit(huart, EnterCMD, 3, 100);
+			HAL_UART_Transmit_IT(huart, EnterCMD, 3);
 		PRINTF_EN = 0;
 	}
 
@@ -78,20 +78,25 @@ int Cmd_set(int argc, char *argv[]) {
 		if ((strcmp(*(argv + 2), "deveui") == 0)) {
 			for (uint8_t idx = 0; idx < 8; idx++) {
 				memcpy(merg, *(argv + 3) + 2 * idx, 2);
-				u_mem_set(NODE_LRWAN_DEVEUI_ADR + idx, (uint8_t) strtol(merg, NULL, 16));
-				printf("%d \r\n",  (uint8_t) strtol(merg, NULL, 16));
+				u_mem_set(NODE_LRWAN_DEVEUI_ADR + idx,
+						(uint8_t) strtol(merg, NULL, 16));
+//				printf("%d \r\n",  (uint8_t) strtol(merg, NULL, 16));
 			}
 
 		}
 		if ((strcmp(*(argv + 2), "appeui") == 0)) {
 			for (uint8_t idx = 0; idx < 16; idx++) {
-				u_mem_set(NODE_LRWAN_APPEUI_ADR + idx, atoi(*(argv + 3)));
+				memcpy(merg, *(argv + 3) + 2 * idx, 2);
+				u_mem_set(NODE_LRWAN_DEVEUI_ADR + idx,
+						(uint8_t) strtol(merg, NULL, 16));
 			}
 
 		}
 		if ((strcmp(*(argv + 2), "appkey") == 0)) {
 			for (uint8_t idx = 0; idx < 16; idx++) {
-				u_mem_set(NODE_LRWAN_APPKEY_ADR + idx, atoi(*(argv + 3)));
+				memcpy(merg, *(argv + 3) + 2 * idx, 2);
+				u_mem_set(NODE_LRWAN_DEVEUI_ADR + idx,
+						(uint8_t) strtol(merg, NULL, 16));
 			}
 
 		}
@@ -143,7 +148,7 @@ int Cmd_get(int argc, char *argv[]) {
 				strcat(commandSendBuffer,
 						itoa_user(u_mem_get(NODE_LRWAN_DEVEUI_ADR + idx), 16));
 
-				printf("%c %c \r\n", itoa_user(u_mem_get(NODE_LRWAN_DEVEUI_ADR + idx), 16),(itoa_user(u_mem_get(NODE_LRWAN_DEVEUI_ADR + idx), 16)+1));
+				//printf("%d \r\n", u_mem_get(NODE_LRWAN_DEVEUI_ADR + idx));
 			}
 
 		}

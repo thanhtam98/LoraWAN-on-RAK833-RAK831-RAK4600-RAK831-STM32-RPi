@@ -29,16 +29,16 @@ void vAppDefault(void) {
 
 	/*Task initialization*/
 
-	osThreadDef(loraTaskHandle, vRakTask, osPriorityNormal, 0, 128);
-	loraTaskHandle = osThreadCreate(osThread(loraTaskHandle), NULL);
-	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
+//	osThreadDef(loraTaskHandle, vRakTask, osPriorityNormal, 0, 128);
+//	loraTaskHandle = osThreadCreate(osThread(loraTaskHandle), NULL);
+//	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
 
-	osThreadDef(modbusTaskHandle, vModBusTask, osPriorityNormal, 0, 256);
-	modbusTaskHandle = osThreadCreate(osThread(modbusTaskHandle), NULL);
-	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
+//	osThreadDef(modbusTaskHandle, vModBusTask, osPriorityNormal, 0, 256);
+//	modbusTaskHandle = osThreadCreate(osThread(modbusTaskHandle), NULL);
+//	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
 
-	osThreadDef(envTaskHandle, vEnvTask, osPriorityNormal, 0, 512);
-	envTaskHandle = osThreadCreate(osThread(envTaskHandle), NULL);
+//	osThreadDef(envTaskHandle, vEnvTask, osPriorityNormal, 0, 512);
+//	envTaskHandle = osThreadCreate(osThread(envTaskHandle), NULL);
 
 	osThreadDef(cmdTaskHandle, vCmdTask, osPriorityNormal, 0, 256);
 	cmdTaskHandle = osThreadCreate(osThread(cmdTaskHandle), NULL);
@@ -59,19 +59,19 @@ void vAppDefault(void) {
 //		while (HAL_I2C_Mem_Write(&hi2c1, (uint16_t) 0xa0, (uint16_t) 0x00,
 //				I2C_MEMADD_SIZE_8BIT,(uint8_t*) send, 10, 1000) != HAL_OK) {
 //			DBG("Write Error \r\n");
-//			MX_I2C1_Init();
+////			MX_I2C1_Init();
 //			osDelay(1000);
 //		}
-//
+////
 //		DBG("Write complete \r\n");
 //		osDelay(1000);
-////		taskENTER_CRITICAL();
+//////		taskENTER_CRITICAL();
 //		while (HAL_I2C_Mem_Read(&hi2c1, (uint16_t) 0xA0, (uint16_t) 0x2,
 //				I2C_MEMADD_SIZE_8BIT, (uint8_t*) recv, (uint16_t)10, 1000)
 //				!= HAL_OK) {
 //			DBG("Read Error \r\n");
 //			osDelay(1000);
-//			//NVIC_SystemReset();
+////			//NVIC_SystemReset();
 //		}
 ////		taskEXIT_CRITICAL();
 //		DBG("Read complete \r\n");
@@ -79,7 +79,7 @@ void vAppDefault(void) {
 //		{
 //			DBG("Read value %d %d  \r\n",i,recv[i]);
 //		}
-////		DBG("Read value %d %d %d \r\n",recv[0],recv[1],recv[2],recv[3],recv[4],recv[5]);
+//		DBG("Read value %d %d %d \r\n",recv[0],recv[1],recv[2],recv[3],recv[4],recv[5]);
 		DBG("\r\nMemFree:%d", xPortGetFreeHeapSize());
 		osDelay(1000);
 		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_7);

@@ -21,7 +21,7 @@
 #include "usart.h"
 
 /* USER CODE BEGIN 0 */
-
+#include "param.h"
 /* USER CODE END 0 */
 
 UART_HandleTypeDef huart1;
@@ -248,7 +248,27 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
 } 
 
 /* USER CODE BEGIN 1 */
+/*
+ *Brief: Reconfig modbus param!
+ *
+ * **/
+void USER_USART3_UART_Init(void)
+{
 
+  huart3.Instance = USART3;
+  huart3.Init.BaudRate = 1200*PARAM[NODE_MB_BAUD_ADR];
+  huart3.Init.StopBits = (PARAM[NODE_MB_STOPBITS_ADR] == 0)? UART_STOPBITS_1:UART_STOPBITS_2 ;
+  huart3.Init.WordLength = (PARAM[NODE_MB_DATABITS_ADR] == 0)? UART_WORDLENGTH_8B : UART_WORDLENGTH_9B;
+  huart3.Init.Parity = (PARAM[NODE_MB_PARTITY_ADR] == 0) ? UART_PARITY_NONE: (PARAM[NODE_MB_PARTITY_ADR] == 1) ?UART_PARITY_ODD : UART_PARITY_EVEN;
+  huart3.Init.Mode = UART_MODE_TX_RX;
+  huart3.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart3.Init.OverSampling = UART_OVERSAMPLING_16;
+  if (HAL_UART_Init(&huart3) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+}
 /* USER CODE END 1 */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

@@ -7,6 +7,7 @@
 #include "main.h"
 #include "cmsis_os.h"
 #include "sharedmem.h"
+#include "param.h"
 /* Modbus includes ---------------------------------*/
 #include "mb.h"
 #include "mbport.h"
@@ -21,8 +22,15 @@ static USHORT usRegInputBuf[REG_INPUT_NREGS];
 void vModBusTask(void const * argument)
 { 
   /* ABCDEF */
+	eMBErrorCode eStatus;
+	if (PARAM[NODE_HAVE_PARAM_ADR] != 0)
+	{
+		eStatus= eMBInit( MB_RTU, PARAM[NODE_MB_ID_ADR], 3, 9600, MB_PAR_NONE );
+	}
+	else {
+		 eStatus = eMBInit( MB_RTU,1, 3, 9600, MB_PAR_NONE );
+	}
 
-  eMBErrorCode eStatus = eMBInit( MB_RTU, 1, 3, 9600, MB_PAR_NONE );
   eStatus = eMBEnable();
 //  osTimerStart(myTimer01Handle, 1);
 	  while(1) {

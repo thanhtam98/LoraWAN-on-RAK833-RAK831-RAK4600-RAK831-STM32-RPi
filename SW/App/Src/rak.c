@@ -3,8 +3,10 @@
 #include "usart.h"
 #include <string.h>
 #include <stdio.h>
+#include "param.h"
+
 /* Private variables -------------------*/
-char commandSendBuffer[RAK_MAX_RECV_LEN];
+char rakCommandSendBuffer[RAK_MAX_RECV_LEN];
 char commandRecvBuffer[RAK_MAX_RECV_LEN];
 uint8_t commandRecvBufferIndex = 0;
 uint8_t gotCommandRecvFlag = 0;
@@ -24,12 +26,26 @@ uint8_t gotCommandRecvFlag = 0;
 uint8_t* itoa_user(uint32_t val, uint8_t base) {
 	static uint8_t buf[32] = { 0 };  // 32 bits
 	int i = 30;
-	if (val == 0)
+	uint32_t val_ = val;
+	if (val == 0) {
 		buf[i--] = '0';
+//		if (base == 16) {
+//			buf[i--] = '0';
+//			return &buf[i + 1];
+//		}
+	}
+
 	for (; val && i; --i, val /= base)
 		buf[i] = "0123456789abcdef"[val % base];
-
+	if ((base == 16) && (((uint8_t)val_) < 16)) {
+		buf[i--] = '0';
+	}
+//	if (base == 16)
+//	{
+//		buf[i] = '0';
+//	}
 	return &buf[i + 1];
+
 }
 
 uint8_t rak_send_raw(char *datahex) {
@@ -79,62 +95,61 @@ uint8_t rak_send_raw(char *datahex) {
 uint8_t rak_setClass(uint8_t classMode) {
 	if (classMode > 2)
 		return 0;
-	memset(commandSendBuffer, 0, RAK_MAX_RECV_LEN);
-	strcat(commandSendBuffer, "at+set_config=lora:class:");
-	strcat(commandSendBuffer, itoa_user(classMode, 10));
-	return rak_send_raw(commandSendBuffer);
+	memset(rakCommandSendBuffer, 0, RAK_MAX_RECV_LEN);
+	strcat(rakCommandSendBuffer, "at+set_config=lora:class:");
+	strcat(rakCommandSendBuffer, itoa_user(classMode, 10));
+	return rak_send_raw(rakCommandSendBuffer);
 }
-
 
 uint8_t rak_setRegion(uint8_t region) {
 	if (region > 9) {
 		return 0;
 	}
-	memset(commandSendBuffer, 0, RAK_MAX_RECV_LEN);
-	strcat(commandSendBuffer, "at+set_config=lora:region:");
+	memset(rakCommandSendBuffer, 0, RAK_MAX_RECV_LEN);
+	strcat(rakCommandSendBuffer, "at+set_config=lora:region:");
 	switch (region) {
 	case 0:
 
-		strcat(commandSendBuffer, "AS923");
+		strcat(rakCommandSendBuffer, "AS923");
 		break;
 	case 1:
 
-		strcat(commandSendBuffer, "AU915");
+		strcat(rakCommandSendBuffer, "AU915");
 		break;
 	case 2:
 
-		strcat(commandSendBuffer, "CN470");
+		strcat(rakCommandSendBuffer, "CN470");
 		break;
 	case 3:
 
-		strcat(commandSendBuffer, "CN779");
+		strcat(rakCommandSendBuffer, "CN779");
 		break;
 	case 4:
 
-		strcat(commandSendBuffer, "EU433");
+		strcat(rakCommandSendBuffer, "EU433");
 		break;
 	case 5:
 
-		strcat(commandSendBuffer, "EU868");
+		strcat(rakCommandSendBuffer, "EU868");
 		break;
 	case 6:
 
-		strcat(commandSendBuffer, "KR920");
+		strcat(rakCommandSendBuffer, "KR920");
 		break;
 	case 7:
 
-		strcat(commandSendBuffer, "IN865");
+		strcat(rakCommandSendBuffer, "IN865");
 		break;
 	case 8:
 
-		strcat(commandSendBuffer, "AU915");
+		strcat(rakCommandSendBuffer, "AU915");
 		break;
 	case 9:
 
-		strcat(commandSendBuffer, "AU915");
+		strcat(rakCommandSendBuffer, "AU915");
 		break;
 	}
-	return rak_send_raw(commandSendBuffer);
+	return rak_send_raw(rakCommandSendBuffer);
 
 }
 
@@ -153,10 +168,10 @@ void rak_reset(void) {
 uint8_t rak_setWorkingMode(uint8_t mode) {
 	if (mode > 2)
 		return 0;
-	memset(commandSendBuffer, 0, RAK_MAX_RECV_LEN);
-	strcat(commandSendBuffer, "at+set_config=lora:work_mode:");
-	strcat(commandSendBuffer, itoa_user(mode, 10));
-	return rak_send_raw(commandSendBuffer);
+	memset(rakCommandSendBuffer, 0, RAK_MAX_RECV_LEN);
+	strcat(rakCommandSendBuffer, "at+set_config=lora:work_mode:");
+	strcat(rakCommandSendBuffer, itoa_user(mode, 10));
+	return rak_send_raw(rakCommandSendBuffer);
 }
 
 /*
@@ -168,16 +183,16 @@ uint8_t rak_setWorkingMode(uint8_t mode) {
 uint8_t rak_setJoinMode(uint8_t mode) {
 	if (mode > 2)
 		return 0;
-	memset(commandSendBuffer, 0, RAK_MAX_RECV_LEN);
-	strcat(commandSendBuffer, "at+set_config=lora:join_mode:");
-	strcat(commandSendBuffer, itoa_user(mode, 10));
-	return rak_send_raw(commandSendBuffer);
+	memset(rakCommandSendBuffer, 0, RAK_MAX_RECV_LEN);
+	strcat(rakCommandSendBuffer, "at+set_config=lora:join_mode:");
+	strcat(rakCommandSendBuffer, itoa_user(mode, 10));
+	return rak_send_raw(rakCommandSendBuffer);
 }
 
 uint8_t rak_join(void) {
-	memset(commandSendBuffer, 0, RAK_MAX_RECV_LEN);
-	strcat(commandSendBuffer, "at+join");
-	rak_send_raw(commandSendBuffer);
+	memset(rakCommandSendBuffer, 0, RAK_MAX_RECV_LEN);
+	strcat(rakCommandSendBuffer, "at+join");
+	rak_send_raw(rakCommandSendBuffer);
 
 	for (uint8_t u8tryPerSec = 0; u8tryPerSec < MAX_TIME_OUT; u8tryPerSec++) {
 		osDelay(1000);
@@ -211,18 +226,18 @@ uint8_t rak_join(void) {
 
 void rak_initOTAA(char *devEUI, char *appEUI, char *appKey) {
 
-	memset(commandSendBuffer, 0, RAK_MAX_RECV_LEN);
-	strcat(commandSendBuffer, "at+set_config=lora:dev_eui:");
-	strcat(commandSendBuffer, devEUI);
-	rak_send_raw(commandSendBuffer);
-	memset(commandSendBuffer, 0, RAK_MAX_RECV_LEN);
-	strcat(commandSendBuffer, "at+set_config=lora:app_eui:");
-	strcat(commandSendBuffer, appEUI);
-	rak_send_raw(commandSendBuffer);
-	memset(commandSendBuffer, 0, RAK_MAX_RECV_LEN);
-	strcat(commandSendBuffer, "appKey+set_config=lora:app_key:");
-	strcat(commandSendBuffer, devEUI);
-	rak_send_raw(commandSendBuffer);
+	memset(rakCommandSendBuffer, 0, RAK_MAX_RECV_LEN);
+	strcat(rakCommandSendBuffer, "at+set_config=lora:dev_eui:");
+	strcat(rakCommandSendBuffer, devEUI);
+	rak_send_raw(rakCommandSendBuffer);
+	memset(rakCommandSendBuffer, 0, RAK_MAX_RECV_LEN);
+	strcat(rakCommandSendBuffer, "at+set_config=lora:app_eui:");
+	strcat(rakCommandSendBuffer, appEUI);
+	rak_send_raw(rakCommandSendBuffer);
+	memset(rakCommandSendBuffer, 0, RAK_MAX_RECV_LEN);
+	strcat(rakCommandSendBuffer, "appKey+set_config=lora:app_key:");
+	strcat(rakCommandSendBuffer, devEUI);
+	rak_send_raw(rakCommandSendBuffer);
 
 }
 /*
@@ -233,10 +248,10 @@ void rak_initOTAA(char *devEUI, char *appEUI, char *appKey) {
 uint8_t rak_isConfirm(uint8_t type) {
 	if (type > 1)
 		return 0;
-	memset(commandSendBuffer, 0, RAK_MAX_RECV_LEN);
-	strcat(commandSendBuffer, "at+set_config=lora:confirm:");
-	strcat(commandSendBuffer, itoa_user(type, 10));
-	return rak_send_raw(commandSendBuffer);
+	memset(rakCommandSendBuffer, 0, RAK_MAX_RECV_LEN);
+	strcat(rakCommandSendBuffer, "at+set_config=lora:confirm:");
+	strcat(rakCommandSendBuffer, itoa_user(type, 10));
+	return rak_send_raw(rakCommandSendBuffer);
 }
 
 /*Brief: Handle AT command received over serial interrupt
@@ -265,13 +280,28 @@ void rak_recv_isr(void) {
 
 void vRakTask(void const *arg) {
 	uint8_t isLoraWAN = 0;
-	char *p= "\r\n NTT";
-	char *n= "\r\n ntt";
+
 	char * DevEui = "60C5A8FFFE000001";
 	char * AppEui = "70B3D57EF00047C0";
 	char * AppKey = "5D833B4696D5E01E2F8DC880E30BA5FE";
+	if (PARAM[NODE_HAVE_PARAM_ADR] == 1) {
+		for (uint8_t idx = 0; idx < 8; idx++) {
+			strcat(DevEui,
+					itoa_user(u_mem_get(NODE_LRWAN_DEVEUI_ADR + idx), 16));
+		}
+		for (uint8_t idx = 0; idx < 16; idx++) {
+			strcat(AppEui,
+					itoa_user(u_mem_get(NODE_LRWAN_APPEUI_ADR + idx), 16));
+		}
+		for (uint8_t idx = 0; idx < 16; idx++) {
+			strcat(AppKey,
+					itoa_user(u_mem_get(NODE_LRWAN_APPKEY_ADR + idx), 16));
+		}
+		//printf("%d \r\n", u_mem_get(NODE_LRWAN_DEVEUI_ADR + idx));
+
+	}
 	/*Initial */
-	//rak_reset();
+//rak_reset();
 	osDelay(1000);
 	rak_setClass(2);
 	rak_setRegion(0);
@@ -289,8 +319,6 @@ void vRakTask(void const *arg) {
 //	{
 //		HAL_UART_Transmit(&huart1,n,6,100);
 //	}
-
-
 
 	while (1) {
 		/*Thread up*/
