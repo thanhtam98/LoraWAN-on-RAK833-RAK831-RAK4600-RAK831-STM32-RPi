@@ -15,8 +15,8 @@ tCmdLineEntry g_psCmdTable[] = { { "help", Cmd_help,
 const char * ErrorCode[4] = { "CMDLINE_BAD_CMD", "CMDLINE_TOO_MANY_ARGS",
 		"CMDLINE_TOO_FEW_ARGS", "CMDLINE_INVALID_ARG" };
 
-uint8_t commandBuffer[50];
-uint8_t commandSendBuffer[50];
+uint8_t commandBuffer[100];
+uint8_t commandSendBuffer[100];
 uint32_t commandBufferIndex = 0;
 uint32_t gotCommandFlag = 0;
 uint8_t isEcho = 1;
@@ -34,7 +34,7 @@ void command_recv_callback_irq(UART_HandleTypeDef *huart) {
 //		HAL_UART_Transmit_IT(huart, &receivedChar, 1);
 
 //	__HAL_UART_ENABLE_IT(&huart1, UART_IT_RXNE);
-	if (receivedChar != 13) {
+	if (receivedChar != 10) {
 		if ((receivedChar == 8) || (receivedChar == 127)) {
 			if (commandBufferIndex > 0)
 				commandBufferIndex--;
@@ -49,7 +49,7 @@ void command_recv_callback_irq(UART_HandleTypeDef *huart) {
 			gotCommandFlag = 1;
 		}
 		if (isEcho == 1)
-			HAL_UART_Transmit_IT(huart, EnterCMD, 3);
+//			HAL_UART_Transmit_IT(huart, EnterCMD, 3);
 		PRINTF_EN = 0;
 	}
 
@@ -76,7 +76,7 @@ int Cmd_set(int argc, char *argv[]) {
 
 		}
 		if ((strcmp(*(argv + 2), "deveui") == 0)) {
-			for (uint8_t idx = 0; idx < 8; idx++) {
+			for (uint8_t idx = 0; idx < NODE_LRWAN_DEVEUI_LEN; idx++) {
 				memcpy(merg, *(argv + 3) + 2 * idx, 2);
 				u_mem_set(NODE_LRWAN_DEVEUI_ADR + idx,
 						(uint8_t) strtol(merg, NULL, 16));
@@ -85,17 +85,17 @@ int Cmd_set(int argc, char *argv[]) {
 
 		}
 		if ((strcmp(*(argv + 2), "appeui") == 0)) {
-			for (uint8_t idx = 0; idx < 16; idx++) {
+			for (uint8_t idx = 0; idx < NODE_LRWAN_APPEUI_LEN; idx++) {
 				memcpy(merg, *(argv + 3) + 2 * idx, 2);
-				u_mem_set(NODE_LRWAN_DEVEUI_ADR + idx,
+				u_mem_set(NODE_LRWAN_APPEUI_ADR + idx,
 						(uint8_t) strtol(merg, NULL, 16));
 			}
 
 		}
 		if ((strcmp(*(argv + 2), "appkey") == 0)) {
-			for (uint8_t idx = 0; idx < 16; idx++) {
+			for (uint8_t idx = 0; idx < NODE_LRWAN_APPKEY_LEN; idx++) {
 				memcpy(merg, *(argv + 3) + 2 * idx, 2);
-				u_mem_set(NODE_LRWAN_DEVEUI_ADR + idx,
+				u_mem_set(NODE_LRWAN_APPKEY_ADR + idx,
 						(uint8_t) strtol(merg, NULL, 16));
 			}
 
@@ -114,37 +114,40 @@ int Cmd_set(int argc, char *argv[]) {
 int Cmd_get(int argc, char *argv[]) {
 
 	memset(commandSendBuffer, 0, 50);
-	strcat(commandSendBuffer, *(argv + 0));
-	strcat(commandSendBuffer, " ");
-	strcat(commandSendBuffer, *(argv + 1));
-	strcat(commandSendBuffer, " ");
-	strcat(commandSendBuffer, *(argv + 2));
-	strcat(commandSendBuffer, " ");
+//	strcat(commandSendBuffer, *(argv + 0));
+//	strcat(commandSendBuffer, " ");
+//	strcat(commandSendBuffer, *(argv + 1));
+//	strcat(commandSendBuffer, " ");
+//	strcat(commandSendBuffer, *(argv + 2));
+//	strcat(commandSendBuffer, " ");
 	if ((strcmp(*(argv + 1), "mb") == 0)) {
 
 		if ((strcmp(*(argv + 2), "mode") == 0)) {
 			strcat(commandSendBuffer,
-					itoa_user(u_mem_get(NODE_MB_MODE_ADR), 16));
+					itoa_user(u_mem_get(NODE_MB_MODE_ADR), 10));
 		} else if ((strcmp(*(argv + 2), "baud") == 0)) {
 			strcat(commandSendBuffer,
-					itoa_user(u_mem_get(NODE_MB_BAUD_ADR), 16));
+					itoa_user(u_mem_get(NODE_MB_BAUD_ADR), 10));
 		} else if ((strcmp(*(argv + 2), "db") == 0)) {
 			strcat(commandSendBuffer,
-					itoa_user(u_mem_get(NODE_MB_DATABITS_ADR), 16));
+					itoa_user(u_mem_get(NODE_MB_DATABITS_ADR), 10));
+		} else if ((strcmp(*(argv + 2), "stbi") == 0)) {
+					strcat(commandSendBuffer,
+							itoa_user(u_mem_get(NODE_MB_STOPBITS_ADR), 10));
 		} else if ((strcmp(*(argv + 2), "pari") == 0)) {
 			strcat(commandSendBuffer,
-					itoa_user(u_mem_get(NODE_MB_PARTITY_ADR), 16));
+					itoa_user(u_mem_get(NODE_MB_PARTITY_ADR), 10));
 		} else if ((strcmp(*(argv + 2), "id") == 0)) {
-			strcat(commandSendBuffer, itoa_user(u_mem_get(NODE_MB_ID_ADR), 16));
+			strcat(commandSendBuffer, itoa_user(u_mem_get(NODE_MB_ID_ADR), 10));
 		}
 	} else if ((strcmp(*(argv + 1), "lr") == 0)) {
 		if ((strcmp(*(argv + 2), "mode") == 0)) {
 			strcat(commandSendBuffer,
-					itoa_user(u_mem_get(NODE_LRWAN_MODE_ADR), 16));
+					itoa_user(u_mem_get(NODE_LRWAN_MODE_ADR), 10));
 
 		}
 		if ((strcmp(*(argv + 2), "deveui") == 0)) {
-			for (uint8_t idx = 0; idx < 8; idx++) {
+			for (uint8_t idx = 0; idx < NODE_LRWAN_DEVEUI_LEN; idx++) {
 				strcat(commandSendBuffer,
 						itoa_user(u_mem_get(NODE_LRWAN_DEVEUI_ADR + idx), 16));
 
@@ -153,25 +156,25 @@ int Cmd_get(int argc, char *argv[]) {
 
 		}
 		if ((strcmp(*(argv + 2), "appeui") == 0)) {
-			for (uint8_t idx = 0; idx < 16; idx++) {
+			for (uint8_t idx = 0; idx < NODE_LRWAN_APPEUI_LEN; idx++) {
 				strcat(commandSendBuffer,
 						itoa_user(u_mem_get(NODE_LRWAN_APPEUI_ADR + idx), 16));
 			}
 
 		}
 		if ((strcmp(*(argv + 2), "appkey") == 0)) {
-			for (uint8_t idx = 0; idx < 16; idx++) {
+			for (uint8_t idx = 0; idx < NODE_LRWAN_APPKEY_LEN; idx++) {
 				strcat(commandSendBuffer,
 						itoa_user(u_mem_get(NODE_LRWAN_APPKEY_ADR + idx), 16));
 			}
 
 		}
 	} else if ((strcmp(*(argv + 1), "id") == 0)) {
-		strcat(commandSendBuffer, itoa_user(u_mem_get(NODE_ID_ADR), 16));
+		strcat(commandSendBuffer, itoa_user(u_mem_get(NODE_ID_ADR), 10));
 
 	} else if ((strcmp(*(argv + 1), "cf") == 0)) {
 		strcat(commandSendBuffer,
-				itoa_user(u_mem_get(NODE_HAVE_PARAM_ADR), 16));
+				itoa_user(u_mem_get(NODE_HAVE_PARAM_ADR), 10));
 	}
 	strcat(commandSendBuffer, "\r\n");
 	/* Reponse -----------------------------------------------------*/

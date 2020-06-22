@@ -1,0 +1,48 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Create_devices LOG file                                          )
+(                                                                     )
+(    Drawing          : RAK833_RPIGATEWAY.brd                         )
+(    Software Version : 17.2S052                                      )
+(    Date/Time        : Mon Jun 22 17:35:12 2020                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/header3_header3pitch100mil_z_d.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/capnp_c0603_10u35v.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/mountinghole_mh_3mm_1_hole4mm.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/rak_pcie_conn_pcie_52pos_rak_pc.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/capnp_c0603_discrete_10nf.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/capnp_cap_1210_10u35v.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/capnp_c0603_discrete_01uf_.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/cap_c0603_10uf_.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/capnp_c0603_01uf.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/c-10pf50v-smd0805_c0603_10pf.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/c-6pf50v-smd0805_c0603_6pf.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/cap_cap_al_d_100uf35v.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/cap0603_c0603_100nf.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/capnp_cap_1210_22u63v.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/cap_cap_al_d_220u16v.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/ss34_2_sod123_1n5819.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/led_led0805_led.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/antenna_0_header_1_3mm_antenna.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/header20x2_header40x2pitch100m.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/usbmin_6_con5_microusb_skt_sm_.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/header6_header-6_zw_jtag.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/inductor_ind_6x6mm_88uh17a.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/l-82nh-smd0805_c0603_82nh.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/res-sm0402_0_r0603_discrete_10k.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/res-sm0402_0_r0603_discrete_22.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/res-sm0402_0_r0603_discrete_360.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/res-sm0402_0_r0603_discrete_30k.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/resistor_r0603_0rnc.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/res-sm0402_0_r0603_discrete_1r.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/resistor_r0603_22r.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/pmic_sot23-6_sot23-6_ap3211.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/zm5202_zm5202_a_zm5202_zm5202au.txt': written successfully.
+Device file 'C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/allegro/cat25c02_0_tssop-8_cat25256.txt': written successfully.
+
+  Created device files: 33
+

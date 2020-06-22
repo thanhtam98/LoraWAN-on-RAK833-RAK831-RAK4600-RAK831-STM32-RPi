@@ -1,0 +1,50 @@
+\t (00:00:02) allegro 17.2 S052 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Mon Jun 22 17:18:35 2020
+\t (00:00:02)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=21780 CPUs=4
+\t (00:00:02) CmdLine= c:\cadence\spb_17.2\tools\bin\allegro.exe C:\GIT\ThesisLorawanNode\HW\RAK833_RPiGateway\RAK833_RPIGATEWAY.brd
+\t (00:00:02) 
+   (00:00:02) Loading axlcore.cxt 
+   (00:00:03) Searching for nsWare programs v2.78
+   (00:00:03) 	NsWare directory found: E:/CAD/pcbenv/nsWare/
+   (00:00:03) 	NsWare programs must reside in this directory!
+   (00:00:03) function AFn_OpenDesign redefined
+   (00:00:03) function PinVia_Overlap_FinishEnterFun redefined
+   (00:00:03) function Find_Point_On_Line_From_Distant redefined
+   (00:00:03) function Find_Point_Quadrature_Line redefined
+   (00:00:03) function Line_Line_Intersect redefined
+   (00:00:03) function _getPinsNet redefined
+   (00:00:03) function _getBranchs redefined
+   (00:00:03) function _getPaths redefined
+   (00:00:03) function _get2PointsPath redefined
+   (00:00:03) function _checkElementList redefined
+   (00:00:03) function _getSurroundPoints redefined
+   (00:00:03) function _getListPointsLPaths redefined
+   (00:00:03) function _checkPathPoint redefined
+   (00:00:03) function _deleteElementList redefined
+   (00:00:03) function _checkElementList redefined
+   (00:00:03) function _deleteElementList redefined
+   (00:00:03) function Find_Point_On_Line_From_Distant redefined
+   (00:00:03) function Find_Point_Quadrature_Line redefined
+   (00:00:03) function Is_Point_On_List redefined
+   (00:00:03) function Line_Line_Intersect redefined
+   (00:00:03) function Line_Line_Distant redefined
+\t (00:00:06) Opening existing design...
+\i (00:00:06) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged RAK833_RPIGATEWAY
+\d (00:00:06) Design opened: C:/GIT/ThesisLorawanNode/HW/RAK833_RPiGateway/RAK833_RPIGATEWAY.brd
+\i (00:00:07) trapsize 4220
+\i (00:00:07) trapsize 4365
+\i (00:00:08) trapsize 4099
+\i (00:00:08) trapsize 6653
+\i (00:00:08) generaledit 
+\i (00:00:10) zoom out 1 
+\i (00:00:10) setwindow pcb
+\i (00:00:10) zoom out 3017.067 12926.412
+\i (00:00:10) trapsize 13307
+\i (00:00:11) zoom out 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom out 3014.405 12929.073
+\i (00:00:11) trapsize 26614
+\i (00:00:14) pick grid 2778.450 12497.935
+\t (00:00:14) last pick:  2780.000 12500.000
+\i (00:00:20) exit 
+\t (00:00:21)     Journal end - Mon Jun 22 17:18:54 2020

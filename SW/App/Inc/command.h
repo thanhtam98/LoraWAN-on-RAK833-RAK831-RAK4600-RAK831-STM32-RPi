@@ -6,7 +6,7 @@
 #include "usart.h"
 #include "main.h"
 extern uint32_t gotCommandFlag;
-extern uint8_t commandBuffer[50];
+extern uint8_t commandBuffer[100];
 int
 Cmd_help(int argc, char *argv[]);
 int

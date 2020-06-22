@@ -41,7 +41,6 @@ extern UART_HandleTypeDef huart3;
 void MX_USART1_UART_Init(void);
 void MX_USART2_UART_Init(void);
 void MX_USART3_UART_Init(void);
-void USER_USART3_UART_Init(void);
 
 /* USER CODE BEGIN Prototypes */
 

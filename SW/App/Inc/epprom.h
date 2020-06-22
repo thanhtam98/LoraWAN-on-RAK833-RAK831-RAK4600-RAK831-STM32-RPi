@@ -16,7 +16,7 @@ enum
 };
 
 
-#define EEP_MAX_SIZE 96    //
+#define EEP_MAX_SIZE    192 //
 //#define PARAM_MAX_SIZE 10
 uint8_t at24_write_bytes(uint16_t DevAddress, uint16_t MemAddress, uint8_t *pData,
 		uint16_t TxBufferSize);

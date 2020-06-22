@@ -1,79 +1,43 @@
-\t (00:00:00) allegro 17.2 S052 Windows SPB 64-bit Edition
-\t (00:00:00)     Journal start - Wed Jun 17 09:12:17 2020
-\t (00:00:00)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=5844 CPUs=4
-\t (00:00:00) CmdLine= c:\cadence\spb_17.2\tools\bin\allegro.exe C:\GIT\ThesisLorawanNode\HW\RAK811_STM32Node\allegro\STM32F103_RAK811_THESISNODE.brd
-\t (00:00:00) 
-   (00:00:00) Loading axlcore.cxt 
-   (00:00:01) Searching for nsWare programs v2.78
-   (00:00:01) 	NsWare directory found: E:/CAD/pcbenv/nsWare/
-   (00:00:01) 	NsWare programs must reside in this directory!
-   (00:00:01) function AFn_OpenDesign redefined
-   (00:00:01) function PinVia_Overlap_FinishEnterFun redefined
-   (00:00:01) function Find_Point_On_Line_From_Distant redefined
-   (00:00:01) function Find_Point_Quadrature_Line redefined
-   (00:00:01) function Line_Line_Intersect redefined
-   (00:00:01) function _getPinsNet redefined
-   (00:00:01) function _getBranchs redefined
-   (00:00:01) function _getPaths redefined
-   (00:00:01) function _get2PointsPath redefined
-   (00:00:01) function _checkElementList redefined
-   (00:00:01) function _getSurroundPoints redefined
-   (00:00:01) function _getListPointsLPaths redefined
-   (00:00:01) function _checkPathPoint redefined
-   (00:00:01) function _deleteElementList redefined
-   (00:00:01) function _checkElementList redefined
-   (00:00:01) function _deleteElementList redefined
-   (00:00:01) function Find_Point_On_Line_From_Distant redefined
-   (00:00:01) function Find_Point_Quadrature_Line redefined
-   (00:00:01) function Is_Point_On_List redefined
-   (00:00:01) function Line_Line_Intersect redefined
-   (00:00:01) function Line_Line_Distant redefined
-\t (00:00:03) Opening existing design...
-\i (00:00:03) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged STM32F103_RAK811_THESISNODE
-\d (00:00:03) Design opened: C:/GIT/ThesisLorawanNode/HW/RAK811_STM32Node/allegro/STM32F103_RAK811_THESISNODE.brd
+\t (00:00:02) allegro 17.2 S052 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Wed Jun 17 14:36:31 2020
+\t (00:00:02)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=22848 CPUs=4
+\t (00:00:02) CmdLine= C:\Cadence\SPB_17.2\tools\bin\allegro.exe
+\t (00:00:02) 
+   (00:00:02) Loading axlcore.cxt 
+   (00:00:03) Searching for nsWare programs v2.78
+   (00:00:03) 	NsWare directory found: E:/CAD/pcbenv/nsWare/
+   (00:00:03) 	NsWare programs must reside in this directory!
+   (00:00:03) function AFn_OpenDesign redefined
+   (00:00:03) function PinVia_Overlap_FinishEnterFun redefined
+   (00:00:03) function Find_Point_On_Line_From_Distant redefined
+   (00:00:03) function Find_Point_Quadrature_Line redefined
+   (00:00:03) function Line_Line_Intersect redefined
+   (00:00:03) function _getPinsNet redefined
+   (00:00:03) function _getBranchs redefined
+   (00:00:03) function _getPaths redefined
+   (00:00:03) function _get2PointsPath redefined
+   (00:00:03) function _checkElementList redefined
+   (00:00:03) function _getSurroundPoints redefined
+   (00:00:03) function _getListPointsLPaths redefined
+   (00:00:03) function _checkPathPoint redefined
+   (00:00:03) function _deleteElementList redefined
+   (00:00:03) function _checkElementList redefined
+   (00:00:03) function _deleteElementList redefined
+   (00:00:03) function Find_Point_On_Line_From_Distant redefined
+   (00:00:03) function Find_Point_Quadrature_Line redefined
+   (00:00:03) function Is_Point_On_List redefined
+   (00:00:03) function Line_Line_Intersect redefined
+   (00:00:03) function Line_Line_Distant redefined
+\t (00:00:04) Opening existing design...
+\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged STM32F103_RAK811_THESISNODE
+\d (00:00:04) Design opened: C:/GIT/ThesisLorawanNode/HW/RAK811_STM32Node/allegro/STM32F103_RAK811_THESISNODE.brd
 \i (00:00:04) trapsize 3246
-\i (00:00:04) trapsize 3427
-\i (00:00:04) trapsize 2752
-\i (00:00:04) trapsize 2752
-\i (00:00:05) generaledit 
-\i (00:00:06) zoom in 1 
-\i (00:00:06) setwindow pcb
-\i (00:00:06) zoom in 3853.00 13251.59
-\i (00:00:06) trapsize 1376
-\i (00:00:07) zoom in 1 
-\i (00:00:07) setwindow pcb
-\i (00:00:07) zoom in 3891.53 13482.77
-\i (00:00:07) trapsize 688
-\i (00:00:08) zoom out 1 
-\i (00:00:08) setwindow pcb
-\i (00:00:08) zoom out 3967.21 13383.69
-\i (00:00:08) trapsize 1376
-\i (00:00:09) setwindow form.mini
-\i (00:00:09) FORM mini subclass TOP 
-\i (00:00:10) setwindow pcb
-\i (00:00:10) zoom out 1 
-\i (00:00:10) setwindow pcb
-\i (00:00:10) zoom out 3645.21 13350.67
-\i (00:00:10) trapsize 2752
-\i (00:00:18) dlib 
-\i (00:00:21) setwindow form.dlib
-\i (00:00:21) FORM dlib execute  
-\t (00:00:21) Starting Cadence export libraries...
-\i (00:00:27) FORM dlib cancel  
-\i (00:00:28) setwindow pcb
-\i (00:00:28) generaledit 
-\i (00:00:29) zoom in 1 
-\i (00:00:29) setwindow pcb
-\i (00:00:29) zoom in 4399.30 14005.67
-\i (00:00:29) trapsize 1376
-\i (00:00:31) zoom out 1 
-\i (00:00:31) setwindow pcb
-\i (00:00:31) zoom out 4770.84 13925.86
-\i (00:00:31) trapsize 2752
-\i (00:00:34) dlib 
-\i (00:00:36) setwindow form.dlib
-\i (00:00:36) FORM dlib execute  
-\t (00:00:36) Starting Cadence export libraries...
-\i (00:00:42) setwindow pcb
-\i (00:00:42) exit 
-\t (00:00:42)     Journal end - Wed Jun 17 09:12:58 2020
+\i (00:00:05) trapsize 3427
+\i (00:00:05) trapsize 2752
+\i (00:00:05) trapsize 2752
+\i (00:00:06) generaledit 
+\i (00:00:10) opencd E:/LVTN/AccessControllerBoard/16_Controller/03_layout/controller.brd 
+\t (00:00:10) Opening existing design...
+\i (00:00:11) fillin yes 
+\i (00:00:12) trapsize 129
+\t (00:00:12)     Journal end - Wed Jun 17 14:36:41 2020

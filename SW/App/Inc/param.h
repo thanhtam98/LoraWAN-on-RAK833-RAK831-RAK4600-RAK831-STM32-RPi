@@ -36,7 +36,7 @@
 #define NODE_LRWAN_APPKEY_LEN 		16
 
 #define NODE_LRWAN_APPEUI_ADR		NODE_LRWAN_APPKEY_ADR + NODE_LRWAN_APPKEY_LEN
-#define NODE_LRWAN_APPEUI_LEN 		16
+#define NODE_LRWAN_APPEUI_LEN 		8
 
 typedef struct
 {
@@ -48,7 +48,7 @@ typedef struct
  *
  * */
 
-#define PARAM_MAX_SIZE 			96
+#define PARAM_MAX_SIZE 			192
 #define PARAM_LOAD_ALL			0xFFFF
 
 
