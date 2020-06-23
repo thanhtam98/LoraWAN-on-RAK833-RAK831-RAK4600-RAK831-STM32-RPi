@@ -29,14 +29,14 @@ void vAppDefault(void) {
 
 	/*Task initialization*/
 
-//	osThreadDef(loraTaskHandle, vRakTask, osPriorityNormal, 0, 128);
-//	loraTaskHandle = osThreadCreate(osThread(loraTaskHandle), NULL);
-//	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
-//	osThreadDef(modbusTaskHandle, vModBusTask, osPriorityNormal, 0, 256);
-//	modbusTaskHandle = osThreadCreate(osThread(modbusTaskHandle), NULL);
-//	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
-//	osThreadDef(envTaskHandle, vEnvTask, osPriorityNormal, 0, 512);
-//	envTaskHandle = osThreadCreate(osThread(envTaskHandle), NULL);
+	osThreadDef(loraTaskHandle, vRakTask, osPriorityNormal, 0, 128);
+	loraTaskHandle = osThreadCreate(osThread(loraTaskHandle), NULL);
+	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
+	osThreadDef(modbusTaskHandle, vModBusTask, osPriorityNormal, 0, 256);
+	modbusTaskHandle = osThreadCreate(osThread(modbusTaskHandle), NULL);
+	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
+	osThreadDef(envTaskHandle, vEnvTask, osPriorityNormal, 0, 512);
+	envTaskHandle = osThreadCreate(osThread(envTaskHandle), NULL);
 	osThreadDef(cmdTaskHandle, vCmdTask, osPriorityNormal, 0, 256);
 	cmdTaskHandle = osThreadCreate(osThread(cmdTaskHandle), NULL);
 	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
@@ -77,7 +77,7 @@ void vAppDefault(void) {
 //		DBG("Read value %d %d %d \r\n",recv[0],recv[1],recv[2],recv[3],recv[4],recv[5]);
 		DBG("\r\nMemFree:%d", xPortGetFreeHeapSize());
 		osDelay(1000);
-		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_7);
+		HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
 	}
 }
 

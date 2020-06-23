@@ -34,7 +34,7 @@ void command_recv_callback_irq(UART_HandleTypeDef *huart) {
 //		HAL_UART_Transmit_IT(huart, &receivedChar, 1);
 
 //	__HAL_UART_ENABLE_IT(&huart1, UART_IT_RXNE);
-	if (receivedChar != 10) {
+	if ((receivedChar != 10)&&(receivedChar != 13) ){
 		if ((receivedChar == 8) || (receivedChar == 127)) {
 			if (commandBufferIndex > 0)
 				commandBufferIndex--;
@@ -284,7 +284,7 @@ void vCmdTask(const void *arg) {
 				HAL_UART_Transmit(&huart2, Badcommand, strlen(Badcommand), 100);
 			//					UARTprintf();
 		}
-		osDelay(100);
+		osDelay(10);
 	}
 
 }

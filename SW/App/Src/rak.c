@@ -6,11 +6,15 @@
 #include "param.h"
 
 /* Private variables -------------------*/
-char rakCommandSendBuffer[RAK_MAX_RECV_LEN];
+char rakCommandSendBuffer[RAK_MAX_SEND_LEN];
 char commandRecvBuffer[RAK_MAX_RECV_LEN];
 uint8_t commandRecvBufferIndex = 0;
 uint8_t gotCommandRecvFlag = 0;
-
+lr_packet_t lr_packet_recv;
+enum {
+	LR_NOT_RESPONE, LR_JOINED, LR_NOT_JOINED, LR_ERR, LR_BUSY
+};
+uint8_t isJoinedLoraWAN = 0;
 /* Start implementation --------------------*/
 
 /*
@@ -37,7 +41,7 @@ uint8_t* itoa_user(uint32_t val, uint8_t base) {
 
 	for (; val && i; --i, val /= base)
 		buf[i] = "0123456789abcdef"[val % base];
-	if ((base == 16) && (((uint8_t)val_) < 16)) {
+	if ((base == 16) && (((uint8_t) val_) < 16)) {
 		buf[i--] = '0';
 	}
 //	if (base == 16)
@@ -205,12 +209,12 @@ uint8_t rak_join(void) {
 		/* Process the rak at command*/
 		if (commandRecvBuffer[0] == 'O') // OK
 				{
-			return 1;
+			return LR_JOINED;
 		}
 		/*Todo: capture error code for deciding next command */
 		if (commandRecvBuffer[0] == 'E') //ERROR
 				{
-			return 2;
+			return LR_ERR;
 		}
 
 		/*	Clear buffer*/
@@ -218,7 +222,7 @@ uint8_t rak_join(void) {
 
 	} else {
 
-		return 0;
+		return LR_NOT_RESPONE;
 		/* rak not responding*/
 	}
 
@@ -254,6 +258,74 @@ uint8_t rak_isConfirm(uint8_t type) {
 	return rak_send_raw(rakCommandSendBuffer);
 }
 
+uint8_t rak_sendData(uint8_t port, char* data) {
+	if (port > 63)
+		return 0;  // the biggest port is 63
+	memset(rakCommandSendBuffer, 0, RAK_MAX_RECV_LEN);
+	strcat(rakCommandSendBuffer, "at+send=lora:");
+	strcat(rakCommandSendBuffer, itoa_user(port, 10));
+	strcat(rakCommandSendBuffer, ":");
+	strcat(rakCommandSendBuffer, data);
+	return rak_send_raw(rakCommandSendBuffer);
+
+}
+
+/*Brief: command received processing
+ *
+ * **/
+void rak_command_recv_process(void) {
+	/*Packet support extraction  variale*/
+	uint8_t buf[4];
+	uint8_t* pColon;
+	if (strcmp(rakCommandSendBuffer, "at+recv") == 0) {
+		if ((strchr(rakCommandSendBuffer, '=') + 1) == '0') {
+			/*This is ACK.*/
+		} else {
+			/*
+			 * The downlink recieved at port 22 and the pay load is: 6e7474
+			 * port,rssi,fnc,snr,payload
+			 * Content:  at+recv=22,-54,9,3:6e7474{0D}{0A}*/
+			if ((strchr(rakCommandSendBuffer, '=') + 3) != ',') {
+				memset(buf, 0, 4);
+				memcpy(buf, (strchr(rakCommandSendBuffer, '=') + 1), 2);
+				lr_packet_recv.port = atoi(buf);
+			} else {
+				memset(buf, 0, 4);
+				memcpy(buf, (strchr(rakCommandSendBuffer, '=') + 1), 1);
+				lr_packet_recv.port = atoi(buf);
+			}
+			pColon = strchr(rakCommandSendBuffer, ':');
+			if (*(pColon - 2) != ',') {
+				memset(buf, 0, 4);
+				memcpy(buf, (pColon - 2), 2);
+				lr_packet_recv.len = atoi(buf);
+			} else {
+				memset(buf, 0, 4);
+				memcpy(buf, (pColon - 1), 1);
+				lr_packet_recv.len = atoi(buf);
+			}
+
+			for (uint8_t index = 0; index < lr_packet_recv.len; index++) {
+				//
+				memcpy(buf, (pColon + 1) + index * 2, 2);
+				lr_packet_recv.pPayload[index] = strtol(buf, NULL, 16);
+			}
+			//memcpy(&lr_packet_recv.pPayload[0],(strchr(rakCommandSendBuffer, ':') + 1), strlen(strchr(rakCommandSendBuffer, ':') + 1
+		}
+	}
+
+	/*ERROR code */
+	if (strcmp(commandRecvBuffer, "ER") == 0) {
+
+		if ((commandRecvBuffer[7] == '8')&&(commandRecvBuffer[8] == '0')) {
+			isJoinedLoraWAN = LR_BUSY;
+		}
+		if ((commandRecvBuffer[7] == '8')&&(commandRecvBuffer[8] == '6')) {
+			isJoinedLoraWAN = LR_NOT_JOINED;
+		}
+	}
+
+}
 /*Brief: Handle AT command received over serial interrupt
  *
  *
@@ -279,11 +351,13 @@ void rak_recv_isr(void) {
 }
 
 void vRakTask(void const *arg) {
-	uint8_t isLoraWAN = 0;
 
 	char * DevEui = "60C5A8FFFE000001";
 	char * AppEui = "70B3D57EF00047C0";
 	char * AppKey = "5D833B4696D5E01E2F8DC880E30BA5FE";
+	char * pData =
+			"5468656e20746869732073697465206973206d61646520666f7220796f752120557365206f75722073757065722068616e6479206f6e6c696e6520746f6f6c20746f206465636f6465206f7220656e636f646520796f757220646174612e";
+
 	if (PARAM[NODE_HAVE_PARAM_ADR] == 1) {
 		for (uint8_t idx = 0; idx < 8; idx++) {
 			strcat(DevEui,
@@ -309,21 +383,42 @@ void vRakTask(void const *arg) {
 	rak_setJoinMode(0);
 	rak_isConfirm(1);
 	rak_initOTAA(DevEui, AppEui, AppKey);
-	rak_join();
-//	if(rak_setClass(0) == 0)
-//
-//	{
-//		HAL_UART_Transmit(&huart1,p,6,100);
-//	}
-//	else
-//	{
-//		HAL_UART_Transmit(&huart1,n,6,100);
-//	}
+	isJoinedLoraWAN = rak_join();
+	uint8_t err;
 
 	while (1) {
 		/*Thread up*/
 
+		osDelay(5000);
+
+		err = rak_sendData(5, pData);
+		DBG("Send data over LPWAN \r\n with code: %d", err);
 		/*Thread down*/
+
+		/*Handling*/
+		if (isJoinedLoraWAN == LR_NOT_JOINED) {
+			DBG("Re joining to LRWAN: ");
+			osDelay(3000);
+			isJoinedLoraWAN = rak_join();
+			DBG("Re joining to LRWAN with code: %d \r\n", isJoinedLoraWAN);
+		}
+		if (isJoinedLoraWAN == LR_BUSY)
+		{
+			DBG("LRWAN is busy now, sleeping in 5s \r\n");
+			osDelay(5000);
+		}
+
+		/*
+		 * Receive downlink data and error code detecting
+		 *
+		 * **/
+
+		if (gotCommandRecvFlag == 1) {
+			rak_command_recv_process();
+			gotCommandRecvFlag = 0;
+			/*	Clear buffer*/
+			memset(commandRecvBuffer, 0, RAK_MAX_RECV_LEN);
+		}
 
 	}
 }

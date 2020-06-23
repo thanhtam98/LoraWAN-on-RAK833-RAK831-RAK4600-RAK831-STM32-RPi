@@ -13,7 +13,7 @@
 //	uint8_t uiMem;
 //} xMemHandler_t;
 
-typedef  uint8_t xMemHandler_t;
+typedef  uint16_t xMemHandler_t;
 
 /* Private define -----------------------------------*/
 #define MEM_MAX_SIZE	(40)
@@ -32,7 +32,7 @@ static xMemHandler_t xMemSharedHandler[MEM_MAX_SIZE];
  * retVal: Value of Mem at uiFuncAdr
  *
  */
-uint8_t uiMemGet(uint8_t uiFuncAdr)
+uint16_t uiMemGet(uint8_t uiFuncAdr)
 {
 	return xMemSharedHandler[uiFuncAdr];
 
@@ -43,7 +43,7 @@ uint8_t uiMemGet(uint8_t uiFuncAdr)
  * retVal: None
  *
  */
-void uiMemSet(uint8_t uiFuncAdr, uint8_t uiValue)
+void uiMemSet(uint8_t uiFuncAdr, uint16_t uiValue)
 {
 	xMemSharedHandler[uiFuncAdr] =uiValue ;
 }

@@ -114,21 +114,21 @@ int main(void)
 
   /*Load pre-paramter from eepROm*/
 
-  v_epr_load(PARAM_LOAD_ALL);
-  if (PARAM[NODE_HAVE_PARAM_ADR] != 0 )
-  {
-	  /* Found pre-param from eeprom and apply it*/
-
-	  USER_USART3_UART_Init(); // Modbus re-config
-
-	  /*Todo: LORAWAN*/
-
-  }
-  else
-  {
-
-	  /*Notify to the Led and jump in to vAppConfiguationTask !!**/
-  }
+//  v_epr_load(PARAM_LOAD_ALL);
+//  if (PARAM[NODE_HAVE_PARAM_ADR] != 0 )
+//  {
+//	  /* Found pre-param from eeprom and apply it*/
+//
+//	  USER_USART3_UART_Init(); // Modbus re-config
+//
+//	  /*Todo: LORAWAN*/
+//
+//  }
+//  else
+//  {
+//
+//	  /*Notify to the Led and jump in to vAppConfiguationTask !!**/
+//  }
 
 //  while(1)
 //  {

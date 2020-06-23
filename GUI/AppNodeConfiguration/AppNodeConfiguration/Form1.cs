@@ -8,9 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
+using System.Runtime.InteropServices;
+using System;
+using System.Windows.Forms;
+using System.Drawing;
+using System.Drawing.Drawing2D;
 
 namespace AppNodeConfiguration
 {
+   
     public partial class Form1 : Form
     {   
         
@@ -19,6 +25,9 @@ namespace AppNodeConfiguration
         bool isWaitingRx = false;
         int timeOut = 0;
         int theWaitingVal = 0;
+
+
+
         public Form1()
         {
             InitializeComponent();
@@ -39,7 +48,7 @@ namespace AppNodeConfiguration
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
             try
             {
@@ -50,7 +59,26 @@ namespace AppNodeConfiguration
 
                 serialPort1.Parity = (Parity)Enum.Parse(typeof(Parity), cBoxParity.Text);
                 serialPort1.Open();
-                prgBarLoad.Value = 100;
+
+
+                
+                serialPort1.WriteLine("get cf");
+                theWaitingVal = 255;
+                prgBarLoad.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+                await Task.Delay(1000);
+                if (theWaitingVal == 0)
+                {
+                   
+                    
+                    prgBarLoad.Value = 100;
+
+                }
+                else
+                {
+                    prgBarLoad.SetState(2);
+                    prgBarLoad.Value = 10;
+                    
+                }
 
             }
             catch (Exception err)
@@ -84,6 +112,7 @@ namespace AppNodeConfiguration
                 dataOut = tBoxSend.Text;
                 serialPort1.Write(dataOut);
                 theWaitingVal = 1;
+
             }
         }
 
@@ -169,8 +198,15 @@ namespace AppNodeConfiguration
 
                 theWaitingVal = 0;
                 Console.WriteLine("Baud");
-                cBoxMbBaud.Text = (1200*Int16.Parse(dataIn)).ToString();
-                
+                try
+                {
+                    cBoxMbBaud.Text = (1200 * Int16.Parse(dataIn)).ToString();
+                }
+                catch
+
+                {
+                    cBoxMbBaud.Text =9600.ToString();
+                }
             }
 
             if (theWaitingVal == 3)
@@ -270,6 +306,22 @@ namespace AppNodeConfiguration
 
             }
             Console.WriteLine(dataIn);
+
+            if (theWaitingVal == 255)
+            {
+                Console.WriteLine("cf");
+                theWaitingVal = 0;
+                if (dataIn == "0")
+                {
+                    prgBarLoad.ForeColor = Color.FromArgb(255, 0, 0);
+                    //prgBarLoad.SetState(2);
+                }
+                else
+                {
+                    prgBarLoad.ForeColor = Color.FromArgb(0, 255, 0);
+                }
+                
+            }
             /*   if (theWaitingVal == 10)
                {
 
@@ -438,7 +490,7 @@ namespace AppNodeConfiguration
             }
 
             serialPort1.WriteLine("get cf");
-            theWaitingVal = 11;
+            theWaitingVal = 255;
             /***/
             timeOut = 0;
             while (theWaitingVal != 0)
@@ -551,6 +603,60 @@ namespace AppNodeConfiguration
         private void cBoxPari_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void label22_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void prgBarLoad_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label25_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+    public static class ModifyProgressBarColor
+    {
+        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = false)]
+        static extern IntPtr SendMessage(IntPtr hWnd, uint Msg, IntPtr w, IntPtr l);
+        public static void SetState(this ProgressBar pBar, int state)
+        {
+            SendMessage(pBar.Handle, 1040, (IntPtr)state, IntPtr.Zero);
+        }
+    }
+}
+namespace QuantumConcepts.Common.Forms.UI.Controls
+{
+    public class ProgressBarEx : ProgressBar
+    {
+        public ProgressBarEx()
+        {
+            this.SetStyle(ControlStyles.UserPaint, true);
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            LinearGradientBrush brush = null;
+            Rectangle rec = new Rectangle(0, 0, this.Width, this.Height);
+            double scaleFactor = (((double)Value - (double)Minimum) / ((double)Maximum - (double)Minimum));
+
+            if (ProgressBarRenderer.IsSupported)
+                ProgressBarRenderer.DrawHorizontalBar(e.Graphics, rec);
+
+            rec.Width = (int)((rec.Width * scaleFactor) - 4);
+            rec.Height -= 4;
+            brush = new LinearGradientBrush(rec, this.ForeColor, this.BackColor, LinearGradientMode.Vertical);
+            e.Graphics.FillRectangle(brush, 2, 2, rec.Width, rec.Height);
         }
     }
 }

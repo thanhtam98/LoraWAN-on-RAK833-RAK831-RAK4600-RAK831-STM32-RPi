@@ -3,8 +3,20 @@
 
 #include "usart.h"
 
-#define RAK_MAX_RECV_LEN 40
+#define RAK_MAX_RECV_LEN 400
+#define RAK_MAX_PAYLOAD	 51
+#define RAK_MAX_SEND_LEN 200
 #define MAX_TIME_OUT     10   // second unit
+/*
+ *  Indexing offset for at command processing
+ * */
+//#define RAK_
+typedef struct
+{
+	uint8_t pPayload[RAK_MAX_PAYLOAD];
+	uint8_t port;
+	uint8_t len;
+} lr_packet_t;
 /* UART for RAK communication */
 #define RAK_huart huart1
 

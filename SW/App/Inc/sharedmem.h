@@ -26,7 +26,7 @@
 #define MEM_MAX_SIZE	(40)
 
 /*Public Function prototype---------------------*/
-uint8_t uiMemGet(uint8_t uiFuncAdr);
-void uiMemSet(uint8_t uiFuncAdr, uint8_t uiValue);
+uint16_t uiMemGet(uint8_t uiFuncAdr);
+void uiMemSet(uint8_t uiFuncAdr, uint16_t uiValue);
 
 #endif
