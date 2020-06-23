@@ -99,14 +99,25 @@ int main(void)
   MX_TIM4_Init();
   MX_TIM3_Init();
   MX_I2C1_Init();
+  MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
 
-  /*Force to enale periphral manually */
+  /*Force to enable periphral manually */
   char *p="NTT \r\n";
   HAL_TIM_Base_Start(&htim4);
+
   __HAL_UART_ENABLE_IT(&huart1, UART_IT_RXNE);
   __HAL_UART_ENABLE_IT(&huart3, UART_IT_RXNE);
   __HAL_UART_ENABLE_IT(&huart2, UART_IT_RXNE);
+
+
+  /* Run the ADC calibration */
+  if (HAL_ADCEx_Calibration_Start(&hadc1) != HAL_OK)
+  {
+    /* Calibration Error */
+    Error_Handler();
+  }
+
 //  HAL_Delay(101);
 //  HAL_UART_Transmit(&huart2,p,6,100);
 //  HAL_UART_Transmit(&huart3,p,6,100);

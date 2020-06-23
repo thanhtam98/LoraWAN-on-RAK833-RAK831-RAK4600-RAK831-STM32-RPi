@@ -5,6 +5,18 @@
 #include <stdio.h>
 #include <stdint.h>
 /*Function Address define*/
+/* IO Mapping
+ *   [SW1][SW2][PULS][ADC1][ADC2][OneWire]
+ *
+ * */
+
+#define PORT_IO_SW_1				(1)
+#define PORT_IO_SW_2 				(2)
+#define PORT_PULSE					(3)
+#define PORT_ADC_1					(4)
+#define PORT_ADC_2					(5)
+#define PORT_ONE_WIRE				(6)
+
 
 #define FUNC_READ_TEMP_ADR			(1)
 #define FUNC_READ_HUMD_ADR			(2)

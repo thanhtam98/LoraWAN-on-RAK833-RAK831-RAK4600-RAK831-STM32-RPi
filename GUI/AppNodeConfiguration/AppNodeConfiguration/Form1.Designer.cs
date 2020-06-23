@@ -67,6 +67,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
@@ -88,6 +89,12 @@
             this.cBoxLrMode = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label24 = new System.Windows.Forms.Label();
@@ -100,13 +107,6 @@
             this.label20 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.Manual.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -517,7 +517,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(711, 257);
+            this.button1.Location = new System.Drawing.Point(690, 131);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 79);
@@ -528,7 +528,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(648, 148);
+            this.button2.Location = new System.Drawing.Point(690, 40);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 79);
@@ -571,6 +571,15 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "LoraWAN";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(476, 69);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(18, 17);
+            this.checkBox1.TabIndex = 43;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // comboBox8
             // 
             this.comboBox8.FormattingEnabled = true;
@@ -601,7 +610,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(303, 71);
+            this.label26.Location = new System.Drawing.Point(303, 66);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(57, 20);
             this.label26.TabIndex = 40;
@@ -625,7 +634,7 @@
             "EU870",
             "US915",
             "KR923"});
-            this.comboBox7.Location = new System.Drawing.Point(476, 19);
+            this.comboBox7.Location = new System.Drawing.Point(476, 26);
             this.comboBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(121, 28);
@@ -634,7 +643,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(581, 257);
+            this.button3.Location = new System.Drawing.Point(690, 229);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 79);
@@ -796,6 +805,54 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "IO Configuration";
             // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(278, 213);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(121, 27);
+            this.textBox9.TabIndex = 56;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(278, 177);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(121, 27);
+            this.textBox8.TabIndex = 55;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(278, 142);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(121, 27);
+            this.textBox7.TabIndex = 54;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(278, 105);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(121, 27);
+            this.textBox4.TabIndex = 53;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(278, 70);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(121, 27);
+            this.textBox3.TabIndex = 52;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(278, 34);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(121, 27);
+            this.textBox2.TabIndex = 51;
+            // 
             // comboBox6
             // 
             this.comboBox6.FormattingEnabled = true;
@@ -937,64 +994,6 @@
             this.label19.TabIndex = 39;
             this.label19.Text = "Switch 1";
             this.label19.Click += new System.EventHandler(this.label19_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(278, 34);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 27);
-            this.textBox2.TabIndex = 51;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(278, 70);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 27);
-            this.textBox3.TabIndex = 52;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(278, 105);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(121, 27);
-            this.textBox4.TabIndex = 53;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(278, 142);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(121, 27);
-            this.textBox7.TabIndex = 54;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(278, 177);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(121, 27);
-            this.textBox8.TabIndex = 55;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(278, 213);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(121, 27);
-            this.textBox9.TabIndex = 56;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(476, 67);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(113, 24);
-            this.checkBox1.TabIndex = 43;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 

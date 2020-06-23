@@ -70,6 +70,12 @@ void delay_us(uint32_t time);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define SW_1_Pin GPIO_PIN_6
+#define SW_1_GPIO_Port GPIOA
+#define SW_2_Pin GPIO_PIN_7
+#define SW_2_GPIO_Port GPIOA
+#define OneWire_Pin GPIO_PIN_1
+#define OneWire_GPIO_Port GPIOB
 #define RAK_RST_Pin GPIO_PIN_8
 #define RAK_RST_GPIO_Port GPIOA
 #define RAK_TX_Pin GPIO_PIN_9

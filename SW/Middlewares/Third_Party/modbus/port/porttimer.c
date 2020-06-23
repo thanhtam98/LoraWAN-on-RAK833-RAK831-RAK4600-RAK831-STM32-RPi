@@ -30,7 +30,7 @@
 //static void prvvTIMERExpiredISR( void );
  
 /* -----------------------    variables     ---------------------------------*/
-extern TIM_HandleTypeDef htim3;
+extern TIM_HandleTypeDef htim2;
 uint16_t timeout = 0;
 uint16_t downcounter = 0;
  
@@ -40,21 +40,21 @@ xMBPortTimersInit( USHORT usTim1Timerout50us )
 {
   TIM_MasterConfigTypeDef sMasterConfig;
   
-  htim3.Instance = TIM3;
-  htim3.Init.Prescaler = (HAL_RCC_GetPCLK1Freq() / 1000000) - 1;
-  htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 50 - 1;
+  htim2.Instance = TIM2;
+  htim2.Init.Prescaler = (HAL_RCC_GetPCLK1Freq() / 1000000) - 1;
+  htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim2.Init.Period = 50 - 1;
 //
   timeout = usTim1Timerout50us;
 
-  if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
+  if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
   {
     return FALSE;
   }
 
   sMasterConfig.MasterOutputTrigger = TIM_TRGO_UPDATE;
   sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
-  if (HAL_TIMEx_MasterConfigSynchronization(&htim3, &sMasterConfig) != HAL_OK)
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim2, &sMasterConfig) != HAL_OK)
   {
     return FALSE;
   }
@@ -68,7 +68,7 @@ vMBPortTimersEnable(  )
 {
   /* Enable the timer with the timeout passed to xMBPortTimersInit( ) */
   downcounter = timeout;
-  HAL_TIM_Base_Start_IT(&htim3);
+  HAL_TIM_Base_Start_IT(&htim2);
 
 }
  
@@ -77,7 +77,7 @@ vMBPortTimersDisable(  )
 {
 
   /* Disable any pending timers. */
- HAL_TIM_Base_Stop_IT(&htim3);
+ HAL_TIM_Base_Stop_IT(&htim2);
 }
  
 /* Create an ISR which is called whenever the timer has expired. This function
