@@ -330,44 +330,44 @@ namespace AppNodeConfiguration
                 Console.WriteLine("fr");
                 if (dataIn == "0")
                 {
-                    cBoxAdr.Text = "AS923";
+                    cBoxFreq.Text = "AS923";
                 }
                 else if (dataIn == "1")
                 {
-                    cBoxAdr.Text = "AU915";
+                    cBoxFreq.Text = "AU915";
                 }
                 else if (dataIn == "2")
                 {
-                    cBoxAdr.Text = "CN470";
+                    cBoxFreq.Text = "CN470";
                 }
                 else if (dataIn == "3")
                 {
-                    cBoxAdr.Text = "CN779";
+                    cBoxFreq.Text = "CN779";
                 }
                 else if (dataIn == "4")
                 {
-                    cBoxAdr.Text = "EU433";
+                    cBoxFreq.Text = "EU433";
                 }
                 else if (dataIn == "5")
                 {
-                    cBoxAdr.Text = "EU868";
+                    cBoxFreq.Text = "EU868";
                 }
                 else if (dataIn == "6")
                 {
-                    cBoxAdr.Text = "KR920";
+                    cBoxFreq.Text = "KR920";
                 }
                 else if (dataIn == "7")
                 {
-                    cBoxAdr.Text = "IN865";
+                    cBoxFreq.Text = "IN865";
                 }
                 else if (dataIn == "8")
                 {
-                    cBoxAdr.Text = "AU915";
+                    cBoxFreq.Text = "AU915";
                 }
 
                 else if (dataIn == "9")
                 {
-                    cBoxAdr.Text = "AU915";
+                    cBoxFreq.Text = "AU915";
                 }
 
 
@@ -379,11 +379,11 @@ namespace AppNodeConfiguration
                 Console.WriteLine("isConfirmed");
                 if (dataIn == "0")
                 {
-                    cBoxAdr.Text = "No";
+                    cBoxCfm.Text = "NO";
                 }
                 else
                 {
-                    cBoxAdr.Text = "YES";
+                    cBoxCfm.Text = "YES";
                 }
 
             }
@@ -394,11 +394,11 @@ namespace AppNodeConfiguration
                 Console.WriteLine("Class");
                 if (dataIn == "0")
                 {
-                    cBoxAdr.Text = "A";
+                    cBoxClass.Text = "A";
                 }
                 else
                 {
-                    cBoxAdr.Text = "C";
+                    cBoxClass.Text = "C";
                 }
 
             }
@@ -809,7 +809,7 @@ namespace AppNodeConfiguration
             serialPort1.WriteLine((Convert.ToInt32(cBoxMbBaud.Text) / 1200).ToString());
             await Task.Delay(200);
 
-            if (cBoxMbMode.Text == "8")
+            if (cBoxDb.Text == "8")
             {
                 serialPort1.WriteLine("set mb db 0");
             }
@@ -840,13 +840,23 @@ namespace AppNodeConfiguration
             }
             else
             {
-                serialPort1.WriteLine("set mb db 2");
+                serialPort1.WriteLine("set mb pari 2");
             }
             await Task.Delay(200);
 
             serialPort1.Write("set mb id ");
             serialPort1.WriteLine(tBoxSid.Text);
             await Task.Delay(200);
+
+            if(cBoxLrMode.Text == "OTAA")
+            {
+                serialPort1.WriteLine("set lr mode 0");
+            }
+            else
+            {
+                serialPort1.WriteLine("set lr mode 1");
+            }
+
 
             serialPort1.Write("set lr deveui ");
             serialPort1.WriteLine(tBoxDevEUI.Text);
@@ -889,7 +899,7 @@ namespace AppNodeConfiguration
             }
             await Task.Delay(200);
 
-            serialPort1.Write("set lr adr ");
+            serialPort1.Write("set lr fr ");
             if (cBoxFreq.Text == "AS923")
             {
                 serialPort1.WriteLine("0");
@@ -928,7 +938,7 @@ namespace AppNodeConfiguration
             }
             await Task.Delay(200);
 
-            if (cBoxCfm.Text == "No")
+            if (cBoxCfm.Text == "NO")
             {
                 serialPort1.WriteLine("set lr cf 0");
 
@@ -1001,6 +1011,11 @@ namespace AppNodeConfiguration
         }
 
         private void cBoxOneW_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cBoxAdr_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

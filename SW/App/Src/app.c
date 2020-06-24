@@ -29,14 +29,14 @@ void vAppDefault(void) {
 
 	/*Task initialization*/
 
-	osThreadDef(loraTaskHandle, vRakTask, osPriorityNormal, 0, 128);
-	loraTaskHandle = osThreadCreate(osThread(loraTaskHandle), NULL);
-	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
-	osThreadDef(modbusTaskHandle, vModBusTask, osPriorityNormal, 0, 256);
-	modbusTaskHandle = osThreadCreate(osThread(modbusTaskHandle), NULL);
-	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
-	osThreadDef(envTaskHandle, vEnvTask, osPriorityNormal, 0, 512);
-	envTaskHandle = osThreadCreate(osThread(envTaskHandle), NULL);
+//	osThreadDef(loraTaskHandle, vRakTask, osPriorityNormal, 0, 128);
+//	loraTaskHandle = osThreadCreate(osThread(loraTaskHandle), NULL);
+//	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
+//	osThreadDef(modbusTaskHandle, vModBusTask, osPriorityNormal, 0, 256);
+//	modbusTaskHandle = osThreadCreate(osThread(modbusTaskHandle), NULL);
+//	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
+//	osThreadDef(envTaskHandle, vEnvTask, osPriorityNormal, 0, 512);
+//	envTaskHandle = osThreadCreate(osThread(envTaskHandle), NULL);
 	osThreadDef(cmdTaskHandle, vCmdTask, osPriorityNormal, 0, 256);
 	cmdTaskHandle = osThreadCreate(osThread(cmdTaskHandle), NULL);
 	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
@@ -48,9 +48,9 @@ void vAppDefault(void) {
 
 	char *p = "\r\n NTT";
 	DHT11_DATA_TypeDef DHT_DATA;
-	char send[30] = { 10, 20, 30, 40, 50, 60, 50, 45, 44, 43, 45, 22, 33, 44,
-			88, 77, 55, 66, 66, 55, 88, 11, 55 };
-	char recv[30];
+//	char send[30] = { 10, 20, 30, 40, 50, 60, 50, 45, 44, 43, 45, 22, 33, 44,
+//			88, 77, 55, 66, 66, 55, 88, 11, 55 };
+//	char recv[30];
 	while (1) {
 //		DBG("Write value %c \r\n",send);
 //		while (HAL_I2C_Mem_Write(&hi2c1, (uint16_t) 0xa0, (uint16_t) 0x00,

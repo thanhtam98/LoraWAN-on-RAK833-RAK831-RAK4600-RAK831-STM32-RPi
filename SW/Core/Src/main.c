@@ -1,27 +1,28 @@
 /* USER CODE BEGIN Header */
 /**
-  ******************************************************************************
-  * @file           : main.c
-  * @brief          : Main program body
-  ******************************************************************************
-  * @attention
-  *
-  * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
-  * All rights reserved.</center></h2>
-  *
-  * This software component is licensed by ST under Ultimate Liberty license
-  * SLA0044, the "License"; You may not use this file except in compliance with
-  * the License. You may obtain a copy of the License at:
-  *                             www.st.com/SLA0044
-  *
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * @file           : main.c
+ * @brief          : Main program body
+ ******************************************************************************
+ * @attention
+ *
+ * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
+ * All rights reserved.</center></h2>
+ *
+ * This software component is licensed by ST under Ultimate Liberty license
+ * SLA0044, the "License"; You may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at:
+ *                             www.st.com/SLA0044
+ *
+ ******************************************************************************
+ */
 /* USER CODE END Header */
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "cmsis_os.h"
 #include "adc.h"
+#include "dma.h"
 #include "i2c.h"
 #include "tim.h"
 #include "usart.h"
@@ -49,7 +50,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-uint8_t PRINTF_EN	= 1;
+uint8_t PRINTF_EN = 1;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -92,6 +93,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_ADC1_Init();
   MX_USART1_UART_Init();
   MX_USART2_UART_Init();
@@ -102,55 +104,78 @@ int main(void)
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
 
-  /*Force to enable periphral manually */
-  char *p="NTT \r\n";
-  HAL_TIM_Base_Start(&htim4);
-
-  __HAL_UART_ENABLE_IT(&huart1, UART_IT_RXNE);
-  __HAL_UART_ENABLE_IT(&huart3, UART_IT_RXNE);
-  __HAL_UART_ENABLE_IT(&huart2, UART_IT_RXNE);
-
-
-  /* Run the ADC calibration */
-  if (HAL_ADCEx_Calibration_Start(&hadc1) != HAL_OK)
-  {
-    /* Calibration Error */
-    Error_Handler();
-  }
+	/*Force to enable periphral manually */
+	char *p = "NTT \r\n";
+	HAL_TIM_Base_Start(&htim4);
+//
+	__HAL_UART_ENABLE_IT(&huart1, UART_IT_RXNE);
+	__HAL_UART_ENABLE_IT(&huart2, UART_IT_RXNE);
+//	__HAL_UART_ENABLE_IT(&huart3, UART_IT_RXNE);
+	/* Run the ADC calibration */
+	if (HAL_ADCEx_Calibration_Start(&hadc1) != HAL_OK) {
+		/* Calibration Error */
+		Error_Handler();
+	}
 
 //  HAL_Delay(101);
 //  HAL_UART_Transmit(&huart2,p,6,100);
 //  HAL_UART_Transmit(&huart3,p,6,100);
-  printf("---------- IOT Node ----------  \r\n");
+	printf("---------- IOT Node ----------  \r\n");
 
-  /*Load pre-paramter from eepROm*/
+	/*Load pre-paramter from eepROm*/
+	printf(" Loading pre-configuration from EEPROM !!  \r\n");
+//	v_epr_load(PARAM_LOAD_ALL);
+	if (PARAM[NODE_HAVE_PARAM_ADR] != NO_PARAM) {
 
-//  v_epr_load(PARAM_LOAD_ALL);
-//  if (PARAM[NODE_HAVE_PARAM_ADR] != 0 )
-//  {
-//	  /* Found pre-param from eeprom and apply it*/
-//
-//	  USER_USART3_UART_Init(); // Modbus re-config
-//
-//	  /*Todo: LORAWAN*/
-//
-//  }
-//  else
-//  {
-//
-//	  /*Notify to the Led and jump in to vAppConfiguationTask !!**/
-//  }
+		/* Found pre-param from eeprom and apply it*/
+
+		//USER_USART3_UART_Init(); // Modbus re-config
+
+		/*Todo: LORAWAN*/
+
+	} else {
+		printf(
+				" Fail to find pre-configuration. Load defaul config instead.  \r\n");
+		/* Load default config**/
+		PARAM[NODE_HAVE_PARAM_ADR] = FLASH_PARAM;
+		PARAM[NODE_ID_ADR] = NODE_ID_ADR_DEFAULT;
+		PARAM[NODE_MB_ID_ADR] = NODE_MB_ID_DEFAULT;
+
+		PARAM[NODE_LRWAN_DATARATE_ADR] = NODE_LRWAN_DATARATE_DEFAULT;
+		PARAM[NODE_LRWAN_CLASS_ADR] = NODE_LRWAN_CLASS_DEFAULT;
+		PARAM[NODE_LRWAN_FREQ_ADR] = NODE_LRWAN_FREQ_DEFAULT;
+		PARAM[NODE_LRWAN_CONFIRM_ADR] = NODE_LRWAN_CONFIRM_DEFAULT;
+		PARAM[NODE_LRWAN_MODE_ADR] = NODE_LRWAN_MODE_DEFAULT;
+
+
+		PARAM[NODE_IO_PORT_0_ADR] = NODE_IO_PORT_0_DEFAULT;
+		PARAM[NODE_IO_PORT_0_ADR + 1] = 0x00;
+		PARAM[NODE_IO_PORT_1_ADR] = NODE_IO_PORT_1_DEFAULT;
+		PARAM[NODE_IO_PORT_1_ADR + 1] = 0x01;
+		PARAM[NODE_IO_PORT_2_ADR] = NODE_IO_PORT_2_DEFAULT;
+		PARAM[NODE_IO_PORT_2_ADR + 1] = 0x02;
+		PARAM[NODE_IO_PORT_3_ADR] = NODE_IO_PORT_3_DEFAULT;
+		PARAM[NODE_IO_PORT_3_ADR + 1] = 0x03;
+		PARAM[NODE_IO_PORT_4_ADR] = NODE_IO_PORT_4_DEFAULT;
+		PARAM[NODE_IO_PORT_4_ADR + 1] = 0x04;
+		PARAM[NODE_IO_PORT_5_ADR] = NODE_IO_PORT_5_DEFAULT;
+		PARAM[NODE_IO_PORT_5_ADR + 1] = 0x05;
+
+///
+		/*Notify to the Led and jump in to vAppConfiguationTask !!**/
+
+	}
 
 //  while(1)
 //  {
-//	  HAL_UART_Transmit(&huart1,p,6,100);
+//	  printf("---------- IOT Node ----------  \r\n");
 //	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
 //
 //	HAL_Delay(1000);
 //	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
 //	HAL_Delay(1000);
 //  }
-  printf("Booting to RTOS   \r\n");
+	printf("Booting to RTOS   \r\n");
   /* USER CODE END 2 */
 
   /* Call init function for freertos objects (in freertos.c) */
@@ -161,12 +186,11 @@ int main(void)
   /* We should never get here as control is now taken by the scheduler */
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
-  {
+	while (1) {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-  }
+	}
   /* USER CODE END 3 */
 }
 
@@ -221,18 +245,16 @@ void delay_us(uint32_t time) {
 }
 
 /* USER CODE BEGIN 4 */
-PUTCHAR_PROTOTYPE
-{
-  /* Place your implementation of fputc here */
-  /* e.g. write a character to the USART */
+PUTCHAR_PROTOTYPE {
+	/* Place your implementation of fputc here */
+	/* e.g. write a character to the USART */
 //  USART_SendData(EVAL_COM1, (uint8_t) ch);
-	HAL_UART_Transmit(&huart2, (uint8_t *)&ch, 1, 0xFFFF);
+	HAL_UART_Transmit(&huart2, (uint8_t *) &ch, 1, 0xFFFF);
 
-  /* Loop until the end of transmission */
+	/* Loop until the end of transmission */
 //  while (USART_GetFlagStatus(EVAL_COM1, USART_FLAG_TC) == RESET)
 //  {}
-
-  return ch;
+	return ch;
 }
 /* USER CODE END 4 */
 
@@ -264,7 +286,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
-  /* User can add his own implementation to report the HAL error return state */
+	/* User can add his own implementation to report the HAL error return state */
 
   /* USER CODE END Error_Handler_Debug */
 }
@@ -280,8 +302,8 @@ void Error_Handler(void)
 void assert_failed(uint8_t *file, uint32_t line)
 { 
   /* USER CODE BEGIN 6 */
-  /* User can add his own implementation to report the file name and line number,
-     tex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
+	/* User can add his own implementation to report the file name and line number,
+	 tex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */

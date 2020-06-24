@@ -666,6 +666,7 @@
             this.cBoxAdr.Size = new System.Drawing.Size(92, 25);
             this.cBoxAdr.TabIndex = 42;
             this.cBoxAdr.Text = "Adapted";
+            this.cBoxAdr.SelectedIndexChanged += new System.EventHandler(this.cBoxAdr_SelectedIndexChanged);
             // 
             // label27
             // 

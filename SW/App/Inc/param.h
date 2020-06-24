@@ -5,6 +5,33 @@
 #include <stdint.h>
 #include  "epprom.h"
 
+/* Default config
+ * */
+#define NODE_ID_ADR_DEFAULT				1
+/* Modbus salve parameters---*/
+#define NODE_MB_ID_DEFAULT				1
+#define NODE_MB_SERCFG_DEFAULT			1
+#define NODE_MB_MODE_DEFAULT			1  //RTU OR ASCII
+#define NODE_MB_BAUD_DEFAULT			1
+#define NODE_MB_DATABITS_DEFAULT		1
+#define NODE_MB_PARTITY_DEFAULT			1
+#define NODE_MB_STOPBITS_DEFAULT		1
+
+#define NODE_LRWAN_DATARATE_DEFAULT 	0
+#define NODE_LRWAN_CLASS_DEFAULT		2
+#define NODE_LRWAN_FREQ_DEFAULT			0
+#define NODE_LRWAN_CONFIRM_DEFAULT		1
+#define NODE_LRWAN_MODE_DEFAULT			0
+#define NODE_IO_PORT_0_DEFAULT			0
+#define NODE_IO_PORT_1_DEFAULT			1
+#define NODE_IO_PORT_2_DEFAULT			2
+#define NODE_IO_PORT_3_DEFAULT			2
+#define NODE_IO_PORT_4_DEFAULT			4
+#define NODE_IO_PORT_5_DEFAULT			5
+#define NODE_IO_PORT_6_DEFAULT			6
+
+
+
 /**
  *
  *
@@ -21,7 +48,9 @@
 #define NODE_MB_DATABITS_ADR		6
 #define NODE_MB_PARTITY_ADR			7
 #define NODE_MB_STOPBITS_ADR		8
-#define NODE_MB_DEFAULT_LEN			9
+#define NODE_MB_DEFAULT_LEN
+
+
 //#define NODE_MB_
 /**/
 #define NODE_LRWAN_BASE 			20
@@ -55,7 +84,10 @@
 /* IO define **/
 #define NODE_IO_BASE				NODE_LRWAN_APPEUI_ADR + NODE_LRWAN_APPEUI_LEN
 
-#define NODE_IO_PORT_1_ADR			NODE_IO_BASE + 0
+#define NODE_IO_PORT_0_ADR			NODE_IO_BASE + 0
+#define NODE_IO_PORT_0_LEN			2
+
+#define NODE_IO_PORT_1_ADR			NODE_IO_PORT_0_ADR + NODE_IO_PORT_0_LEN
 #define NODE_IO_PORT_1_LEN			2
 
 #define NODE_IO_PORT_2_ADR			NODE_IO_PORT_1_ADR + NODE_IO_PORT_1_LEN
@@ -76,6 +108,11 @@ typedef struct
 	uint8_t uLen;
 } uParam_t;
 
+enum{
+	NO_PARAM,
+	EEP_PARAM,
+	FLASH_PARAM
+};
 /*
  *
  * */

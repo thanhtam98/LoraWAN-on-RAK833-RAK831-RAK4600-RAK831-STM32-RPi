@@ -65,6 +65,10 @@ int Cmd_set(int argc, char *argv[]) {
 			u_mem_set(NODE_MB_BAUD_ADR, atoi(*(argv + 3)));
 		} else if ((strcmp(*(argv + 2), "db") == 0)) {
 			u_mem_set(NODE_MB_DATABITS_ADR, atoi(*(argv + 3)));
+		} else if ((strcmp(*(argv + 2), "stbi") == 0)) {
+			u_mem_set(NODE_MB_STOPBITS_ADR, atoi(*(argv + 3)));
+//			strcat(commandSendBuffer,
+//					itoa_user(u_mem_get(NODE_MB_STOPBITS_ADR), 10));
 		} else if ((strcmp(*(argv + 2), "pari") == 0)) {
 			u_mem_set(NODE_MB_PARTITY_ADR, atoi(*(argv + 3)));
 		} else if ((strcmp(*(argv + 2), "id") == 0)) {
@@ -116,6 +120,12 @@ int Cmd_set(int argc, char *argv[]) {
 			}
 
 		}
+		if ((strcmp(*(argv + 2), "mode") == 0)) {
+			u_mem_set(NODE_LRWAN_MODE_ADR, atoi(*(argv + 3)));
+//					strcat(commandSendBuffer,
+//							itoa_user(u_mem_get(NODE_LRWAN_MODE_ADR), 10));
+
+				}
 	} else if ((strcmp(*(argv + 1), "id") == 0)) {
 		u_mem_set(NODE_ID_ADR, atoi(*(argv + 2)));
 
@@ -130,9 +140,9 @@ int Cmd_set(int argc, char *argv[]) {
 //	}
 	else if ((strcmp(*(argv + 1), "p_pf") == 0)) {
 
-			port = atoi(*(argv + 2));
-			u_mem_set(NODE_IO_BASE + 2 * port, atoi((*(argv + 3))));
-		}
+		port = atoi(*(argv + 2));
+		u_mem_set(NODE_IO_BASE + 2 * port, atoi((*(argv + 3))));
+	}
 	/* Reponse -----------------------------------------------------*/
 	char *reponse = "OK\r\n";
 	HAL_UART_Transmit(&huart2, reponse, 4, 1000);
@@ -140,7 +150,7 @@ int Cmd_set(int argc, char *argv[]) {
 }
 int Cmd_get(int argc, char *argv[]) {
 
-	uint8_t port =0;
+	uint8_t port = 0;
 	memset(commandSendBuffer, 0, 50);
 //	strcat(commandSendBuffer, *(argv + 0));
 //	strcat(commandSendBuffer, " ");
@@ -170,24 +180,28 @@ int Cmd_get(int argc, char *argv[]) {
 		}
 	} else if ((strcmp(*(argv + 1), "lr") == 0)) {
 		if ((strcmp(*(argv + 2), "adr") == 0)) {
-			strcat(commandSendBuffer, itoa_user(u_mem_get(NODE_LRWAN_DATARATE_ADR), 10));
+			strcat(commandSendBuffer,
+					itoa_user(u_mem_get(NODE_LRWAN_DATARATE_ADR), 10));
 //			u_mem_set(NODE_LRWAN_DATARATE_ADR, atoi(*(argv + 3)));
 
 		}
 		if ((strcmp(*(argv + 2), "fr") == 0)) {
-			strcat(commandSendBuffer, itoa_user(u_mem_get(NODE_LRWAN_FREQ_ADR), 10));
+			strcat(commandSendBuffer,
+					itoa_user(u_mem_get(NODE_LRWAN_FREQ_ADR), 10));
 
 //			u_mem_set(NODE_LRWAN_FREQ_ADR, atoi(*(argv + 3)));
 
 		}
 		if ((strcmp(*(argv + 2), "cf") == 0)) {
-			strcat(commandSendBuffer, itoa_user(u_mem_get(NODE_LRWAN_CONFIRM_ADR), 10));
+			strcat(commandSendBuffer,
+					itoa_user(u_mem_get(NODE_LRWAN_CONFIRM_ADR), 10));
 
 //			u_mem_set(NODE_LRWAN_CONFIRM_ADR, atoi(*(argv + 3)));
 
 		}
 		if ((strcmp(*(argv + 2), "class") == 0)) {
-			strcat(commandSendBuffer, itoa_user(u_mem_get(NODE_LRWAN_CLASS_ADR), 10));
+			strcat(commandSendBuffer,
+					itoa_user(u_mem_get(NODE_LRWAN_CLASS_ADR), 10));
 
 //			u_mem_set(NODE_LRWAN_CLASS_ADR, atoi(*(argv + 3)));
 
@@ -230,11 +244,10 @@ int Cmd_get(int argc, char *argv[]) {
 
 	else if ((strcmp(*(argv + 1), "p_pf") == 0)) {
 
-			port = atoi(*(argv + 2));
-			strcat(commandSendBuffer,
-					itoa_user(u_mem_get(NODE_IO_BASE + 2 * port),
-							10));
-		}
+		port = atoi(*(argv + 2));
+		strcat(commandSendBuffer,
+				itoa_user(u_mem_get(NODE_IO_BASE + 2 * port), 10));
+	}
 
 //	else if ((strcmp(*(argv + 1), "p_val") == 0)) {
 //

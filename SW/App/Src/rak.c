@@ -24,6 +24,7 @@ uint8_t isJoinedLoraWAN = 0;
 /*Function*/
 /**
  * @brief
+ *
  * @param
  * @retval None
  */
@@ -403,10 +404,10 @@ void vRakTask(void const *arg) {
 	char * DevEui = "60C5A8FFFE000001";
 	char * AppEui = "70B3D57EF00047C0";
 	char * AppKey = "5D833B4696D5E01E2F8DC880E30BA5FE";
-	char * pData =
-			"5468656e20746869732073697465206973206d61646520666f7220796f752120557365206f75722073757065722068616e6479206f6e6c696e6520746f6f6c20746f206465636f6465206f7220656e636f646520796f757220646174612e";
+	char * pData = "aabbccdd";
+//			"5468656e20746869732073697465206973206d61646520666f7220796f752120557365206f75722073757065722068616e6479206f6e6c696e6520746f6f6c20746f206465636f6465206f7220656e636f646520796f757220646174612e";
 
-	if (PARAM[NODE_HAVE_PARAM_ADR] == 1) {
+	if (PARAM[NODE_HAVE_PARAM_ADR] == EEP_PARAM) {
 		for (uint8_t idx = 0; idx < 8; idx++) {
 			strcat(DevEui,
 					itoa_user(u_mem_get(NODE_LRWAN_DEVEUI_ADR + idx), 16));
@@ -425,11 +426,11 @@ void vRakTask(void const *arg) {
 	/*Initial */
 //rak_reset();
 	osDelay(1000);
-	rak_setClass(2);
-	rak_setRegion(0);
+	rak_setClass(PARAM[NODE_LRWAN_CLASS_ADR]);
+	rak_setRegion(PARAM[NODE_LRWAN_FREQ_ADR]);
 	rak_setWorkingMode(0);
-	rak_setJoinMode(0);
-	rak_isConfirm(1);
+	rak_setJoinMode(PARAM[NODE_LRWAN_MODE_ADR]);
+	rak_isConfirm(PARAM[NODE_LRWAN_CONFIRM_ADR]);
 	rak_initOTAA(DevEui, AppEui, AppKey);
 	isJoinedLoraWAN = rak_join();
 	uint8_t err;
