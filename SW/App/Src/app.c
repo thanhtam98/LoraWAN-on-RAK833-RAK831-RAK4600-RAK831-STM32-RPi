@@ -29,7 +29,7 @@ void vAppDefault(void) {
 
 	/*Task initialization*/
 
-//	osThreadDef(loraTaskHandle, vRakTask, osPriorityNormal, 0, 128);
+//	osThreadDef(loraTaskHandle, vRakTask, osPriorityNormal, 0, 256);
 //	loraTaskHandle = osThreadCreate(osThread(loraTaskHandle), NULL);
 //	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
 //	osThreadDef(modbusTaskHandle, vModBusTask, osPriorityNormal, 0, 256);

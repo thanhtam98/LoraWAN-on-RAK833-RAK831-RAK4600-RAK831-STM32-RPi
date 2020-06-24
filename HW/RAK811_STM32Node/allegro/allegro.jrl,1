@@ -1,294 +1,256 @@
-\t (00:00:16) allegro 17.2 S052 Windows SPB 64-bit Edition
-\t (00:00:16)     Journal start - Wed Jun 24 09:16:21 2020
-\t (00:00:16)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=14432 CPUs=4
-\t (00:00:16) CmdLine= C:\Cadence\SPB_17.2\tools\bin\allegro.exe
-\t (00:00:16) 
-\d (00:00:16) Design opened: C:/GIT/ThesisLorawanNode/HW/RAK811_STM32Node/allegro/STM32F103_RAK811_THESISNODE.brd
-\i (00:00:16) generaledit 
-\i (00:00:18) zoom in 1 
-\i (00:00:18) setwindow pcb
-\i (00:00:18) zoom in 3212.02 14005.39
-\i (00:00:18) trapsize 1798
-\i (00:00:19) zoom in 1 
-\i (00:00:19) setwindow pcb
-\i (00:00:19) zoom in 2924.40 13171.29
-\i (00:00:19) trapsize 899
-\i (00:00:20) zoom out 1 
-\i (00:00:20) setwindow pcb
-\i (00:00:20) zoom out 2924.40 13171.29
-\i (00:00:20) trapsize 1798
-\i (00:00:20) zoom out 1 
-\i (00:00:20) setwindow pcb
-\i (00:00:20) zoom out 2924.40 13171.29
-\i (00:00:20) trapsize 3595
+\t (00:00:02) allegro 17.2 S052 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Wed Jun 24 14:38:56 2020
+\t (00:00:02)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=23968 CPUs=4
+\t (00:00:02) CmdLine= C:\Cadence\SPB_17.2\tools\bin\allegro.exe
+\t (00:00:02) 
+   (00:00:02) Loading axlcore.cxt 
+   (00:00:03) Searching for nsWare programs v2.78
+   (00:00:03) 	NsWare directory found: E:/CAD/pcbenv/nsWare/
+   (00:00:03) 	NsWare programs must reside in this directory!
+   (00:00:03) function AFn_OpenDesign redefined
+   (00:00:03) function PinVia_Overlap_FinishEnterFun redefined
+   (00:00:03) function Find_Point_On_Line_From_Distant redefined
+   (00:00:03) function Find_Point_Quadrature_Line redefined
+   (00:00:03) function Line_Line_Intersect redefined
+   (00:00:03) function _getPinsNet redefined
+   (00:00:03) function _getBranchs redefined
+   (00:00:03) function _getPaths redefined
+   (00:00:03) function _get2PointsPath redefined
+   (00:00:03) function _checkElementList redefined
+   (00:00:03) function _getSurroundPoints redefined
+   (00:00:03) function _getListPointsLPaths redefined
+   (00:00:03) function _checkPathPoint redefined
+   (00:00:03) function _deleteElementList redefined
+   (00:00:03) function _checkElementList redefined
+   (00:00:03) function _deleteElementList redefined
+   (00:00:03) function Find_Point_On_Line_From_Distant redefined
+   (00:00:03) function Find_Point_Quadrature_Line redefined
+   (00:00:03) function Is_Point_On_List redefined
+   (00:00:03) function Line_Line_Intersect redefined
+   (00:00:03) function Line_Line_Distant redefined
+\t (00:00:03) Opening existing design...
+\i (00:00:03) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged STM32F103_RAK811_THESISNODE
+\d (00:00:03) Design opened: C:/GIT/ThesisLorawanNode/HW/RAK811_STM32Node/allegro/STM32F103_RAK811_THESISNODE.brd
+\i (00:00:04) trapsize 1648
+\i (00:00:04) trapsize 1693
+\i (00:00:05) trapsize 1656
+\i (00:00:05) trapsize 2539
+\i (00:00:06) generaledit 
+\i (00:00:22) pick grid 3919.45 11902.17
+\t (00:00:22) last pick:  3920.00 11900.00
 \i (00:00:22) zoom in 1 
 \i (00:00:22) setwindow pcb
-\i (00:00:22) zoom in 3693.79 12775.81
-\i (00:00:22) trapsize 1798
-\i (00:00:27) zoom out 1 
-\i (00:00:27) setwindow pcb
-\i (00:00:27) zoom out 4484.76 12951.98
-\i (00:00:27) trapsize 3595
-\i (00:00:28) zoom in 1 
-\i (00:00:28) setwindow pcb
-\i (00:00:28) zoom in 3859.18 14138.43
-\i (00:00:28) trapsize 1798
-\i (00:00:32) zoom out 1 
-\i (00:00:32) setwindow pcb
-\i (00:00:32) zoom out 2859.68 13955.07
-\i (00:00:32) trapsize 3595
-\i (00:00:33) zoom in 1 
-\i (00:00:33) setwindow pcb
-\i (00:00:33) zoom in 2787.78 13099.40
-\i (00:00:33) trapsize 1798
-\i (00:00:33) zoom in 1 
-\i (00:00:33) setwindow pcb
-\i (00:00:33) zoom in 2776.99 13070.64
-\i (00:00:33) trapsize 899
-\i (00:00:34) zoom out 1 
-\i (00:00:34) setwindow pcb
-\i (00:00:34) zoom out 2777.00 13072.44
-\i (00:00:34) trapsize 1798
-\i (00:00:35) zoom out 1 
-\i (00:00:35) setwindow pcb
-\i (00:00:35) zoom out 2874.07 12845.94
-\i (00:00:35) trapsize 3595
-\i (00:00:35) zoom in 1 
-\i (00:00:35) setwindow pcb
-\i (00:00:35) zoom in 3025.07 12630.23
-\i (00:00:35) trapsize 1798
-\i (00:08:09) zoom in 1 
-\i (00:08:09) setwindow pcb
-\i (00:08:09) zoom in 3866.37 13101.22
-\i (00:08:09) trapsize 899
-\i (00:08:11) zoom out 1 
-\i (00:08:11) setwindow pcb
-\i (00:08:11) zoom out 3859.18 13094.03
-\i (00:08:11) trapsize 1798
-\i (00:08:12) zoom out 1 
-\i (00:08:12) setwindow pcb
-\i (00:08:12) zoom out 4017.38 12637.43
-\i (00:08:12) trapsize 3595
-\i (00:08:14) zoom in 1 
-\i (00:08:14) setwindow pcb
-\i (00:08:14) zoom in 3672.24 13032.92
-\i (00:08:14) trapsize 1798
-\i (00:08:15) pick grid 3916.72 13978.49
-\t (00:08:15) last pick:  3920.00 13980.00
-\i (00:08:15) roam y -96 
-\i (00:08:15) roam y -96
-\i (00:08:16) roam y -96 
-\i (00:08:16) roam y -96
-\i (00:08:16) roam x 96 
-\i (00:08:16) roam x 96
-\i (00:08:16) roam x 96 
-\i (00:08:16) roam x 96
-\i (00:08:17) zoom in 1 
-\i (00:08:17) setwindow pcb
-\i (00:08:17) zoom in 4544.47 14668.85
-\i (00:08:17) trapsize 899
-\i (00:08:17) zoom out 1 
-\i (00:08:17) setwindow pcb
-\i (00:08:17) zoom out 4542.68 14670.65
-\i (00:08:17) trapsize 1798
-\i (00:08:17) roam y 96 
-\i (00:08:17) roam y 96
-\i (00:08:18) roam y 96 
-\i (00:08:18) roam y 96
-\i (00:08:18) roam y 96 
-\i (00:08:18) roam y 96
-\i (00:08:18) roam y 96 
-\i (00:08:18) roam y 96
-\i (00:10:01) zoom out 1 
-\i (00:10:01) setwindow pcb
-\i (00:10:01) zoom out 4607.39 12925.12
-\i (00:10:01) trapsize 3595
-\i (00:10:02) zoom in 1 
-\i (00:10:02) setwindow pcb
-\i (00:10:02) zoom in 3442.51 14176.30
-\i (00:10:02) trapsize 1798
-\i (00:10:06) zoom in 1 
-\i (00:10:06) setwindow pcb
-\i (00:10:06) zoom in 2885.24 13942.60
-\i (00:10:06) trapsize 899
-\i (00:10:06) zoom in 1 
-\i (00:10:06) setwindow pcb
-\i (00:10:06) zoom in 2867.26 13856.31
-\i (00:10:06) trapsize 449
-\i (00:10:07) zoom out 1 
-\i (00:10:07) setwindow pcb
-\i (00:10:07) zoom out 2862.77 13834.74
-\i (00:10:07) trapsize 899
-\i (00:10:07) zoom out 1 
-\i (00:10:07) setwindow pcb
-\i (00:10:07) zoom out 2862.76 13832.94
-\i (00:10:07) trapsize 1798
-\i (00:10:11) zoom out 1 
-\i (00:10:11) setwindow pcb
-\i (00:10:11) zoom out 3934.17 12977.26
-\i (00:10:11) trapsize 3595
-\i (00:10:11) zoom in 1 
-\i (00:10:11) setwindow pcb
-\i (00:10:11) zoom in 3617.78 14242.81
-\i (00:10:11) trapsize 1798
-\i (00:10:12) zoom out 1 
-\i (00:10:12) setwindow pcb
-\i (00:10:12) zoom out 3603.40 14206.86
-\i (00:10:12) trapsize 3595
-\i (00:10:21) opencd E:/Temp/STM32F103_RAK811_THESISNODE_4.brd 
-\i (00:10:22) fillin confirm
-\i (00:10:25) fillin "STM32F103_RAK811_THESISNODE.brd"
-\t (00:10:25) Opening existing design...
-\i (00:10:26) trapsize 3595
-\d (00:10:26) Design opened: C:/GIT/ThesisLorawanNode/HW/RAK811_STM32Node/allegro/STM32F103_RAK811_THESISNODE.brd
-\i (00:10:26) generaledit 
-\i (00:10:27) zoom in 1 
-\i (00:10:27) setwindow pcb
-\i (00:10:27) zoom in 3744.13 13307.91
-\i (00:10:27) trapsize 1798
-\i (00:10:29) zoom out 1 
-\i (00:10:29) setwindow pcb
-\i (00:10:29) zoom out 3765.71 12887.26
-\i (00:10:29) trapsize 3595
-\i (00:10:29) zoom in 1 
-\i (00:10:30) setwindow pcb
-\i (00:10:30) zoom in 2809.36 13455.32
-\i (00:10:30) trapsize 1798
-\i (00:10:30) zoom out 1 
-\i (00:10:30) setwindow pcb
-\i (00:10:30) zoom out 2805.77 13455.32
-\i (00:10:30) trapsize 3595
-\i (00:10:30) zoom in 1 
-\i (00:10:30) setwindow pcb
-\i (00:10:30) zoom in 2877.67 14267.86
-\i (00:10:30) trapsize 1798
-\i (00:10:32) zoom out 1 
-\i (00:10:32) setwindow pcb
-\i (00:10:32) zoom out 3923.90 13800.47
-\i (00:10:32) trapsize 3595
-\i (00:10:34) zoom in 1 
-\i (00:10:34) setwindow pcb
-\i (00:10:34) zoom in 3557.18 14260.67
-\i (00:10:34) trapsize 1798
-\i (00:10:34) zoom out 1 
-\i (00:10:34) setwindow pcb
-\i (00:10:34) zoom out 3553.58 14257.07
-\i (00:10:34) trapsize 3595
-\i (00:10:36) zoom in 1 
-\i (00:10:36) setwindow pcb
-\i (00:10:36) zoom in 5106.75 13825.64
-\i (00:10:36) trapsize 1798
-\i (00:10:37) zoom out 1 
-\i (00:10:37) setwindow pcb
-\i (00:10:37) zoom out 5106.76 13825.65
-\i (00:10:37) trapsize 3595
-\i (00:10:40) zoom in 1 
-\i (00:10:40) setwindow pcb
-\i (00:10:40) zoom in 5027.65 13005.92
-\i (00:10:40) trapsize 1798
-\i (00:10:41) zoom in 1 
-\i (00:10:41) setwindow pcb
-\i (00:10:41) zoom in 5027.66 13013.12
-\i (00:10:41) trapsize 899
-\i (00:10:43) zoom out 1 
-\i (00:10:43) setwindow pcb
-\i (00:10:43) zoom out 5027.66 13013.12
-\i (00:10:43) trapsize 1798
-\i (00:10:45) zoom out 1 
-\i (00:10:45) setwindow pcb
-\i (00:10:45) zoom out 5142.71 13516.46
-\i (00:10:45) trapsize 3595
-\i (00:10:46) zoom in 1 
-\i (00:10:46) setwindow pcb
-\i (00:10:46) zoom in 4912.61 14199.57
-\i (00:10:46) trapsize 1798
-\i (00:18:01) zoom out 1 
-\i (00:18:01) setwindow pcb
-\i (00:18:01) zoom out 3168.89 13937.12
-\i (00:18:01) trapsize 3595
-\i (00:18:02) zoom in 1 
-\i (00:18:02) setwindow pcb
-\i (00:18:02) zoom in 3168.89 13937.11
-\i (00:18:02) trapsize 1798
-\i (00:18:04) zoom in 1 
-\i (00:18:04) setwindow pcb
-\i (00:18:04) zoom in 3168.89 13937.12
-\i (00:18:04) trapsize 899
-\i (00:18:04) zoom out 1 
-\i (00:18:04) setwindow pcb
-\i (00:18:04) zoom out 3168.89 13937.12
-\i (00:18:04) trapsize 1798
-\i (00:18:04) zoom out 1 
-\i (00:18:04) setwindow pcb
-\i (00:18:04) zoom out 3168.89 13937.12
-\i (00:18:04) trapsize 3595
-\i (00:18:05) zoom in 1 
-\i (00:18:05) setwindow pcb
-\i (00:18:05) zoom in 3521.23 12801.00
-\i (00:18:05) trapsize 1798
-\i (00:18:06) zoom in 1 
-\i (00:18:06) setwindow pcb
-\i (00:18:06) zoom in 3521.23 12808.19
-\i (00:18:06) trapsize 899
-\i (00:18:06) zoom out 1 
-\i (00:18:06) setwindow pcb
-\i (00:18:06) zoom out 3521.23 12808.19
-\i (00:18:06) trapsize 1798
-\i (00:18:08) zoom out 1 
-\i (00:18:08) setwindow pcb
-\i (00:18:08) zoom out 3215.64 13049.09
-\i (00:18:08) trapsize 3595
-\i (00:18:09) zoom in 1 
-\i (00:18:09) setwindow pcb
-\i (00:18:09) zoom in 2510.96 13178.51
-\i (00:18:09) trapsize 1798
-\i (00:18:20) zoom in 1 
-\i (00:18:20) setwindow pcb
-\i (00:18:20) zoom in 4207.94 12952.01
-\i (00:18:20) trapsize 899
+\i (00:00:22) zoom in 4356.11 12775.49
+\i (00:00:22) trapsize 1269
+\i (00:00:22) zoom in 1 
+\i (00:00:22) setwindow pcb
+\i (00:00:22) zoom in 4361.19 12783.10
+\i (00:00:22) trapsize 635
+\i (00:00:23) zoom in 1 
+\i (00:00:23) setwindow pcb
+\i (00:00:23) zoom in 4361.18 12783.10
+\i (00:00:23) trapsize 317
+\i (00:00:25) zoom out 1 
+\i (00:00:25) setwindow pcb
+\i (00:00:25) zoom out 4243.77 12899.25
+\i (00:00:25) trapsize 635
+\i (00:00:29) zoom out 1 
+\i (00:00:29) setwindow pcb
+\i (00:00:29) zoom out 4332.63 12856.09
+\i (00:00:29) trapsize 1269
+\i (00:00:30) zoom out 1 
+\i (00:00:30) setwindow pcb
+\i (00:00:30) zoom out 4332.62 12856.09
+\i (00:00:30) trapsize 2539
+\i (00:00:30) zoom in 1 
+\i (00:00:30) setwindow pcb
+\i (00:00:30) zoom in 3423.76 13627.86
+\i (00:00:30) trapsize 1269
+\i (00:00:32) roam y -96 
+\i (00:00:32) roam y -96
+\i (00:00:32) roam y -96 
+\i (00:00:32) roam y -96
+\i (00:00:32) roam y -96 
+\i (00:00:32) roam y -96
+\i (00:00:33) roam y -96 
+\i (00:00:33) roam y -96
+\i (00:00:33) roam x -96 
+\i (00:00:33) roam x -96
+\i (00:00:33) roam y 96 
+\i (00:00:33) roam y 96
+\i (00:00:53) 3d 
+\i (00:00:59) generaledit 
+\i (00:01:01) QtSignal pcb3dViewer pcb3dViewerCanvas keyPressEvent 16777248 33554432 false 1
+\i (00:01:02) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasMousePressEvent 733 264 733 308 4 4 33554432 +
+\i (00:01:02) QtSignal 3321.56 14194.9 -53.7454
+\i (00:01:02) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3321.56 14194.9 -53.7454 +
+\i (00:01:02) QtSignal 3322.77 14193.7 -56.7257
+\i (00:01:02) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3316.77 14199.7 -61.7254 +
+\i (00:01:02) QtSignal 3318.03 14198.4 -64.6752
+\i (00:01:02) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3312.12 14204.3 -69.7907 +
+\i (00:01:02) QtSignal 3332.18 14203.7 -93.1382
+\i (00:01:02) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3291.44 14252 -138.565 3292.98 +
+\i (00:01:02) QtSignal 14250.4 -141.202
+\i (00:01:02) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3288.48 14255.8 -147.197 +
+\i (00:01:02) QtSignal 3310.75 14257.5 -162.148
+\i (00:01:02) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3288.63 14291.7 -200.574 +
+\i (00:01:02) QtSignal 3290.34 14289.8 -202.924
+\i (00:01:02) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3287.15 14295 -209.373 3288.88 +
+\i (00:01:02) QtSignal 14293.1 -211.679
+\i (00:01:02) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3285.78 14298.1 -218.187 +
+\i (00:01:02) QtSignal 3308.88 14293.1 -232.726
+\i (00:01:02) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3293.22 14327.2 -279.07 3296 +
+\i (00:01:02) QtSignal 14329.1 -278.568
+\i (00:01:02) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3295.95 14329.2 -278.763 +
+\i (00:01:02) QtSignal 3299.67 14324.9 -282.633
+\i (00:01:02) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3296.29 14333.7 -296.144 +
+\i (00:01:02) QtSignal 3298.18 14331.5 -297.98
+\i (00:01:02) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3296.62 14335.7 -304.801 +
+\i (00:01:02) QtSignal 3298.52 14333.5 -306.587
+\i (00:01:03) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3297.05 14337.5 -313.433 +
+\i (00:01:03) QtSignal 3315.13 14321.3 -326.764
+\i (00:01:03) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3307.58 14349.5 -380.501 +
+\i (00:01:03) QtSignal 3309.55 14347 -381.815
+\i (00:01:03) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3308.96 14350 -388.709 3329.54 +
+\i (00:01:03) QtSignal 14329.2 -399.435
+\i (00:01:03) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3328.64 14351.4 -458.735 +
+\i (00:01:03) QtSignal 3330.62 14348.7 -459.488
+\i (00:01:03) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3330.87 14350.6 -466.168 +
+\i (00:01:03) QtSignal 3332.85 14347.9 -466.863
+\i (00:01:03) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3333.17 14349.7 -473.511 +
+\i (00:01:03) QtSignal 3341.08 14338.8 -476.061
+\i (00:01:03) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3342.98 14345 -501.92 3344.94 +
+\i (00:01:03) QtSignal 14342.2 -502.324
+\i (00:01:03) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3345.58 14343.5 -508.769 +
+\i (00:01:03) QtSignal 3347.53 14340.7 -509.115
+\i (00:01:03) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3348.22 14341.9 -515.514 +
+\i (00:01:03) QtSignal 3345.41 14340 -516.17
+\i (00:01:03) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3345.39 14340 -515.993 3342.57 +
+\i (00:01:03) QtSignal 14338.1 -516.591
+\i (00:01:03) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3342.55 14338 -516.355 3341.67 +
+\i (00:01:03) QtSignal 14333.3 -517.181
+\i (00:01:04) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3342.12 14334.2 -523.29 3341.24 +
+\i (00:01:04) QtSignal 14329.4 -523.997
+\i (00:01:04) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasRotateEvent 3341.66 14330.1 -530.009 +
+\i (00:01:04) QtSignal 3338.82 14328.2 -530.429
+\i (00:01:04) QtSignal pcb3dViewer pcb3dViewerCanvas CanvasMouseReleaseEvent 744 322 744 366 4 0 +
+\i (00:01:04) QtSignal 33554432 3338.79 14328.2 -530.012
+\i (00:01:14) QtSignal pcb3dViewer pcb3dViewer closed
+\t (00:10:03) Performing autosave...
+\t (00:10:04) Autosave successful
+\i (00:11:03) xdehilite 
+\i (00:11:04) xNet Gnd 
+\i (00:11:04) xname_flush 
+\t (00:11:04) Net "Gnd" dehighlighted.
+\i (00:11:04) done 
+\i (00:11:04) xdehilite 
+\i (00:11:04) xNet Vcc3.3V 
+\i (00:11:04) xname_flush 
+\t (00:11:04) Net "Vcc3.3V" dehighlighted.
+\i (00:11:04) done 
+\i (00:11:04) xdehilite 
+\i (00:11:04) xNet Vcc5v 
+\i (00:11:04) xname_flush 
+\t (00:11:04) Net "Vcc5v" dehighlighted.
+\i (00:11:04) done 
+\i (00:11:04) xdehilite 
+\i (00:11:04) xNet Vin 
+\i (00:11:04) xname_flush 
+\t (00:11:04) Net "Vin" dehighlighted.
+\i (00:11:04) done 
+\i (00:11:04) xdehilite 
+\i (00:11:04) xNet Sen_Adc_1 
+\i (00:11:04) xname_flush 
+\t (00:11:04) Net "Sen_Adc_1" dehighlighted.
+\i (00:11:04) done 
+\i (00:11:04) xdehilite 
+\i (00:11:04) xNet Sen_Adc_2 
+\i (00:11:04) xname_flush 
+\t (00:11:04) Net "Sen_Adc_2" dehighlighted.
+\i (00:11:04) done 
+\i (00:11:04) xdehilite 
+\i (00:11:04) xNet Rs485_Ro_Master 
+\i (00:11:04) xname_flush 
+\t (00:11:04) Net "Rs485_Ro_Master" dehighlighted.
+\i (00:11:04) done 
+\i (00:11:04) xdehilite 
+\i (00:11:04) xNet Rs485_Di_Master 
+\i (00:11:04) xname_flush 
+\t (00:11:04) Net "Rs485_Di_Master" dehighlighted.
+\i (00:11:04) done 
+\i (00:11:05) xdehilite 
+\i (00:11:05) xNet N8037733 
+\i (00:11:05) xname_flush 
+\t (00:11:05) Net "N8037733" dehighlighted.
+\i (00:11:05) done 
+\i (00:11:05) xdehilite 
+\i (00:11:05) xNet N8037737 
+\i (00:11:05) xname_flush 
+\t (00:11:05) Net "N8037737" dehighlighted.
+\i (00:11:05) done 
+\i (00:11:05) xdehilite 
+\i (00:11:05) xNet Rs485_Ro_Slave 
+\i (00:11:05) xname_flush 
+\t (00:11:05) Net "Rs485_Ro_Slave" dehighlighted.
+\i (00:11:05) done 
+\i (00:11:05) xdehilite 
+\i (00:11:05) xNet Rs485_Di_Slave 
+\i (00:11:05) xname_flush 
+\t (00:11:05) Net "Rs485_Di_Slave" dehighlighted.
+\i (00:11:05) done 
+\i (00:11:05) xdehilite 
+\i (00:11:05) xNet Sen_Onewire 
+\i (00:11:05) xname_flush 
+\t (00:11:05) Net "Sen_Onewire" dehighlighted.
+\i (00:11:05) done 
+\i (00:11:05) xdehilite 
+\i (00:11:05) xNet Rak811_Rx 
+\i (00:11:05) xname_flush 
+\t (00:11:05) Net "Rak811_Rx" dehighlighted.
+\i (00:11:05) done 
+\i (00:11:05) xdehilite 
+\i (00:11:05) xNet Rak811_Tx 
+\i (00:11:05) xname_flush 
+\t (00:11:05) Net "Rak811_Tx" dehighlighted.
+\i (00:11:05) done 
+\i (00:11:05) generaledit 
+\i (00:11:11) xdehilite 
+\i (00:11:12) xNet Gnd 
+\i (00:11:12) xname_flush 
+\t (00:11:12) Net "Gnd" dehighlighted.
+\i (00:11:12) done 
+\i (00:11:12) generaledit 
+\i (00:13:24) zoom out 1 
+\i (00:13:24) setwindow pcb
+\i (00:13:24) zoom out 3683.69 13137.89
+\i (00:13:24) trapsize 2539
+\i (00:13:25) zoom in 1 
+\i (00:13:25) setwindow pcb
+\i (00:13:25) zoom in 3384.12 12965.25
+\i (00:13:25) trapsize 1269
+\i (00:13:26) zoom out 1 
+\i (00:13:26) setwindow pcb
+\i (00:13:26) zoom out 3648.15 13089.65
+\i (00:13:26) trapsize 2539
+\i (00:13:26) pick grid 5501.42 13429.84
+\t (00:13:26) last pick:  5500.00 13430.00
+\i (00:13:27) roam y 96 
+\i (00:13:27) roam y 96
+\i (00:13:35) zoom in 1 
+\i (00:13:35) setwindow pcb
+\i (00:13:35) zoom in 4181.28 13678.64
+\i (00:13:35) trapsize 1269
+\i (00:18:14) xhilite 
+\i (00:18:15) xname_flush 
+\i (00:18:15) done 
+\i (00:18:15) generaledit 
 \i (00:18:21) zoom out 1 
 \i (00:18:21) setwindow pcb
-\i (00:18:21) zoom out 3972.45 13117.40
-\i (00:18:21) trapsize 1798
-\i (00:18:21) zoom out 1 
-\i (00:18:21) setwindow pcb
-\i (00:18:21) zoom out 3965.27 13167.73
-\i (00:18:21) trapsize 3595
-\i (00:18:22) zoom in 1 
-\i (00:18:22) setwindow pcb
-\i (00:18:22) zoom in 3368.44 14483.61
-\i (00:18:22) trapsize 1798
-\i (00:18:22) zoom in 1 
-\i (00:18:22) setwindow pcb
-\i (00:18:22) zoom in 3594.95 14382.94
-\i (00:18:22) trapsize 899
-\i (00:18:23) zoom in 1 
-\i (00:18:23) setwindow pcb
-\i (00:18:23) zoom in 3609.34 14357.77
-\i (00:18:23) trapsize 449
-\i (00:19:23) zoom out 1 
-\i (00:19:23) setwindow pcb
-\i (00:19:23) zoom out 3660.57 14252.61
-\i (00:19:23) trapsize 899
-\i (00:19:23) zoom out 1 
-\i (00:19:23) setwindow pcb
-\i (00:19:23) zoom out 3660.57 14252.61
-\i (00:19:23) trapsize 1798
-\i (00:19:24) zoom in 1 
-\i (00:19:24) setwindow pcb
-\i (00:19:24) zoom in 3541.93 14342.49
-\i (00:19:24) trapsize 899
-\i (00:19:24) zoom out 1 
-\i (00:19:25) setwindow pcb
-\i (00:19:25) zoom out 3502.38 14468.33
-\i (00:19:25) trapsize 1798
-\i (00:19:25) zoom in 1 
-\i (00:19:25) setwindow pcb
-\i (00:19:25) zoom in 3563.50 14313.72
-\i (00:19:25) trapsize 899
-\i (00:19:26) zoom in 1 
-\i (00:19:26) setwindow pcb
-\i (00:19:26) zoom in 3565.30 14301.14
-\i (00:19:26) trapsize 449
-\i (00:45:25) exit 
-\t (00:45:25)     Journal end - Wed Jun 24 10:01:31 2020
+\i (00:18:21) zoom out 4143.21 13559.33
+\i (00:18:21) trapsize 2539
+\i (00:18:22) pick grid 6184.34 13335.92
+\t (00:18:22) last pick:  6180.00 13340.00
+\i (00:18:28) exit 
+\e (00:18:28) Do you want to save the changes you made to STM32F103_RAK811_THESISNODE.brd?
+\i (00:18:29) fillin no 
+\t (00:18:30)     Journal end - Wed Jun 24 14:57:24 2020

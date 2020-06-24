@@ -108,8 +108,8 @@ int main(void)
 	char *p = "NTT \r\n";
 	HAL_TIM_Base_Start(&htim4);
 //
-	__HAL_UART_ENABLE_IT(&huart1, UART_IT_RXNE);
-	__HAL_UART_ENABLE_IT(&huart2, UART_IT_RXNE);
+//	__HAL_UART_ENABLE_IT(&huart1, UART_IT_RXNE);
+//	__HAL_UART_ENABLE_IT(&huart2, UART_IT_RXNE);
 //	__HAL_UART_ENABLE_IT(&huart3, UART_IT_RXNE);
 	/* Run the ADC calibration */
 	if (HAL_ADCEx_Calibration_Start(&hadc1) != HAL_OK) {
@@ -118,8 +118,8 @@ int main(void)
 	}
 
 //  HAL_Delay(101);
-//  HAL_UART_Transmit(&huart2,p,6,100);
-//  HAL_UART_Transmit(&huart3,p,6,100);
+  HAL_UART_Transmit(&huart1,p,6,100);
+  HAL_UART_Transmit(&huart3,p,6,100);
 	printf("---------- IOT Node ----------  \r\n");
 
 	/*Load pre-paramter from eepROm*/
