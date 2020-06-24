@@ -4,7 +4,7 @@
 #include "main.h"
 #include "param.h"
 #include "usart.h"
-
+#include "envtask.h"
 tCmdLineEntry g_psCmdTable[] = { { "help", Cmd_help,
 		" : Display list of commands" }, { "set", Cmd_set,
 		" : Set the specific param in the next arg" }, { "get", Cmd_get,
@@ -34,28 +34,29 @@ void command_recv_callback_irq(UART_HandleTypeDef *huart) {
 //		HAL_UART_Transmit_IT(huart, &receivedChar, 1);
 
 //	__HAL_UART_ENABLE_IT(&huart1, UART_IT_RXNE);
-	if ((receivedChar != 10)&&(receivedChar != 13) ){
-		if ((receivedChar == 8) || (receivedChar == 127)) {
-			if (commandBufferIndex > 0)
-				commandBufferIndex--;
+		if ((receivedChar != 10) && (receivedChar != 13)) {
+			if ((receivedChar == 8) || (receivedChar == 127)) {
+				if (commandBufferIndex > 0)
+					commandBufferIndex--;
+			} else {
+				commandBuffer[commandBufferIndex] = receivedChar;
+				commandBufferIndex++;
+			}
 		} else {
-			commandBuffer[commandBufferIndex] = receivedChar;
-			commandBufferIndex++;
-		}
-	} else {
-		if (commandBufferIndex != 0) {
-			commandBuffer[commandBufferIndex] = 0;
-			commandBufferIndex = 0;
-			gotCommandFlag = 1;
-		}
-		if (isEcho == 1)
+			if (commandBufferIndex != 0) {
+				commandBuffer[commandBufferIndex] = 0;
+				commandBufferIndex = 0;
+				gotCommandFlag = 1;
+			}
+			if (isEcho == 1)
 //			HAL_UART_Transmit_IT(huart, EnterCMD, 3);
-		PRINTF_EN = 0;
-	}
+				PRINTF_EN = 0;
+		}
 
 }
 int Cmd_set(int argc, char *argv[]) {
 	char merg[4];
+	uint8_t port;
 	if ((strcmp(*(argv + 1), "mb") == 0)) {
 
 		if ((strcmp(*(argv + 2), "mode") == 0)) {
@@ -70,9 +71,24 @@ int Cmd_set(int argc, char *argv[]) {
 			u_mem_set(NODE_MB_ID_ADR, atoi(*(argv + 3)));
 		}
 	} else if ((strcmp(*(argv + 1), "lr") == 0)) {
-		if ((strcmp(*(argv + 2), "mode") == 0)) {
+		if ((strcmp(*(argv + 2), "adr") == 0)) {
 
-			u_mem_set(NODE_MB_MODE_ADR, atoi(*(argv + 3)));
+			u_mem_set(NODE_LRWAN_DATARATE_ADR, atoi(*(argv + 3)));
+
+		}
+		if ((strcmp(*(argv + 2), "fr") == 0)) {
+
+			u_mem_set(NODE_LRWAN_FREQ_ADR, atoi(*(argv + 3)));
+
+		}
+		if ((strcmp(*(argv + 2), "cf") == 0)) {
+
+			u_mem_set(NODE_LRWAN_CONFIRM_ADR, atoi(*(argv + 3)));
+
+		}
+		if ((strcmp(*(argv + 2), "class") == 0)) {
+
+			u_mem_set(NODE_LRWAN_CLASS_ADR, atoi(*(argv + 3)));
 
 		}
 		if ((strcmp(*(argv + 2), "deveui") == 0)) {
@@ -101,11 +117,22 @@ int Cmd_set(int argc, char *argv[]) {
 
 		}
 	} else if ((strcmp(*(argv + 1), "id") == 0)) {
-		u_mem_set(NODE_ID_ADR, atoi(*(argv + 3)));
+		u_mem_set(NODE_ID_ADR, atoi(*(argv + 2)));
 
 	} else if ((strcmp(*(argv + 1), "cf") == 0)) {
-		u_mem_set(NODE_HAVE_PARAM_ADR, atoi(*(argv + 3)));
+		u_mem_set(NODE_HAVE_PARAM_ADR, atoi(*(argv + 2)));
 	}
+//	else if ((strcmp(*(argv + 1), "port") == 0)) {
+//		port = atoi((*(argv + 2)));
+//		u_mem_set(NODE_IO_BASE + 2 * port, atoi((*(argv + 3))));
+//		u_mem_set(NODE_IO_BASE + 2 * port + 1, atoi((*(argv + 4))));
+//
+//	}
+	else if ((strcmp(*(argv + 1), "p_pf") == 0)) {
+
+			port = atoi(*(argv + 2));
+			u_mem_set(NODE_IO_BASE + 2 * port, atoi((*(argv + 3))));
+		}
 	/* Reponse -----------------------------------------------------*/
 	char *reponse = "OK\r\n";
 	HAL_UART_Transmit(&huart2, reponse, 4, 1000);
@@ -113,6 +140,7 @@ int Cmd_set(int argc, char *argv[]) {
 }
 int Cmd_get(int argc, char *argv[]) {
 
+	uint8_t port =0;
 	memset(commandSendBuffer, 0, 50);
 //	strcat(commandSendBuffer, *(argv + 0));
 //	strcat(commandSendBuffer, " ");
@@ -132,8 +160,8 @@ int Cmd_get(int argc, char *argv[]) {
 			strcat(commandSendBuffer,
 					itoa_user(u_mem_get(NODE_MB_DATABITS_ADR), 10));
 		} else if ((strcmp(*(argv + 2), "stbi") == 0)) {
-					strcat(commandSendBuffer,
-							itoa_user(u_mem_get(NODE_MB_STOPBITS_ADR), 10));
+			strcat(commandSendBuffer,
+					itoa_user(u_mem_get(NODE_MB_STOPBITS_ADR), 10));
 		} else if ((strcmp(*(argv + 2), "pari") == 0)) {
 			strcat(commandSendBuffer,
 					itoa_user(u_mem_get(NODE_MB_PARTITY_ADR), 10));
@@ -141,6 +169,29 @@ int Cmd_get(int argc, char *argv[]) {
 			strcat(commandSendBuffer, itoa_user(u_mem_get(NODE_MB_ID_ADR), 10));
 		}
 	} else if ((strcmp(*(argv + 1), "lr") == 0)) {
+		if ((strcmp(*(argv + 2), "adr") == 0)) {
+			strcat(commandSendBuffer, itoa_user(u_mem_get(NODE_LRWAN_DATARATE_ADR), 10));
+//			u_mem_set(NODE_LRWAN_DATARATE_ADR, atoi(*(argv + 3)));
+
+		}
+		if ((strcmp(*(argv + 2), "fr") == 0)) {
+			strcat(commandSendBuffer, itoa_user(u_mem_get(NODE_LRWAN_FREQ_ADR), 10));
+
+//			u_mem_set(NODE_LRWAN_FREQ_ADR, atoi(*(argv + 3)));
+
+		}
+		if ((strcmp(*(argv + 2), "cf") == 0)) {
+			strcat(commandSendBuffer, itoa_user(u_mem_get(NODE_LRWAN_CONFIRM_ADR), 10));
+
+//			u_mem_set(NODE_LRWAN_CONFIRM_ADR, atoi(*(argv + 3)));
+
+		}
+		if ((strcmp(*(argv + 2), "class") == 0)) {
+			strcat(commandSendBuffer, itoa_user(u_mem_get(NODE_LRWAN_CLASS_ADR), 10));
+
+//			u_mem_set(NODE_LRWAN_CLASS_ADR, atoi(*(argv + 3)));
+
+		}
 		if ((strcmp(*(argv + 2), "mode") == 0)) {
 			strcat(commandSendBuffer,
 					itoa_user(u_mem_get(NODE_LRWAN_MODE_ADR), 10));
@@ -176,6 +227,28 @@ int Cmd_get(int argc, char *argv[]) {
 		strcat(commandSendBuffer,
 				itoa_user(u_mem_get(NODE_HAVE_PARAM_ADR), 10));
 	}
+
+	else if ((strcmp(*(argv + 1), "p_pf") == 0)) {
+
+			port = atoi(*(argv + 2));
+			strcat(commandSendBuffer,
+					itoa_user(u_mem_get(NODE_IO_BASE + 2 * port),
+							10));
+		}
+
+//	else if ((strcmp(*(argv + 1), "p_val") == 0)) {
+//
+//			port = atoi(*(argv + 2));
+//			strcat(commandSendBuffer,
+//					itoa_user(u_mem_get(NODE_IO_BASE + 2 * port),
+//							10));
+//		}
+//	}
+
+//	else if ((strcmp(*(argv + 1), "cf") == 0)) {
+//		strcat(commandSendBuffer,
+//				itoa_user(u_mem_get(NODE_HAVE_PARAM_ADR), 10));
+//	}
 	strcat(commandSendBuffer, "\r\n");
 	/* Reponse -----------------------------------------------------*/
 	HAL_UART_Transmit(&huart2, commandSendBuffer, strlen(commandSendBuffer),

@@ -1,43 +1,164 @@
-\t (00:00:02) allegro 17.2 S052 Windows SPB 64-bit Edition
-\t (00:00:02)     Journal start - Wed Jun 17 14:36:31 2020
-\t (00:00:02)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=22848 CPUs=4
-\t (00:00:02) CmdLine= C:\Cadence\SPB_17.2\tools\bin\allegro.exe
-\t (00:00:02) 
-   (00:00:02) Loading axlcore.cxt 
-   (00:00:03) Searching for nsWare programs v2.78
-   (00:00:03) 	NsWare directory found: E:/CAD/pcbenv/nsWare/
-   (00:00:03) 	NsWare programs must reside in this directory!
-   (00:00:03) function AFn_OpenDesign redefined
-   (00:00:03) function PinVia_Overlap_FinishEnterFun redefined
-   (00:00:03) function Find_Point_On_Line_From_Distant redefined
-   (00:00:03) function Find_Point_Quadrature_Line redefined
-   (00:00:03) function Line_Line_Intersect redefined
-   (00:00:03) function _getPinsNet redefined
-   (00:00:03) function _getBranchs redefined
-   (00:00:03) function _getPaths redefined
-   (00:00:03) function _get2PointsPath redefined
-   (00:00:03) function _checkElementList redefined
-   (00:00:03) function _getSurroundPoints redefined
-   (00:00:03) function _getListPointsLPaths redefined
-   (00:00:03) function _checkPathPoint redefined
-   (00:00:03) function _deleteElementList redefined
-   (00:00:03) function _checkElementList redefined
-   (00:00:03) function _deleteElementList redefined
-   (00:00:03) function Find_Point_On_Line_From_Distant redefined
-   (00:00:03) function Find_Point_Quadrature_Line redefined
-   (00:00:03) function Is_Point_On_List redefined
-   (00:00:03) function Line_Line_Intersect redefined
-   (00:00:03) function Line_Line_Distant redefined
-\t (00:00:04) Opening existing design...
-\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged STM32F103_RAK811_THESISNODE
-\d (00:00:04) Design opened: C:/GIT/ThesisLorawanNode/HW/RAK811_STM32Node/allegro/STM32F103_RAK811_THESISNODE.brd
-\i (00:00:04) trapsize 3246
-\i (00:00:05) trapsize 3427
-\i (00:00:05) trapsize 2752
-\i (00:00:05) trapsize 2752
-\i (00:00:06) generaledit 
-\i (00:00:10) opencd E:/LVTN/AccessControllerBoard/16_Controller/03_layout/controller.brd 
-\t (00:00:10) Opening existing design...
-\i (00:00:11) fillin yes 
-\i (00:00:12) trapsize 129
-\t (00:00:12)     Journal end - Wed Jun 17 14:36:41 2020
+\t (00:00:00) allegro 17.2 S052 Windows SPB 64-bit Edition
+\t (00:00:00)     Journal start - Sun Jun 21 14:36:30 2020
+\t (00:00:00)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=23008 CPUs=4
+\t (00:00:00) CmdLine= c:\cadence\spb_17.2\tools\bin\allegro.exe C:\GIT\ThesisLorawanNode\HW\RAK811_STM32Node\allegro\STM32F103_RAK811_THESISNODE.brd
+\t (00:00:00) 
+   (00:00:01) Loading axlcore.cxt 
+   (00:00:01) Searching for nsWare programs v2.78
+   (00:00:01) 	NsWare directory found: E:/CAD/pcbenv/nsWare/
+   (00:00:01) 	NsWare programs must reside in this directory!
+   (00:00:01) function AFn_OpenDesign redefined
+   (00:00:01) function PinVia_Overlap_FinishEnterFun redefined
+   (00:00:01) function Find_Point_On_Line_From_Distant redefined
+   (00:00:01) function Find_Point_Quadrature_Line redefined
+   (00:00:01) function Line_Line_Intersect redefined
+   (00:00:01) function _getPinsNet redefined
+   (00:00:01) function _getBranchs redefined
+   (00:00:01) function _getPaths redefined
+   (00:00:01) function _get2PointsPath redefined
+   (00:00:01) function _checkElementList redefined
+   (00:00:01) function _getSurroundPoints redefined
+   (00:00:01) function _getListPointsLPaths redefined
+   (00:00:01) function _checkPathPoint redefined
+   (00:00:01) function _deleteElementList redefined
+   (00:00:01) function _checkElementList redefined
+   (00:00:01) function _deleteElementList redefined
+   (00:00:01) function Find_Point_On_Line_From_Distant redefined
+   (00:00:01) function Find_Point_Quadrature_Line redefined
+   (00:00:01) function Is_Point_On_List redefined
+   (00:00:01) function Line_Line_Intersect redefined
+   (00:00:01) function Line_Line_Distant redefined
+\t (00:00:02) Opening existing design...
+\i (00:00:02) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged STM32F103_RAK811_THESISNODE
+\d (00:00:02) Design opened: C:/GIT/ThesisLorawanNode/HW/RAK811_STM32Node/allegro/STM32F103_RAK811_THESISNODE.brd
+\i (00:00:03) trapsize 1699
+\i (00:00:03) trapsize 1747
+\i (00:00:03) trapsize 1516
+\i (00:00:03) trapsize 2662
+\i (00:00:04) generaledit 
+\i (00:00:07) zoom in 1 
+\i (00:00:07) setwindow pcb
+\i (00:00:07) zoom in 4172.80 12951.26
+\i (00:00:07) trapsize 1331
+\i (00:00:07) zoom in 1 
+\i (00:00:07) setwindow pcb
+\i (00:00:07) zoom in 4172.80 12948.60
+\i (00:00:07) trapsize 665
+\i (00:00:07) zoom in 1 
+\i (00:00:07) setwindow pcb
+\i (00:00:07) zoom in 4146.18 12850.12
+\i (00:00:07) trapsize 333
+\i (00:00:11) zoom in 1 
+\i (00:00:12) setwindow pcb
+\i (00:00:12) zoom in 3925.91 12794.89
+\i (00:00:12) trapsize 166
+\i (00:00:12) zoom in 1 
+\i (00:00:12) setwindow pcb
+\i (00:00:12) zoom in 3925.91 12794.89
+\i (00:00:12) trapsize 83
+\i (00:00:13) zoom out 1 
+\i (00:00:13) setwindow pcb
+\i (00:00:13) zoom out 3950.20 12837.98
+\i (00:00:13) trapsize 166
+\i (00:00:13) zoom out 1 
+\i (00:00:13) setwindow pcb
+\i (00:00:13) zoom out 3950.19 12837.99
+\i (00:00:13) trapsize 333
+\i (00:00:13) zoom out 1 
+\i (00:00:13) setwindow pcb
+\i (00:00:13) zoom out 3950.19 12835.99
+\i (00:00:13) trapsize 665
+\i (00:00:13) zoom out 1 
+\i (00:00:13) setwindow pcb
+\i (00:00:13) zoom out 3950.18 12833.33
+\i (00:00:13) trapsize 1331
+\i (00:00:14) zoom in 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom in 3596.15 12814.70
+\i (00:00:14) trapsize 665
+\i (00:00:15) zoom in 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom in 3596.15 12814.70
+\i (00:00:15) trapsize 333
+\i (00:00:15) zoom out 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom out 3596.16 12814.70
+\i (00:00:15) trapsize 665
+\i (00:00:16) zoom out 1 
+\i (00:00:16) setwindow pcb
+\i (00:00:16) zoom out 3596.15 12814.70
+\i (00:00:16) trapsize 1331
+\i (00:00:16) zoom in 1 
+\i (00:00:16) setwindow pcb
+\i (00:00:16) zoom in 5038.92 13131.48
+\i (00:00:16) trapsize 665
+\i (00:00:17) zoom in 1 
+\i (00:00:17) setwindow pcb
+\i (00:00:17) zoom in 5033.60 13048.96
+\i (00:00:17) trapsize 333
+\i (00:00:17) zoom in 1 
+\i (00:00:17) setwindow pcb
+\i (00:00:17) zoom in 5032.27 13013.03
+\i (00:00:17) trapsize 166
+\i (00:00:18) zoom out 1 
+\i (00:00:18) setwindow pcb
+\i (00:00:18) zoom out 5033.60 12971.77
+\i (00:00:18) trapsize 333
+\i (00:00:18) zoom out 1 
+\i (00:00:18) setwindow pcb
+\i (00:00:18) zoom out 5034.94 12967.79
+\i (00:00:18) trapsize 665
+\i (00:00:18) zoom out 1 
+\i (00:00:18) setwindow pcb
+\i (00:00:18) zoom out 5034.93 12967.78
+\i (00:00:18) trapsize 1331
+\i (00:00:18) zoom out 1 
+\i (00:00:18) setwindow pcb
+\i (00:00:18) zoom out 5034.94 12967.78
+\i (00:00:18) trapsize 2662
+\i (00:00:18) zoom out 1 
+\i (00:00:18) setwindow pcb
+\i (00:00:18) zoom out 5034.93 12967.79
+\i (00:00:18) trapsize 5324
+\i (00:00:19) zoom in 1 
+\i (00:00:19) setwindow pcb
+\i (00:00:19) zoom in 5962.70 14817.23
+\i (00:00:19) trapsize 2662
+\i (00:00:19) zoom in 1 
+\i (00:00:19) setwindow pcb
+\i (00:00:19) zoom in 5653.92 14370.03
+\i (00:00:19) trapsize 1331
+\i (00:00:19) zoom in 1 
+\i (00:00:19) setwindow pcb
+\i (00:00:19) zoom in 4959.16 14250.24
+\i (00:00:19) trapsize 665
+\i (00:00:22) zoom in 1 
+\i (00:00:22) setwindow pcb
+\i (00:00:22) zoom in 5031.03 13966.75
+\i (00:00:22) trapsize 333
+\i (00:00:23) zoom in 1 
+\i (00:00:23) setwindow pcb
+\i (00:00:23) zoom in 5026.38 13962.76
+\i (00:00:23) trapsize 166
+\i (00:00:24) zoom out 1 
+\i (00:00:24) setwindow pcb
+\i (00:00:24) zoom out 5025.38 13962.77
+\i (00:00:24) trapsize 333
+\i (00:00:24) zoom out 1 
+\i (00:00:24) setwindow pcb
+\i (00:00:24) zoom out 5025.38 13962.76
+\i (00:00:24) trapsize 665
+\i (00:00:24) zoom out 1 
+\i (00:00:24) setwindow pcb
+\i (00:00:24) zoom out 5029.38 13964.09
+\i (00:00:24) trapsize 1331
+\i (00:00:25) zoom out 1 
+\i (00:00:25) setwindow pcb
+\i (00:00:25) zoom out 5050.67 13966.76
+\i (00:00:25) trapsize 2662
+\i (00:00:26) zoom out 1 
+\i (00:00:26) setwindow pcb
+\i (00:00:26) zoom out 4502.30 14664.18
+\i (00:00:26) trapsize 5324
+\i (00:00:27) exit 
+\t (00:00:27)     Journal end - Sun Jun 21 14:36:57 2020

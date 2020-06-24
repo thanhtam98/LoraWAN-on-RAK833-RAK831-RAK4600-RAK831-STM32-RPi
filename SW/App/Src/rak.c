@@ -266,7 +266,55 @@ uint8_t rak_sendData(uint8_t port, char* data) {
 	strcat(rakCommandSendBuffer, itoa_user(port, 10));
 	strcat(rakCommandSendBuffer, ":");
 	strcat(rakCommandSendBuffer, data);
+	rak_send_raw(rakCommandSendBuffer);
+
+}
+
+uint8_t rak_getStatus(void) {
+	char *pNetJoinStatus = NULL;
+	memset(rakCommandSendBuffer, 0, RAK_MAX_RECV_LEN);
+	strcat(rakCommandSendBuffer, "at+get_config=lora:status");
 	return rak_send_raw(rakCommandSendBuffer);
+	for (uint8_t u8tryPerSec = 0; u8tryPerSec < MAX_TIME_OUT; u8tryPerSec++) {
+		osDelay(1000);
+		if (gotCommandRecvFlag == 1) {
+			break;
+		}
+	}
+	if (gotCommandRecvFlag == 1) {
+		gotCommandRecvFlag = 0;
+//		Region: EU868
+//		Send_interval: 600s
+//		Auto send status: false.
+//		Join_mode: ABP
+//		DevAddr: 260125D7
+//		AppsKey: 841986913ACD00BBC2BE2479D70F3228
+//		NwksKey: 69AF20AEA26C01B243945A28C9172B42
+//		Class: A
+//		Joined Network:true => offset 9
+//		IsConfirm: false
+//		AdrEnable: true
+//		EnableRepeaterSupport: false
+		/* Process the rak at command*/
+		pNetJoinStatus = strstr(rakCommandSendBuffer, "Network:");
+		if (pNetJoinStatus != NULL)
+		{
+
+			/* Check true false status
+			 * Simply only need check bit =)))
+			 * */
+			if(*(pNetJoinStatus +9 ) == 't')
+			{
+//				isJoinedLoraWAN = LR_JOINED;
+				return LR_JOINED;
+			}
+			else {
+//				isJoinedLoraWAN =LR_NOT_JOINED;
+				return LR_NOT_JOINED;
+			}
+		}
+		/* rak not responding*/
+	}
 
 }
 
@@ -317,10 +365,10 @@ void rak_command_recv_process(void) {
 	/*ERROR code */
 	if (strcmp(commandRecvBuffer, "ER") == 0) {
 
-		if ((commandRecvBuffer[7] == '8')&&(commandRecvBuffer[8] == '0')) {
+		if ((commandRecvBuffer[7] == '8') && (commandRecvBuffer[8] == '0')) {
 			isJoinedLoraWAN = LR_BUSY;
 		}
-		if ((commandRecvBuffer[7] == '8')&&(commandRecvBuffer[8] == '6')) {
+		if ((commandRecvBuffer[7] == '8') && (commandRecvBuffer[8] == '6')) {
 			isJoinedLoraWAN = LR_NOT_JOINED;
 		}
 	}
@@ -396,14 +444,14 @@ void vRakTask(void const *arg) {
 		/*Thread down*/
 
 		/*Handling*/
+		isJoinedLoraWAN = rak_getStatus();
 		if (isJoinedLoraWAN == LR_NOT_JOINED) {
 			DBG("Re joining to LRWAN: ");
 			osDelay(3000);
 			isJoinedLoraWAN = rak_join();
 			DBG("Re joining to LRWAN with code: %d \r\n", isJoinedLoraWAN);
 		}
-		if (isJoinedLoraWAN == LR_BUSY)
-		{
+		if (isJoinedLoraWAN == LR_BUSY) {
 			DBG("LRWAN is busy now, sleeping in 5s \r\n");
 			osDelay(5000);
 		}

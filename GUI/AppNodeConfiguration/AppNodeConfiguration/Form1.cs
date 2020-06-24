@@ -23,6 +23,7 @@ namespace AppNodeConfiguration
         string dataIn;
         string dataOut = "NTT \r\n";
         bool isWaitingRx = false;
+        string[] ProfileTable = { "NC", "NO", "Per Second", "Per Minimute", "Per Hour", "Light Sensor", "Temp Sensor", "Humid Sensor", "DHT11", "DHT22", "DS18B20" };
         int timeOut = 0;
         int theWaitingVal = 0;
 
@@ -65,7 +66,7 @@ namespace AppNodeConfiguration
                 serialPort1.WriteLine("get cf");
                 theWaitingVal = 255;
                 prgBarLoad.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-                await Task.Delay(1000);
+                await Task.Delay(2000);
                 if (theWaitingVal == 0)
                 {
                    
@@ -176,7 +177,7 @@ namespace AppNodeConfiguration
         private void processData(object sender, EventArgs e)
         {
             Console.WriteLine("Recved text:");
-            
+            Console.WriteLine("Recved text:");
             if (theWaitingVal == 1)
             {
 
@@ -305,6 +306,154 @@ namespace AppNodeConfiguration
                 tBoxAppKey.Text = dataIn;
 
             }
+
+            if (theWaitingVal == 11)
+            {
+
+                theWaitingVal = 0;
+                Console.WriteLine("adr");
+                if (dataIn == "0")
+                {
+                    cBoxAdr.Text = "Adapted";
+                }
+                else
+                {
+                    cBoxAdr.Text = "SF"+ dataIn;
+                }
+
+            }
+
+            if (theWaitingVal == 12)
+            {
+
+                theWaitingVal = 0;
+                Console.WriteLine("fr");
+                if (dataIn == "0")
+                {
+                    cBoxAdr.Text = "AS923";
+                }
+                else if (dataIn == "1")
+                {
+                    cBoxAdr.Text = "AU915";
+                }
+                else if (dataIn == "2")
+                {
+                    cBoxAdr.Text = "CN470";
+                }
+                else if (dataIn == "3")
+                {
+                    cBoxAdr.Text = "CN779";
+                }
+                else if (dataIn == "4")
+                {
+                    cBoxAdr.Text = "EU433";
+                }
+                else if (dataIn == "5")
+                {
+                    cBoxAdr.Text = "EU868";
+                }
+                else if (dataIn == "6")
+                {
+                    cBoxAdr.Text = "KR920";
+                }
+                else if (dataIn == "7")
+                {
+                    cBoxAdr.Text = "IN865";
+                }
+                else if (dataIn == "8")
+                {
+                    cBoxAdr.Text = "AU915";
+                }
+
+                else if (dataIn == "9")
+                {
+                    cBoxAdr.Text = "AU915";
+                }
+
+
+            }
+            if (theWaitingVal == 13)
+            {
+
+                theWaitingVal = 0;
+                Console.WriteLine("isConfirmed");
+                if (dataIn == "0")
+                {
+                    cBoxAdr.Text = "No";
+                }
+                else
+                {
+                    cBoxAdr.Text = "YES";
+                }
+
+            }
+            if (theWaitingVal == 14)
+            {
+
+                theWaitingVal = 0;
+                Console.WriteLine("Class");
+                if (dataIn == "0")
+                {
+                    cBoxAdr.Text = "A";
+                }
+                else
+                {
+                    cBoxAdr.Text = "C";
+                }
+
+            }
+            if (theWaitingVal == 15)
+            {
+
+                theWaitingVal = 0;
+                Console.WriteLine("SW1");
+                cBoxSW1.Text = ProfileTable[Int16.Parse(dataIn)];
+
+            }
+            if (theWaitingVal == 16)
+            {
+
+                theWaitingVal = 0;
+                Console.WriteLine("SW2");
+                cBoxSW2.Text = ProfileTable[Int16.Parse(dataIn)];
+
+            }
+
+            if (theWaitingVal == 17)
+            {
+
+                theWaitingVal = 0;
+                Console.WriteLine("cBoxADC1");
+                cBoxADC1.Text = ProfileTable[Int16.Parse(dataIn)];
+
+            }
+            if (theWaitingVal == 18)
+            {
+
+                theWaitingVal = 0;
+                Console.WriteLine("cBoxADC2");
+                cBoxADC2.Text = ProfileTable[Int16.Parse(dataIn)];
+
+            }
+            if (theWaitingVal == 19)
+            {
+
+                theWaitingVal = 0;
+                Console.WriteLine("cBoxPul");
+                cBoxPul.Text = ProfileTable[Int16.Parse(dataIn)];
+
+            }
+
+            if (theWaitingVal == 20)
+            {
+
+                theWaitingVal = 0;
+                Console.WriteLine("cBoxOneW");
+                cBoxOneW.Text = ProfileTable[Int16.Parse(dataIn)];
+
+            }
+
+
             Console.WriteLine(dataIn);
 
             if (theWaitingVal == 255)
@@ -489,6 +638,129 @@ namespace AppNodeConfiguration
                 if (timeOut > 10) break;
             }
 
+            serialPort1.WriteLine("get lr adr");
+            theWaitingVal = 11;
+            /***/
+            timeOut = 0;
+            while (theWaitingVal != 0)
+            {
+                await Task.Delay(200);
+                timeOut++;
+                if (timeOut > 10) break;
+            }
+
+
+            serialPort1.WriteLine("get lr fr");
+            theWaitingVal = 12;
+            /***/
+            timeOut = 0;
+            while (theWaitingVal != 0)
+            {
+                await Task.Delay(200);
+                timeOut++;
+                if (timeOut > 10) break;
+            }
+
+
+
+            serialPort1.WriteLine("get lr cf");
+            theWaitingVal = 13;
+            /***/
+            timeOut = 0;
+            while (theWaitingVal != 0)
+            {
+                await Task.Delay(200);
+                timeOut++;
+                if (timeOut > 10) break;
+            }
+
+
+
+
+            serialPort1.WriteLine("get lr class");
+            theWaitingVal = 14;
+            /***/
+            timeOut = 0;
+            while (theWaitingVal != 0)
+            {
+                await Task.Delay(200);
+                timeOut++;
+                if (timeOut > 10) break;
+            }
+
+
+            serialPort1.WriteLine("get p_pf 0");
+            theWaitingVal = 15;
+            /***/
+            timeOut = 0;
+            while (theWaitingVal != 0)
+            {
+                await Task.Delay(200);
+                timeOut++;
+                if (timeOut > 10) break;
+            }
+
+            serialPort1.WriteLine("get p_pf 1");
+            theWaitingVal = 16;
+            /***/
+            timeOut = 0;
+            while (theWaitingVal != 0)
+            {
+                await Task.Delay(200);
+                timeOut++;
+                if (timeOut > 10) break;
+            }
+
+            serialPort1.WriteLine("get p_pf 2");
+            theWaitingVal = 17;
+            /***/
+            timeOut = 0;
+            while (theWaitingVal != 0)
+            {
+                await Task.Delay(200);
+                timeOut++;
+                if (timeOut > 10) break;
+            }
+
+
+            serialPort1.WriteLine("get p_pf 3");
+            theWaitingVal = 18;
+            /***/
+            timeOut = 0;
+            while (theWaitingVal != 0)
+            {
+                await Task.Delay(200);
+                timeOut++;
+                if (timeOut > 10) break;
+            }
+            serialPort1.WriteLine("get p_pf 4");
+            theWaitingVal = 19;
+            /***/
+            timeOut = 0;
+            while (theWaitingVal != 0)
+            {
+                await Task.Delay(200);
+                timeOut++;
+                if (timeOut > 10) break;
+            }
+            serialPort1.WriteLine("get p_pf 5");
+            theWaitingVal = 20;
+            /***/
+            timeOut = 0;
+            while (theWaitingVal != 0)
+            {
+                await Task.Delay(200);
+                timeOut++;
+                if (timeOut > 10) break;
+            }
+
+
+
+
+
+
+
+
             serialPort1.WriteLine("get cf");
             theWaitingVal = 255;
             /***/
@@ -499,6 +771,7 @@ namespace AppNodeConfiguration
                 timeOut++;
                 if (timeOut > 10) break;
             }
+
 
 
 
@@ -585,6 +858,103 @@ namespace AppNodeConfiguration
             serialPort1.WriteLine(tBoxAppKey.Text);
             await Task.Delay(200);
 
+            serialPort1.Write("set lr adr ");
+            if (cBoxAdr.Text == "Adapted")
+            {
+                serialPort1.WriteLine("0");
+            }
+            else if (cBoxAdr.Text == "SF7" )
+            {
+                serialPort1.WriteLine("7");
+            }
+            else if (cBoxAdr.Text == "SF8")
+            {
+                serialPort1.WriteLine("8");
+            }
+            else if (cBoxAdr.Text == "SF9")
+            {
+                serialPort1.WriteLine("9");
+            }
+            else if (cBoxAdr.Text == "SF10")
+            {
+                serialPort1.WriteLine("10");
+            }
+            else if (cBoxAdr.Text == "SF11")
+            {
+                serialPort1.WriteLine("11");
+            }
+            else if (cBoxAdr.Text == "SF12")
+            {
+                serialPort1.WriteLine("12");
+            }
+            await Task.Delay(200);
+
+            serialPort1.Write("set lr adr ");
+            if (cBoxFreq.Text == "AS923")
+            {
+                serialPort1.WriteLine("0");
+            }
+            else if (cBoxFreq.Text == "AU915")
+            {
+                serialPort1.WriteLine("1");
+            }
+            else if (cBoxFreq.Text == "CN470")
+            {
+                serialPort1.WriteLine("2");
+            }
+            else if (cBoxFreq.Text == "CN779")
+            {
+                serialPort1.WriteLine("3");
+            }
+            else if (cBoxFreq.Text == "EU433")
+            {
+                serialPort1.WriteLine("4");
+            }
+            else if (cBoxFreq.Text == "EU868")
+            {
+                serialPort1.WriteLine("5");
+            }
+            else if (cBoxFreq.Text == "KR920")
+            {
+                serialPort1.WriteLine("6");
+            }
+            else if (cBoxFreq.Text == "IN865")
+            {
+                serialPort1.WriteLine("7");
+            }
+            else if (cBoxFreq.Text == "AU915")
+            {
+                serialPort1.WriteLine("8");
+            }
+            await Task.Delay(200);
+
+            if (cBoxCfm.Text == "No")
+            {
+                serialPort1.WriteLine("set lr cf 0");
+
+
+            }
+            else
+            {
+                serialPort1.WriteLine("set lr cf 1");
+            }
+
+            await Task.Delay(200);
+            if (cBoxClass.Text == "A")
+            {
+                serialPort1.WriteLine("set lr class 0");
+
+            }
+            else
+            {
+                serialPort1.WriteLine("set lr class 2");
+            }
+
+
+            await Task.Delay(200);
+
+
+
             /* if (tBoxSid.Text == "")
              {
                  serialPort1.WriteLine("set mb db 0");
@@ -621,6 +991,16 @@ namespace AppNodeConfiguration
         }
 
         private void label25_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cBoxOneW_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

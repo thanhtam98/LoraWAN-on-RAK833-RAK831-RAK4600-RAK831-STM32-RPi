@@ -6,7 +6,7 @@
 /*
  *
  * */
-#define IO_MAX_PORT		5
+#define IO_MAX_PORT		6
 /* IO
  *   [SW1][SW2][PULS][ADC1][ADC2][OneWire]
  *
@@ -31,7 +31,8 @@ enum {
 	PORT1,
 	PORT2,
 	PORT3,
-	PORT4
+	PORT4,
+	PORT5
 };
 typedef struct {
 	uint8_t profile;
