@@ -36,20 +36,21 @@ uParam_t U_PARAM[PARAM_MAX_SIZE] = {
 void v_epr_load(uint16_t usAdr) {
 	uint8_t err;
 	if (usAdr == PARAM_LOAD_ALL) {
+		err = at24_read_bytes(AT24_ADR, 0x00,PARAM,EEP_MAX_SIZE);
 		/*Load all value in Eeprom to RAM*/
-		for (uint8_t funcID = 0; funcID < PARAM_MAX_SIZE; funcID++) {
-			err = at24_read_bytes(AT24_ADR, U_PARAM[funcID].uAdr,
-					&PARAM[U_PARAM[funcID].uAdr], U_PARAM[funcID].uLen);
-			if (err == ERR_TIMEOUT) {
+//		for (uint8_t funcID = 0; funcID < PARAM_MAX_SIZE; funcID++) {
+//			err = at24_read_bytes(AT24_ADR, U_PARAM[funcID].uAdr,
+//					&PARAM[U_PARAM[funcID].uAdr], U_PARAM[funcID].uLen);
+			if (err == 0) {
 				printf("Read TimeOut \r\n");
-				break;
+
 			}
-		}
+//		}
 	} else {
 		/*Load the specific adr requested*/
-		err = at24_read_bytes(AT24_ADR, U_PARAM[usAdr].uAdr, &PARAM[usAdr],
-				U_PARAM[usAdr].uLen);
-		if (err == ERR_TIMEOUT) {
+		err = at24_read_bytes(AT24_ADR, usAdr, &PARAM[usAdr],
+				0x01);
+		if (err == 0) {
 			printf("Read TimeOut \r\n");
 
 		}
@@ -65,15 +66,21 @@ void v_epr_load(uint16_t usAdr) {
 void v_epr_save(uint16_t usAdr) {
 	uint8_t err;
 	if (usAdr == PARAM_LOAD_ALL) {
-		/*Store all value in Eeprom to RAM*/
-		for (uint8_t funcID = 0; funcID < PARAM_MAX_SIZE; funcID++) {
-			err = at24_write_bytes(AT24_ADR, U_PARAM[funcID].uAdr,
-					&PARAM[U_PARAM[funcID].uAdr], U_PARAM[funcID].uLen);
-			if (err == ERR_TIMEOUT) {
-				printf("Write TimeOut \r\n");
-				break;
-			}
+		err = at24_write_bytes(AT24_ADR,0x00, PARAM,
+				EEP_MAX_SIZE);
+		if (err = 0) {
+			printf("Write TimeOut \r\n");
+
 		}
+		/*Store all value in Eeprom to RAM*/
+//		for (uint8_t funcID = 0; funcID < PARAM_MAX_SIZE; funcID++) {
+//			err = at24_write_bytes(AT24_ADR, U_PARAM[funcID].uAdr,
+//					&PARAM[U_PARAM[funcID].uAdr], U_PARAM[funcID].uLen);
+//			if (err == ERR_TIMEOUT) {
+//				printf("Write TimeOut \r\n");
+//				break;
+//			}
+//		}
 //		at24_write_bytes(AT24_ADR, NODE_HAVE_PARAM_ADR,
 //				&PARAM[NODE_HAVE_PARAM_ADR], 8);
 //
@@ -87,9 +94,9 @@ void v_epr_save(uint16_t usAdr) {
 	} else {
 
 		/*Store the specific adr requested*/
-		err = at24_write_bytes(AT24_ADR, U_PARAM[usAdr].uAdr, &PARAM[usAdr],
-				U_PARAM[usAdr].uLen);
-		if (err = ERR_TIMEOUT) {
+		err = at24_write_bytes(AT24_ADR,usAdr, &PARAM[usAdr],
+				0x01);
+		if (err = 0) {
 			printf("Write TimeOut \r\n");
 
 		}

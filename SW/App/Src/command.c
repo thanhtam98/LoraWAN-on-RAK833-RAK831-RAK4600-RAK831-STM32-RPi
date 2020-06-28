@@ -5,6 +5,7 @@
 #include "param.h"
 #include "usart.h"
 #include "envtask.h"
+#include "epprom.h"
 tCmdLineEntry g_psCmdTable[] = { { "help", Cmd_help,
 		" : Display list of commands" }, { "set", Cmd_set,
 		" : Set the specific param in the next arg" }, { "get", Cmd_get,
@@ -143,6 +144,10 @@ int Cmd_set(int argc, char *argv[]) {
 		port = atoi(*(argv + 2));
 		u_mem_set(NODE_IO_BASE + 2 * port, atoi((*(argv + 3))));
 	}
+	else if ((strcmp(*(argv + 1), "save") == 0)) {
+		v_epr_save(PARAM_LOAD_ALL);
+
+		}
 	/* Reponse -----------------------------------------------------*/
 	char *reponse = "OK\r\n";
 	HAL_UART_Transmit(&huart2, reponse, 4, 1000);

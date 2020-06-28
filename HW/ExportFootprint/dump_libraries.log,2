@@ -3,22 +3,22 @@
 (    Dump Library Log                                                 )
 (                                                                     )
 (    Software Version : 17.2S052                                      )
-(    Date/Time        : Thu Jun 18 18:21:03 2020                      )
+(    Date/Time        : Sat Jun 27 23:41:10 2020                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
 
-*** file: C:/GIT/ThesisLorawanNode/HW/ExportFootprint/db9_fe.dra ***
+*** file: C:/GIT/ThesisLorawanNode/HW/ExportFootprint/bat_cr1220.dra ***
 
 
 
   *** Creating padstacks. ***
 
-  TH_SQU_80_CIR_45 being dumped.
+  PAD5 being dumped.
 
-  TH_CIR_162_OVAL_130X50 being dumped.
+  PAD6 being dumped.
 
-  TH_CIR_80_CIR_45 being dumped.
+  PAD7 being dumped.
 
 
 

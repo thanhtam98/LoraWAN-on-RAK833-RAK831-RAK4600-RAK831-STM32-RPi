@@ -57,7 +57,7 @@ uint8_t PRINTF_EN = 1;
 void SystemClock_Config(void);
 void MX_FREERTOS_Init(void);
 /* USER CODE BEGIN PFP */
-
+void v_led_start(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -103,37 +103,38 @@ int main(void)
   MX_I2C1_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
-
+//	HAL_I2C_MspInit(&hi2c1);
+	v_led_start();
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, SET);
+//while(1);
 	/*Force to enable periphral manually */
 	char *p = "NTT \r\n";
 	HAL_TIM_Base_Start(&htim4);
 //
-//	__HAL_UART_ENABLE_IT(&huart1, UART_IT_RXNE);
-//	__HAL_UART_ENABLE_IT(&huart2, UART_IT_RXNE);
-//	__HAL_UART_ENABLE_IT(&huart3, UART_IT_RXNE);
+	__HAL_UART_ENABLE_IT(&huart2, UART_IT_RXNE);
+
 	/* Run the ADC calibration */
-	if (HAL_ADCEx_Calibration_Start(&hadc1) != HAL_OK) {
-		/* Calibration Error */
-		Error_Handler();
-	}
-
+//	if (HAL_ADCEx_Calibration_Start(&hadc1) != HAL_OK) {
+//		/* Calibration Error */
+//		Error_Handler();
+//	}
 //  HAL_Delay(101);
-  HAL_UART_Transmit(&huart1,p,6,100);
-  HAL_UART_Transmit(&huart3,p,6,100);
+//  HAL_UART_Transmit(&huart1,p,6,100);
+//  HAL_UART_Transmit(&huart3,p,6,100);
 	printf("---------- IOT Node ----------  \r\n");
-
 	/*Load pre-paramter from eepROm*/
 	printf(" Loading pre-configuration from EEPROM !!  \r\n");
-//	v_epr_load(PARAM_LOAD_ALL);
+	v_epr_load(PARAM_LOAD_ALL);
 	if (PARAM[NODE_HAVE_PARAM_ADR] != NO_PARAM) {
 
 		/* Found pre-param from eeprom and apply it*/
-
+		printf(" pre-configuration from EEPROM: %d  \r\n",
+				PARAM[NODE_HAVE_PARAM_ADR]);
 		//USER_USART3_UART_Init(); // Modbus re-config
-
 		/*Todo: LORAWAN*/
 
-	} else {
+	} else
+	{
 		printf(
 				" Fail to find pre-configuration. Load defaul config instead.  \r\n");
 		/* Load default config**/
@@ -141,12 +142,14 @@ int main(void)
 		PARAM[NODE_ID_ADR] = NODE_ID_ADR_DEFAULT;
 		PARAM[NODE_MB_ID_ADR] = NODE_MB_ID_DEFAULT;
 
+//		PARAM[15] = 69;
+//		PARAM[16] = 96;
 		PARAM[NODE_LRWAN_DATARATE_ADR] = NODE_LRWAN_DATARATE_DEFAULT;
 		PARAM[NODE_LRWAN_CLASS_ADR] = NODE_LRWAN_CLASS_DEFAULT;
 		PARAM[NODE_LRWAN_FREQ_ADR] = NODE_LRWAN_FREQ_DEFAULT;
 		PARAM[NODE_LRWAN_CONFIRM_ADR] = NODE_LRWAN_CONFIRM_DEFAULT;
 		PARAM[NODE_LRWAN_MODE_ADR] = NODE_LRWAN_MODE_DEFAULT;
-
+		PARAM[NODE_LRWAN_TX_POWER_ADR] =NODE_LRWAN_TX_POWER_DEFAULT ;
 
 		PARAM[NODE_IO_PORT_0_ADR] = NODE_IO_PORT_0_DEFAULT;
 		PARAM[NODE_IO_PORT_0_ADR + 1] = 0x00;
@@ -160,21 +163,17 @@ int main(void)
 		PARAM[NODE_IO_PORT_4_ADR + 1] = 0x04;
 		PARAM[NODE_IO_PORT_5_ADR] = NODE_IO_PORT_5_DEFAULT;
 		PARAM[NODE_IO_PORT_5_ADR + 1] = 0x05;
-
+		v_epr_save(PARAM_LOAD_ALL);
+//		memset(PARAM,0,120);
 ///
 		/*Notify to the Led and jump in to vAppConfiguationTask !!**/
 
 	}
-
-//  while(1)
-//  {
-//	  printf("---------- IOT Node ----------  \r\n");
-//	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
-//
-//	HAL_Delay(1000);
-//	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
-//	HAL_Delay(1000);
-//  }
+	v_epr_load(PARAM_LOAD_ALL);
+	for (uint8_t paramIndex = 0; paramIndex < 120; paramIndex++) {
+		DBG("ParamLoaded %d: %d \r\n", paramIndex, PARAM[paramIndex]);
+		HAL_Delay(10);
+	}
 	printf("Booting to RTOS   \r\n");
   /* USER CODE END 2 */
 
@@ -255,6 +254,21 @@ PUTCHAR_PROTOTYPE {
 //  while (USART_GetFlagStatus(EVAL_COM1, USART_FLAG_TC) == RESET)
 //  {}
 	return ch;
+}
+
+void v_led_start(void) {
+
+	for (uint8_t num = 0; num < 15; num++) {
+		HAL_GPIO_TogglePin(LED_0_GPIO_Port, LED_3_Pin);
+		HAL_Delay(50);
+		HAL_GPIO_TogglePin(LED_0_GPIO_Port, LED_2_Pin);
+		HAL_Delay(50);
+		HAL_GPIO_TogglePin(LED_0_GPIO_Port, LED_1_Pin);
+		HAL_Delay(50);
+		HAL_GPIO_TogglePin(LED_0_GPIO_Port, LED_0_Pin);
+		HAL_Delay(50);
+
+	}
 }
 /* USER CODE END 4 */
 

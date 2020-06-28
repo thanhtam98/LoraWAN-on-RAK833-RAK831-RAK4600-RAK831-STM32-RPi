@@ -449,6 +449,7 @@ namespace AppNodeConfiguration
 
                 theWaitingVal = 0;
                 Console.WriteLine("cBoxOneW");
+                if (Int16.Parse(dataIn) <10)
                 cBoxOneW.Text = ProfileTable[Int16.Parse(dataIn)];
 
             }
@@ -962,7 +963,7 @@ namespace AppNodeConfiguration
 
 
             await Task.Delay(200);
-
+            serialPort1.WriteLine("set save");
 
 
             /* if (tBoxSid.Text == "")

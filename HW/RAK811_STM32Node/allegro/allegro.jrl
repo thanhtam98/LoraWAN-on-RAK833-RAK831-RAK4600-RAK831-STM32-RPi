@@ -1,59 +1,12 @@
-\t (00:00:02) allegro 17.2 S052 Windows SPB 64-bit Edition
-\t (00:00:02)     Journal start - Wed Jun 24 17:40:41 2020
-\t (00:00:02)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=16800 CPUs=4
-\t (00:00:02) CmdLine= C:\Cadence\SPB_17.2\tools\bin\allegro.exe
-\t (00:00:02) 
-   (00:00:02) Loading axlcore.cxt 
-   (00:00:03) Searching for nsWare programs v2.78
-   (00:00:03) 	NsWare directory found: E:/CAD/pcbenv/nsWare/
-   (00:00:03) 	NsWare programs must reside in this directory!
-   (00:00:03) function AFn_OpenDesign redefined
-   (00:00:03) function PinVia_Overlap_FinishEnterFun redefined
-   (00:00:03) function Find_Point_On_Line_From_Distant redefined
-   (00:00:03) function Find_Point_Quadrature_Line redefined
-   (00:00:03) function Line_Line_Intersect redefined
-   (00:00:03) function _getPinsNet redefined
-   (00:00:03) function _getBranchs redefined
-   (00:00:03) function _getPaths redefined
-   (00:00:03) function _get2PointsPath redefined
-   (00:00:03) function _checkElementList redefined
-   (00:00:03) function _getSurroundPoints redefined
-   (00:00:03) function _getListPointsLPaths redefined
-   (00:00:03) function _checkPathPoint redefined
-   (00:00:03) function _deleteElementList redefined
-   (00:00:03) function _checkElementList redefined
-   (00:00:03) function _deleteElementList redefined
-   (00:00:03) function Find_Point_On_Line_From_Distant redefined
-   (00:00:03) function Find_Point_Quadrature_Line redefined
-   (00:00:03) function Is_Point_On_List redefined
-   (00:00:03) function Line_Line_Intersect redefined
-   (00:00:03) function Line_Line_Distant redefined
-\t (00:00:04) Opening existing design...
-\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged STM32F103_RAK811_THESISNODE
-\d (00:00:04) Design opened: C:/GIT/ThesisLorawanNode/HW/RAK811_STM32Node/allegro/STM32F103_RAK811_THESISNODE.brd
-\i (00:00:04) trapsize 1648
-\i (00:00:05) trapsize 1693
-\i (00:00:05) trapsize 1656
-\i (00:00:05) trapsize 2539
-\i (00:00:06) generaledit 
-\i (00:00:07) zoom in 1 
-\i (00:00:07) setwindow pcb
-\i (00:00:07) zoom in 4188.56 14557.66
-\i (00:00:07) trapsize 1269
-\i (00:00:08) zoom in 1 
-\i (00:00:08) setwindow pcb
-\i (00:00:08) zoom in 4338.35 14506.89
-\i (00:00:08) trapsize 635
-\i (00:00:09) zoom in 1 
-\i (00:00:09) setwindow pcb
-\i (00:00:09) zoom in 4178.41 14562.75
-\i (00:00:09) trapsize 317
-\i (00:00:14) opencd C:/GIT/ThesisLorawanNode/HW/RAK811_STM32Node/allegro/STM32F103_RAK811_THESISNODE.brd 
-\t (00:00:14) Opening existing design...
-\i (00:00:14) trapsize 2539
-\d (00:00:14) Design opened: C:/GIT/ThesisLorawanNode/HW/RAK811_STM32Node/allegro/STM32F103_RAK811_THESISNODE.brd
-\i (00:00:14) generaledit 
-\i (00:00:18) opencd E:/Temp/AUTOSAVE.brd 
-\t (00:00:18) Opening existing design...
-\i (00:00:18) trapsize 1976
-\t (00:00:18)     Journal end - Wed Jun 24 17:40:57 2020
+\t (00:21:52) allegro 17.2 S052 Windows SPB 64-bit Edition
+\t (00:21:52)     Journal start - Thu Jun 25 17:15:58 2020
+\t (00:21:52)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=20572 CPUs=4
+\t (00:21:52) CmdLine= c:\cadence\spb_17.2\tools\bin\allegro.exe C:\Users\NguyenThanhTam\Downloads\Lora GPS  HAT for RPi v1.4.brd
+\t (00:21:52) 
+\d (00:21:52) Design opened: C:/GIT/ThesisLorawanNode/HW/RAK811_STM32Node/allegro/STM32F103_RAK811_THESISNODE.brd
+\i (00:21:53) generaledit 
+\i (00:21:58) opencd E:/Temp/AUTOSAVE.brd 
+\t (00:21:58) Opening existing design...
+\i (00:21:59) fillin yes 
+\i (00:21:59) trapsize 2226
+\t (00:21:59)     Journal end - Thu Jun 25 17:16:05 2020

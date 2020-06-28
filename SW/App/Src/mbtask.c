@@ -8,6 +8,7 @@
 #include "cmsis_os.h"
 #include "sharedmem.h"
 #include "param.h"
+#include "usart.h"
 /* Modbus includes ---------------------------------*/
 #include "mb.h"
 #include "mbport.h"
@@ -29,6 +30,7 @@ void vModBusTask(void const * argument) {
 	}
 
 	eStatus = eMBEnable();
+	__HAL_UART_ENABLE_IT(&huart3, UART_IT_RXNE);
 //  osTimerStart(myTimer01Handle, 1);
 	while (1) {
 		eMBPoll();

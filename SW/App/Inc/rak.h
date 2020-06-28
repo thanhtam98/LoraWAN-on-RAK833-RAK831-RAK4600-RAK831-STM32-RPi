@@ -3,7 +3,7 @@
 
 #include "usart.h"
 
-#define RAK_MAX_RECV_LEN 400
+#define RAK_MAX_RECV_LEN 700
 #define RAK_MAX_PAYLOAD	 51
 #define RAK_MAX_SEND_LEN 200
 #define MAX_TIME_OUT     10   // second unit

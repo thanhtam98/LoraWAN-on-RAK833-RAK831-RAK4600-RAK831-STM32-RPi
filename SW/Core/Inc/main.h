@@ -76,12 +76,28 @@ void delay_us(uint32_t time);
 #define SW_2_GPIO_Port GPIOA
 #define OneWire_Pin GPIO_PIN_1
 #define OneWire_GPIO_Port GPIOB
+#define MB_RDE_Pin GPIO_PIN_2
+#define MB_RDE_GPIO_Port GPIOB
+#define BTN_1_Pin GPIO_PIN_12
+#define BTN_1_GPIO_Port GPIOB
+#define BTN_2_Pin GPIO_PIN_13
+#define BTN_2_GPIO_Port GPIOB
+#define BTN_3_Pin GPIO_PIN_14
+#define BTN_3_GPIO_Port GPIOB
 #define RAK_RST_Pin GPIO_PIN_8
 #define RAK_RST_GPIO_Port GPIOA
 #define RAK_TX_Pin GPIO_PIN_9
 #define RAK_TX_GPIO_Port GPIOA
 #define RAK_RX_Pin GPIO_PIN_10
 #define RAK_RX_GPIO_Port GPIOA
+#define LED_0_Pin GPIO_PIN_4
+#define LED_0_GPIO_Port GPIOB
+#define LED_1_Pin GPIO_PIN_5
+#define LED_1_GPIO_Port GPIOB
+#define LED_2_Pin GPIO_PIN_6
+#define LED_2_GPIO_Port GPIOB
+#define LED_3_Pin GPIO_PIN_7
+#define LED_3_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

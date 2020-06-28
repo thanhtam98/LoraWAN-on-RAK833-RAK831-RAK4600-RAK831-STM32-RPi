@@ -1,0 +1,30 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Dump Library Log                                                 )
+(                                                                     )
+(    Software Version : 17.2S052                                      )
+(    Date/Time        : Sat Jun 27 23:41:40 2020                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+*** file: C:/GIT/ThesisLorawanNode/HW/ExportFootprint/Button_TH_12x12mm.dra ***
+
+
+
+  *** Creating padstacks. ***
+
+  DRILL50_SQ100 being dumped.
+
+  DRILL50_CIR100 being dumped.
+
+
+
+*********************** Summary *********************
+ERRORs reported:                           0
+
+Number of padstacks dumped:                2
+
+Total number of symbols dumped:            0
+*****************************************************
+

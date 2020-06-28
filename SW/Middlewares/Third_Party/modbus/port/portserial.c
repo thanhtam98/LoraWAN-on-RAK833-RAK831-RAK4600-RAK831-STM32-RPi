@@ -21,6 +21,7 @@
 /* ----------------------- Platform includes ----------------------------------*/
 #include "port.h"
 #include "main.h"
+#include "gpio.h"
 /* ----------------------- Modbus includes ----------------------------------*/
 #include "mb.h"
 #include "mbport.h"
@@ -38,7 +39,7 @@ void vMBPortSerialEnable(BOOL xRxEnable, BOOL xTxEnable) {
 	 */
 
 	if (xRxEnable) {
-//			HAL_GPIO_WritePin(USART3_RDE_GPIO_Port, USART3_RDE_Pin, 0);
+			HAL_GPIO_WritePin(MB_RDE_GPIO_Port, MB_RDE_Pin, 0);
 //			HAL_GPIO_WritePin(USART3_LED_GPIO_Port, USART3_LED_Pin, 0);
 		__HAL_UART_ENABLE_IT(&huart3, UART_IT_RXNE);
 	} else {
@@ -47,7 +48,7 @@ void vMBPortSerialEnable(BOOL xRxEnable, BOOL xTxEnable) {
 
 	if (xTxEnable) {
 //		HAL_GPIO_WritePin(USART3_LED_GPIO_Port, USART3_LED_Pin, 1);
-//		HAL_GPIO_WritePin(USART3_RDE_GPIO_Port, USART3_RDE_Pin, 1);
+		HAL_GPIO_WritePin(MB_RDE_GPIO_Port, MB_RDE_Pin, 1);
 		__HAL_UART_ENABLE_IT(&huart3, UART_IT_TXE);
 	} else {
 		__HAL_UART_DISABLE_IT(&huart3, UART_IT_TXE);
