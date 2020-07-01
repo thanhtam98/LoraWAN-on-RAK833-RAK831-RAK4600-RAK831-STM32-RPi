@@ -94,7 +94,8 @@
       (Path "Design Resources" "Library")
       (Path "Design Resources" "Library"
          "c:\git\thesislorawannode\hw\rak811_stm32node\library1.olb")
-      (Path "Outputs"))
+      (Path "Outputs")
+      (Select "Design Resources"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -105,8 +106,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 104 1140 104 425")
-        (Scroll "189 104")
-        (Zoom "132")
+        (Scroll "0 0")
+        (Zoom "66")
         (Occurrence "/"))
       (Path
          "C:\GIT\THESISLORAWANNODE\HW\RAK811_STM32NODE\STM32F103_RAK811_THESISNODE.DSN")
@@ -115,7 +116,7 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 52 1238 52 303")
+        (Placement "44 0 1 -1 -1 -8 -31 52 1238 52 303")
         (Scroll "0 802")
         (Zoom "172")
         (Occurrence "/"))
@@ -127,8 +128,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 78 1264 78 329")
-        (Scroll "-67 0")
-        (Zoom "66")
+        (Scroll "0 263")
+        (Zoom "132")
         (Occurrence "/"))
       (Path
          "C:\GIT\THESISLORAWANNODE\HW\RAK811_STM32NODE\STM32F103_RAK811_THESISNODE.DSN")
@@ -138,7 +139,7 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 104 1290 104 355")
-        (Scroll "-6 158")
+        (Scroll "-6 14")
         (Zoom "116")
         (Occurrence "/"))
       (Path

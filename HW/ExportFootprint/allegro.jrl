@@ -1,53 +1,45 @@
-\t (00:00:00) allegro 17.2 S052 Windows SPB 64-bit Edition
-\t (00:00:00)     Journal start - Sun Jun 21 14:37:18 2020
-\t (00:00:00)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=17672 CPUs=4
-\t (00:00:00) CmdLine= c:\cadence\spb_17.2\tools\bin\allegro.exe C:\GIT\ThesisLorawanNode\HW\ExportFootprint\soic16.dra
-\t (00:00:00) 
-   (00:00:00) Loading axlcore.cxt 
-   (00:00:00) Searching for nsWare programs v2.78
-   (00:00:00) 	NsWare directory found: E:/CAD/pcbenv/nsWare/
-   (00:00:00) 	NsWare programs must reside in this directory!
-   (00:00:00) function AFn_OpenDesign redefined
-   (00:00:00) function PinVia_Overlap_FinishEnterFun redefined
-   (00:00:00) function Find_Point_On_Line_From_Distant redefined
-   (00:00:00) function Find_Point_Quadrature_Line redefined
-   (00:00:00) function Line_Line_Intersect redefined
-   (00:00:00) function _getPinsNet redefined
-   (00:00:00) function _getBranchs redefined
-   (00:00:00) function _getPaths redefined
-   (00:00:00) function _get2PointsPath redefined
-   (00:00:00) function _checkElementList redefined
-   (00:00:00) function _getSurroundPoints redefined
-   (00:00:00) function _getListPointsLPaths redefined
-   (00:00:00) function _checkPathPoint redefined
-   (00:00:00) function _deleteElementList redefined
-   (00:00:00) function _checkElementList redefined
-   (00:00:00) function _deleteElementList redefined
-   (00:00:00) function Find_Point_On_Line_From_Distant redefined
-   (00:00:00) function Find_Point_Quadrature_Line redefined
-   (00:00:00) function Is_Point_On_List redefined
-   (00:00:00) function Line_Line_Intersect redefined
-   (00:00:00) function Line_Line_Distant redefined
-\t (00:00:00) Opening existing design...
-\i (00:00:00) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged soic16
-\d (00:00:00) Design opened: C:/GIT/ThesisLorawanNode/HW/ExportFootprint/soic16.dra
-\t (00:00:01) Grids are drawn 200.00, 200.00 apart for enhanced viewing.
-\i (00:00:01) trapsize 250
-\i (00:00:01) trapsize 257
-\i (00:00:01) trapsize 250
-\i (00:00:02) trapsize 250
-\i (00:00:02) generaledit 
-\i (25:23:14) exit 
-\t (25:23:15)     Journal end - Mon Jun 22 16:00:33 2020
-4
-\i (00:00:03) trapsize 1510
-\i (00:00:03) zoom out 1 
-\i (00:00:03) setwindow pcb
-\i (00:00:03) zoom out 1013.35 243.14
-\i (00:00:03) trapsize 1510
-\i (00:00:03) zoom out 1 
-\i (00:00:03) setwindow pcb
-\i (00:00:03) zoom out 983.14 234.08
-\i (00:00:03) trapsize 1510
-\i (00:00:04) exit 
-\t (00:00:04)     Journal end - Sun Jun 21 14:37:29 2020
+\t (00:00:02) allegro 17.2 S052 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Sun Jun 28 17:52:22 2020
+\t (00:00:02)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=21152 CPUs=4
+\t (00:00:02) CmdLine= C:\Cadence\SPB_17.2\tools\bin\allegro.exe
+\t (00:00:02) 
+   (00:00:02) Loading axlcore.cxt 
+   (00:00:03) Searching for nsWare programs v2.78
+   (00:00:03) 	NsWare directory found: E:/CAD/pcbenv/nsWare/
+   (00:00:03) 	NsWare programs must reside in this directory!
+   (00:00:03) function AFn_OpenDesign redefined
+   (00:00:03) function PinVia_Overlap_FinishEnterFun redefined
+   (00:00:03) function Find_Point_On_Line_From_Distant redefined
+   (00:00:03) function Find_Point_Quadrature_Line redefined
+   (00:00:03) function Line_Line_Intersect redefined
+   (00:00:03) function _getPinsNet redefined
+   (00:00:03) function _getBranchs redefined
+   (00:00:03) function _getPaths redefined
+   (00:00:03) function _get2PointsPath redefined
+   (00:00:03) function _checkElementList redefined
+   (00:00:03) function _getSurroundPoints redefined
+   (00:00:03) function _getListPointsLPaths redefined
+   (00:00:03) function _checkPathPoint redefined
+   (00:00:03) function _deleteElementList redefined
+   (00:00:03) function _checkElementList redefined
+   (00:00:03) function _deleteElementList redefined
+   (00:00:03) function Find_Point_On_Line_From_Distant redefined
+   (00:00:03) function Find_Point_Quadrature_Line redefined
+   (00:00:03) function Is_Point_On_List redefined
+   (00:00:03) function Line_Line_Intersect redefined
+   (00:00:03) function Line_Line_Distant redefined
+\t (00:00:03) Opening existing design...
+\i (00:00:03) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged xtal_2p_th_1p1mmp
+\d (00:00:03) Design opened: C:/GIT/ThesisLorawanNode/HW/ExportFootprint/xtal_2p_th_1p1mmp.dra
+\i (00:00:04) trapsize 408184
+\i (00:00:04) trapsize 320537
+\i (00:00:04) trapsize 408184
+\i (00:00:05) trapsize 408184
+\i (00:00:05) trapsize 41237
+\i (00:00:06) generaledit 
+\i (00:00:10) opencd E:/Temp/RAK4600_SM32Node/allegro/AUTOSAVE.brd 
+\t (00:00:11) Opening existing design...
+\i (00:00:11) trapsize 3474
+\i (00:00:11) trapsize 3573
+\i (00:00:12) trapsize 3573
+\t (00:00:12)     Journal end - Sun Jun 28 17:52:32 2020

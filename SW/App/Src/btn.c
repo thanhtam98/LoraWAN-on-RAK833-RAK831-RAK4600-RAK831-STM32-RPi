@@ -96,6 +96,7 @@ void vBtnTask(const void *arg) {
 			case bSHORT: {
 
 				swData[btn_num].swData = SHORT_PRESS;
+				osMessagePut(px_iot_node_handle->btnQueueHandle, &swData[btn_num],100);
 //				xStatus = xQueueSend(pxValveHandles->xQueue, &swData[btn_num],
 //						xTicksToWait);
 				swObject[btn_num].swState = bEND;
@@ -128,6 +129,7 @@ void vBtnTask(const void *arg) {
 			}
 			case bDBLONG: {
 				swData[btn_num].swData = DBLONG_PRESS;
+				osMessagePut(px_iot_node_handle->btnQueueHandle, &swData[btn_num],100);
 //				xStatus = xQueueSend(pxValveHandles->xQueue, &swData[btn_num],
 //						xTicksToWait);
 //				swObject[btn_num].swState = END;
@@ -137,6 +139,7 @@ void vBtnTask(const void *arg) {
 			case bLONG: {
 
 				swData[btn_num].swData = LONG_PRESS;
+				osMessagePut(px_iot_node_handle->btnQueueHandle, &swData[btn_num],100);
 //				xStatus = xQueueSend(pxValveHandles->xQueue, &swData[btn_num],
 //						xTicksToWait);
 //				swObject[btn_num].swState = END;

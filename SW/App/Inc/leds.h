@@ -19,7 +19,7 @@ typedef struct {
 typedef struct  {
 	led_control_t led_control;
 	uint8_t is_update;
-}led_control_update;
+}led_control_update_t;
 
 #define LED_MAX_NUM		4
 #define LED_UPDATE_INTERVAL_MS 	10

@@ -27,8 +27,8 @@ void vAppDefault(void) {
 //	iot_node.envQueueHandle
 	/*Task initialization*/
 
-	osThreadDef(loraTaskHandle, vRakTask, osPriorityNormal, 0, 256);
-	loraTaskHandle = osThreadCreate(osThread(loraTaskHandle), (void*)&iot_node_handle);
+//	osThreadDef(loraTaskHandle, vRakTask, osPriorityNormal, 0, 256);
+//	loraTaskHandle = osThreadCreate(osThread(loraTaskHandle), (void*)&iot_node_handle);
 	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
 	osThreadDef(modbusTaskHandle, vModBusTask, osPriorityNormal, 0, 256);
 	modbusTaskHandle = osThreadCreate(osThread(modbusTaskHandle), (void*)&iot_node_handle);
@@ -52,8 +52,10 @@ void vAppDefault(void) {
 //	__HAL_RCC_I2C1_FORCE_RESET();
 //				HAL_Delay(1000);
 //				__HAL_RCC_I2C1_RELEASE_RESET();
+	float dtemp=0;
 	while (1) {
-
+		dtemp = f_ds18b20();
+		DBG("\r\n Temp: %.2f \r\n",dtemp);
 //		if (HAL_I2C_IsDeviceReady(&hi2c1, 0xA0, 2, 100)==HAL_OK)
 //		{
 //			DBG("EEPROM ready \r\n/");
@@ -86,7 +88,7 @@ void vAppDefault(void) {
 //			DBG("Read value %d %d  \r\n", i, recv[i]);
 //		}
 ////		DBG("Read value %d %d %d \r\n",recv[0],recv[1],recv[2],recv[3],recv[4],recv[5]);
-	DBG("\r\nMemFree:%d", xPortGetFreeHeapSize());
+//	DBG("\r\n MemFree:%d", xPortGetFreeHeapSize());
 	osDelay(1000);
 	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_7);
 	osDelay(1000);

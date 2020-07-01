@@ -109,7 +109,7 @@ int main(void)
 //while(1);
 	/*Force to enable periphral manually */
 	char *p = "NTT \r\n";
-	HAL_TIM_Base_Start(&htim4);
+	HAL_TIM_Base_Start(&htim4);  //delay_us
 //
 	__HAL_UART_ENABLE_IT(&huart2, UART_IT_RXNE);
 
