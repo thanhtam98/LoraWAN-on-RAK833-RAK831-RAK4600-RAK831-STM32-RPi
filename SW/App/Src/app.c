@@ -12,6 +12,7 @@ osThreadId modbusTaskHandle;
 osThreadId loraTaskHandle;
 osThreadId envTaskHandle;
 osThreadId cmdTaskHandle;
+osThreadId btnTaskHandle;
 //osMessageQId btnQueueHandle;
 
 void vAppDefault(void) {
@@ -33,16 +34,20 @@ void vAppDefault(void) {
 	osThreadDef(modbusTaskHandle, vModBusTask, osPriorityNormal, 0, 256);
 	modbusTaskHandle = osThreadCreate(osThread(modbusTaskHandle), (void*)&iot_node_handle);
 	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
-//	osThreadDef(envTaskHandle, vEnvTask, osPriorityNormal, 0, 512);
+//	osThreadDef(envTaskHandle, vEnvTask, osPriorityNormal, 0, 256);
 //	envTaskHandle = osThreadCreate(osThread(envTaskHandle), (void*)&iot_node_handle);
+//	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
 	osThreadDef(cmdTaskHandle, vCmdTask, osPriorityNormal, 0, 256);
 	cmdTaskHandle = osThreadCreate(osThread(cmdTaskHandle), (void*)&iot_node_handle);
 	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
 
+	osThreadDef(btnTaskHandle, vBtnTask, osPriorityNormal,0,256);
+	btnTaskHandle = osThreadCreate(osThread(btnTaskHandle), (void*)&iot_node_handle);
 	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
 
-	osDelay(1000);
-	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
+//	osThreadDef(btnTaskHandle, vEnvTask, osPriorityNormal,0,256);
+//	btnTaskHandle = osThreadCreate(osThread(btnTaskHandle), (void*)&iot_node_handle);
+//	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
 
 	char *p = "\r\n NTT";
 	DHT11_DATA_TypeDef DHT_DATA;
@@ -54,8 +59,8 @@ void vAppDefault(void) {
 //				__HAL_RCC_I2C1_RELEASE_RESET();
 	float dtemp=0;
 	while (1) {
-		dtemp = f_ds18b20();
-		DBG("\r\n Temp: %.2f \r\n",dtemp);
+//		dtemp = f_ds18b20();
+//		DBG("\r\n Temp: %.2f \r\n",dtemp);
 //		if (HAL_I2C_IsDeviceReady(&hi2c1, 0xA0, 2, 100)==HAL_OK)
 //		{
 //			DBG("EEPROM ready \r\n/");
@@ -89,14 +94,14 @@ void vAppDefault(void) {
 //		}
 ////		DBG("Read value %d %d %d \r\n",recv[0],recv[1],recv[2],recv[3],recv[4],recv[5]);
 //	DBG("\r\n MemFree:%d", xPortGetFreeHeapSize());
-	osDelay(1000);
+	osDelay(100);
 	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_7);
-	osDelay(1000);
+	osDelay(100);
 	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_6);
-	osDelay(1000);
+	osDelay(100);
 	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_5);
-	osDelay(1000);
-	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
+	osDelay(100);
+//	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
 
 	}
 }

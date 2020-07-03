@@ -11,7 +11,9 @@
 #include  "adc.h"
 #include "gpio.h"
 #include "param.h"
-
+#include "ds18b20.h"
+#include "tim.h"
+#include "timers.h"
 /*Timer */
 #define ENV_TIME_INTERVAL  10
 osTimerId envTimerHandler;
@@ -26,31 +28,33 @@ __IO uint16_t aADCxConvertedValues[2];
 
 void vPortRawRead(uint32_t *portData) {
 
-
 	/* Port0 ------------*/
 	portData[PORT0] = HAL_GPIO_ReadPin(SW_1_GPIO_Port, SW_1_Pin);
 	/* Port1 ------------*/
 	portData[PORT1] = HAL_GPIO_ReadPin(SW_2_GPIO_Port, SW_2_Pin);
 	/* Port2 ------------*/
 	HAL_ADC_Start(&hadc1);
-	HAL_ADC_PollForConversion(&hadc1, 1);
-	if (ubSequenceCompleted != RESET) {
-		ubSequenceCompleted = RESET;
+	HAL_ADC_PollForConversion(&hadc1, 100);
+	portData[PORT2] = HAL_ADC_GetValue(&hadc1);
 
-		portData[PORT2] = aADCxConvertedValues[0];
+	/* Port3 ------------*/
 
-		/* Port3 ------------*/
-		portData[PORT3] = aADCxConvertedValues[1];
+	HAL_ADC_PollForConversion(&hadc1, 100);
+	portData[PORT3] = HAL_ADC_GetValue(&hadc1);
 
-	}
-
+	HAL_ADC_Stop(&hadc1);
 	/* Port4 ------------*/
-	portData[PORT4] = TIM3->CNT;
-	TIM3 -> CNT = 0;
+//	portData[PORT4] = TIM3->CNT;
+//	TIM3->CNT = 0;
+	portData[PORT4] = HAL_TIM_ReadCapturedValue(&htim3, TIM_CHANNEL_3);
+	htim3.Instance->CCR2 = 0;
+
 	/* Port5----------------**/
-	DHT11_DATA_TypeDef DHT_DATA;
-	DHT11_ReadData(&DHT_DATA);
-	portData[PORT5] = DHT_DATA.temp_int;
+	DBG("Raw data: %d %d %d %d %d", portData[PORT0], portData[PORT1],
+			portData[PORT2], portData[PORT3], portData[PORT4]);
+//	DHT11_DATA_TypeDef DHT_DATA;
+//	DHT11_ReadData(&DHT_DATA);
+//	portData[PORT5] = DHT_DATA.temp_int;
 
 }
 void vPortProcess(uint32_t *portData) {
@@ -58,40 +62,48 @@ void vPortProcess(uint32_t *portData) {
 	for (uint8_t portIndex = 0; portIndex < IO_MAX_PORT; portIndex++) {
 		switch (ioPort[portIndex].profile) {
 		case IO_SW_NC:
-			uiMemSet(ioPort[portIndex].mbAdr, (portData[portIndex]==RESET)?SET:RESET);
+			uiMemSet(ioPort[portIndex].mbAdr,
+					(portData[portIndex] == RESET) ? SET : RESET);
 			break;
 		case IO_SW_NO:
-			uiMemSet(ioPort[portIndex].mbAdr, (portData[portIndex]==RESET)?RESET:SET);
+			uiMemSet(ioPort[portIndex].mbAdr,
+					(portData[portIndex] == RESET) ? RESET : SET);
 			break;
 		case IO_PUL_PER_SEC:
-			uiMemSet(ioPort[portIndex].mbAdr, (uint16_t)((portData[portIndex] /ENV_TIME_INTERVAL)<<8)| 0x0000);
+			uiMemSet(ioPort[portIndex].mbAdr,
+					(uint16_t) ((portData[portIndex] / ENV_TIME_INTERVAL) << 8)
+							| 0x0000);
 			break;
 		case IO_PUL_PER_MIN:
-			uiMemSet(ioPort[portIndex].mbAdr, (uint16_t)((60*portData[portIndex] /ENV_TIME_INTERVAL)<<8)| 0x0000);
+			uiMemSet(ioPort[portIndex].mbAdr,
+					(uint16_t) ((60 * portData[portIndex] / ENV_TIME_INTERVAL)
+							<< 8) | 0x0000);
 			break;
 		case IO_PUL_PER_HOUR:
-			uiMemSet(ioPort[portIndex].mbAdr,  (uint16_t)((60*60*portData[portIndex] /ENV_TIME_INTERVAL)<<8)| 0x0000);
+			uiMemSet(ioPort[portIndex].mbAdr,
+					(uint16_t) ((60 * 60 * portData[portIndex]
+							/ ENV_TIME_INTERVAL) << 8) | 0x0000);
 			break;
 		case IO_ADC_LIGHT:
-			uiMemSet(ioPort[portIndex].mbAdr,  (uint16_t)portData[portIndex]);
+			uiMemSet(ioPort[portIndex].mbAdr, (uint16_t) portData[portIndex]);
 
 			break;
 		case IO_ADC_TEMP:
-			uiMemSet(ioPort[portIndex].mbAdr,  (uint16_t)portData[portIndex]);
+			uiMemSet(ioPort[portIndex].mbAdr, (uint16_t) portData[portIndex]);
 			break;
 		case IO_ADC_HUMID:
-			uiMemSet(ioPort[portIndex].mbAdr,  (uint16_t)portData[portIndex]);
+			uiMemSet(ioPort[portIndex].mbAdr, (uint16_t) portData[portIndex]);
 			break;
 		case IO_ONEWIRE_DHT11:
-			uiMemSet(ioPort[portIndex].mbAdr,  (uint16_t)portData[portIndex]);
+			uiMemSet(ioPort[portIndex].mbAdr, (uint16_t) portData[portIndex]);
 
 			break;
 		case IO_ONEWIRE_DHT22:
-			uiMemSet(ioPort[portIndex].mbAdr,  (uint16_t)portData[portIndex]);
+			uiMemSet(ioPort[portIndex].mbAdr, (uint16_t) portData[portIndex]);
 
 			break;
 		case IO_ONWWIRE_DS18B20:
-			uiMemSet(ioPort[portIndex].mbAdr,  (uint16_t)portData[portIndex]);
+			uiMemSet(ioPort[portIndex].mbAdr, (uint16_t) portData[portIndex]);
 
 			break;
 		}
@@ -99,10 +111,10 @@ void vPortProcess(uint32_t *portData) {
 	}
 }
 
-void vEnvTimerCallback(void const *arg)
-{
-	vPortRawRead(arg);
-	vPortProcess(arg);
+void vEnvTimerCallback(void const *arg) {
+	uint32_t *pxArg = (uint32_t) arg;
+	vPortRawRead(pxArg);
+	//vPortProcess(pxArg);
 
 }
 void vEnvTask(void const *arg) {
@@ -122,21 +134,25 @@ void vEnvTask(void const *arg) {
 	}
 
 	uint32_t temperature;
-	DHT11_DATA_TypeDef DHT_DATA;
+//	DHT11_DATA_TypeDef DHT_DATA;
 	uint32_t u32portRawData[IO_MAX_PORT];
-	if (HAL_ADC_Start_DMA(&hadc1, (uint32_t *) aADCxConvertedValues, 2)
-			!= HAL_OK) {
-		/* Start Error */
-		Error_Handler();
-	}
+	HAL_TIM_IC_Start(&htim3, TIM_CHANNEL_3);
 
-	envTimerHandler = osTimerCreate(vEnvTimerCallback, osTimerPeriodic, u32portRawData);
-	osTimerStart(envTimerHandler,ENV_TIME_INTERVAL*1000 );
+//	if (HAL_ADC_Start_DMA(&hadc1, (uint32_t *) aADCxConvertedValues, 2)
+//			!= HAL_OK) {
+////		/* Start Error */
+//		Error_Handler();
+//	}
+
+//	envTimerHandler = osTimerCreate(vEnvTimerCallback, osTimerPeriodic,
+//			u32portRawData);
+//	osTimerStart(envTimerHandler, ENV_TIME_INTERVAL * 1000);
 	while (1) {
+		vEnvTimerCallback(u32portRawData);
+		osDelay(1000);
+		/* */
 //		vPortRawRead(u32portRawData);
-
 //		delay_us(1000000);
-
 //		HAL_ADC_Start(&hadc1);
 //		osDelay(1200);
 //		HAL_ADC_PollForConversion(&hadc1, 100);
@@ -146,7 +162,6 @@ void vEnvTask(void const *arg) {
 ////		uiMemSet(FUNC_READ_LIGH_ADR, adcRead1);
 //		uiMemSet(FUNC_READ_TEMP_ADR, DHT_DATA.temp_int);
 //		uiMemSet(FUNC_READ_HUMD_ADR, DHT_DATA.humi_int);
-
 	}
 
 }

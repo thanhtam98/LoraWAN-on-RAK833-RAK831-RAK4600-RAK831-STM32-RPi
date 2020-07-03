@@ -22,7 +22,6 @@
 #include "main.h"
 #include "cmsis_os.h"
 #include "adc.h"
-#include "dma.h"
 #include "i2c.h"
 #include "tim.h"
 #include "usart.h"
@@ -93,7 +92,6 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_DMA_Init();
   MX_ADC1_Init();
   MX_USART1_UART_Init();
   MX_USART2_UART_Init();
@@ -105,6 +103,9 @@ int main(void)
   /* USER CODE BEGIN 2 */
 //	HAL_I2C_MspInit(&hi2c1);
 	v_led_start();
+
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, RESET);
+	HAL_Delay(100);
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, SET);
 //while(1);
 	/*Force to enable periphral manually */
@@ -112,7 +113,7 @@ int main(void)
 	HAL_TIM_Base_Start(&htim4);  //delay_us
 //
 	__HAL_UART_ENABLE_IT(&huart2, UART_IT_RXNE);
-
+//	 HAL_TIM_Base_Start(&htim3);
 	/* Run the ADC calibration */
 //	if (HAL_ADCEx_Calibration_Start(&hadc1) != HAL_OK) {
 //		/* Calibration Error */
@@ -170,10 +171,10 @@ int main(void)
 
 	}
 	v_epr_load(PARAM_LOAD_ALL);
-	for (uint8_t paramIndex = 0; paramIndex < 120; paramIndex++) {
-		DBG("ParamLoaded %d: %d \r\n", paramIndex, PARAM[paramIndex]);
-		HAL_Delay(10);
-	}
+//	for (uint8_t paramIndex = 0; paramIndex < 120; paramIndex++) {
+//		DBG("ParamLoaded %d: %d \r\n", paramIndex, PARAM[paramIndex]);
+//		HAL_Delay(10);
+//	}
 	printf("Booting to RTOS   \r\n");
   /* USER CODE END 2 */
 
@@ -238,9 +239,9 @@ void SystemClock_Config(void)
 
 /* USER CODE BEGIN 4 */
 void delay_us(uint32_t time) {
+	/* */
 	__HAL_TIM_SET_COUNTER(&htim4, 0);
-	while (__HAL_TIM_GET_COUNTER(&htim4) < time)
-		;
+	while (__HAL_TIM_GET_COUNTER(&htim4) < time);
 }
 
 /* USER CODE BEGIN 4 */

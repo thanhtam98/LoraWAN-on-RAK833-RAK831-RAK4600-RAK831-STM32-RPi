@@ -1,7 +1,7 @@
 #include  "ds18b20.h"
 #include "main.h"
 #include "cmsis_os.h"
-
+#include "sharedmem.h"
 #define DS18B20_PORT GPIOB
 #define DS18B20_PIN GPIO_PIN_1
 
@@ -96,14 +96,15 @@ uint8_t DS18B20_Read(void) {
 float f_ds18b20(void) {
 	uint8_t Temp_byte1, Temp_byte2;
 	uint16_t Temp;
+	float Temp_out;
 	taskENTER_CRITICAL();
 	DS18B20_Start();
 	HAL_Delay(1);
 	DS18B20_Write(0xCC);  // skip ROM
 	DS18B20_Write(0x44);  // convert t
 	taskEXIT_CRITICAL();
-	HAL_Delay(800);
-//	osDelay(800);
+//	HAL_Delay(800);
+	osDelay(800);
 	taskENTER_CRITICAL();
 	DS18B20_Start();
 	HAL_Delay(1);
@@ -113,6 +114,10 @@ float f_ds18b20(void) {
 	Temp_byte1 = DS18B20_Read();
 	Temp_byte2 = DS18B20_Read();
 	Temp = (Temp_byte2 << 8) | Temp_byte1;
-	return (float) Temp / 16;
+	Temp_out = (float) Temp / 16;
+	printf("Temp Value: %d\r\n",(uint16_t)Temp_out);
+	uiMemSet(PORT_ONE_WIRE,Temp);
+	return  Temp_out;
+
 }
 

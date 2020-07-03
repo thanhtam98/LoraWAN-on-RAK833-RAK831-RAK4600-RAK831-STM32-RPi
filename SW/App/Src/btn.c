@@ -13,7 +13,6 @@ sw_t sw_state(uint8_t swNumber) {
 			return PRESSED;
 		else
 			return RELEASED;
-
 	case 1:
 		if (HAL_GPIO_ReadPin(BTN_2_GPIO_Port, BTN_2_Pin) == 0)
 			return PRESSED;
@@ -46,7 +45,9 @@ void vBtnTask(const void *arg) {
 	while (1) {
 
 		osDelay(BTN_MIN_WAITING_MS);
-		for (uint8_t btn_num = 0; btn_num < BTN_MAX_NUM; btn_num++) {
+		for (uint8_t btn_num = 0; btn_num < BTN_MAX_NUM; btn_num++)
+		{
+
 			switch (swObject[btn_num].swState) {
 			case bWAITING: {
 				if (sw_state(btn_num) == PRESSED) {
@@ -96,11 +97,12 @@ void vBtnTask(const void *arg) {
 			case bSHORT: {
 
 				swData[btn_num].swData = SHORT_PRESS;
-				osMessagePut(px_iot_node_handle->btnQueueHandle, &swData[btn_num],100);
+//				osMessagePut(px_iot_node_handle->btnQueueHandle, &swData[btn_num],100);
 //				xStatus = xQueueSend(pxValveHandles->xQueue, &swData[btn_num],
 //						xTicksToWait);
 				swObject[btn_num].swState = bEND;
-				printf("Send Short");
+				DBG("Send Short");
+				HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
 
 				break;
 			}
@@ -129,21 +131,25 @@ void vBtnTask(const void *arg) {
 			}
 			case bDBLONG: {
 				swData[btn_num].swData = DBLONG_PRESS;
-				osMessagePut(px_iot_node_handle->btnQueueHandle, &swData[btn_num],100);
+//				osMessagePut(px_iot_node_handle->btnQueueHandle, &swData[btn_num],100);
 //				xStatus = xQueueSend(pxValveHandles->xQueue, &swData[btn_num],
 //						xTicksToWait);
-//				swObject[btn_num].swState = END;
-				printf("Send DBLong");
+				swObject[btn_num].swState = bEND;
+				HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
+
+				DBG("Send DBLong");
 				break;
 			}
 			case bLONG: {
 
 				swData[btn_num].swData = LONG_PRESS;
-				osMessagePut(px_iot_node_handle->btnQueueHandle, &swData[btn_num],100);
+//				osMessagePut(px_iot_node_handle->btnQueueHandle, &swData[btn_num],100);
 //				xStatus = xQueueSend(pxValveHandles->xQueue, &swData[btn_num],
 //						xTicksToWait);
-//				swObject[btn_num].swState = END;
-				printf("Send Long");
+				HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
+
+				swObject[btn_num].swState = bEND;
+				DBG("Send Long");
 
 				break;
 			}

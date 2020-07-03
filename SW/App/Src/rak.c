@@ -11,6 +11,7 @@ char commandRecvBuffer[RAK_MAX_RECV_LEN];
 uint8_t commandRecvBufferIndex = 0;
 //uint8_t gotErrorFlag;
 uint8_t gotCommandRecvFlag = 0;
+uint8_t globalError = 0;
 
 lr_packet_t lr_packet_recv;
 enum {
@@ -69,20 +70,24 @@ uint8_t rak_waitingAT(void) {
 }
 uint8_t rak_send_raw(char *datahex) {
 	char *EnterCMD = "\r\n";
-	HAL_UART_Transmit(&RAK_huart, (uint8_t*) datahex, strlen(datahex), 1000);
+	HAL_UART_Transmit(&RAK_huart, (uint8_t*) datahex, strlen(datahex), 100);
 	HAL_UART_Transmit(&RAK_huart, (uint8_t*) EnterCMD, 3, 100);
 
 	/*Wait for the rak reponse*/
 	uint8_t err;
 	err = rak_waitingAT();
-	DBG("Send to RAK with code: %d", err);
-
+	DBG("\r\n Send to RAK ");
+	DBG(datahex);
+	DBG(" with code: %d", err);
+	DBG(" and the raw data recv: ");
+//	DBG(" and the raw data recv");
+	DBG(commandRecvBuffer);
 	/**/
-
+//	HAL_UART_Transmit(&huart2, (uint8_t*) commandRecvBuffer, 3, 1000);
 	/*	Clear buffer*/
 	memset(commandRecvBuffer, 0, RAK_MAX_RECV_LEN);
-
-	return 0;
+	gotCommandRecvFlag = AT_NONE;
+	return err;
 	/* rak not responding*/
 
 }
@@ -406,8 +411,9 @@ void rak_command_recv_process(void) {
 uint8_t rak_err_detector(void) {
 
 	uint8_t error;
-	error = atoi(&commandRecvBuffer[7]);
-	DBG("Error code %d \r\n");
+	globalError = atoi(&commandRecvBuffer[7]);
+	error = globalError;
+	DBG("Error code %d \r\n", error);
 	memset(commandRecvBuffer, 0, RAK_MAX_RECV_LEN);
 
 	return error;
@@ -428,20 +434,25 @@ void rak_recv_isr(void) {
 	}
 
 	else {
-		commandRecvBuffer[commandRecvBufferIndex] = 0;
-		commandRecvBufferIndex = 0;
+//		commandRecvBuffer[commandRecvBufferIndex] = 0;
+
 //		gotCommandRecvFlag = 1;
-		if (commandRecvBuffer[0] == 'E') {
+		if (commandRecvBuffer[1] == 'R') {
 			//set Flag to call Error code detector
 			gotCommandRecvFlag = AT_ERR;
-		} else if (commandRecvBuffer[0] == 'a') {
+			rak_err_detector();
+		} else if (commandRecvBuffer[1] == 't') {
 			//set flag to notify the command received
 			gotCommandRecvFlag = AT_RECV;
-		} else if (commandRecvBuffer[0] == 'O') {
+
+		} else if ((commandRecvBuffer[1] == 'O')
+				|| (commandRecvBuffer[1] == 'K')) {
 			gotCommandRecvFlag = AT_OK;
 		} else {
 			gotCommandRecvFlag = AT_CMD;
 		}
+
+		commandRecvBufferIndex = 0;
 	}
 	if (commandRecvBufferIndex == RAK_MAX_RECV_LEN)
 		commandRecvBufferIndex = 0;
@@ -477,14 +488,18 @@ void vRakTask(void const *arg) {
 	}
 	/*Initial */
 //rak_reset(); // RAK was reset before
-	osDelay(1000);
+	osDelay(2000);
 	__HAL_UART_ENABLE_IT(&huart1, UART_IT_RXNE);
 
 	rak_setClass(PARAM[NODE_LRWAN_CLASS_ADR]);
+
 	rak_setRegion(PARAM[NODE_LRWAN_FREQ_ADR]);
+
 //rak_setWorkingMode(0); //
 	rak_setJoinMode(PARAM[NODE_LRWAN_MODE_ADR]);
+
 	rak_isConfirm(PARAM[NODE_LRWAN_CONFIRM_ADR]);
+
 //	rak_initOTAA(DevEui, AppEui, AppKey);
 //	isJoinedLoraWAN = rak_join();
 
@@ -494,7 +509,9 @@ void vRakTask(void const *arg) {
 //		rak_setJoinMode(0);
 
 	rak_setTxPower(PARAM[NODE_LRWAN_TX_POWER_ADR]);
+	osDelay(2000);
 	rak_isConfirm(PARAM[NODE_LRWAN_CONFIRM_ADR]);
+	osDelay(2000);
 
 	/* Datarate parameter**/
 	if (PARAM[NODE_LRWAN_DATARATE_ADR] == 0) {
@@ -522,7 +539,25 @@ void vRakTask(void const *arg) {
 		osDelay(5000);
 
 		err = rak_sendData(5, pData);
-		DBG("Send data over LPWAN \r\n with code: %d", err);
+		if (err == AT_ERR) {
+			DBG("LRWAN error code: %d \r\n", globalError);
+			switch (globalError) {
+			case 86:
+				rak_join();
+				globalError = 0;
+				DBG("Rejoining ... \r\n");
+				break;
+
+			case 80:
+				globalError = 0;
+				osDelay(4000);
+				break;
+
+			default:
+				break;
+			}
+		}
+
 		/*Thread down*/
 
 		/*Handling*/
@@ -545,14 +580,14 @@ void vRakTask(void const *arg) {
 		if (gotCommandRecvFlag != AT_NONE) {
 			switch (gotCommandRecvFlag) {
 			case AT_ERR: {
-				err = rak_err_detector();
-				if (err == 86)
+//				err = rak_err_detector();
+				if (globalError == 86)
 					isJoinedLoraWAN = LR_NOT_JOINED;
-				if (err == 80)
+				if (globalError == 80)
 					isJoinedLoraWAN = LR_BUSY;
-				if (err == 96)
+				if (globalError == 96)
 					isJoinedLoraWAN = LR_RX_TIMEOUT;
-				if (err == 99)
+				if (globalError == 99)
 					isJoinedLoraWAN = LR_NOT_JOINED;
 
 				DBG("LRWAN error code: %d \r\n", err);
