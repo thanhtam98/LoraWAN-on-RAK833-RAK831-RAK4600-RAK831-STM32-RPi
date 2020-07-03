@@ -20,8 +20,8 @@
 
 #define FUNC_READ_TEMP_ADR			(1)
 #define FUNC_READ_HUMD_ADR			(2)
-#define FUNC_READ_TAIR_ADR			(3)
-#define FUNC_READ_LIGH_ADR			(4)
+#define FUNC_READ_TAIR_ADR			(4)
+#define FUNC_READ_LIGH_ADR			(3)
 
 #define FUNC_READ_USER1_ADR			(11)
 #define FUNC_READ_USER2_ADR			(12)

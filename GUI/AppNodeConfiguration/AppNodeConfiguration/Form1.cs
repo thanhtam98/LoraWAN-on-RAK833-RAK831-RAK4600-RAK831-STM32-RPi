@@ -407,7 +407,15 @@ namespace AppNodeConfiguration
 
                 theWaitingVal = 0;
                 Console.WriteLine("SW1");
-                cBoxSW1.Text = ProfileTable[Int16.Parse(dataIn)];
+                if (Int16.Parse(dataIn) < 11)
+                {
+                    cBoxSW1.Text = ProfileTable[Int16.Parse(dataIn)];
+                }
+                else
+                {
+                    cBoxSW1.Text = "NULL";
+                }
+                
 
             }
             if (theWaitingVal == 16)
@@ -415,7 +423,14 @@ namespace AppNodeConfiguration
 
                 theWaitingVal = 0;
                 Console.WriteLine("SW2");
-                cBoxSW2.Text = ProfileTable[Int16.Parse(dataIn)];
+                if (Int16.Parse(dataIn) < 11)
+                {
+                    cBoxSW2.Text = ProfileTable[Int16.Parse(dataIn)];
+                }
+                else
+                {
+                    cBoxSW2.Text = "NULL";
+                }
 
             }
 
@@ -424,7 +439,15 @@ namespace AppNodeConfiguration
 
                 theWaitingVal = 0;
                 Console.WriteLine("cBoxADC1");
-                cBoxADC1.Text = ProfileTable[Int16.Parse(dataIn)];
+             
+                if (Int16.Parse(dataIn) < 11)
+                {
+                    cBoxADC1.Text = ProfileTable[Int16.Parse(dataIn)];
+                }
+                else
+                {
+                    cBoxADC1.Text = "NULL";
+                }
 
             }
             if (theWaitingVal == 18)
@@ -432,7 +455,16 @@ namespace AppNodeConfiguration
 
                 theWaitingVal = 0;
                 Console.WriteLine("cBoxADC2");
-                cBoxADC2.Text = ProfileTable[Int16.Parse(dataIn)];
+           
+                if (Int16.Parse(dataIn) < 11)
+                {
+                    cBoxADC2.Text = ProfileTable[Int16.Parse(dataIn)];
+                }
+                else
+                {
+                    cBoxADC2.Text = "NULL";
+                }
+
 
             }
             if (theWaitingVal == 19)
@@ -440,8 +472,15 @@ namespace AppNodeConfiguration
 
                 theWaitingVal = 0;
                 Console.WriteLine("cBoxPul");
-                cBoxPul.Text = ProfileTable[Int16.Parse(dataIn)];
-
+      
+                if (Int16.Parse(dataIn) < 11)
+                {
+                    cBoxPul.Text = ProfileTable[Int16.Parse(dataIn)];
+                }
+                else
+                {
+                    cBoxPul.Text = "NULL";
+                }
             }
 
             if (theWaitingVal == 20)
@@ -450,9 +489,69 @@ namespace AppNodeConfiguration
                 theWaitingVal = 0;
                 Console.WriteLine("cBoxOneW");
                 if (Int16.Parse(dataIn) <10)
-                cBoxOneW.Text = ProfileTable[Int16.Parse(dataIn)];
+               
+                if (Int16.Parse(dataIn) < 11)
+                {
+                    cBoxOneW.Text = ProfileTable[Int16.Parse(dataIn)];
+                }
+                else
+                {
+                    cBoxOneW.Text = "NULL";
+                }
 
             }
+
+            if (theWaitingVal == 21)
+            {
+
+                theWaitingVal = 0;
+                Console.WriteLine("Tx power");
+
+                if (dataIn == "0")
+                {
+                    cBoxPower.Text = "MAX";
+                }
+                else
+                {
+                    cBoxPower.Text = dataIn;
+                }
+
+            }
+
+            if (theWaitingVal == 22)
+            {
+
+                theWaitingVal = 0;
+                Console.WriteLine("Auto Join");
+
+                if (dataIn == "0")
+                {
+                    cBoxAutoJoin.Text = "NO";
+                }
+                else
+                {
+                    cBoxAutoJoin.Text = "YES";
+                }
+
+            }
+
+            if (theWaitingVal == 23)
+            {
+
+                theWaitingVal = 0;
+                Console.WriteLine("lwpan status");
+
+                if (dataIn == "0")
+                {
+                    chBoxJoin.Checked = true;
+                }
+                else
+                {
+                    chBoxJoin.Checked = false;
+                }
+
+            }
+
 
 
             Console.WriteLine(dataIn);
@@ -537,7 +636,7 @@ namespace AppNodeConfiguration
             timeOut = 0;
             while (theWaitingVal != 0)
             {
-                await Task.Delay(100);
+                await Task.Delay(200);
                 timeOut++;
                 if (timeOut > 10) break;
             }
@@ -559,7 +658,7 @@ namespace AppNodeConfiguration
             timeOut = 0;
             while (theWaitingVal != 0)
             {
-                await Task.Delay(50);
+                await Task.Delay(100);
                 timeOut++;
                 if (timeOut > 10) break;
             }
@@ -570,7 +669,7 @@ namespace AppNodeConfiguration
             timeOut = 0;
             while (theWaitingVal != 0)
             {
-                await Task.Delay(50);
+                await Task.Delay(100);
                 timeOut++;
                 if (timeOut > 10) break;
             }
@@ -581,7 +680,7 @@ namespace AppNodeConfiguration
             timeOut = 0;
             while (theWaitingVal != 0)
             {
-                await Task.Delay(50);
+                await Task.Delay(100);
                 timeOut++;
                 if (timeOut > 10) break;
             }
@@ -592,7 +691,7 @@ namespace AppNodeConfiguration
             timeOut = 0;
             while (theWaitingVal != 0)
             {
-                await Task.Delay(50);
+                await Task.Delay(100);
                 timeOut++;
                 if (timeOut > 10) break;
             }
@@ -602,7 +701,7 @@ namespace AppNodeConfiguration
             timeOut = 0;
             while (theWaitingVal != 0)
             {
-                await Task.Delay(50);
+                await Task.Delay(100);
                 timeOut++;
                 if (timeOut > 10) break;
             }
@@ -613,7 +712,7 @@ namespace AppNodeConfiguration
             timeOut = 0;
             while (theWaitingVal != 0)
             {
-                await Task.Delay(50);
+                await Task.Delay(100);
                 timeOut++;
                 if (timeOut > 10) break;
             }
@@ -624,7 +723,7 @@ namespace AppNodeConfiguration
             timeOut = 0;
             while (theWaitingVal != 0)
             {
-                await Task.Delay(50);
+                await Task.Delay(100);
                 timeOut++;
                 if (timeOut > 10) break;
             }
@@ -634,7 +733,7 @@ namespace AppNodeConfiguration
             timeOut = 0;
             while (theWaitingVal != 0)
             {
-                await Task.Delay(50);
+                await Task.Delay(100);
                 timeOut++;
                 if (timeOut > 10) break;
             }
@@ -645,7 +744,7 @@ namespace AppNodeConfiguration
             timeOut = 0;
             while (theWaitingVal != 0)
             {
-                await Task.Delay(50);
+                await Task.Delay(100);
                 timeOut++;
                 if (timeOut > 10) break;
             }
@@ -657,7 +756,7 @@ namespace AppNodeConfiguration
             timeOut = 0;
             while (theWaitingVal != 0)
             {
-                await Task.Delay(50);
+                await Task.Delay(100);
                 timeOut++;
                 if (timeOut > 10) break;
             }
@@ -670,7 +769,7 @@ namespace AppNodeConfiguration
             timeOut = 0;
             while (theWaitingVal != 0)
             {
-                await Task.Delay(50);
+                await Task.Delay(100);
                 timeOut++;
                 if (timeOut > 10) break;
             }
@@ -684,7 +783,7 @@ namespace AppNodeConfiguration
             timeOut = 0;
             while (theWaitingVal != 0)
             {
-                await Task.Delay(50);
+                await Task.Delay(100);
                 timeOut++;
                 if (timeOut > 10) break;
             }
@@ -696,7 +795,7 @@ namespace AppNodeConfiguration
             timeOut = 0;
             while (theWaitingVal != 0)
             {
-                await Task.Delay(50);
+                await Task.Delay(100);
                 timeOut++;
                 if (timeOut > 10) break;
             }
@@ -707,7 +806,7 @@ namespace AppNodeConfiguration
             timeOut = 0;
             while (theWaitingVal != 0)
             {
-                await Task.Delay(50);
+                await Task.Delay(100);
                 timeOut++;
                 if (timeOut > 10) break;
             }
@@ -718,7 +817,7 @@ namespace AppNodeConfiguration
             timeOut = 0;
             while (theWaitingVal != 0)
             {
-                await Task.Delay(50);
+                await Task.Delay(100);
                 timeOut++;
                 if (timeOut > 10) break;
             }
@@ -730,7 +829,7 @@ namespace AppNodeConfiguration
             timeOut = 0;
             while (theWaitingVal != 0)
             {
-                await Task.Delay(50);
+                await Task.Delay(100);
                 timeOut++;
                 if (timeOut > 10) break;
             }
@@ -740,7 +839,7 @@ namespace AppNodeConfiguration
             timeOut = 0;
             while (theWaitingVal != 0)
             {
-                await Task.Delay(50);
+                await Task.Delay(100);
                 timeOut++;
                 if (timeOut > 10) break;
             }
@@ -750,12 +849,44 @@ namespace AppNodeConfiguration
             timeOut = 0;
             while (theWaitingVal != 0)
             {
-                await Task.Delay(50);
+                await Task.Delay(100);
+                timeOut++;
+                if (timeOut > 10) break;
+            }
+
+            serialPort1.WriteLine("get lr pwr");
+            theWaitingVal = 21;
+            /***/
+            timeOut = 0;
+            while (theWaitingVal != 0)
+            {
+                await Task.Delay(100);
+                timeOut++;
+                if (timeOut > 10) break;
+            }
+
+            serialPort1.WriteLine("get lr join");
+            theWaitingVal = 22;
+            /***/
+            timeOut = 0;
+            while (theWaitingVal != 0)
+            {
+                await Task.Delay(100);
                 timeOut++;
                 if (timeOut > 10) break;
             }
 
 
+            serialPort1.WriteLine("get lr auto");
+            theWaitingVal = 23;
+            /***/
+            timeOut = 0;
+            while (theWaitingVal != 0)
+            {
+                await Task.Delay(100);
+                timeOut++;
+                if (timeOut > 10) break;
+            }
 
 
 
@@ -804,11 +935,11 @@ namespace AppNodeConfiguration
             {
                 serialPort1.WriteLine("set mb mode 1");
             }
-            await Task.Delay(100);
+            await Task.Delay(200);
 
             serialPort1.Write("set mb baud ");
             serialPort1.WriteLine((Convert.ToInt32(cBoxMbBaud.Text) / 1200).ToString());
-            await Task.Delay(100);
+            await Task.Delay(200);
 
             if (cBoxDb.Text == "8")
             {
@@ -829,7 +960,7 @@ namespace AppNodeConfiguration
             {
                 serialPort1.WriteLine("set mb stbi 1");
             }
-            await Task.Delay(100);
+            await Task.Delay(200);
 
             if (cBoxPari.Text == "None")
             {
@@ -843,11 +974,11 @@ namespace AppNodeConfiguration
             {
                 serialPort1.WriteLine("set mb pari 2");
             }
-            await Task.Delay(100);
+            await Task.Delay(200);
 
             serialPort1.Write("set mb id ");
             serialPort1.WriteLine(tBoxSid.Text);
-            await Task.Delay(100);
+            await Task.Delay(200);
 
             if(cBoxLrMode.Text == "OTAA")
             {
@@ -861,13 +992,13 @@ namespace AppNodeConfiguration
 
             serialPort1.Write("set lr deveui ");
             serialPort1.WriteLine(tBoxDevEUI.Text);
-            await Task.Delay(100);
+            await Task.Delay(200);
             serialPort1.Write("set lr appeui ");
             serialPort1.WriteLine(tBoxAppEUI.Text);
-            await Task.Delay(100);
+            await Task.Delay(200);
             serialPort1.Write("set lr appkey ");
             serialPort1.WriteLine(tBoxAppKey.Text);
-            await Task.Delay(100);
+            await Task.Delay(200);
 
             serialPort1.Write("set lr adr ");
             if (cBoxAdr.Text == "Adapted")
@@ -898,7 +1029,7 @@ namespace AppNodeConfiguration
             {
                 serialPort1.WriteLine("12");
             }
-            await Task.Delay(100);
+            await Task.Delay(200);
 
             serialPort1.Write("set lr fr ");
             if (cBoxFreq.Text == "AS923")
@@ -937,7 +1068,7 @@ namespace AppNodeConfiguration
             {
                 serialPort1.WriteLine("8");
             }
-            await Task.Delay(100);
+            await Task.Delay(200);
 
             if (cBoxCfm.Text == "NO")
             {
@@ -950,7 +1081,7 @@ namespace AppNodeConfiguration
                 serialPort1.WriteLine("set lr cf 1");
             }
 
-            await Task.Delay(100);
+            await Task.Delay(200);
             if (cBoxClass.Text == "A")
             {
                 serialPort1.WriteLine("set lr class 0");
@@ -961,8 +1092,33 @@ namespace AppNodeConfiguration
                 serialPort1.WriteLine("set lr class 2");
             }
 
+            await Task.Delay(200);
+            if (cBoxPower.Text == "MAX")
+            {
+                serialPort1.WriteLine("set lr pwr 0");
 
-            await Task.Delay(100);
+            }
+            else
+            {
+                serialPort1.WriteLine("set lr pwr "+ cBoxPower.Text);
+   
+            }
+
+            if (cBoxAutoJoin.Text == "No")
+            {
+                serialPort1.WriteLine("set lr auto 0");
+
+            }
+            else
+            {
+                serialPort1.WriteLine("set lr auto 1");
+            }
+
+
+
+
+
+            await Task.Delay(200);
             serialPort1.WriteLine("set save");
 
 

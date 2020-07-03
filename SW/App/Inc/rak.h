@@ -30,7 +30,7 @@ uint8_t rak_join(void) ;
 void rak_initOTAA(char *devEUI, char *appEUI, char *appKey);
 uint8_t rak_isConfirm(uint8_t type);
 
-
+extern uint8_t isJoinedLoraWAN;
 void rak_recv_isr(void);
 
 void vRakTask(void const *arg);

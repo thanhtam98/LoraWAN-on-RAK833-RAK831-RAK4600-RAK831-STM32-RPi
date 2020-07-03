@@ -3,8 +3,8 @@
 
 #include "main.h"
 
-#define DHT11_GPIO_Port GPIOA
-#define DHT11_Pin       GPIO_PIN_7
+#define DHT11_GPIO_Port GPIOB
+#define DHT11_Pin       GPIO_PIN_1
 #define DHT_HignPin()	HAL_GPIO_WritePin(DHT11_GPIO_Port, DHT11_Pin, GPIO_PIN_SET)
 #define DHT_LowPin()	HAL_GPIO_WritePin(DHT11_GPIO_Port, DHT11_Pin, GPIO_PIN_RESET)
 #define DHT_ReadPin()	HAL_GPIO_ReadPin(DHT11_GPIO_Port, DHT11_Pin)

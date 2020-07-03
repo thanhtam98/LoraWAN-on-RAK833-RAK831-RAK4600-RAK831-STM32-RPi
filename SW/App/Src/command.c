@@ -6,6 +6,7 @@
 #include "usart.h"
 #include "envtask.h"
 #include "epprom.h"
+#include "rak.h"
 tCmdLineEntry g_psCmdTable[] = { { "help", Cmd_help,
 		" : Display list of commands" }, { "set", Cmd_set,
 		" : Set the specific param in the next arg" }, { "get", Cmd_get,
@@ -96,6 +97,17 @@ int Cmd_set(int argc, char *argv[]) {
 			u_mem_set(NODE_LRWAN_CLASS_ADR, atoi(*(argv + 3)));
 
 		}
+		if ((strcmp(*(argv + 2), "pwr") == 0)) {
+
+					u_mem_set(NODE_LRWAN_TX_POWER_ADR, atoi(*(argv + 3)));
+
+				}
+		if ((strcmp(*(argv + 2), "auto") == 0)) {
+
+					u_mem_set(NODE_LRWAN_AUTO_JOIN_ADR, atoi(*(argv + 3)));
+
+				}
+
 		if ((strcmp(*(argv + 2), "deveui") == 0)) {
 			for (uint8_t idx = 0; idx < NODE_LRWAN_DEVEUI_LEN; idx++) {
 				memcpy(merg, *(argv + 3) + 2 * idx, 2);
@@ -211,6 +223,25 @@ int Cmd_get(int argc, char *argv[]) {
 //			u_mem_set(NODE_LRWAN_CLASS_ADR, atoi(*(argv + 3)));
 
 		}
+		if ((strcmp(*(argv + 2), "pwr") == 0)) {
+					strcat(commandSendBuffer,
+							itoa_user(u_mem_get(NODE_LRWAN_TX_POWER_ADR), 10));
+
+
+				}
+		if ((strcmp(*(argv + 2), "auto") == 0)) {
+					strcat(commandSendBuffer,
+							itoa_user(u_mem_get(NODE_LRWAN_AUTO_JOIN_ADR), 10));
+
+
+				}
+
+		if ((strcmp(*(argv + 2), "join") == 0)) {
+//						strcat(commandSendBuffer,
+//								itoa_user(u_mem_get(NODE_LRWAN_TX_POWER_ADR), 10));
+
+			strcat(commandSendBuffer,itoa_user(isJoinedLoraWAN,10));
+					}
 		if ((strcmp(*(argv + 2), "mode") == 0)) {
 			strcat(commandSendBuffer,
 					itoa_user(u_mem_get(NODE_LRWAN_MODE_ADR), 10));

@@ -52,69 +52,75 @@ void vPortRawRead(uint32_t *portData) {
 	/* Port5----------------**/
 	DBG("Raw data: %d %d %d %d %d", portData[PORT0], portData[PORT1],
 			portData[PORT2], portData[PORT3], portData[PORT4]);
-//	DHT11_DATA_TypeDef DHT_DATA;
-//	DHT11_ReadData(&DHT_DATA);
-//	portData[PORT5] = DHT_DATA.temp_int;
+	DHT11_DATA_TypeDef DHT_DATA;
+	DHT11_ReadData(&DHT_DATA);
+	portData[PORT5] = (uint32_t) (DHT_DATA.temp_int << 8 * 3)
+			| (DHT_DATA.temp_deci << 8 * 2) | (DHT_DATA.humi_int << 8 * 1)
+			| (DHT_DATA.humi_deci << 8*0);
 
 }
 void vPortProcess(uint32_t *portData) {
 
-	for (uint8_t portIndex = 0; portIndex < IO_MAX_PORT; portIndex++) {
-		switch (ioPort[portIndex].profile) {
-		case IO_SW_NC:
-			uiMemSet(ioPort[portIndex].mbAdr,
-					(portData[portIndex] == RESET) ? SET : RESET);
-			break;
-		case IO_SW_NO:
-			uiMemSet(ioPort[portIndex].mbAdr,
-					(portData[portIndex] == RESET) ? RESET : SET);
-			break;
-		case IO_PUL_PER_SEC:
-			uiMemSet(ioPort[portIndex].mbAdr,
-					(uint16_t) ((portData[portIndex] / ENV_TIME_INTERVAL) << 8)
-							| 0x0000);
-			break;
-		case IO_PUL_PER_MIN:
-			uiMemSet(ioPort[portIndex].mbAdr,
-					(uint16_t) ((60 * portData[portIndex] / ENV_TIME_INTERVAL)
-							<< 8) | 0x0000);
-			break;
-		case IO_PUL_PER_HOUR:
-			uiMemSet(ioPort[portIndex].mbAdr,
-					(uint16_t) ((60 * 60 * portData[portIndex]
-							/ ENV_TIME_INTERVAL) << 8) | 0x0000);
-			break;
-		case IO_ADC_LIGHT:
-			uiMemSet(ioPort[portIndex].mbAdr, (uint16_t) portData[portIndex]);
-
-			break;
-		case IO_ADC_TEMP:
-			uiMemSet(ioPort[portIndex].mbAdr, (uint16_t) portData[portIndex]);
-			break;
-		case IO_ADC_HUMID:
-			uiMemSet(ioPort[portIndex].mbAdr, (uint16_t) portData[portIndex]);
-			break;
-		case IO_ONEWIRE_DHT11:
-			uiMemSet(ioPort[portIndex].mbAdr, (uint16_t) portData[portIndex]);
-
-			break;
-		case IO_ONEWIRE_DHT22:
-			uiMemSet(ioPort[portIndex].mbAdr, (uint16_t) portData[portIndex]);
-
-			break;
-		case IO_ONWWIRE_DS18B20:
-			uiMemSet(ioPort[portIndex].mbAdr, (uint16_t) portData[portIndex]);
-
-			break;
-		}
-
-	}
+	uiMemSet(PORT_ADC_2, (uint16_t) portData[4]);
+	uiMemSet(PORT_ADC_2,  (uint16_t)portData[4]);
+	uiMemSet(PORT_ONE_WIRE, (uint16_t)portData[5]);
+	uiMemSet(PORT_ONE_WIRE+1,  (uint16_t)(portData[5]>>16));
+//	for (uint8_t portIndex = 0; portIndex < IO_MAX_PORT; portIndex++) {
+//		switch (ioPort[portIndex].profile) {
+//		case IO_SW_NC:
+//			uiMemSet(ioPort[portIndex].mbAdr,
+//					(portData[portIndex] == RESET) ? SET : RESET);
+//			break;
+//		case IO_SW_NO:
+//			uiMemSet(ioPort[portIndex].mbAdr,
+//					(portData[portIndex] == RESET) ? RESET : SET);
+//			break;
+//		case IO_PUL_PER_SEC:
+//			uiMemSet(ioPort[portIndex].mbAdr,
+//					(uint16_t) ((portData[portIndex] / ENV_TIME_INTERVAL) << 8)
+//							| 0x0000);
+//			break;
+//		case IO_PUL_PER_MIN:
+//			uiMemSet(ioPort[portIndex].mbAdr,
+//					(uint16_t) ((60 * portData[portIndex] / ENV_TIME_INTERVAL)
+//							<< 8) | 0x0000);
+//			break;
+//		case IO_PUL_PER_HOUR:
+//			uiMemSet(ioPort[portIndex].mbAdr,
+//					(uint16_t) ((60 * 60 * portData[portIndex]
+//							/ ENV_TIME_INTERVAL) << 8) | 0x0000);
+//			break;
+//		case IO_ADC_LIGHT:
+//			uiMemSet(ioPort[portIndex].mbAdr, (uint16_t) portData[portIndex]);
+//
+//			break;
+//		case IO_ADC_TEMP:
+//			uiMemSet(ioPort[portIndex].mbAdr, (uint16_t) portData[portIndex]);
+//			break;
+//		case IO_ADC_HUMID:
+//			uiMemSet(ioPort[portIndex].mbAdr, (uint16_t) portData[portIndex]);
+//			break;
+//		case IO_ONEWIRE_DHT11:
+//			uiMemSet(ioPort[portIndex].mbAdr, (uint16_t) portData[portIndex]);
+//
+//			break;
+//		case IO_ONEWIRE_DHT22:
+//			uiMemSet(ioPort[portIndex].mbAdr, (uint16_t) portData[portIndex]);
+//
+//			break;
+//		case IO_ONWWIRE_DS18B20:
+//			uiMemSet(ioPort[portIndex].mbAdr, (uint16_t) portData[portIndex]);
+//
+//			break;
+//		}
+//
+//	}
 }
 
 void vEnvTimerCallback(void const *arg) {
 	uint32_t *pxArg = (uint32_t) arg;
 	vPortRawRead(pxArg);
-	//vPortProcess(pxArg);
+	vPortProcess(pxArg);
 
 }
 void vEnvTask(void const *arg) {
@@ -149,7 +155,7 @@ void vEnvTask(void const *arg) {
 //	osTimerStart(envTimerHandler, ENV_TIME_INTERVAL * 1000);
 	while (1) {
 		vEnvTimerCallback(u32portRawData);
-		osDelay(1000);
+		osDelay(2000);
 		/* */
 //		vPortRawRead(u32portRawData);
 //		delay_us(1000000);

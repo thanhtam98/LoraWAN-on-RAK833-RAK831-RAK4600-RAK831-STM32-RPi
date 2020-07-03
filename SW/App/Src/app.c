@@ -28,15 +28,15 @@ void vAppDefault(void) {
 //	iot_node.envQueueHandle
 	/*Task initialization*/
 
-//	osThreadDef(loraTaskHandle, vRakTask, osPriorityNormal, 0, 256);
-//	loraTaskHandle = osThreadCreate(osThread(loraTaskHandle), (void*)&iot_node_handle);
+	osThreadDef(loraTaskHandle, vRakTask, osPriorityNormal, 0, 256);
+	loraTaskHandle = osThreadCreate(osThread(loraTaskHandle), (void*)&iot_node_handle);
 	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
 	osThreadDef(modbusTaskHandle, vModBusTask, osPriorityNormal, 0, 256);
 	modbusTaskHandle = osThreadCreate(osThread(modbusTaskHandle), (void*)&iot_node_handle);
 	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
-//	osThreadDef(envTaskHandle, vEnvTask, osPriorityNormal, 0, 256);
-//	envTaskHandle = osThreadCreate(osThread(envTaskHandle), (void*)&iot_node_handle);
-//	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
+	osThreadDef(envTaskHandle, vEnvTask, osPriorityNormal, 0, 256);
+	envTaskHandle = osThreadCreate(osThread(envTaskHandle), (void*)&iot_node_handle);
+	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
 	osThreadDef(cmdTaskHandle, vCmdTask, osPriorityNormal, 0, 256);
 	cmdTaskHandle = osThreadCreate(osThread(cmdTaskHandle), (void*)&iot_node_handle);
 	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
@@ -45,9 +45,6 @@ void vAppDefault(void) {
 	btnTaskHandle = osThreadCreate(osThread(btnTaskHandle), (void*)&iot_node_handle);
 	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
 
-//	osThreadDef(btnTaskHandle, vEnvTask, osPriorityNormal,0,256);
-//	btnTaskHandle = osThreadCreate(osThread(btnTaskHandle), (void*)&iot_node_handle);
-//	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
 
 	char *p = "\r\n NTT";
 	DHT11_DATA_TypeDef DHT_DATA;
