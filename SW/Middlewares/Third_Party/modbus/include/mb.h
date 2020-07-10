@@ -32,13 +32,15 @@
 #define _MB_H
 
 #include "port.h"
+#include "mbport.h"
+#include "mbproto.h"
+
 
 #ifdef __cplusplus
 PR_BEGIN_EXTERN_C
 #endif
 
-#include "mbport.h"
-#include "mbproto.h"
+
 
 /*! \defgroup modbus Modbus
  * \code #include "mb.h" \endcode

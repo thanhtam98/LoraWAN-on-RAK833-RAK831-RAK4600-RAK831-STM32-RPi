@@ -586,26 +586,42 @@ void vRakTask(void const *arg) {
 		isJoinedLoraWAN = LR_NOT_JOINED;
 		DBG("LR NOTJOINED \r\n");
 	}
-
+	rak_setDr(5);
 	while (1) {
 		/*Thread up*/
 
 		osDelay(5000);
 		memset(lrTxBuffer,0,50);
-		strcat(lrTxBuffer,itoa_user(FUNC_READ_TEMP_ADR, 16));
+//		strcat(lrTxBuffer,itoa_user(PORT_IO_SW_1, 16));
+//		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_IO_SW_1) >> 8), 16));
+//		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_IO_SW_1) ), 16));
+//
+//		strcat(lrTxBuffer,itoa_user(PORT_IO_SW_2, 16));
+//		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_IO_SW_2) >> 8), 16));
+//		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_IO_SW_2) ), 16));
+//
+//		strcat(lrTxBuffer,itoa_user(PORT_PULSE, 16));
+//		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_PULSE) >> 8), 16));
+//		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_PULSE) ), 16));
+//
+
+//
+//		strcat(lrTxBuffer,itoa_user(PORT_ADC_2, 16));
+//		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_ADC_2) >> 8), 16));
+//		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_ADC_2) ), 16));
+//
+		strcat(lrTxBuffer,itoa_user(1, 16));
 		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_ONE_WIRE) >> 8), 16));
 		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_ONE_WIRE) ), 16));
+//
+		strcat(lrTxBuffer,itoa_user(2, 16));
+		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_ONE_WIRE_) >> 8), 16));
+		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_ONE_WIRE_) ), 16));
+		strcat(lrTxBuffer,itoa_user(3, 16));
+		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_ADC_1) >> 8), 16));
+		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_ADC_1) ), 16));
 
-		strcat(lrTxBuffer,itoa_user(FUNC_READ_HUMD_ADR, 16));
-		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_ONE_WIRE+1) >> 8), 16));
-		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_ONE_WIRE+1) ), 16));
-
-		strcat(lrTxBuffer,itoa_user(FUNC_READ_LIGH_ADR, 16));
-		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_ADC_2) >> 8), 16));
-		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_ADC_2) ), 16));
-
-
-		err = rak_sendData(5, lrTxBuffer);
+		err = rak_sendData(1, lrTxBuffer);
 		if (err == AT_ERR) {
 			DBG("LRWAN error code: %d \r\n", globalError);
 			switch (globalError) {

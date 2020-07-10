@@ -29,6 +29,7 @@
 #include "mb.h"
 #include "mbport.h"
 #include "command.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -50,7 +51,7 @@
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
 extern uint16_t downcounter;
-
+extern uint8_t mbIsMaster;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -191,12 +192,23 @@ void TIM1_UP_IRQHandler(void)
 void TIM2_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM2_IRQn 0 */
-	if (__HAL_TIM_GET_FLAG(&htim2, TIM_FLAG_UPDATE) != RESET
+	if (mbIsMaster == 0) {
+		if (__HAL_TIM_GET_FLAG(&htim2, TIM_FLAG_UPDATE) != RESET
 				&& __HAL_TIM_GET_IT_SOURCE(&htim2, TIM_IT_UPDATE) != RESET) {
 			__HAL_TIM_CLEAR_IT(&htim2, TIM_IT_UPDATE);
 			if (!--downcounter)
 				pxMBPortCBTimerExpired();
 		}
+	} else {
+		if (__HAL_TIM_GET_FLAG(&htim2, TIM_FLAG_UPDATE) != RESET
+				&& __HAL_TIM_GET_IT_SOURCE(&htim2, TIM_IT_UPDATE) != RESET) {
+			__HAL_TIM_CLEAR_IT(&htim2, TIM_IT_UPDATE);
+			__HAL_TIM_CLEAR_FLAG(&htim2, TIM_IT_UPDATE);
+//			if (!--downcounter)
+//				pxMBMasterPortCBTimerExpired();
+		}
+	}
+
   /* USER CODE END TIM2_IRQn 0 */
   HAL_TIM_IRQHandler(&htim2);
   /* USER CODE BEGIN TIM2_IRQn 1 */
@@ -279,24 +291,46 @@ void USART3_IRQHandler(void)
   /* USER CODE BEGIN USART3_IRQn 0 */
 	uint32_t tmp_flag = __HAL_UART_GET_FLAG(&huart3, UART_FLAG_RXNE);
 	uint32_t tmp_it_source = __HAL_UART_GET_IT_SOURCE(&huart3, UART_IT_RXNE);
+	if (mbIsMaster == 0) {
+		if ((tmp_flag != RESET) && (tmp_it_source != RESET)) {
 
-	if ((tmp_flag != RESET) && (tmp_it_source != RESET)) {
+			//		uint8_t recv = (uint8_t) ((huart3).Instance->DR & (uint8_t) 0x00FF);
+			//		HAL_UART_Transmit(&huart3, &recv, 1, 10);
+			pxMBFrameCBByteReceived();
 
-//		uint8_t recv = (uint8_t) ((huart3).Instance->DR & (uint8_t) 0x00FF);
-//		HAL_UART_Transmit(&huart3, &recv, 1, 10);
-		pxMBFrameCBByteReceived();
+			__HAL_UART_CLEAR_PEFLAG(&huart3);
+			__HAL_UART_ENABLE_IT(&huart3, UART_IT_RXNE);
 
-		__HAL_UART_CLEAR_PEFLAG(&huart3);
-		__HAL_UART_ENABLE_IT(&huart3, UART_IT_RXNE);
+			return;
+		}
 
-		return;
+		if ((__HAL_UART_GET_FLAG(&huart3, UART_FLAG_TXE) != RESET)
+				&& (__HAL_UART_GET_IT_SOURCE(&huart3, UART_IT_TXE) != RESET)) {
+			pxMBFrameCBTransmitterEmpty();
+			return;
+		}
+
+	} else {
+		if ((tmp_flag != RESET) && (tmp_it_source != RESET)) {
+
+			//		uint8_t recv = (uint8_t) ((huart3).Instance->DR & (uint8_t) 0x00FF);
+			//		HAL_UART_Transmit(&huart3, &recv, 1, 10);
+			pxMBMasterFrameCBByteReceived();
+
+			__HAL_UART_CLEAR_PEFLAG(&huart3);
+			__HAL_UART_ENABLE_IT(&huart3, UART_IT_RXNE);
+
+			return;
+		}
+
+		if ((__HAL_UART_GET_FLAG(&huart3, UART_FLAG_TXE) != RESET)
+				&& (__HAL_UART_GET_IT_SOURCE(&huart3, UART_IT_TXE) != RESET)) {
+			pxMBMasterFrameCBTransmitterEmpty();
+			return;
+		}
+
 	}
 
-	if ((__HAL_UART_GET_FLAG(&huart3, UART_FLAG_TXE) != RESET)
-			&& (__HAL_UART_GET_IT_SOURCE(&huart3, UART_IT_TXE) != RESET)) {
-		pxMBFrameCBTransmitterEmpty();
-		return;
-	}
   /* USER CODE END USART3_IRQn 0 */
   HAL_UART_IRQHandler(&huart3);
   /* USER CODE BEGIN USART3_IRQn 1 */

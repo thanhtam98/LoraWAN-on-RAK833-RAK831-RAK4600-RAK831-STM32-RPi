@@ -13,6 +13,7 @@ osThreadId loraTaskHandle;
 osThreadId envTaskHandle;
 osThreadId cmdTaskHandle;
 osThreadId btnTaskHandle;
+osThreadId masterMbHandle;
 //osMessageQId btnQueueHandle;
 
 void vAppDefault(void) {
@@ -43,14 +44,19 @@ void vAppDefault(void) {
 
 	osThreadDef(btnTaskHandle, vBtnTask, osPriorityNormal,0,256);
 	btnTaskHandle = osThreadCreate(osThread(btnTaskHandle), (void*)&iot_node_handle);
+
+
 	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
+//	osThreadDef(masterMbHandle, vTestModbusTask, osPriorityNormal, 0, 512 );
+//	masterMbHandle = osThreadCreate(osThread(masterMbHandle),  (void*)&iot_node_handle);
+		DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
 
 
-	char *p = "\r\n NTT";
-	DHT11_DATA_TypeDef DHT_DATA;
-	char send[30] = { 10, 20, 30, 40, 50, 60, 50, 45, 44, 43, 45, 22, 33, 44,
-			88, 77, 55, 66, 66, 55, 88, 11, 55 };
-	char recv[30];
+//	char *p = "\r\n NTT";
+//	DHT11_DATA_TypeDef DHT_DATA;
+//	char send[30] = { 10, 20, 30, 40, 50, 60, 50, 45, 44, 43, 45, 22, 33, 44,
+//			88, 77, 55, 66, 66, 55, 88, 11, 55 };
+//	char recv[30];
 //	__HAL_RCC_I2C1_FORCE_RESET();
 //				HAL_Delay(1000);
 //				__HAL_RCC_I2C1_RELEASE_RESET();

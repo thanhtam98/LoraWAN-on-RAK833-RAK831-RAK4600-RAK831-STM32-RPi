@@ -117,6 +117,7 @@
 							<option id="fr.ac6.managedbuild.option.gnu.cross.instructionSet.1122582618.1392896027" name="Instruction Set" superClass="fr.ac6.managedbuild.option.gnu.cross.instructionSet.1122582618" />
 							<option id="fr.ac6.managedbuild.option.gnu.cross.fpu.1962892604.1538321646" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu.1962892604" />
 							<option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.903455130.833323496" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi.903455130" />
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross" />
 							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.623909130" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1468821813">
 								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.778491751" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c" />
 								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.1820242092" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s" />
@@ -319,10 +320,10 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="startup" />
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Middlewares" />
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers" />
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core" />
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers" />
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Middlewares" />
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="startup" />
 					</sourceEntries>
 				</configuration>
 			</storageModule>

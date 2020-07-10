@@ -25,67 +25,60 @@
 /* ----------------------- Modbus includes ----------------------------------*/
 #include "mb.h"
 #include "mbport.h"
- 
+
 /* ----------------------- static functions ---------------------------------*/
 //static void prvvTIMERExpiredISR( void );
- 
 /* -----------------------    variables     ---------------------------------*/
 extern TIM_HandleTypeDef htim2;
 uint16_t timeout = 0;
 uint16_t downcounter = 0;
- 
+
 /* ----------------------- Start implementation -----------------------------*/
-BOOL
-xMBPortTimersInit( USHORT usTim1Timerout50us )
-{
-  TIM_MasterConfigTypeDef sMasterConfig;
-  
-  htim2.Instance = TIM2;
-  htim2.Init.Prescaler = (HAL_RCC_GetPCLK1Freq() / 1000000) - 1;
-  htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = 50 - 1;
+BOOL xMBPortTimersInit(USHORT usTim1Timerout50us) {
+	TIM_MasterConfigTypeDef sMasterConfig;
+
+	htim2.Instance = TIM2;
+	htim2.Init.Prescaler = (HAL_RCC_GetPCLK1Freq() / 1000000) - 1;
+	htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
+	htim2.Init.Period = 50 - 1;
 //
-  timeout = usTim1Timerout50us;
+	timeout = usTim1Timerout50us;
 
-  if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
-  {
-    return FALSE;
-  }
+	if (HAL_TIM_Base_Init(&htim2) != HAL_OK) {
+		return FALSE;
+	}
 
-  sMasterConfig.MasterOutputTrigger = TIM_TRGO_UPDATE;
-  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
-  if (HAL_TIMEx_MasterConfigSynchronization(&htim2, &sMasterConfig) != HAL_OK)
-  {
-    return FALSE;
-  }
-  
-  return TRUE;
+	sMasterConfig.MasterOutputTrigger = TIM_TRGO_UPDATE;
+	sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+	if (HAL_TIMEx_MasterConfigSynchronization(&htim2, &sMasterConfig)
+			!= HAL_OK) {
+		return FALSE;
+	}
+
+	return TRUE;
 }
- 
- 
-void
-vMBPortTimersEnable(  )
-{
-  /* Enable the timer with the timeout passed to xMBPortTimersInit( ) */
-  downcounter = timeout;
-  HAL_TIM_Base_Start_IT(&htim2);
+
+void vMBPortTimersEnable() {
+	/* Enable the timer with the timeout passed to xMBPortTimersInit( ) */
+	downcounter = timeout;
+	HAL_TIM_Base_Start_IT(&htim2);
 
 }
- 
-void
-vMBPortTimersDisable(  )
-{
 
-  /* Disable any pending timers. */
- HAL_TIM_Base_Stop_IT(&htim2);
+void vMBPortTimersDisable() {
+
+	/* Disable any pending timers. */
+	__HAL_TIM_CLEAR_IT(&htim2, TIM_IT_UPDATE);
+	__HAL_TIM_CLEAR_FLAG(&htim2, TIM_IT_UPDATE);
+	HAL_TIM_Base_Stop_IT(&htim2);
 }
- 
+
 /* Create an ISR which is called whenever the timer has expired. This function
-* must then call pxMBPortCBTimerExpired( ) to notify the protocol stack that
-* the timer has expired.
+ * must then call pxMBPortCBTimerExpired( ) to notify the protocol stack that
+ * the timer has expired.
  
-static void prvvTIMERExpiredISR( void )
-{
-( void )pxMBPortCBTimerExpired(  );
-}
-*/
+ static void prvvTIMERExpiredISR( void )
+ {
+ ( void )pxMBPortCBTimerExpired(  );
+ }
+ */

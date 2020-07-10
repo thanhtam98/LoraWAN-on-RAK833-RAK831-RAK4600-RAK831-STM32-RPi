@@ -105,9 +105,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 104 1140 104 425")
-        (Scroll "0 0")
-        (Zoom "66")
+        (Placement "44 2 3 -1 -1 -8 -31 104 1140 104 425")
+        (Scroll "863 300")
+        (Zoom "132")
         (Occurrence "/"))
       (Path
          "C:\GIT\THESISLORAWANNODE\HW\RAK811_STM32NODE\STM32F103_RAK811_THESISNODE.DSN")

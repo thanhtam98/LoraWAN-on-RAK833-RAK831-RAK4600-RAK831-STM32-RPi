@@ -166,9 +166,9 @@ void StartDefaultTask(void const * argument)
 
 /* Private application code --------------------------------------------------*/
 /* USER CODE BEGIN Application */
-void Callback01(void) {
-	pxMBPortCBTimerExpired();
-}
+//void Callback01(void) {
+//	pxMBPortCBTimerExpired();
+//}
 /* USER CODE END Application */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

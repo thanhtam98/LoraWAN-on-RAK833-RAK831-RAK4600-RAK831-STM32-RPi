@@ -52,4 +52,11 @@ typedef int32_t LONG;
 #define FALSE           0
 #endif
 
+typedef struct
+{
+	UCHAR Event;
+	USHORT TimeOut;
+}TimerExpiredType;
+
+
 #endif

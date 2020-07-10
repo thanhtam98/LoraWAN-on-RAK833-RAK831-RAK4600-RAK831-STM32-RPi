@@ -6,7 +6,7 @@
 /*
  *
  * */
-#define IO_MAX_PORT		6
+#define IO_MAX_PORT		7
 /* IO
  *   [SW1][SW2][PULS][ADC1][ADC2][OneWire]
  *

@@ -33,22 +33,25 @@ void vPortRawRead(uint32_t *portData) {
 	/* Port1 ------------*/
 	portData[PORT1] = HAL_GPIO_ReadPin(SW_2_GPIO_Port, SW_2_Pin);
 	/* Port2 ------------*/
+	//taskENTER_CRITICAL();
 	HAL_ADC_Start(&hadc1);
 	HAL_ADC_PollForConversion(&hadc1, 100);
-	portData[PORT2] = HAL_ADC_GetValue(&hadc1);
-
+	portData[PORT3] = HAL_ADC_GetValue(&hadc1);
+//	portData[PORT2]= aADCxConvertedValues[0];
 	/* Port3 ------------*/
 
 	HAL_ADC_PollForConversion(&hadc1, 100);
-	portData[PORT3] = HAL_ADC_GetValue(&hadc1);
-
+	portData[PORT4] = HAL_ADC_GetValue(&hadc1);
+	//taskEXIT_CRITICAL();
+//	HAL_ADC_PollForConversion(&hadc1, 10000);
+//		portData[PORT4] = HAL_ADC_GetValue(&hadc1);
+//	portData[PORT3]= aADCxConvertedValues[0];
 	HAL_ADC_Stop(&hadc1);
 	/* Port4 ------------*/
 //	portData[PORT4] = TIM3->CNT;
 //	TIM3->CNT = 0;
-	portData[PORT4] = HAL_TIM_ReadCapturedValue(&htim3, TIM_CHANNEL_3);
-	htim3.Instance->CCR2 = 0;
-
+//	portData[PORT4] = HAL_TIM_ReadCapturedValue(&htim3, TIM_CHANNEL_3);
+//	htim3.Instance->CCR2 = 0;
 	/* Port5----------------**/
 	DBG("Raw data: %d %d %d %d %d", portData[PORT0], portData[PORT1],
 			portData[PORT2], portData[PORT3], portData[PORT4]);
@@ -56,15 +59,26 @@ void vPortRawRead(uint32_t *portData) {
 	DHT11_ReadData(&DHT_DATA);
 	portData[PORT5] = (uint32_t) (DHT_DATA.temp_int << 8 * 3)
 			| (DHT_DATA.temp_deci << 8 * 2) | (DHT_DATA.humi_int << 8 * 1)
-			| (DHT_DATA.humi_deci << 8*0);
+			| (DHT_DATA.humi_deci << 8 * 0);
 
 }
 void vPortProcess(uint32_t *portData) {
+	uiMemSet(PORT_IO_SW_1, (uint16_t) portData[PORT0]);
+	uiMemSet(PORT_IO_SW_2, (uint16_t) portData[PORT1]);
+	uiMemSet(PORT_PULSE, (uint16_t) portData[PORT2]);
+	float f_data_temp = portData[PORT3] * 100 / 4096;
+	uint16_t u_int_part = (uint16_t) portData[PORT3] * 100 / 4096;
+	uint16_t u_dec_part = (uint16_t) 10*(float)(u_int_part
+			- (uint16_t) portData[PORT3] * 100 / 4096);
+	uiMemSet(PORT_ADC_1, (uint16_t) (u_int_part << 8) | (u_dec_part));
+	f_data_temp = portData[PORT4] * 100 / 4096;
+	u_int_part = (uint16_t) portData[PORT4] * 100 / 4096;
+	u_dec_part = (uint16_t) 10*(float)(u_int_part
+			- (uint16_t) portData[PORT4] * 100 / 4096);
+	uiMemSet(PORT_ADC_2, (uint16_t) (u_int_part << 8) | (u_dec_part));
 
-	uiMemSet(PORT_ADC_2, (uint16_t) portData[4]);
-	uiMemSet(PORT_ADC_2,  (uint16_t)portData[4]);
-	uiMemSet(PORT_ONE_WIRE, (uint16_t)portData[5]);
-	uiMemSet(PORT_ONE_WIRE+1,  (uint16_t)(portData[5]>>16));
+	uiMemSet(PORT_ONE_WIRE, (uint16_t) portData[5]);
+	uiMemSet(PORT_ONE_WIRE + 1, (uint16_t) (portData[5] >> 16));
 //	for (uint8_t portIndex = 0; portIndex < IO_MAX_PORT; portIndex++) {
 //		switch (ioPort[portIndex].profile) {
 //		case IO_SW_NC:
@@ -148,7 +162,9 @@ void vEnvTask(void const *arg) {
 //			!= HAL_OK) {
 ////		/* Start Error */
 //		Error_Handler();
+//		while(10);
 //	}
+	HAL_ADC_Start(&hadc1);
 
 //	envTimerHandler = osTimerCreate(vEnvTimerCallback, osTimerPeriodic,
 //			u32portRawData);

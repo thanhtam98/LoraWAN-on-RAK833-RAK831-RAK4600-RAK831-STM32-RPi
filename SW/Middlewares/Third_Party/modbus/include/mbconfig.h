@@ -35,6 +35,31 @@
 PR_BEGIN_EXTERN_C
 #endif
 /* ----------------------- Defines ------------------------------------------*/
+/* ----------------------- Defines ------------------------------------------*/
+/*! \defgroup modbus_cfg Modbus Configuration
+ *
+ * Most modules in the protocol stack are completly optional and can be
+ * excluded. This is specially important if target resources are very small
+ * and program memory space should be saved.<br>
+ *
+ * All of these settings are available in the file <code>mbconfig.h</code>
+ */
+/*! \addtogroup modbus_cfg
+ *  @{
+ */
+/*! \brief If Modbus Master ASCII support is enabled. */
+#define MB_MASTER_ASCII_ENABLED                 (  0 )
+/*! \brief If Modbus Master RTU support is enabled. */
+#define MB_MASTER_RTU_ENABLED                   (  1 )
+/*! \brief If Modbus Master TCP support is enabled. */
+#define MB_MASTER_TCP_ENABLED                   (  0 )
+/*! \brief If Modbus Slave ASCII support is enabled. */
+#define MB_SLAVE_ASCII_ENABLED                  (  0 )
+/*! \brief If Modbus Slave RTU support is enabled. */
+#define MB_SLAVE_RTU_ENABLED                    (  1 )
+/*! \brief If Modbus Slave TCP support is enabled. */
+#define MB_SLAVE_TCP_ENABLED                    (  0 )
+
 /*! \defgroup modbus_cfg Modbus Configuration
  *
  * Most modules in the protocol stack are completly optional and can be
@@ -126,6 +151,19 @@ PR_BEGIN_EXTERN_C
 #define MB_FUNC_READWRITE_HOLDING_ENABLED       (  1 )
 
 /*! @} */
+
+#if MB_MASTER_RTU_ENABLED > 0 || MB_MASTER_ASCII_ENABLED > 0
+/*! \brief If master send a broadcast frame,the master will wait time of convert to delay,
+ * then master can send other frame */
+#define MB_MASTER_DELAY_MS_CONVERT              (200 )
+/*! \brief If master send a frame which is not broadcast,the master will wait sometime for slave.
+ * And if slave is not respond in this time,the master will process this timeout error.
+ * Then master can send other frame */
+#define MB_MASTER_TIMEOUT_MS_RESPOND            (100 )
+/*! \brief The total slaves in Modbus Master system. Default 16.
+ * \note : The slave ID must be continuous from 1.*/
+#define MB_MASTER_TOTAL_SLAVE_NUM               ( 16 )
+#endif
 #ifdef __cplusplus
     PR_END_EXTERN_C
 #endif

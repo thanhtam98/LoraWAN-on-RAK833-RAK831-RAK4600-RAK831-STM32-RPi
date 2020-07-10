@@ -107,7 +107,11 @@ int Cmd_set(int argc, char *argv[]) {
 					u_mem_set(NODE_LRWAN_AUTO_JOIN_ADR, atoi(*(argv + 3)));
 
 				}
+		if ((strcmp(*(argv + 2), "join") == 0)) {
 
+							//u_mem_set(NODE_LRWAN_AUTO_JOIN_ADR, atoi(*(argv + 3)));
+			//give semaphore to rak task
+						}
 		if ((strcmp(*(argv + 2), "deveui") == 0)) {
 			for (uint8_t idx = 0; idx < NODE_LRWAN_DEVEUI_LEN; idx++) {
 				memcpy(merg, *(argv + 3) + 2 * idx, 2);

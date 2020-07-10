@@ -16,7 +16,7 @@
 #define PORT_ADC_1					(4)
 #define PORT_ADC_2					(5)
 #define PORT_ONE_WIRE				(6)
-
+#define PORT_ONE_WIRE_				(7)
 
 #define FUNC_READ_TEMP_ADR			(1)
 #define FUNC_READ_HUMD_ADR			(2)

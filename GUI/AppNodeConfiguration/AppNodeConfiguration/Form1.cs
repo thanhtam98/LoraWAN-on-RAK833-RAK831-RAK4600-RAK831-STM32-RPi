@@ -1116,8 +1116,21 @@ namespace AppNodeConfiguration
 
 
 
+            await Task.Delay(200);
+            serialPort1.WriteLine("set p_pf 0 " + Array.IndexOf(ProfileTable, cBoxSW1.Text).ToString());
+            await Task.Delay(200);
+            serialPort1.WriteLine("set p_pf 1 " + Array.IndexOf(ProfileTable, cBoxSW2.Text).ToString());
+            await Task.Delay(200);
+            serialPort1.WriteLine("set p_pf 2 " + Array.IndexOf(ProfileTable, cBoxADC1.Text).ToString());
+            await Task.Delay(200);
+            serialPort1.WriteLine("set p_pf 3 " + Array.IndexOf(ProfileTable, cBoxADC2.Text).ToString());
+            await Task.Delay(200);
+            serialPort1.WriteLine("set p_pf 4 " + Array.IndexOf(ProfileTable, cBoxPul.Text).ToString());
+            await Task.Delay(200);
+            serialPort1.WriteLine("set p_pf 5 " + Array.IndexOf(ProfileTable, cBoxOneW.Text).ToString());
 
-
+            await Task.Delay(200);
+            serialPort1.WriteLine("set cf 2");
             await Task.Delay(200);
             serialPort1.WriteLine("set save");
 
@@ -1173,6 +1186,21 @@ namespace AppNodeConfiguration
         }
 
         private void cBoxAdr_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            if (serialPort1.IsOpen)
+            {
+                serialPort1.WriteLine("set lr join");   
+
+            }
+        }
+
+        private void cBoxADC1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
