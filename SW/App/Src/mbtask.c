@@ -70,9 +70,9 @@ void vModBusTask(void const * argument) {
 	eMBErrorCode eStatus;
 	if (PARAM[NODE_HAVE_PARAM_ADR] != 255) {
 //		eStatus = eMBInit(MB_RTU, PARAM[NODE_MB_ID_ADR], 3, 9600, MB_PAR_NONE);
-		eStatus = eMBInit(MB_RTU, 1, 3, 9600, MB_PAR_NONE);
+		eStatus = eMBInit(MB_RTU, 3, 3, 9600, MB_PAR_NONE);
 	} else {
-		eStatus = eMBInit(MB_RTU, 1, 3, 9600, MB_PAR_NONE);
+		eStatus = eMBInit(MB_RTU, 3, 3, 9600, MB_PAR_NONE);
 	}
 
 	eStatus = eMBEnable();
