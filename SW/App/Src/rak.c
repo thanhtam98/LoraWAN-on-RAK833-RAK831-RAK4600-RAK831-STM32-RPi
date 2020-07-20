@@ -540,7 +540,7 @@ void vRakTask(void const *arg) {
 	}
 	/*Initial */
 //rak_reset(); // RAK was reset before
-	osDelay(2000);
+//	osDelay(2000);
 
 	rak_setClass(PARAM[NODE_LRWAN_CLASS_ADR]);
 
@@ -560,9 +560,9 @@ void vRakTask(void const *arg) {
 //		rak_setJoinMode(0);
 
 	rak_setTxPower(PARAM[NODE_LRWAN_TX_POWER_ADR]);
-	osDelay(2000);
+//	osDelay(2000);
 	rak_isConfirm(PARAM[NODE_LRWAN_CONFIRM_ADR]);
-	osDelay(2000);
+//	osDelay(2000);
 
 	/* Datarate parameter**/
 	if (PARAM[NODE_LRWAN_DATARATE_ADR] == 0) {

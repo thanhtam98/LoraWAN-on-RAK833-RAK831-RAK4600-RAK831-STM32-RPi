@@ -69,7 +69,7 @@ int DH11_ReadByte(void) {
 void DHT11_ReadData(DHT11_DATA_TypeDef *DHT11_DATA) {
 
 	unsigned int cout = 1;
-
+	HAL_TIM_Base_Start(&htim4);
 	DHT_Set_Output();
 
 	DHT_LowPin();
@@ -122,5 +122,6 @@ void DHT11_ReadData(DHT11_DATA_TypeDef *DHT11_DATA) {
 		DHT_HignPin();
 	}
 	taskEXIT_CRITICAL();
+	HAL_TIM_Base_Stop(&htim4);
 }
 

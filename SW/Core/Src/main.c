@@ -23,6 +23,7 @@
 #include "cmsis_os.h"
 #include "adc.h"
 #include "i2c.h"
+#include "rtc.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -100,17 +101,18 @@ int main(void)
   MX_TIM3_Init();
   MX_I2C1_Init();
   MX_TIM2_Init();
+  MX_RTC_Init();
   /* USER CODE BEGIN 2 */
 //	HAL_I2C_MspInit(&hi2c1);
-	v_led_start();
+//	v_led_start();
 
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, RESET);
-	HAL_Delay(100);
+	HAL_Delay(10);
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, SET);
 //while(1);
 	/*Force to enable periphral manually */
 	char *p = "NTT \r\n";
-	HAL_TIM_Base_Start(&htim4);  //delay_us
+//	HAL_TIM_Base_Start(&htim4);  //delay_us => move to DHT when it is called to reduce power consuming
 //
 	__HAL_UART_ENABLE_IT(&huart2, UART_IT_RXNE);
 //	 HAL_TIM_Base_Start(&htim3);
@@ -206,7 +208,8 @@ void SystemClock_Config(void)
 
   /** Initializes the CPU, AHB and APB busses clocks 
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_LSE;
+  RCC_OscInitStruct.LSEState = RCC_LSE_ON;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
@@ -229,7 +232,8 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_ADC;
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_RTC|RCC_PERIPHCLK_ADC;
+  PeriphClkInit.RTCClockSelection = RCC_RTCCLKSOURCE_LSE;
   PeriphClkInit.AdcClockSelection = RCC_ADCPCLK2_DIV2;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {

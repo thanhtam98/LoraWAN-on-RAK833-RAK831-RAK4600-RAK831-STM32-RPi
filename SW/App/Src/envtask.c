@@ -156,7 +156,7 @@ void vEnvTask(void const *arg) {
 	uint32_t temperature;
 //	DHT11_DATA_TypeDef DHT_DATA;
 	uint32_t u32portRawData[IO_MAX_PORT];
-	HAL_TIM_IC_Start(&htim3, TIM_CHANNEL_3);
+//	HAL_TIM_IC_Start(&htim3, TIM_CHANNEL_3);
 
 //	if (HAL_ADC_Start_DMA(&hadc1, (uint32_t *) aADCxConvertedValues, 2)
 //			!= HAL_OK) {
