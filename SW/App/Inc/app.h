@@ -15,7 +15,7 @@
 #include "command.h"
 #include "btn.h"
 #include "leds.h"
-#include "rtc.h"
+
 
 typedef struct {
 	osMessageQId btnQueueHandle;

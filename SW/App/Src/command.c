@@ -99,19 +99,19 @@ int Cmd_set(int argc, char *argv[]) {
 		}
 		if ((strcmp(*(argv + 2), "pwr") == 0)) {
 
-					u_mem_set(NODE_LRWAN_TX_POWER_ADR, atoi(*(argv + 3)));
+			u_mem_set(NODE_LRWAN_TX_POWER_ADR, atoi(*(argv + 3)));
 
-				}
+		}
 		if ((strcmp(*(argv + 2), "auto") == 0)) {
 
-					u_mem_set(NODE_LRWAN_AUTO_JOIN_ADR, atoi(*(argv + 3)));
+			u_mem_set(NODE_LRWAN_AUTO_JOIN_ADR, atoi(*(argv + 3)));
 
-				}
+		}
 		if ((strcmp(*(argv + 2), "join") == 0)) {
 
-							//u_mem_set(NODE_LRWAN_AUTO_JOIN_ADR, atoi(*(argv + 3)));
+			//u_mem_set(NODE_LRWAN_AUTO_JOIN_ADR, atoi(*(argv + 3)));
 			//give semaphore to rak task
-						}
+		}
 		if ((strcmp(*(argv + 2), "deveui") == 0)) {
 			for (uint8_t idx = 0; idx < NODE_LRWAN_DEVEUI_LEN; idx++) {
 				memcpy(merg, *(argv + 3) + 2 * idx, 2);
@@ -142,13 +142,19 @@ int Cmd_set(int argc, char *argv[]) {
 //					strcat(commandSendBuffer,
 //							itoa_user(u_mem_get(NODE_LRWAN_MODE_ADR), 10));
 
-				}
+		}
 	} else if ((strcmp(*(argv + 1), "id") == 0)) {
 		u_mem_set(NODE_ID_ADR, atoi(*(argv + 2)));
 
 	} else if ((strcmp(*(argv + 1), "cf") == 0)) {
-		u_mem_set(NODE_HAVE_PARAM_ADR, atoi(*(argv + 2)));
+		u_mem_set(NODE_HAVE_PARAM_ADR, EEP_PARAM);
 	}
+	else if ((strcmp(*(argv + 1), "mbmode") == 0)) {
+			u_mem_set(NODE_MB_WORKMODE_ADR, atoi(*(argv + 2)));
+		}
+	else if ((strcmp(*(argv + 1), "lrmode") == 0)) {
+			u_mem_set(NODE_LRWAN_WORKMODE_ADR, atoi(*(argv + 2)));
+		}
 //	else if ((strcmp(*(argv + 1), "port") == 0)) {
 //		port = atoi((*(argv + 2)));
 //		u_mem_set(NODE_IO_BASE + 2 * port, atoi((*(argv + 3))));
@@ -159,11 +165,13 @@ int Cmd_set(int argc, char *argv[]) {
 
 		port = atoi(*(argv + 2));
 		u_mem_set(NODE_IO_BASE + 2 * port, atoi((*(argv + 3))));
-	}
-	else if ((strcmp(*(argv + 1), "save") == 0)) {
+	} else if ((strcmp(*(argv + 1), "save") == 0)) {
 		v_epr_save(PARAM_LOAD_ALL);
 
-		}
+	} else if ((strcmp(*(argv + 1), "reset") == 0)) {
+		NVIC_SystemReset();
+
+	}
 	/* Reponse -----------------------------------------------------*/
 	char *reponse = "OK\r\n";
 	HAL_UART_Transmit(&huart2, reponse, 4, 1000);
@@ -173,12 +181,6 @@ int Cmd_get(int argc, char *argv[]) {
 
 	uint8_t port = 0;
 	memset(commandSendBuffer, 0, 50);
-//	strcat(commandSendBuffer, *(argv + 0));
-//	strcat(commandSendBuffer, " ");
-//	strcat(commandSendBuffer, *(argv + 1));
-//	strcat(commandSendBuffer, " ");
-//	strcat(commandSendBuffer, *(argv + 2));
-//	strcat(commandSendBuffer, " ");
 	if ((strcmp(*(argv + 1), "mb") == 0)) {
 
 		if ((strcmp(*(argv + 2), "mode") == 0)) {
@@ -228,24 +230,22 @@ int Cmd_get(int argc, char *argv[]) {
 
 		}
 		if ((strcmp(*(argv + 2), "pwr") == 0)) {
-					strcat(commandSendBuffer,
-							itoa_user(u_mem_get(NODE_LRWAN_TX_POWER_ADR), 10));
+			strcat(commandSendBuffer,
+					itoa_user(u_mem_get(NODE_LRWAN_TX_POWER_ADR), 10));
 
-
-				}
+		}
 		if ((strcmp(*(argv + 2), "auto") == 0)) {
-					strcat(commandSendBuffer,
-							itoa_user(u_mem_get(NODE_LRWAN_AUTO_JOIN_ADR), 10));
+			strcat(commandSendBuffer,
+					itoa_user(u_mem_get(NODE_LRWAN_AUTO_JOIN_ADR), 10));
 
-
-				}
+		}
 
 		if ((strcmp(*(argv + 2), "join") == 0)) {
 //						strcat(commandSendBuffer,
 //								itoa_user(u_mem_get(NODE_LRWAN_TX_POWER_ADR), 10));
 
-			strcat(commandSendBuffer,itoa_user(isJoinedLoraWAN,10));
-					}
+			strcat(commandSendBuffer, itoa_user(isJoinedLoraWAN, 10));
+		}
 		if ((strcmp(*(argv + 2), "mode") == 0)) {
 			strcat(commandSendBuffer,
 					itoa_user(u_mem_get(NODE_LRWAN_MODE_ADR), 10));
@@ -280,6 +280,12 @@ int Cmd_get(int argc, char *argv[]) {
 	} else if ((strcmp(*(argv + 1), "cf") == 0)) {
 		strcat(commandSendBuffer,
 				itoa_user(u_mem_get(NODE_HAVE_PARAM_ADR), 10));
+	} else if ((strcmp(*(argv + 1), "mbmode") == 0)) {
+		strcat(commandSendBuffer,
+				itoa_user(u_mem_get(NODE_MB_WORKMODE_ADR), 10));
+	} else if ((strcmp(*(argv + 1), "lrmode") == 0)) {
+		strcat(commandSendBuffer,
+				itoa_user(u_mem_get(NODE_LRWAN_WORKMODE_ADR), 10));
 	}
 
 	else if ((strcmp(*(argv + 1), "p_pf") == 0)) {
@@ -332,72 +338,7 @@ int Cmd_help(int argc, char *argv[]) {
 // Return success.
 	return (0);
 }
-///*
-//command: SETRGBLED	number RED	GREEN	BLUE	(number = 0-1)
-//					SETRGBLED	0 FF	00	1A
-//
-//*/
-//int
-//setRGBLED(int argc, char *argv[])
-//{
-//	if (argc < 5) return 1;
-//    	return(update_color(CHARTOBIN(*argv[1]) ,CHAR2TOBIN(argv[2]),CHAR2TOBIN(argv[3]),CHAR2TOBIN(argv[4])));
-//
-//}
-//
-///*
-//command: SETLIGHT	channel level	(level from 00-FF, channel = 0-F)
-//					SETLIGHT	F 80
-//
-//*/
-//
-//int
-//setLight(int argc, char *argv[])
-//{
-//	if (argc < 3) return 1;
-//  return (setADCChannel(CHARTOBIN(*argv[1]) ,CHAR2TOBIN(argv[2])));
-//
-//}
-//
-//int
-//setAllLight(int argc, char *argv[])
-//{
-//	if (argc < 2) return 1;
-//   broadcastADCOutput(CHAR2TOBIN(argv[1]));
-//
-//	return 0;
-//}
-//
-//
-///*
-//command: CONTROLRELAY	channel state	(state is ON-OFF, channel = 0-3)
-//					CONTROLRELAY	0 ON
-//*/
-//int
-//controlRelay(int argc, char *argv[])
-//{
-//	unsigned char number;
-//	if (argc != 3) return 1;
-//	number = CHARTOBIN(*argv[1]);
-//	if (number > 3) return 1;
-// if(my_strcmp( "ON", argv[2]) == 0)
-//            {
-//                onRelay(CHARTOBIN(*argv[1]));
-//							return 0;
-//            }
-//	else if (my_strcmp( "OFF", argv[2]) == 0)
-//            {
-//                offRelay(CHARTOBIN(*argv[1]));
-//							return 0;
-//            }
-//						return 1;	//error
-//}
 
-/*
- * Brief: Handler for Command line. Must be mapped to one thread!
- *
- *
- * */
 void vCmdTask(const void *arg) {
 	char *Badcommand = "Bad Command\r\n>";
 	int ret;

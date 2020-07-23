@@ -70,8 +70,8 @@ typedef enum
 } eMBMasterSndState;
 
 /* ----------------------- Static variables ---------------------------------*/
-static volatile eMBMasterSndState eSndState;
-static volatile eMBMasterRcvState eRcvState;
+static volatile eMBMasterSndState eMasterSndState;
+static volatile eMBMasterRcvState eMasterRcvState;
 
 static volatile UCHAR  ucMasterRTUSndBuf[MB_PDU_SIZE_MAX];
 static volatile UCHAR  ucMasterRTURcvBuf[MB_SER_PDU_SIZE_MAX];
@@ -139,7 +139,7 @@ eMBMasterRTUStart( void )
      * to STATE_M_RX_IDLE. This makes sure that we delay startup of the
      * modbus protocol stack until the bus is free.
      */
-    eRcvState = STATE_M_RX_INIT;
+    eMasterRcvState = STATE_M_RX_INIT;
     vMBMasterPortSerialEnable( TRUE, FALSE );
     vMBMasterPortTimersT35Enable(  );
 
@@ -203,7 +203,7 @@ eMBMasterRTUSend( UCHAR ucSlaveAddress, const UCHAR * pucFrame, USHORT usLength 
      * slow with processing the received frame and the master sent another
      * frame on the network. We have to abort sending the frame.
      */
-    if( eRcvState == STATE_M_RX_IDLE )
+    if( eMasterRcvState == STATE_M_RX_IDLE )
     {
         /* First byte before the Modbus-PDU is the slave address. */
         pucMasterSndBufferCur = ( UCHAR * ) pucFrame - 1;
@@ -219,7 +219,7 @@ eMBMasterRTUSend( UCHAR ucSlaveAddress, const UCHAR * pucFrame, USHORT usLength 
         ucMasterRTUSndBuf[usMasterSndBufferCount++] = ( UCHAR )( usCRC16 >> 8 );
 
         /* Activate the transmitter. */
-        eSndState = STATE_M_TX_XMIT;
+        eMasterSndState = STATE_M_TX_XMIT;
         vMBMasterPortSerialEnable( FALSE, TRUE );
     }
     else
@@ -236,12 +236,12 @@ xMBMasterRTUReceiveFSM( void )
     BOOL            xTaskNeedSwitch = FALSE;
     UCHAR           ucByte;
 
-    assert_param(( eSndState == STATE_M_TX_IDLE ) || ( eSndState == STATE_M_TX_XFWR ));
+    assert_param(( eMasterSndState == STATE_M_TX_IDLE ) || ( eMasterSndState == STATE_M_TX_XFWR ));
 
     /* Always read the character. */
     ( void )xMBMasterPortSerialGetByte( ( CHAR * ) & ucByte );
 
-    switch ( eRcvState )
+    switch ( eMasterRcvState )
     {
         /* If we have received a character in the init state we have to
          * wait until the frame is finished.
@@ -267,11 +267,11 @@ xMBMasterRTUReceiveFSM( void )
     	 * Disable timer of respond timeout and change the transmiter state to idle.
     	 */
     	vMBMasterPortTimersDisable( );
-    	eSndState = STATE_M_TX_IDLE;
+    	eMasterSndState = STATE_M_TX_IDLE;
 
         usMasterRcvBufferPos = 0;
         ucMasterRTURcvBuf[usMasterRcvBufferPos++] = ucByte;
-        eRcvState = STATE_M_RX_RCV;
+        eMasterRcvState = STATE_M_RX_RCV;
 
         /* Enable t3.5 timers. */
         vMBMasterPortTimersT35Enable( );
@@ -289,7 +289,7 @@ xMBMasterRTUReceiveFSM( void )
         }
         else
         {
-            eRcvState = STATE_M_RX_ERROR;
+            eMasterRcvState = STATE_M_RX_ERROR;
         }
         vMBMasterPortTimersT35Enable();
         break;
@@ -302,9 +302,9 @@ xMBMasterRTUTransmitFSM( void )
 {
     BOOL            xNeedPoll = FALSE;
 
-    assert_param( eRcvState == STATE_M_RX_IDLE );
+    assert_param( eMasterRcvState == STATE_M_RX_IDLE );
 
-    switch ( eSndState )
+    switch ( eMasterSndState )
     {
         /* We should not get a transmitter event if the transmitter is in
          * idle state.  */
@@ -327,7 +327,7 @@ xMBMasterRTUTransmitFSM( void )
             /* Disable transmitter. This prevents another transmit buffer
              * empty interrupt. */
             vMBMasterPortSerialEnable( TRUE, FALSE );
-            eSndState = STATE_M_TX_XFWR;
+            eMasterSndState = STATE_M_TX_XFWR;
             /* If the frame is broadcast ,master will enable timer of convert delay,
              * else master will enable timer of respond timeout. */
             if ( xFrameIsBroadcast == TRUE )
@@ -353,7 +353,7 @@ xMBMasterRTUTimerExpired(void)
 {
 	BOOL xNeedPoll = FALSE;
 
-	switch (eRcvState)
+	switch (eMasterRcvState)
 	{
 		/* Timer t35 expired. Startup phase is finished. */
 	case STATE_M_RX_INIT:
@@ -375,13 +375,13 @@ xMBMasterRTUTimerExpired(void)
 		/* Function called in an illegal state. */
 	default:
 		assert_param(
-				( eRcvState == STATE_M_RX_INIT ) || ( eRcvState == STATE_M_RX_RCV ) ||
-				( eRcvState == STATE_M_RX_ERROR ) || ( eRcvState == STATE_M_RX_IDLE ));
+				( eMasterRcvState == STATE_M_RX_INIT ) || ( eMasterRcvState == STATE_M_RX_RCV ) ||
+				( eMasterRcvState == STATE_M_RX_ERROR ) || ( eMasterRcvState == STATE_M_RX_IDLE ));
 		break;
 	}
-	eRcvState = STATE_M_RX_IDLE;
+	eMasterRcvState = STATE_M_RX_IDLE;
 
-	switch (eSndState)
+	switch (eMasterSndState)
 	{
 		/* A frame was send finish and convert delay or respond timeout expired.
 		 * If the frame is broadcast,The master will idle,and if the frame is not
@@ -395,10 +395,10 @@ xMBMasterRTUTimerExpired(void)
 		/* Function called in an illegal state. */
 	default:
 		assert_param(
-				( eSndState == STATE_M_TX_XFWR ) || ( eSndState == STATE_M_TX_IDLE ));
+				( eMasterSndState == STATE_M_TX_XFWR ) || ( eMasterSndState == STATE_M_TX_IDLE ));
 		break;
 	}
-	eSndState = STATE_M_TX_IDLE;
+	eMasterSndState = STATE_M_TX_IDLE;
 
 	vMBMasterPortTimersDisable( );
 	/* If timer mode is convert delay, the master event then turns EV_MASTER_EXECUTE status. */

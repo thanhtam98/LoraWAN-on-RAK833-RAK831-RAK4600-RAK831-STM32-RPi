@@ -54,7 +54,7 @@ BOOL xMBPortTimersInit(USHORT usTim1Timerout50us) {
 			!= HAL_OK) {
 		return FALSE;
 	}
-
+	HAL_TIM_Base_Start_IT(&htim2);
 	return TRUE;
 }
 

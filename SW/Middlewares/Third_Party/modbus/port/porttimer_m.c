@@ -69,9 +69,10 @@ BOOL xMBMasterPortTimersInit(USHORT usTimeOut50us) {
 
 void vMBMasterPortTimersT35Enable() {
 	vMBMasterSetCurTimerMode(MB_TMODE_T35);
-	TimerExpired.TimeOut = timeout;
-	TimerExpired.Event = MB_TMODE_T35;
-//	HAL_TIM_Base_Start_IT(&htim2);
+//	TimerExpired.TimeOut = timeout;
+//	TimerExpired.Event = MB_TMODE_T35;
+	downcounter  =35;
+	HAL_TIM_Base_Start_IT(&htim2);
 //	HAL_TIM_TriggerCallback(htim)
 //	HAL_TIM_Base_Start_IT(&htim2);
 }
@@ -80,9 +81,10 @@ void vMBMasterPortTimersConvertDelayEnable() {
 
 	/* Set current timer mode, don't change it.*/
 	vMBMasterSetCurTimerMode(MB_TMODE_CONVERT_DELAY);
-	TimerExpired.TimeOut = timeout * 3;
-	TimerExpired.Event = MB_TMODE_CONVERT_DELAY;
-//	HAL_TIM_Base_Start_IT(&htim2);
+//	TimerExpired.TimeOut = timeout * 5;
+//	TimerExpired.Event = MB_TMODE_CONVERT_DELAY;
+	downcounter  = 3*35;
+	HAL_TIM_Base_Start_IT(&htim2);
 ///
 //	rt_timer_control(&timer, RT_TIMER_CTRL_SET_TIME, &timer_tick);
 //
@@ -94,9 +96,10 @@ void vMBMasterPortTimersRespondTimeoutEnable() {
 
 	/* Set current timer mode, don't change it.*/
 	vMBMasterSetCurTimerMode(MB_TMODE_RESPOND_TIMEOUT);
-	TimerExpired.TimeOut = timeout * 10;
-	TimerExpired.Event = MB_TMODE_RESPOND_TIMEOUT;
-//	HAL_TIM_Base_Start_IT(&htim2);
+//	TimerExpired.TimeOut = timeout * 10;
+//	TimerExpired.Event = MB_TMODE_RESPOND_TIMEOUT;
+	downcounter = 65 * 1000;
+	HAL_TIM_Base_Start_IT(&htim2);
 //	rt_timer_control(&timer, RT_TIMER_CTRL_SET_TIME, &timer_tick);
 
 //	rt_timer_start(&timer);
@@ -106,7 +109,7 @@ void vMBMasterPortTimersDisable() {
 
 	TimerExpired.Event = MB_TMODE_NONE;
 	/* Disable any pending timers. */
-//	HAL_TIM_Base_Stop_IT(&htim2);
+	HAL_TIM_Base_Stop_IT(&htim2);
 }
 
 //void prvvTIMERExpiredISR(void)

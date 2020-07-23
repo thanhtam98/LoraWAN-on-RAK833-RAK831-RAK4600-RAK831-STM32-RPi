@@ -241,7 +241,7 @@ eMBMasterReqErrCode eMBMasterWaitRequestFinish(void) {
 		}
 		default:
 			//xMBMasterPortEventPost( ucPort,eEvent);
-			vTaskDelay(20);
+			vTaskDelay(2);
 			goto waiting_point;
 		}
 		xMasterEventInQueue = FALSE;

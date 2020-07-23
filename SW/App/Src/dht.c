@@ -16,6 +16,7 @@
 #include "main.h"
 #include "FreeRTOS.h"
 #include "task.h"
+#include "tim.h"
 /* */
 /* Private variables ----------------------------------*/
 unsigned int T_H, T_L, H_H, H_L, Check;
@@ -103,21 +104,21 @@ void DHT11_ReadData(DHT11_DATA_TypeDef *DHT11_DATA) {
 		if (DHT11_DATA->check_sum
 				== (DHT11_DATA->humi_int + DHT11_DATA->humi_deci
 						+ DHT11_DATA->temp_int + DHT11_DATA->temp_deci)) {
-			DBG("\r\n Get ok: Humid %d,%d Temp %d,%d ", DHT11_DATA->humi_int,
-					DHT11_DATA->humi_deci, DHT11_DATA->temp_int,
-					DHT11_DATA->temp_deci);
+//			DBG("\r\n Get ok: Humid %d,%d Temp %d,%d ", DHT11_DATA->humi_int,
+//					DHT11_DATA->humi_deci, DHT11_DATA->temp_int,
+//					DHT11_DATA->temp_deci);
 		} else {
-
-			DBG(
-					"\r\n Get fail:  HumidH %d HumidL %d TempH %d TempL %d Check %d ",
-					DHT11_DATA->humi_int, DHT11_DATA->humi_deci,
-					DHT11_DATA->temp_int, DHT11_DATA->temp_deci,
-					DHT11_DATA->check_sum);
+			DHT11_DATA->check_sum = 00;
+//			DBG(
+//					"\r\n Get fail:  HumidH %d HumidL %d TempH %d TempL %d Check %d ",
+//					DHT11_DATA->humi_int, DHT11_DATA->humi_deci,
+//					DHT11_DATA->temp_int, DHT11_DATA->temp_deci,
+//					DHT11_DATA->check_sum);
 		}
 		DHT_Set_Output();
 		DHT_HignPin();
 	} else {
-		DBG("\r\n Fail to start DHT");
+//		DBG("\r\n Fail to start DHT");
 		DHT_Set_Output();
 		DHT_HignPin();
 	}

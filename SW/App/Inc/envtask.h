@@ -27,16 +27,18 @@ enum {
 	IO_ONWWIRE_DS18B20
 };
 enum {
-	PORT0,
 	PORT1,
 	PORT2,
 	PORT3,
 	PORT4,
-	PORT5
+	PORT5,
+	PORT6,
+	PORT7
 };
 typedef struct {
 	uint8_t profile;
-	uint8_t mbAdr;
+	uint8_t timeInterval; // second
+	uint8_t timeCouter;
 } io_port_t;
 /*Public Task prototype ------------------- */
 void vEnvTask(void const *arg);

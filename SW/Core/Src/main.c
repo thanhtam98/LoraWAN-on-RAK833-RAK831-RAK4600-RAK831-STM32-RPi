@@ -23,7 +23,6 @@
 #include "cmsis_os.h"
 #include "adc.h"
 #include "i2c.h"
-#include "rtc.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -101,7 +100,6 @@ int main(void)
   MX_TIM3_Init();
   MX_I2C1_Init();
   MX_TIM2_Init();
-  MX_RTC_Init();
   /* USER CODE BEGIN 2 */
 //	HAL_I2C_MspInit(&hi2c1);
 //	v_led_start();
@@ -122,18 +120,20 @@ int main(void)
 //		Error_Handler();
 //	}
 //  HAL_Delay(101);
-//  HAL_UART_Transmit(&huart1,p,6,100);
-//  HAL_UART_Transmit(&huart3,p,6,100);
+  HAL_UART_Transmit(&huart1,p,6,100);
+  HAL_UART_Transmit(&huart3,p,6,100);
+//  HAL_UART_Transmit(&huart2,p,6,100);
 	printf("---------- IOT Node ----------  \r\n");
+
 	/*Load pre-paramter from eepROm*/
 	printf(" Loading pre-configuration from EEPROM !!  \r\n");
 	v_epr_load(PARAM_LOAD_ALL);
-	if (PARAM[NODE_HAVE_PARAM_ADR] != NO_PARAM) {
+	if ((PARAM[NODE_HAVE_PARAM_ADR] == EEP_PARAM)||(PARAM[NODE_HAVE_PARAM_ADR] == FLASH_PARAM)) {
 
 		/* Found pre-param from eeprom and apply it*/
 		printf(" pre-configuration from EEPROM: %d  \r\n",
 				PARAM[NODE_HAVE_PARAM_ADR]);
-		//USER_USART3_UART_Init(); // Modbus re-config
+		USER_USART3_UART_Init(); // Modbus re-config
 		/*Todo: LORAWAN*/
 
 	} else
@@ -172,12 +172,31 @@ int main(void)
 		/*Notify to the Led and jump in to vAppConfiguationTask !!**/
 
 	}
-	v_epr_load(PARAM_LOAD_ALL);
+
+	/* Print the configuration before jump into RTOS*/
+	printf("Param type   %d \r\n",PARAM[NODE_HAVE_PARAM_ADR]  );
+	printf("Node ID	     %d \r\n",PARAM[NODE_ID_ADR]  );
+	printf("Modbus ID    %d \r\n",PARAM[NODE_MB_ID_ADR]  );
+	printf("LRWAN DR     %d \r\n",PARAM[NODE_LRWAN_DATARATE_ADR]  );
+	printf("LRWAN Class  %d \r\n",PARAM[NODE_LRWAN_CLASS_ADR]  );
+	printf("LRWAN cf     %d \r\n",PARAM[NODE_LRWAN_CONFIRM_ADR]  );
+	printf("LRWAN tx     %d \r\n",PARAM[NODE_LRWAN_TX_POWER_ADR]  );
+	printf("LRWAN mode   %d \r\n",PARAM[NODE_LRWAN_MODE_ADR]  );
+	printf("Port 1 type  %d \r\n",PARAM[NODE_IO_PORT_0_ADR]  );
+	printf("Port 2 type  %d \r\n",PARAM[NODE_IO_PORT_1_ADR]  );
+	printf("Port 3 type  %d \r\n",PARAM[NODE_IO_PORT_2_ADR]  );
+	printf("Port 4 type  %d \r\n",PARAM[NODE_IO_PORT_3_ADR]  );
+	printf("Port 5 type  %d \r\n",PARAM[NODE_IO_PORT_4_ADR]  );
+	printf("Port 6 type  %d \r\n",PARAM[NODE_IO_PORT_5_ADR]  );
+
+
+//	v_epr_load(PARAM_LOAD_ALL);
 //	for (uint8_t paramIndex = 0; paramIndex < 120; paramIndex++) {
 //		DBG("ParamLoaded %d: %d \r\n", paramIndex, PARAM[paramIndex]);
 //		HAL_Delay(10);
 //	}
 	printf("Booting to RTOS   \r\n");
+
   /* USER CODE END 2 */
 
   /* Call init function for freertos objects (in freertos.c) */
@@ -208,8 +227,7 @@ void SystemClock_Config(void)
 
   /** Initializes the CPU, AHB and APB busses clocks 
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_LSE;
-  RCC_OscInitStruct.LSEState = RCC_LSE_ON;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
@@ -232,8 +250,7 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_RTC|RCC_PERIPHCLK_ADC;
-  PeriphClkInit.RTCClockSelection = RCC_RTCCLKSOURCE_LSE;
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_ADC;
   PeriphClkInit.AdcClockSelection = RCC_ADCPCLK2_DIV2;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {

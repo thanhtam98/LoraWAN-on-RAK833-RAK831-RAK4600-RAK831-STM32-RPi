@@ -55,26 +55,25 @@ void vTestModbusTask(void const * arg) {
 }
 void vModBusTask(void const * argument) {
 	/* ABCDEF */
-//	mbIsMaster = 1;
-//	eMBMasterInit(MB_RTU, 2, 9600, MB_PAR_NONE);
-//	eMBMasterEnable();
+	mbIsMaster = 1;
+	eMBMasterInit(MB_RTU, 2, 9600, MB_PAR_NONE);
+	eMBMasterEnable();
 //	osTimerDef(myTimer01, Callback01);
 //	myTimer01Handle = osTimerCreate(osTimer(myTimer01), osTimerPeriodic, NULL);
 //	osTimerStart(myTimer01Handle, 1);
-//	__HAL_UART_ENABLE_IT(&huart3, UART_IT_RXNE);
+	__HAL_UART_ENABLE_IT(&huart3, UART_IT_RXNE);
 
-//	while (1) {
-//		eMBMasterPoll();
-//		osDelay(1);
-//	}
-	eMBErrorCode eStatus;
-	if (PARAM[NODE_HAVE_PARAM_ADR] != 255) {
-//		eStatus = eMBInit(MB_RTU, PARAM[NODE_MB_ID_ADR], 3, 9600, MB_PAR_NONE);
-		eStatus = eMBInit(MB_RTU, 3, 3, 9600, MB_PAR_NONE);
-	} else {
-		eStatus = eMBInit(MB_RTU, 3, 3, 9600, MB_PAR_NONE);
+	while (1) {
+		eMBMasterPoll();
+		osDelay(1);
 	}
-
+	eMBErrorCode eStatus;
+	if ((PARAM[NODE_HAVE_PARAM_ADR] == FLASH_PARAM)|(PARAM[NODE_HAVE_PARAM_ADR] == EEP_PARAM)) {
+//		eStatus = eMBInit(MB_RTU, PARAM[NODE_MB_ID_ADR], 3, 9600, MB_PAR_NONE);
+		eStatus = eMBInit(MB_RTU, PARAM[NODE_MB_ID_ADR ], 3, 9600, MB_PAR_NONE);
+	} else {
+		eStatus = eMBInit(MB_RTU, 1, 3, 9600, MB_PAR_NONE);
+	}
 	eStatus = eMBEnable();
 	__HAL_UART_ENABLE_IT(&huart3, UART_IT_RXNE);
 //  osTimerStart(myTimer01Handle, 1);
@@ -201,6 +200,7 @@ eMBErrorCode eMBMasterRegHoldingCB(UCHAR * pucRegBuffer, USHORT usAddress,
 				*pucRegBuffer++ = (UCHAR) (pusRegHoldingBuf[iRegIndex] & 0xFF);
 				iRegIndex++;
 				usNRegs--;
+
 			}
 			break;
 			/* write current register values with new values from the protocol stack. */

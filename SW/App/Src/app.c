@@ -9,11 +9,11 @@
 #include "app.h"
 /**/
 osThreadId modbusTaskHandle;
+osThreadId masterMbHandle;
 osThreadId loraTaskHandle;
 osThreadId envTaskHandle;
 osThreadId cmdTaskHandle;
 osThreadId btnTaskHandle;
-osThreadId masterMbHandle;
 //osMessageQId btnQueueHandle;
 
 void vAppDefault(void) {
@@ -30,93 +30,42 @@ void vAppDefault(void) {
 			NULL);
 //	iot_node.envQueueHandle
 	/*Task initialization*/
-
-	osThreadDef(loraTaskHandle, vRakTask, osPriorityNormal, 0, 256);
-	loraTaskHandle = osThreadCreate(osThread(loraTaskHandle),
-			(void*) &iot_node_handle);
+//
+//	osThreadDef(loraTaskHandle, vRakTask, osPriorityNormal, 0, 512);
+//	loraTaskHandle = osThreadCreate(osThread(loraTaskHandle),
+//			(void*) &iot_node_handle);
 	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
-//	osThreadDef(modbusTaskHandle, vModBusTask, osPriorityNormal, 0, 256);
-//	modbusTaskHandle = osThreadCreate(osThread(modbusTaskHandle), (void*)&iot_node_handle);
-//	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
+	osThreadDef(modbusTaskHandle, vModBusTask, osPriorityNormal, 0, 256);
+	modbusTaskHandle = osThreadCreate(osThread(modbusTaskHandle), (void*)&iot_node_handle);
+	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
 	osThreadDef(envTaskHandle, vEnvTask, osPriorityNormal, 0, 256);
 	envTaskHandle = osThreadCreate(osThread(envTaskHandle),
 			(void*) &iot_node_handle);
-//	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
-//	osThreadDef(cmdTaskHandle, vCmdTask, osPriorityNormal, 0, 256);
-//	cmdTaskHandle = osThreadCreate(osThread(cmdTaskHandle), (void*)&iot_node_handle);
-//	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
+	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
+	osThreadDef(cmdTaskHandle, vCmdTask, osPriorityNormal, 0, 256);
+	cmdTaskHandle = osThreadCreate(osThread(cmdTaskHandle), (void*)&iot_node_handle);
+	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
 
 	osThreadDef(btnTaskHandle, vBtnTask, osPriorityNormal, 0, 256);
 	btnTaskHandle = osThreadCreate(osThread(btnTaskHandle),
 			(void*) &iot_node_handle);
 
 	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
-//	osThreadDef(masterMbHandle, vTestModbusTask, osPriorityNormal, 0, 512 );
-//	masterMbHandle = osThreadCreate(osThread(masterMbHandle),  (void*)&iot_node_handle);
+	osThreadDef(masterMbHandle, vTestModbusTask, osPriorityNormal, 0, 512 );
+	masterMbHandle = osThreadCreate(osThread(masterMbHandle),  (void*)&iot_node_handle);
 	DBG("\r\n MemFree: %d", xPortGetFreeHeapSize());
 
-//	char *p = "\r\n NTT";
-//	DHT11_DATA_TypeDef DHT_DATA;
-//	char send[30] = { 10, 20, 30, 40, 50, 60, 50, 45, 44, 43, 45, 22, 33, 44,
-//			88, 77, 55, 66, 66, 55, 88, 11, 55 };
-//	char recv[30];
-//	__HAL_RCC_I2C1_FORCE_RESET();
-//				HAL_Delay(1000);
-//				__HAL_RCC_I2C1_RELEASE_RESET();
+
 	float dtemp = 0;
 	while (1) {
-//		dtemp = f_ds18b20();
-//		DBG("\r\n Temp: %.2f \r\n",dtemp);
-//		if (HAL_I2C_IsDeviceReady(&hi2c1, 0xA0, 2, 100)==HAL_OK)
-//		{
-//			DBG("EEPROM ready \r\n/");
-//		}
-//		else {
-//
-//			DBG("EEPROM not ready \r\n");
-//		}
-////		DBG("Write value %c \r\n",send);
-//		while (HAL_I2C_Mem_Write(&hi2c1, (uint16_t) 0xa0, (uint16_t) 0x02,
-//				I2C_MEMADD_SIZE_8BIT, (uint8_t*) send, 16, 1000) != HAL_OK) {
-//			DBG("Write Error \r\n");
-//			HAL_I2C_ClearBusyFlagErrata_2_14_7(&hi2c1);
-////			MX_I2C1_Init();
-//			osDelay(1000);
-//		}
-////
-//		DBG("Write complete \r\n");
-//		osDelay(1000);
-//////		taskENTER_CRITICAL();
-//		while (HAL_I2C_Mem_Read(&hi2c1, (uint16_t) 0xA0, (uint16_t) 0x2,
-//				I2C_MEMADD_SIZE_8BIT, (uint8_t*) recv, (uint16_t) 16, 1000) != HAL_OK) {
-//			DBG("Read Error \r\n");
-//			osDelay(1000);
-////			//NVIC_SystemReset();
-//	}
-////		taskEXIT_CRITICAL();
-//		DBG("Read complete \r\n");
-//		for (uint8_t i = 0; i < 20; i++) {
-//			DBG("Read value %d %d  \r\n", i, recv[i]);
-//		}
-////		DBG("Read value %d %d %d \r\n",recv[0],recv[1],recv[2],recv[3],recv[4],recv[5]);
-//	DBG("\r\n MemFree:%d", xPortGetFreeHeapSize());
-//	osDelay(1000);
-//	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_7);
-//	osDelay(100);
-//	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_6);
-//	osDelay(100);
-//	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_5);
-//	osDelay(100);
-//	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
+		/*---- Main task controller ------------*/
+
+
 
 //Temporary delay for another task done
 		osDelay(10000);
 
-		HAL_SuspendTick();
 
-		HAL_PWR_EnterSLEEPMode(PWR_MAINREGULATOR_ON, PWR_SLEEPENTRY_WFI);
-		//__HAL_PWR_CLEAR_FLAG(PWR_FLAG_WU);
-		HAL_ResumeTick();
 	}
 }
 
@@ -130,10 +79,7 @@ void vAppConfiguration(void) {
 
 	NVIC_SystemReset();
 }
-//void vHwI2cResetManual(void)
-//{
-//
-//}
+
 void HAL_GPIO_WRITE_ODR(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin) {
 	/* Check the parameters */
 	assert_param(IS_GPIO_PIN(GPIO_Pin));

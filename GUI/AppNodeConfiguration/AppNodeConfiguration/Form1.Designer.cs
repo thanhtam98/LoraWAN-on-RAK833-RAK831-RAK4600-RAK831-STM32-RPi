@@ -67,6 +67,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label16 = new System.Windows.Forms.Label();
             this.cBoxAutoJoin = new System.Windows.Forms.ComboBox();
+            this.btnJoin = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.cBoxPower = new System.Windows.Forms.ComboBox();
@@ -87,8 +88,13 @@
             this.label13 = new System.Windows.Forms.Label();
             this.cBoxLrMode = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.btnJoin = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -108,6 +114,10 @@
             this.cBoxSW1 = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.cBoxLoRaMode = new System.Windows.Forms.ComboBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.cBoxModbusMode = new System.Windows.Forms.ComboBox();
+            this.label35 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.Manual.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -358,7 +368,7 @@
             this.groupBox2.Size = new System.Drawing.Size(339, 258);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Modbus Slave";
+            this.groupBox2.Text = "Modbus";
             // 
             // label11
             // 
@@ -495,10 +505,10 @@
             // 
             // btnSetMB
             // 
-            this.btnSetMB.Location = new System.Drawing.Point(25, 134);
+            this.btnSetMB.Location = new System.Drawing.Point(35, 242);
             this.btnSetMB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSetMB.Name = "btnSetMB";
-            this.btnSetMB.Size = new System.Drawing.Size(100, 79);
+            this.btnSetMB.Size = new System.Drawing.Size(100, 66);
             this.btnSetMB.TabIndex = 38;
             this.btnSetMB.Text = "Set";
             this.btnSetMB.UseVisualStyleBackColor = true;
@@ -506,7 +516,7 @@
             // 
             // btnGetMB
             // 
-            this.btnGetMB.Location = new System.Drawing.Point(25, 34);
+            this.btnGetMB.Location = new System.Drawing.Point(185, 241);
             this.btnGetMB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGetMB.Name = "btnGetMB";
             this.btnGetMB.Size = new System.Drawing.Size(100, 66);
@@ -519,6 +529,7 @@
             // 
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.cBoxAutoJoin);
+            this.groupBox3.Controls.Add(this.btnJoin);
             this.groupBox3.Controls.Add(this.label12);
             this.groupBox3.Controls.Add(this.label30);
             this.groupBox3.Controls.Add(this.cBoxPower);
@@ -544,10 +555,11 @@
             this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Size = new System.Drawing.Size(689, 367);
+            this.groupBox3.Size = new System.Drawing.Size(632, 367);
             this.groupBox3.TabIndex = 13;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "LoraWAN";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // label16
             // 
@@ -570,6 +582,17 @@
             this.cBoxAutoJoin.Size = new System.Drawing.Size(121, 28);
             this.cBoxAutoJoin.TabIndex = 51;
             this.cBoxAutoJoin.Text = "NO";
+            // 
+            // btnJoin
+            // 
+            this.btnJoin.Location = new System.Drawing.Point(497, 215);
+            this.btnJoin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnJoin.Name = "btnJoin";
+            this.btnJoin.Size = new System.Drawing.Size(112, 94);
+            this.btnJoin.TabIndex = 37;
+            this.btnJoin.Text = "Join";
+            this.btnJoin.UseVisualStyleBackColor = true;
+            this.btnJoin.Click += new System.EventHandler(this.button3_Click);
             // 
             // label12
             // 
@@ -601,7 +624,7 @@
             "5",
             "6",
             "7"});
-            this.cBoxPower.Location = new System.Drawing.Point(476, 110);
+            this.cBoxPower.Location = new System.Drawing.Point(486, 110);
             this.cBoxPower.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cBoxPower.Name = "cBoxPower";
             this.cBoxPower.Size = new System.Drawing.Size(121, 28);
@@ -614,7 +637,7 @@
             this.cBoxCfm.Items.AddRange(new object[] {
             "YES",
             "NO"});
-            this.cBoxCfm.Location = new System.Drawing.Point(476, 69);
+            this.cBoxCfm.Location = new System.Drawing.Point(486, 69);
             this.cBoxCfm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cBoxCfm.Name = "cBoxCfm";
             this.cBoxCfm.Size = new System.Drawing.Size(121, 28);
@@ -656,7 +679,7 @@
             // chBoxJoin
             // 
             this.chBoxJoin.AutoSize = true;
-            this.chBoxJoin.Location = new System.Drawing.Point(476, 166);
+            this.chBoxJoin.Location = new System.Drawing.Point(463, 166);
             this.chBoxJoin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chBoxJoin.Name = "chBoxJoin";
             this.chBoxJoin.Size = new System.Drawing.Size(18, 17);
@@ -717,7 +740,7 @@
             "IN865",
             "AU915",
             "AU915"});
-            this.cBoxFreq.Location = new System.Drawing.Point(476, 26);
+            this.cBoxFreq.Location = new System.Drawing.Point(486, 26);
             this.cBoxFreq.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cBoxFreq.Name = "cBoxFreq";
             this.cBoxFreq.Size = new System.Drawing.Size(121, 28);
@@ -729,7 +752,7 @@
             this.tBoxAppKey.Location = new System.Drawing.Point(163, 247);
             this.tBoxAppKey.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tBoxAppKey.Name = "tBoxAppKey";
-            this.tBoxAppKey.Size = new System.Drawing.Size(377, 27);
+            this.tBoxAppKey.Size = new System.Drawing.Size(328, 27);
             this.tBoxAppKey.TabIndex = 28;
             this.tBoxAppKey.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
@@ -738,7 +761,7 @@
             this.tBoxAppEUI.Location = new System.Drawing.Point(163, 282);
             this.tBoxAppEUI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tBoxAppEUI.Name = "tBoxAppEUI";
-            this.tBoxAppEUI.Size = new System.Drawing.Size(377, 27);
+            this.tBoxAppEUI.Size = new System.Drawing.Size(328, 27);
             this.tBoxAppEUI.TabIndex = 32;
             // 
             // label15
@@ -764,7 +787,7 @@
             this.tBoxDevEUI.Location = new System.Drawing.Point(163, 214);
             this.tBoxDevEUI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tBoxDevEUI.Name = "tBoxDevEUI";
-            this.tBoxDevEUI.Size = new System.Drawing.Size(377, 27);
+            this.tBoxDevEUI.Size = new System.Drawing.Size(328, 27);
             this.tBoxDevEUI.TabIndex = 26;
             // 
             // label13
@@ -799,19 +822,14 @@
             this.label14.TabIndex = 21;
             this.label14.Text = "Dev EUI";
             // 
-            // btnJoin
-            // 
-            this.btnJoin.Location = new System.Drawing.Point(25, 234);
-            this.btnJoin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnJoin.Name = "btnJoin";
-            this.btnJoin.Size = new System.Drawing.Size(100, 79);
-            this.btnJoin.TabIndex = 37;
-            this.btnJoin.Text = "Join";
-            this.btnJoin.UseVisualStyleBackColor = true;
-            this.btnJoin.Click += new System.EventHandler(this.button3_Click);
-            // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.label34);
+            this.groupBox4.Controls.Add(this.label33);
+            this.groupBox4.Controls.Add(this.label32);
+            this.groupBox4.Controls.Add(this.label31);
+            this.groupBox4.Controls.Add(this.label26);
+            this.groupBox4.Controls.Add(this.label17);
             this.groupBox4.Controls.Add(this.textBox9);
             this.groupBox4.Controls.Add(this.textBox8);
             this.groupBox4.Controls.Add(this.textBox7);
@@ -835,57 +853,113 @@
             this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox4.Size = new System.Drawing.Size(505, 258);
+            this.groupBox4.Size = new System.Drawing.Size(634, 258);
             this.groupBox4.TabIndex = 39;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "IO Configuration";
             // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(344, 215);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(77, 20);
+            this.label34.TabIndex = 62;
+            this.label34.Text = "Interval 6";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(344, 180);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(77, 20);
+            this.label33.TabIndex = 61;
+            this.label33.Text = "Interval 5";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(344, 145);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(77, 20);
+            this.label32.TabIndex = 60;
+            this.label32.Text = "Interval 4";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(344, 108);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(77, 20);
+            this.label31.TabIndex = 59;
+            this.label31.Text = "Interval 3";
+            this.label31.Click += new System.EventHandler(this.label31_Click);
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(345, 73);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(77, 20);
+            this.label26.TabIndex = 58;
+            this.label26.Text = "Interval 2";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(345, 42);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(77, 20);
+            this.label17.TabIndex = 57;
+            this.label17.Text = "Interval 1";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
+            // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(340, 213);
+            this.textBox9.Location = new System.Drawing.Point(445, 213);
             this.textBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(121, 27);
+            this.textBox9.Size = new System.Drawing.Size(141, 27);
             this.textBox9.TabIndex = 56;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(340, 177);
+            this.textBox8.Location = new System.Drawing.Point(445, 177);
             this.textBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(121, 27);
+            this.textBox8.Size = new System.Drawing.Size(141, 27);
             this.textBox8.TabIndex = 55;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(340, 142);
+            this.textBox7.Location = new System.Drawing.Point(445, 142);
             this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(121, 27);
+            this.textBox7.Size = new System.Drawing.Size(141, 27);
             this.textBox7.TabIndex = 54;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(340, 105);
+            this.textBox4.Location = new System.Drawing.Point(445, 105);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(121, 27);
+            this.textBox4.Size = new System.Drawing.Size(141, 27);
             this.textBox4.TabIndex = 53;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(340, 70);
+            this.textBox3.Location = new System.Drawing.Point(445, 70);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 27);
+            this.textBox3.Size = new System.Drawing.Size(141, 27);
             this.textBox3.TabIndex = 52;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(340, 34);
+            this.textBox2.Location = new System.Drawing.Point(445, 34);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 27);
+            this.textBox2.Size = new System.Drawing.Size(141, 27);
             this.textBox2.TabIndex = 51;
             // 
             // cBoxPul
@@ -1034,24 +1108,74 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.cBoxLoRaMode);
+            this.groupBox5.Controls.Add(this.label36);
+            this.groupBox5.Controls.Add(this.cBoxModbusMode);
+            this.groupBox5.Controls.Add(this.label35);
             this.groupBox5.Controls.Add(this.btnGetMB);
             this.groupBox5.Controls.Add(this.btnSetMB);
-            this.groupBox5.Controls.Add(this.btnJoin);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(1024, 287);
+            this.groupBox5.Location = new System.Drawing.Point(976, 288);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox5.Size = new System.Drawing.Size(156, 367);
+            this.groupBox5.Size = new System.Drawing.Size(333, 367);
             this.groupBox5.TabIndex = 40;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Control";
+            // 
+            // cBoxLoRaMode
+            // 
+            this.cBoxLoRaMode.FormattingEnabled = true;
+            this.cBoxLoRaMode.Items.AddRange(new object[] {
+            "LoRaWAN",
+            "LoRa",
+            "Disable"});
+            this.cBoxLoRaMode.Location = new System.Drawing.Point(141, 77);
+            this.cBoxLoRaMode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cBoxLoRaMode.Name = "cBoxLoRaMode";
+            this.cBoxLoRaMode.Size = new System.Drawing.Size(171, 28);
+            this.cBoxLoRaMode.TabIndex = 53;
+            this.cBoxLoRaMode.Text = "LoRaWAN";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(6, 77);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(95, 20);
+            this.label36.TabIndex = 52;
+            this.label36.Text = "LoRa Mode";
+            // 
+            // cBoxModbusMode
+            // 
+            this.cBoxModbusMode.FormattingEnabled = true;
+            this.cBoxModbusMode.Items.AddRange(new object[] {
+            "Master",
+            "Slave",
+            "Disable"});
+            this.cBoxModbusMode.Location = new System.Drawing.Point(141, 35);
+            this.cBoxModbusMode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cBoxModbusMode.Name = "cBoxModbusMode";
+            this.cBoxModbusMode.Size = new System.Drawing.Size(171, 28);
+            this.cBoxModbusMode.TabIndex = 51;
+            this.cBoxModbusMode.Text = "Slave";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(6, 43);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(114, 20);
+            this.label35.TabIndex = 39;
+            this.label35.Text = "Modbus Mode";
+            this.label35.Click += new System.EventHandler(this.label35_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1191, 666);
+            this.ClientSize = new System.Drawing.Size(1373, 666);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -1073,6 +1197,7 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1158,6 +1283,16 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox cBoxAutoJoin;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.ComboBox cBoxModbusMode;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.ComboBox cBoxLoRaMode;
     }
 }
 

@@ -134,8 +134,8 @@ eMBMasterFuncWriteHoldingRegister( UCHAR * pucFrame, USHORT * usLen )
         usRegAddress++;
 
         /* Make callback to update the value. */
-//        eRegStatus = eMBMasterRegHoldingCB( &pucFrame[MB_PDU_FUNC_WRITE_VALUE_OFF],
-//                                      usRegAddress, 1, MB_REG_WRITE );
+        eRegStatus = eMBMasterRegHoldingCB( &pucFrame[MB_PDU_FUNC_WRITE_VALUE_OFF],
+                                      usRegAddress, 1, MB_REG_WRITE );
 
         /* If an error occured convert it into a Modbus exception. */
         if( eRegStatus != MB_ENOERR )
@@ -225,9 +225,9 @@ eMBMasterFuncWriteMultipleHoldingRegister( UCHAR * pucFrame, USHORT * usLen )
         if( ucRegByteCount == 2 * usRegCount )
         {
             /* Make callback to update the register values. */
-//            eRegStatus =
-//                eMBMasterRegHoldingCB( &ucMBFrame[MB_PDU_REQ_WRITE_MUL_VALUES_OFF],
-//                                 usRegAddress, usRegCount, MB_REG_WRITE );
+            eRegStatus =
+                eMBMasterRegHoldingCB( &ucMBFrame[MB_PDU_REQ_WRITE_MUL_VALUES_OFF],
+                                 usRegAddress, usRegCount, MB_REG_WRITE );
 
             /* If an error occured convert it into a Modbus exception. */
             if( eRegStatus != MB_ENOERR )
@@ -316,7 +316,7 @@ eMBMasterFuncReadHoldingRegister( UCHAR * pucFrame, USHORT * usLen )
         if( ( usRegCount >= 1 ) && ( 2 * usRegCount == pucFrame[MB_PDU_FUNC_READ_BYTECNT_OFF] ) )
         {
             /* Make callback to fill the buffer. */
-//            eRegStatus = eMBMasterRegHoldingCB( &pucFrame[MB_PDU_FUNC_READ_VALUES_OFF], usRegAddress, usRegCount, MB_REG_READ );
+            eRegStatus = eMBMasterRegHoldingCB( &pucFrame[MB_PDU_FUNC_READ_VALUES_OFF], usRegAddress, usRegCount, MB_REG_READ );
             /* If an error occured convert it into a Modbus exception. */
             if( eRegStatus != MB_ENOERR )
             {
@@ -428,14 +428,14 @@ eMBMasterFuncReadWriteMultipleHoldingRegister( UCHAR * pucFrame, USHORT * usLen 
         if( ( 2 * usRegReadCount ) == pucFrame[MB_PDU_FUNC_READWRITE_READ_BYTECNT_OFF] )
         {
             /* Make callback to update the register values. */
-//            eRegStatus = eMBMasterRegHoldingCB( &ucMBFrame[MB_PDU_REQ_READWRITE_WRITE_VALUES_OFF],
-//                                           usRegWriteAddress, usRegWriteCount, MB_REG_WRITE );
+            eRegStatus = eMBMasterRegHoldingCB( &ucMBFrame[MB_PDU_REQ_READWRITE_WRITE_VALUES_OFF],
+                                           usRegWriteAddress, usRegWriteCount, MB_REG_WRITE );
 
             if( eRegStatus == MB_ENOERR )
             {
                 /* Make the read callback. */
-//				eRegStatus = eMBMasterRegHoldingCB(&pucFrame[MB_PDU_FUNC_READWRITE_READ_VALUES_OFF],
-//						                      usRegReadAddress, usRegReadCount, MB_REG_READ);
+				eRegStatus = eMBMasterRegHoldingCB(&pucFrame[MB_PDU_FUNC_READWRITE_READ_VALUES_OFF],
+						                      usRegReadAddress, usRegReadCount, MB_REG_READ);
             }
             if( eRegStatus != MB_ENOERR )
             {

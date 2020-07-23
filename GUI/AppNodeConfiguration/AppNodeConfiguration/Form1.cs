@@ -552,6 +552,48 @@ namespace AppNodeConfiguration
 
             }
 
+            if (theWaitingVal == 24)
+            {
+
+                theWaitingVal = 0;
+                Console.WriteLine("Mb mode");
+
+                if (dataIn == "0")
+                {
+                    cBoxModbusMode.Text = "Slave";
+                }
+                else if (dataIn == "1")
+                {
+                    cBoxModbusMode.Text = "Master";
+                }
+                else if (dataIn == "2")
+                {
+                    cBoxModbusMode.Text = "Disable";
+                }
+
+            }
+
+            if (theWaitingVal == 25)
+            {
+
+                theWaitingVal = 0;
+                Console.WriteLine("Lr mode");
+
+                if (dataIn == "0")
+                {
+                    cBoxLoRaMode.Text = "LoRaWAN";
+                }
+                else if (dataIn == "1")
+                {
+                    cBoxLoRaMode.Text = "LoRa";
+                }
+                else if (dataIn == "2")
+                {
+                    cBoxLoRaMode.Text = "Disable";
+                }
+
+            }
+
 
 
             Console.WriteLine(dataIn);
@@ -888,6 +930,28 @@ namespace AppNodeConfiguration
                 if (timeOut > 10) break;
             }
 
+            serialPort1.WriteLine("get mbmode");
+            theWaitingVal = 24;
+            /***/
+            timeOut = 0;
+            while (theWaitingVal != 0)
+            {
+                await Task.Delay(100);
+                timeOut++;
+                if (timeOut > 10) break;
+            }
+
+            serialPort1.WriteLine("get lrmode");
+            theWaitingVal = 25;
+            /***/
+            timeOut = 0;
+            while (theWaitingVal != 0)
+            {
+                await Task.Delay(100);
+                timeOut++;
+                if (timeOut > 10) break;
+            }
+
 
 
 
@@ -1130,7 +1194,35 @@ namespace AppNodeConfiguration
             serialPort1.WriteLine("set p_pf 5 " + Array.IndexOf(ProfileTable, cBoxOneW.Text).ToString());
 
             await Task.Delay(200);
-            serialPort1.WriteLine("set cf 2");
+            if (cBoxModbusMode.Text == "Slave")
+            {
+                serialPort1.WriteLine("set mbmode 0");
+            }
+            else if (cBoxModbusMode.Text == "Master")
+            {
+                serialPort1.WriteLine("set mbmode 1");
+            }
+            else
+            {
+                serialPort1.WriteLine("set mbmode 2");
+            }
+
+            await Task.Delay(200);
+            if (cBoxLoRaMode.Text == "LoRaWAN")
+            {
+                serialPort1.WriteLine("set lrmode 0");
+            }
+            else if (cBoxModbusMode.Text == "LoRa")
+            {
+                serialPort1.WriteLine("set lrmode 1");
+            }
+            else
+            {
+                serialPort1.WriteLine("set lrmode 2");
+            }
+
+            await Task.Delay(200);
+            serialPort1.WriteLine("set cf 1");
             await Task.Delay(200);
             serialPort1.WriteLine("set save");
 
@@ -1201,6 +1293,31 @@ namespace AppNodeConfiguration
         }
 
         private void cBoxADC1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label35_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label31_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cBoxLoRaMode_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

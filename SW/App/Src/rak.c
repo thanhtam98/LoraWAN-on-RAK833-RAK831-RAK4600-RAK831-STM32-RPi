@@ -507,63 +507,22 @@ void rak_recv_isr(void) {
 //	HAL_UART_Transmit(&RAK_huart, &receivedChar, 1, 100);
 }
 
-void vRakTask(void const *arg) {
+void vRakLRWAN(void) {
 
-	/* Os platform**/
-
-	/* RAK platform*/
 	char * DevEui = "60C5A8FFFE000001";
 	char * AppEui = "70B3D57EF00047C0";
 	char * AppKey = "5D833B4696D5E01E2F8DC880E30BA5FE";
 	char * pData = "aabbccdd";
-	char  lrTxBuffer[60];
-	__HAL_UART_ENABLE_IT(&huart1, UART_IT_RXNE);
-//			"5468656e20746869732073697465206973206d61646520666f7220796f752120557365206f75722073757065722068616e6479206f6e6c696e6520746f6f6c20746f206465636f6465206f7220656e636f646520796f757220646174612e";
-
-	rak_getStatus();
-
-	if (PARAM[NODE_HAVE_PARAM_ADR] == EEP_PARAM) {
-		for (uint8_t idx = 0; idx < 8; idx++) {
-			strcat(DevEui,
-					itoa_user(u_mem_get(NODE_LRWAN_DEVEUI_ADR + idx), 16));
-		}
-		for (uint8_t idx = 0; idx < 16; idx++) {
-			strcat(AppEui,
-					itoa_user(u_mem_get(NODE_LRWAN_APPEUI_ADR + idx), 16));
-		}
-		for (uint8_t idx = 0; idx < 16; idx++) {
-			strcat(AppKey,
-					itoa_user(u_mem_get(NODE_LRWAN_APPKEY_ADR + idx), 16));
-		}
-//printf("%d \r\n", u_mem_get(NODE_LRWAN_DEVEUI_ADR + idx));
-
-	}
-	/*Initial */
-//rak_reset(); // RAK was reset before
-//	osDelay(2000);
+	char lrTxBuffer[60];
 
 	rak_setClass(PARAM[NODE_LRWAN_CLASS_ADR]);
-
 	rak_setRegion(PARAM[NODE_LRWAN_FREQ_ADR]);
-
-//rak_setWorkingMode(0); //
 	rak_setJoinMode(PARAM[NODE_LRWAN_MODE_ADR]);
-
 	rak_isConfirm(PARAM[NODE_LRWAN_CONFIRM_ADR]);
 
-//	rak_initOTAA(DevEui, AppEui, AppKey);
-//	isJoinedLoraWAN = rak_join();
-
-//	rak_setClass(2);
-//		rak_setRegion(0);
-//		rak_setWorkingMode(0);
-//		rak_setJoinMode(0);
-
+	//	##rak_initOTAA(DevEui, AppEui, AppKey); // not call, use the default keys
 	rak_setTxPower(PARAM[NODE_LRWAN_TX_POWER_ADR]);
-//	osDelay(2000);
 	rak_isConfirm(PARAM[NODE_LRWAN_CONFIRM_ADR]);
-//	osDelay(2000);
-
 	/* Datarate parameter**/
 	if (PARAM[NODE_LRWAN_DATARATE_ADR] == 0) {
 		/* if Adr is On, don't care any datarate **/
@@ -573,53 +532,54 @@ void vRakTask(void const *arg) {
 		rak_setDr(PARAM[NODE_LRWAN_CONFIRM_ADR]);
 	}
 
-//	rak_initOTAA(DevEui, AppEui, AppKey);
 	uint8_t err;
-	if ( PARAM[NODE_LRWAN_AUTO_JOIN_ADR] != 0)
-	{
-	err = rak_join();
+	if (PARAM[NODE_LRWAN_AUTO_JOIN_ADR] != 0) {
+		err = rak_join();
+		if (err == AT_CMD) {
+			isJoinedLoraWAN = LR_JOINED;
+			DBG("LR JOINED \r\n");
+		} else {
+			isJoinedLoraWAN = LR_NOT_JOINED;
+			DBG("LR NOTJOINED \r\n");
+		}
 	}
-	if (err == AT_CMD) {
-		isJoinedLoraWAN = LR_JOINED;
-		DBG("LR JOINED \r\n");
-	} else {
-		isJoinedLoraWAN = LR_NOT_JOINED;
-		DBG("LR NOTJOINED \r\n");
-	}
-	rak_setDr(5);
+
+	//	rak_setDr(5);
 	while (1) {
 		/*Thread up*/
 
-		osDelay(5000);
-		memset(lrTxBuffer,0,50);
-//		strcat(lrTxBuffer,itoa_user(PORT_IO_SW_1, 16));
-//		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_IO_SW_1) >> 8), 16));
-//		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_IO_SW_1) ), 16));
-//
-//		strcat(lrTxBuffer,itoa_user(PORT_IO_SW_2, 16));
-//		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_IO_SW_2) >> 8), 16));
-//		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_IO_SW_2) ), 16));
-//
-//		strcat(lrTxBuffer,itoa_user(PORT_PULSE, 16));
-//		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_PULSE) >> 8), 16));
-//		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_PULSE) ), 16));
-//
+		memset(lrTxBuffer, 0, 50);
+		//		strcat(lrTxBuffer,itoa_user(PORT_IO_SW_1, 16));
+		//		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_IO_SW_1) >> 8), 16));
+		//		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_IO_SW_1) ), 16));
+		//
+		//		strcat(lrTxBuffer,itoa_user(PORT_IO_SW_2, 16));
+		//		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_IO_SW_2) >> 8), 16));
+		//		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_IO_SW_2) ), 16));
+		//
+		//		strcat(lrTxBuffer,itoa_user(PORT_PULSE, 16));
+		//		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_PULSE) >> 8), 16));
+		//		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_PULSE) ), 16));
+		//
 
-//
-//		strcat(lrTxBuffer,itoa_user(PORT_ADC_2, 16));
-//		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_ADC_2) >> 8), 16));
-//		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_ADC_2) ), 16));
-//
-		strcat(lrTxBuffer,itoa_user(1, 16));
-		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_ONE_WIRE) >> 8), 16));
-		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_ONE_WIRE) ), 16));
-//
-		strcat(lrTxBuffer,itoa_user(2, 16));
-		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_ONE_WIRE_) >> 8), 16));
-		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_ONE_WIRE_) ), 16));
-		strcat(lrTxBuffer,itoa_user(3, 16));
-		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_ADC_1) >> 8), 16));
-		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_ADC_1) ), 16));
+		//
+		//		strcat(lrTxBuffer,itoa_user(PORT_ADC_2, 16));
+		//		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_ADC_2) >> 8), 16));
+		//		strcat(lrTxBuffer,itoa_user((uint8_t)(uiMemGet(PORT_ADC_2) ), 16));
+		//
+		strcat(lrTxBuffer, itoa_user(1, 16));
+		strcat(lrTxBuffer,
+				itoa_user((uint8_t) (uiMemGet(PORT_ONE_WIRE) >> 8), 16));
+		strcat(lrTxBuffer, itoa_user((uint8_t) (uiMemGet(PORT_ONE_WIRE)), 16));
+		//
+		strcat(lrTxBuffer, itoa_user(2, 16));
+		strcat(lrTxBuffer,
+				itoa_user((uint8_t) (uiMemGet(PORT_ONE_WIRE_) >> 8), 16));
+		strcat(lrTxBuffer, itoa_user((uint8_t) (uiMemGet(PORT_ONE_WIRE_)), 16));
+		strcat(lrTxBuffer, itoa_user(3, 16));
+		strcat(lrTxBuffer,
+				itoa_user((uint8_t) (uiMemGet(PORT_ADC_1) >> 8), 16));
+		strcat(lrTxBuffer, itoa_user((uint8_t) (uiMemGet(PORT_ADC_1)), 16));
 
 		err = rak_sendData(1, lrTxBuffer);
 		if (err == AT_ERR) {
@@ -645,16 +605,16 @@ void vRakTask(void const *arg) {
 
 		/*Handling*/
 		isJoinedLoraWAN = rak_getStatus();
-//		if (isJoinedLoraWAN == LR_NOT_JOINED) {
-//			DBG("Re joining to LRWAN: ");
-//			osDelay(3000);
-//			isJoinedLoraWAN = rak_join();
-//			DBG("Re joining to LRWAN with code: %d \r\n", isJoinedLoraWAN);
-//		}
-//		if (isJoinedLoraWAN == LR_BUSY) {
-//			DBG("LRWAN is busy now, sleeping in 5s \r\n");
-//			osDelay(5000);
-//		}
+		//		if (isJoinedLoraWAN == LR_NOT_JOINED) {
+		//			DBG("Re joining to LRWAN: ");
+		//			osDelay(3000);
+		//			isJoinedLoraWAN = rak_join();
+		//			DBG("Re joining to LRWAN with code: %d \r\n", isJoinedLoraWAN);
+		//		}
+		//		if (isJoinedLoraWAN == LR_BUSY) {
+		//			DBG("LRWAN is busy now, sleeping in 5s \r\n");
+		//			osDelay(5000);
+		//		}
 		/*
 		 * Receive downlink data and error code detecting
 		 *
@@ -663,7 +623,7 @@ void vRakTask(void const *arg) {
 		if (gotCommandRecvFlag != AT_NONE) {
 			switch (gotCommandRecvFlag) {
 			case AT_ERR: {
-//				err = rak_err_detector();
+				//				err = rak_err_detector();
 				if (globalError == 86)
 					isJoinedLoraWAN = LR_NOT_JOINED;
 				if (globalError == 80)
@@ -690,7 +650,41 @@ void vRakTask(void const *arg) {
 			gotCommandRecvFlag = AT_NONE;
 			/*	Clear buffer*/
 			memset(commandRecvBuffer, 0, RAK_MAX_RECV_LEN);
+
+			osDelay(5000);
 		}
 	}
 }
 
+void vRakTask(void const *arg) {
+
+	/* Os platform**/
+
+	/* RAK platform*/
+
+	__HAL_UART_ENABLE_IT(&huart1, UART_IT_RXNE);
+	rak_getStatus();
+
+//	if (PARAM[NODE_HAVE_PARAM_ADR] == EEP_PARAM) {
+//		for (uint8_t idx = 0; idx < 8; idx++) {
+//			strcat(DevEui,
+//					itoa_user(u_mem_get(NODE_LRWAN_DEVEUI_ADR + idx), 16));
+//		}
+//		for (uint8_t idx = 0; idx < 16; idx++) {
+//			strcat(AppEui,
+//					itoa_user(u_mem_get(NODE_LRWAN_APPEUI_ADR + idx), 16));
+//		}
+//		for (uint8_t idx = 0; idx < 16; idx++) {
+//			strcat(AppKey,
+//					itoa_user(u_mem_get(NODE_LRWAN_APPKEY_ADR + idx), 16));
+//		}
+//	}
+	/*Initial */
+	if (PARAM[NODE_LRWAN_WORKMODE_ADR] == LR_WAN) {
+		vRakLRWAN();
+	} else {
+		while (1)
+			;
+	}
+
+}
