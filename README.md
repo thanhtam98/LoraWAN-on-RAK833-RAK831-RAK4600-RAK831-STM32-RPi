@@ -1,3 +1,3 @@
 # LoraWAN-on-RAK833-RAK831-RAK4600-RAK831-STM32-RPi
 
-Add node later :)
+Add note later :)
