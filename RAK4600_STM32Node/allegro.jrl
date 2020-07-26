@@ -1,6 +1,6 @@
 \t (00:00:01) allegro 17.2 S052 Windows SPB 64-bit Edition
-\t (00:00:01)     Journal start - Sat Jun 27 23:17:40 2020
-\t (00:00:01)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=15008 CPUs=4
+\t (00:00:01)     Journal start - Sun Jul 26 15:55:53 2020
+\t (00:00:01)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=7728 CPUs=4
 \t (00:00:01) CmdLine= c:\cadence\spb_17.2\tools\bin\allegro.exe C:\GIT\ThesisLorawanNode\RAK4600_STM32Node\STM32F103_RAK4600_THESISNODE.brd
 \t (00:00:01) 
    (00:00:01) Loading axlcore.cxt 
@@ -28,13 +28,63 @@
    (00:00:01) function Is_Point_On_List redefined
    (00:00:01) function Line_Line_Intersect redefined
    (00:00:01) function Line_Line_Distant redefined
-\t (00:00:02) Opening existing design...
-\i (00:00:02) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged STM32F103_RAK4600_THESISNODE
-\d (00:00:02) Design opened: C:/GIT/ThesisLorawanNode/RAK4600_STM32Node/STM32F103_RAK4600_THESISNODE.brd
-\i (00:00:03) trapsize 8287
-\i (00:00:03) trapsize 8523
-\i (00:00:03) trapsize 7221
-\i (00:00:03) trapsize 11724
-\i (00:00:04) generaledit 
-\i (00:00:05) exit 
-\t (00:00:06)     Journal end - Sat Jun 27 23:17:45 2020
+\t (00:00:04) Opening existing design...
+\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged STM32F103_RAK4600_THESISNODE
+\d (00:00:04) Design opened: C:/GIT/ThesisLorawanNode/RAK4600_STM32Node/STM32F103_RAK4600_THESISNODE.brd
+\i (00:00:05) trapsize 8040
+\i (00:00:05) trapsize 8261
+\i (00:00:06) trapsize 7384
+\i (00:00:06) trapsize 11140
+\i (00:00:06) generaledit 
+\i (00:00:08) zoom in 1 
+\i (00:00:08) setwindow pcb
+\i (00:00:08) zoom in 4010.48 14081.26
+\i (00:00:08) trapsize 5570
+\i (00:00:08) zoom in 1 
+\i (00:00:08) setwindow pcb
+\i (00:00:08) zoom in 4010.48 14081.26
+\i (00:00:08) trapsize 2785
+\i (00:00:08) zoom out 1 
+\i (00:00:08) setwindow pcb
+\i (00:00:08) zoom out 5882.04 12193.00
+\i (00:00:08) trapsize 5570
+\i (00:00:09) pick grid 5726.08 12610.75
+\t (00:00:09) last pick:  5730.00 12610.00
+\i (00:00:09) zoom in 1 
+\i (00:00:09) setwindow pcb
+\i (00:00:09) zoom in 3130.40 14070.12
+\i (00:00:09) trapsize 2785
+\i (00:00:09) roam x -96 
+\i (00:00:09) roam x -96
+\i (00:00:10) roam x -96 
+\i (00:00:10) roam x -96
+\i (00:00:10) roam x 96 
+\i (00:00:10) roam x 96
+\i (00:00:10) zoom in 1 
+\i (00:00:10) setwindow pcb
+\i (00:00:10) zoom in 4027.19 13602.23
+\i (00:00:10) trapsize 1393
+\i (00:00:11) roam x -96 
+\i (00:00:11) roam x -96
+\i (00:00:11) zoom in 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom in 3684.63 13621.73
+\i (00:00:11) trapsize 696
+\i (00:00:11) roam x -96 
+\i (00:00:11) roam x -96
+\i (00:00:11) zoom out 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom out 3463.23 13770.73
+\i (00:00:11) trapsize 1393
+\i (00:00:12) zoom out 1 
+\i (00:00:12) setwindow pcb
+\i (00:00:12) zoom out 3463.23 13770.73
+\i (00:00:12) trapsize 2785
+\i (00:00:12) roam x -96 
+\i (00:00:12) roam x -96
+\i (00:00:12) roam y -96 
+\i (00:00:12) roam y -96
+\i (00:00:13) pick grid 4021.63 12326.70
+\t (00:00:13) last pick:  4020.00 12330.00
+\i (00:00:15) exit 
+\t (00:00:16)     Journal end - Sun Jul 26 15:56:07 2020

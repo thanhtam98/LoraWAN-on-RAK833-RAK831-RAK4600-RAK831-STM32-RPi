@@ -1,11 +1,11 @@
-\t (00:00:00) allegro 17.2 S052 Windows SPB 64-bit Edition
-\t (00:00:00)     Journal start - Wed Jun 17 09:11:38 2020
-\t (00:00:00)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=21168 CPUs=4
-\t (00:00:00) CmdLine= c:\cadence\spb_17.2\tools\bin\allegro.exe C:\GIT\ThesisLorawanNode\HW\RAK4600_SM32Node\allegro\STM32F103_RAK4600_THESISNODE.brd
-\t (00:00:00) 
-   (00:00:00) Loading axlcore.cxt 
-   (00:00:00) Searching for nsWare programs v2.78
-   (00:00:00) 	NsWare directory found: E:/CAD/pcbenv/nsWare/
+\t (00:00:01) allegro 17.2 S052 Windows SPB 64-bit Edition
+\t (00:00:01)     Journal start - Sun Jul 26 15:54:51 2020
+\t (00:00:01)         Host=NTT-ASUSROG User=NguyenThanhTam Pid=14668 CPUs=4
+\t (00:00:01) CmdLine= c:\cadence\spb_17.2\tools\bin\allegro.exe C:\GIT\ThesisLorawanNode\HW\RAK4600_SM32Node\allegro\STM32F103_RAK4600_THESISNODE.brd
+\t (00:00:01) 
+   (00:00:01) Loading axlcore.cxt 
+   (00:00:01) Searching for nsWare programs v2.78
+   (00:00:01) 	NsWare directory found: E:/CAD/pcbenv/nsWare/
    (00:00:01) 	NsWare programs must reside in this directory!
    (00:00:01) function AFn_OpenDesign redefined
    (00:00:01) function PinVia_Overlap_FinishEnterFun redefined
@@ -28,20 +28,13 @@
    (00:00:01) function Is_Point_On_List redefined
    (00:00:01) function Line_Line_Intersect redefined
    (00:00:01) function Line_Line_Distant redefined
-\t (00:00:03) Opening existing design...
-\i (00:00:03) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged STM32F103_RAK4600_THESISNODE
-\d (00:00:03) Design opened: C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/STM32F103_RAK4600_THESISNODE.brd
-\i (00:00:04) trapsize 3246
-\i (00:00:04) trapsize 3427
-\i (00:00:04) trapsize 2752
-\i (00:00:04) trapsize 2752
-\i (00:00:05) generaledit 
-\i (00:00:14) dlib 
-\i (00:00:16) setwindow form.dlib
-\i (00:00:16) FORM dlib execute  
-\t (00:00:16) Starting Cadence export libraries...
-\i (00:00:30) FORM dlib cancel  
-\i (00:00:30) setwindow pcb
-\i (00:00:30) generaledit 
-\i (00:00:31) exit 
-\t (00:00:32)     Journal end - Wed Jun 17 09:12:09 2020
+\t (00:00:04) Opening existing design...
+\i (00:00:04) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged STM32F103_RAK4600_THESISNODE
+\d (00:00:04) Design opened: C:/GIT/ThesisLorawanNode/HW/RAK4600_SM32Node/allegro/STM32F103_RAK4600_THESISNODE.brd
+\i (00:00:05) trapsize 1648
+\i (00:00:05) trapsize 1693
+\i (00:00:05) trapsize 1514
+\i (00:00:05) trapsize 1514
+\i (00:00:06) generaledit 
+\i (00:00:06) exit 
+\t (00:00:07)     Journal end - Sun Jul 26 15:54:56 2020
